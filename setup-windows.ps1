@@ -82,7 +82,14 @@ if ($existingVersion) {
     }
 } else {
     Write-Host "  Installing openclaw@2026.3.2 globally..." -ForegroundColor Gray
-    npm install -g openclaw@2026.3.2
+    try {
+        $npmProcess = Start-Process -FilePath "npm" -ArgumentList "install", "-g", "openclaw@2026.3.2" -WindowStyle Hidden -Wait -PassThru
+        if ($npmProcess.ExitCode -ne 0) {
+            Write-Host "  WARNING npm install openclaw@2026.3.2 exited with code $($npmProcess.ExitCode)" -ForegroundColor Yellow
+        }
+    } catch {
+        Write-Host "  WARNING Failed to install openclaw : $($_.Exception.Message)" -ForegroundColor Yellow
+    }
 }
 
 # Refresh PATH to ensure openclaw is available
@@ -428,7 +435,14 @@ $npmPackages = @(
 
 foreach ($pkg in $npmPackages) {
     Write-Host "    Installing $pkg..." -ForegroundColor Gray
-    npm install -g $pkg 2>$null | Out-Null
+    try {
+        $npmProcess = Start-Process -FilePath "npm" -ArgumentList "install", "-g", $pkg -WindowStyle Hidden -Wait -PassThru
+        if ($npmProcess.ExitCode -ne 0) {
+            Write-Host "    WARNING npm install $pkg exited with code $($npmProcess.ExitCode)" -ForegroundColor Yellow
+        }
+    } catch {
+        Write-Host "    WARNING Failed to install $pkg : $($_.Exception.Message)" -ForegroundColor Yellow
+    }
 }
 
 Write-Host "  OK NPM packages installed" -ForegroundColor Green
