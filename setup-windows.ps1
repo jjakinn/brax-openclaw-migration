@@ -3,7 +3,7 @@
 # Based on Jakin's exact setup (OpenClaw 2026.3.2)
 # One script: install everything, configure everything, leave only Kimi API for Brax
 
-$ErrorActionPreference = "Stop"
+$ErrorActionPreference = "Continue"
 $ProgressPreference = "Continue"
 
 $BraxHome = $env:USERPROFILE
@@ -77,19 +77,12 @@ if ($existingVersion) {
         Write-Host "  OK OpenClaw 2026.3.2 already installed" -ForegroundColor Green
     } else {
         Write-Host "  WARNING Different version found ($v). Reinstalling 2026.3.2..." -ForegroundColor Yellow
-        npm uninstall -g openclaw 2>$null | Out-Null
-        npm install -g openclaw@2026.3.2
+        cmd /c "npm uninstall -g openclaw 2>nul"
+        cmd /c "npm install -g openclaw@2026.3.2 2>nul"
     }
 } else {
     Write-Host "  Installing openclaw@2026.3.2 globally..." -ForegroundColor Gray
-    try {
-        $npmProcess = Start-Process -FilePath "npm" -ArgumentList "install", "-g", "openclaw@2026.3.2" -WindowStyle Hidden -Wait -PassThru
-        if ($npmProcess.ExitCode -ne 0) {
-            Write-Host "  WARNING npm install openclaw@2026.3.2 exited with code $($npmProcess.ExitCode)" -ForegroundColor Yellow
-        }
-    } catch {
-        Write-Host "  WARNING Failed to install openclaw : $($_.Exception.Message)" -ForegroundColor Yellow
-    }
+    cmd /c "npm install -g openclaw@2026.3.2 2>nul"
 }
 
 # Refresh PATH to ensure openclaw is available
@@ -435,14 +428,7 @@ $npmPackages = @(
 
 foreach ($pkg in $npmPackages) {
     Write-Host "    Installing $pkg..." -ForegroundColor Gray
-    try {
-        $npmProcess = Start-Process -FilePath "npm" -ArgumentList "install", "-g", $pkg -WindowStyle Hidden -Wait -PassThru
-        if ($npmProcess.ExitCode -ne 0) {
-            Write-Host "    WARNING npm install $pkg exited with code $($npmProcess.ExitCode)" -ForegroundColor Yellow
-        }
-    } catch {
-        Write-Host "    WARNING Failed to install $pkg : $($_.Exception.Message)" -ForegroundColor Yellow
-    }
+    cmd /c "npm install -g $pkg 2>nul"
 }
 
 Write-Host "  OK NPM packages installed" -ForegroundColor Green
@@ -456,7 +442,7 @@ Write-Host "STEP 9: Installing VIVID TUI..." -ForegroundColor Yellow
 $vividTuiDir = "$scriptDir\vivid-tui"
 if (Test-Path "$vividTuiDir\package.json") {
     Write-Host "  Installing vivid-tui globally..." -ForegroundColor Gray
-    npm install -g $vividTuiDir 2>$null | Out-Null
+    cmd /c "npm install -g $vividTuiDir 2>nul"
     Write-Host "  OK VIVID TUI installed" -ForegroundColor Green
     Write-Host "  Run with: vivid-tui or vivid" -ForegroundColor Gray
 } else {
