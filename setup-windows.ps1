@@ -344,11 +344,16 @@ foreach ($repo in $repos) {
         $skipCount++
     } else {
         Write-Host "  CLONE $($repo.url) -> $($repo.dest)" -ForegroundColor Gray
-        git clone $repo.url $destPath 2>$null | Out-Null
-        if ($LASTEXITCODE -eq 0) {
-            $cloneCount++
-        } else {
-            Write-Host "  FAIL (may be private): $($repo.dest)" -ForegroundColor Yellow
+        try {
+            # Use cmd to avoid PowerShell treating git's stderr as an error
+            $process = Start-Process -FilePath "git" -ArgumentList "clone", $repo.url, $destPath -WindowStyle Hidden -Wait -PassThru
+            if ($process.ExitCode -eq 0) {
+                $cloneCount++
+            } else {
+                Write-Host "  FAIL (may be private): $($repo.dest)" -ForegroundColor Yellow
+            }
+        } catch {
+            Write-Host "  FAIL: $($repo.dest) - $($_.Exception.Message)" -ForegroundColor Yellow
         }
     }
 }
