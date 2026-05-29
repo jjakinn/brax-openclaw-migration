@@ -220,7 +220,7 @@ echo ""
 # Install VIVID TUI
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 if [ -d "$SCRIPT_DIR/vivid-tui" ]; then
-    echo "🎨 Installing VIVID TUI..."
+    echo "🦆 Installing VIVID TUI..."
     cd "$SCRIPT_DIR/vivid-tui"
     npm install -g . 2>/dev/null || sudo npm install -g . 2>/dev/null || echo "⚠️  Could not install vivid-tui globally"
     echo "✅ VIVID TUI installed"

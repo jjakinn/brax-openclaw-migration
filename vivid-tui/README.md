@@ -1,4 +1,4 @@
-# 🎨 VIVID TUI
+# 🦆 VIVID TUI
 
 Branded terminal UI for the VIVID Agent.
 
@@ -14,7 +14,7 @@ npx vivid-tui --start
 
 ## What It Does
 
-1. Shows the 🎨 VIVID Agent banner
+1. Shows the 🦆 VIVID Agent banner
 2. Checks if your OpenClaw gateway is running
 3. Connects you to the full OpenClaw TUI experience
 4. Custom VIVID-themed colors and branding
@@ -46,4 +46,4 @@ Then run `vivid-tui` or `vivid` from anywhere.
 
 ---
 
-Built for VIVID Agent 🎨
+Built for VIVID Agent 🦆

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 🎨 VIVID Agent Terminal UI
+ * 🦆 VIVID Agent Terminal UI
  * Branded wrapper around OpenClaw's built-in TUI
  * 
  * Usage:

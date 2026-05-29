@@ -29,7 +29,7 @@ export function printBanner() {
   console.log('');
   console.log(getVividBanner());
   console.log('');
-  console.log('  \x1b[38;5;213m🎨 VIVID Agent Terminal UI\x1b[0m  \x1b[38;5;245m—  Connected to OpenClaw Gateway\x1b[0m');
+  console.log('  \x1b[38;5;213m🦆 VIVID Agent Terminal UI\x1b[0m  \x1b[38;5;245m—  Connected to OpenClaw Gateway\x1b[0m');
   console.log('  \x1b[38;5;245mType your message and press Enter. Use /help for commands.\x1b[0m');
   console.log('');
 }
