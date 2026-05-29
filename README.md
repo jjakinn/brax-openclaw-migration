@@ -26,6 +26,27 @@ This is a **complete, byte-for-byte clone** of Jakin's OpenClaw environment with
 | **Self-Improving System** | HOT/WARM/COLD memory tiers, corrections, reflections, project patterns | Full setup |
 | **Data Analysis** | Config, datasets folder, reports folder | Ready to use |
 | **Super Agent Config** | AGENTS.md with GitNexus, n8n, data analysis, self-improving protocols | Active |
+| **VIVID TUI** | Branded terminal UI for OpenClaw | 🎨 Installed |
+
+---
+
+## 🎨 VIVID TUI
+
+After setup, use the branded terminal UI:
+
+```bash
+# Connect to running gateway
+vivid-tui
+
+# Start gateway + connect in one shot
+vivid-tui --start
+```
+
+Features:
+- 🎨 Custom VIVID banner with pink dot (matching logo)
+- 💬 Chat interface with themed colors
+- ⚡ Auto-detects gateway status
+- 🚀 Auto-starts gateway if needed
 
 ---
 
@@ -191,6 +212,9 @@ ls ~/n8n-workflows/
 # 7. Start gateway
 openclaw gateway start
 # Then open http://localhost:18789
+
+# 8. Or use VIVID TUI
+vivid-tui --start
 ```
 
 ---

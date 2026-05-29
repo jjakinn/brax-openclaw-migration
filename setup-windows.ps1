@@ -518,6 +518,22 @@ foreach ($pkg in $npmPackages) {
 
 Write-Host "  ✅ NPM packages installed" -ForegroundColor Green
 
+# ============================================================================
+# STEP 9: INSTALL VIVID TUI
+# ============================================================================
+Write-Host ""
+Write-Host "🎨 STEP 9: Installing VIVID TUI..." -ForegroundColor Yellow
+
+$vividTuiDir = "$scriptDir\vivid-tui"
+if (Test-Path "$vividTuiDir\package.json") {
+    Write-Host "  Installing vivid-tui globally..." -ForegroundColor Gray
+    npm install -g $vividTuiDir 2>$null | Out-Null
+    Write-Host "  ✅ VIVID TUI installed" -ForegroundColor Green
+    Write-Host "  Run with: vivid-tui or vivid" -ForegroundColor Gray
+} else {
+    Write-Host "  ⚠️  vivid-tui not found in package" -ForegroundColor Yellow
+}
+
 $filesToUpdate = @(
     "$WorkspaceDir\MEMORY.md",
     "$WorkspaceDir\SOUL.md",
@@ -617,6 +633,13 @@ if ($allGood) {
     Write-Host "⚠️  Some checks failed. Review above and re-run if needed." -ForegroundColor Yellow
 }
 
+Write-Host ""
+Write-Host "═══════════════════════════════════════════════════════════════════════" -ForegroundColor White
+Write-Host "   🎨 LAUNCH VIVID TUI" -ForegroundColor Magenta
+Write-Host "═══════════════════════════════════════════════════════════════════════" -ForegroundColor White
+Write-Host ""
+Write-Host "   vivid-tui              # Connect to running gateway" -ForegroundColor Cyan
+Write-Host "   vivid-tui --start      # Start gateway + connect" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "═══════════════════════════════════════════════════════════════════════" -ForegroundColor White
 Write-Host "   📝 FINAL STEP: Configure your Kimi API Key" -ForegroundColor Yellow

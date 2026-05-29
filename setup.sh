@@ -217,6 +217,17 @@ sed -i '' "s|WORKSPACE_PATH|$WORKSPACE|g" "$BRAX_HOME/.openclaw/openclaw.json" 2
 echo "✅ openclaw.json generated"
 echo ""
 
+# Install VIVID TUI
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -d "$SCRIPT_DIR/vivid-tui" ]; then
+    echo "🎨 Installing VIVID TUI..."
+    cd "$SCRIPT_DIR/vivid-tui"
+    npm install -g . 2>/dev/null || sudo npm install -g . 2>/dev/null || echo "⚠️  Could not install vivid-tui globally"
+    echo "✅ VIVID TUI installed"
+    echo "   Run with: vivid-tui or vivid"
+    echo ""
+fi
+
 echo "🔑 IMPORTANT: You must configure your own API keys:"
 echo "   1. Kimi API key: run 'openclaw auth add kimi-coding'"
 echo "   2. Brave Search API key: edit ~/.openclaw/openclaw.json tools.web.search.apiKey"
@@ -249,11 +260,13 @@ echo "   3. ./setup.sh            (this script — OpenClaw workspace)"
 echo "   4. cp .zshrc.brax ~/.zshrc"
 echo "   5. openclaw auth add kimi-coding"
 echo "   6. openclaw gateway start"
+echo "   7. vivid-tui --start"
 echo ""
 echo "Next steps:"
 echo "   • Run 'openclaw auth add kimi-coding' to add your Kimi API key"
 echo "   • Replace 'YOUR_BRAVE_API_KEY_HERE' in ~/.openclaw/openclaw.json"
 echo "   • Run 'openclaw gateway start' to start the gateway"
+echo "   • Or use VIVID TUI: vivid-tui --start"
 echo "   • Open webchat at http://localhost:18789"
 echo ""
 echo "Your setup is identical to Jakin's except:"

@@ -1,0 +1,27 @@
+{
+  "name": "vivid-tui",
+  "version": "1.0.0",
+  "description": "VIVID Agent Terminal UI for OpenClaw",
+  "main": "index.js",
+  "bin": {
+    "vivid-tui": "./index.js",
+    "vivid": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "openclaw",
+    "tui",
+    "terminal",
+    "ai",
+    "agent"
+  ],
+  "author": "Jakin",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "readline": "^1.3.0",
+    "ws": "^8.18.0"
+  }
+}
