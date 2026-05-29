@@ -635,7 +635,7 @@ if ($allGood) {
 
 Write-Host ""
 Write-Host "═══════════════════════════════════════════════════════════════════════" -ForegroundColor White
-Write-Host "   🎨 LAUNCH VIVID TUI" -ForegroundColor Magenta
+Write-Host "   🦆 LAUNCH VIVID TUI" -ForegroundColor Magenta
 Write-Host "═══════════════════════════════════════════════════════════════════════" -ForegroundColor White
 Write-Host ""
 Write-Host "   vivid-tui              # Connect to running gateway" -ForegroundColor Cyan
