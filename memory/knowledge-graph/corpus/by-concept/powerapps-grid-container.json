@@ -1,0 +1,27 @@
+{
+  "id": "powerapps-grid-container",
+  "name": "Power Apps Grid Container",
+  "category": "Power Platform",
+  "description": "Grid container control in Power Apps for building responsive grid layouts with defined rows and columns, precise control positioning, and form designs.",
+  "related_concepts": [
+    "powerapps-modern-controls",
+    "responsive-design",
+    "form-design"
+  ],
+  "sources": [
+    "powerapps-grid-container-raza"
+  ],
+  "keywords": [
+    "Grid container",
+    "Rows",
+    "Columns",
+    "Grid layout",
+    "Responsive grid",
+    "Grid position",
+    "GridRowStart",
+    "GridColumn",
+    "Gap",
+    "Padding"
+  ],
+  "created_at": "2026-03-30"
+}

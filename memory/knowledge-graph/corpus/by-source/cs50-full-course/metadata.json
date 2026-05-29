@@ -1,0 +1,59 @@
+{
+  "source_id": "cs50-full-course-2026",
+  "display_name": "CS50 (2026) - Full Computer Science Course",
+  "author": "David J. Malan (Harvard)",
+  "type": "course",
+  "format": "video",
+  "metadata": {
+    "publisher": "Harvard University",
+    "year": 2026,
+    "url": "https://www.youtube.com/watch?v=gmuTjeQUbTM",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "total_duration_hours": 24.5,
+    "total_words": 289746,
+    "total_chunks": 20,
+    "chunks_processed": 20,
+    "concepts_extracted": 0
+  },
+  "length": {
+    "pages": 0,
+    "words": 289746,
+    "duration_minutes": 1320,
+    "chunk_count": 20
+  },
+  "structure": {
+    "parts": [
+      "Introduction to Computer Science",
+      "C Programming",
+      "Python",
+      "SQL",
+      "Web Programming",
+      "Advanced Topics"
+    ],
+    "estimated_topics": [
+      "Scratch",
+      "C Basics",
+      "Arrays",
+      "Algorithms",
+      "Memory",
+      "Data Structures",
+      "Python",
+      "SQL",
+      "Web Development",
+      "Flask",
+      "JavaScript",
+      "Final Projects"
+    ]
+  },
+  "domains": [
+    "coding",
+    "computer-science"
+  ],
+  "files": {
+    "raw_transcript": "library/inbox/cs50-full-course.txt",
+    "chunks": "chunks/",
+    "manifest": "chunk-manifest.json"
+  }
+}

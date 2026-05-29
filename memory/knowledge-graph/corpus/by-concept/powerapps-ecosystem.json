@@ -1,0 +1,31 @@
+{
+  "id": "powerapps-ecosystem",
+  "name": "Power Apps Ecosystem",
+  "category": "Power Platform",
+  "description": "Overview of the complete Power Apps ecosystem from no-code (App Builder Agent) to low-code (Canvas/Model-driven) to vibe coding (Vibe portal) to pro-code (Code Apps).",
+  "related_concepts": [
+    "powerapps-vibe-coding",
+    "powerapps-modern-controls",
+    "powerapps-confirm-function",
+    "powerapps-responsive-gallery",
+    "powerapps-navigation-component",
+    "powerapps-card-control",
+    "powerapps-grid-container"
+  ],
+  "sources": [
+    "powerapps-tools-ecosystem-raza"
+  ],
+  "keywords": [
+    "No-code",
+    "Low-code",
+    "Vibe coding",
+    "Pro-code",
+    "App Builder Agent",
+    "Plan Designer",
+    "Code Apps",
+    "Canvas apps",
+    "Model-driven apps",
+    "M365 Copilot"
+  ],
+  "created_at": "2026-03-30"
+}

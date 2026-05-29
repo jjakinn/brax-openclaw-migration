@@ -1,0 +1,17 @@
+CHUNK 5: CONTAINER STYLING
+Source: powerapps-grid-container-raza | Timestamp: 05:00 - 05:45
+
+This is a container, so it comes with standard properties.
+
+Background color, border, border radius. Let's make it 50. So it creates these curved edges.
+
+And we can also add a drop shadow like effect for the container.
+
+---
+
+KEY POINTS:
+- Container styling properties:
+  - `Fill`: Background color
+  - `BorderColor`, `BorderThickness`: Border styling
+  - `BorderRadius`: Curved edges (e.g., 50)
+  - `DropShadow`: Shadow effect

@@ -1,0 +1,22 @@
+# Chunk 002: Flask Framework Basics
+
+Flask is a micro-framework - a library with conventions for building web apps. It handles HTTP requests, extracts URL parameters, so we focus on application logic.
+
+Basic Flask app structure:
+- app.py - main application file
+- templates/ - HTML templates
+- requirements.txt - dependencies
+
+Minimal example:
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "hello, world"
+```
+
+Run with: flask run (port 5000 by default)
+
+Decorators (@app.route) associate functions with URL paths. The function returns content sent to browser.

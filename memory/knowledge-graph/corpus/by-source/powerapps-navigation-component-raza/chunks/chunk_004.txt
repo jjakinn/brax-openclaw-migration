@@ -1,0 +1,25 @@
+CHUNK 4: SUBMENU STRUCTURE
+Source: powerapps-navigation-component-raza | Timestamp: 05:00 - 06:00
+
+To add a second level navigation, the submenu, we will add a `submenu` property.
+
+This as well will be an array. In this array I have added two navigation items. One for dashboard and one for quick actions.
+
+This will be a part of my home main menu. Here I'm pointing to two other screens, dashboard screen and quick action screen that I have added in my app.
+
+---
+
+For the tasks menu, I have added three submenu items pointing to three different screens.
+
+So my nav structure is ready. Now let's start building the component.
+
+---
+
+KEY POINTS:
+- Submenu property: Array of navigation items
+- Structure: Nested array within parent navigation item
+- Example submenus:
+  - Home: Dashboard, Quick Actions
+  - Tasks: Three different task screens
+- Submenu items use same structure: key, title, screen, icon
+- Nav structure is complete → Ready to build component

@@ -1,0 +1,46 @@
+CHUNK 12: CLEARING SELECTIONS & BUG WORKAROUND
+Source: powerapps-modern-combo-box-raza | Timestamp: 20:00 - 23:00
+
+Now this also works if I want to clear those user selections. Submit.
+
+So this will submit a blank table which means the stakeholders person multi-column is blank.
+
+Now if I change James and Sarah and add customer care, that works.
+
+But now if I search for a user let's say Raza and select this time if you notice it went back to its default state.
+
+Now this based on my understanding seems to be a bug only when this combo box is within the form control.
+
+---
+
+Ctrl C. So I've copied this combo box. I'll select my screen. Ctrl +V. Here is that combo box.
+
+Notice there's an error because default selected items is looking for thisItem.stakeholders. ThisItem is the item of the form. In my case, it's the selected item of the gallery. I'm setting a variable when the user selects a gallery item.
+
+So for this combo box that I copied outside, I'll simply change this to varItem.
+
+Now, if you notice, it has the default and it allows me to change only customer care. I'll search for Raza.
+
+Now it's customer care and Raza. So searching works outside of the form.
+
+---
+
+Now what we can do is this this combo box I will hide it.
+
+This combo box that's outside of the form. I'll just place it here to make it look like it's a part of the form. And my data card. the update property. I'll just point it to my copied combo box which is outside of the form.
+
+Before I visit this screen, I should be resetting this combo box. So from my home screen, right before navigating the user to the form, I will reset that combo box, the one that's outside of the form.
+
+---
+
+KEY POINTS:
+- Clearing selections: Submit blank → clears multi-select column
+- **Bug identified**: Search + select resets to default when combo box INSIDE form
+- Workaround: Move combo box OUTSIDE form, position to look like it's inside
+- Steps:
+  1. Copy combo box to outside form
+  2. Change `DefaultSelectedItems` to use variable instead of `thisItem`
+  3. Hide original data card combo box
+  4. Update data card `Update` property to reference external combo box
+  5. Reset external combo box before navigating to screen
+- Result: Search + multi-select works correctly

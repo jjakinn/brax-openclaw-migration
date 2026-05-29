@@ -1,0 +1,28 @@
+CHUNK 1: INTRODUCTION TO POWER APPS VIBE CODING
+Source: powerapps-vibe-coding-raza | Timestamp: 00:00 - 02:00
+
+Hello everyone, Raza here. Wanting to learn all about Vibe coding in Power Apps? Then this video has you covered. Let's build a Vibe Power App step by step from scratch.
+
+Let's begin with Vibe coding in Power Apps. My scenario is to build an order management application.
+
+Best practice, always start by creating a solution. So in make.powerapps.com, I'll head over to solutions and create a brand new solution called order management. I'll select a publisher and I will set this as my preferred solution.
+
+Now what this ensures is that any new artifact that I build in this environment and in this context the artifacts that I will build through vibe.powerapps.com will all be stored in my preferred solution. So I've set this to yes. I'll create my solution.
+
+My order management solution is created. I'll go back to solutions. Here's order management. It's designated as my preferred solution.
+
+---
+
+Now I'll head over to the home experience and head over to the new Vibe coding experience in Power Apps where I can build smarter and faster with a completely new experience that brings together generative design, AI agents, and more. Let's try it out.
+
+Now, this leads me to the Power Apps Vibe portal. Always check which environment you are building in right here at the bottom. Has my initials. It has the current environment. I'll change this and make sure I'm picking the right environment to build in. In my case, my environment was RD YouTube.
+
+---
+
+KEY POINTS:
+- Best practice: Start with a solution in make.powerapps.com
+- Set solution as "preferred solution" — all artifacts auto-stored there
+- Vibe portal: vibe.powerapps.com
+- ALWAYS check environment at bottom of screen before building
+- Environment switching available if needed
+- Vibe combines: Generative design + AI agents + full-stack React

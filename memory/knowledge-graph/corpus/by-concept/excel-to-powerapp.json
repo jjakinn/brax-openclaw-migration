@@ -1,0 +1,27 @@
+{
+  "id": "excel-to-powerapp",
+  "name": "Excel to Power App Transformation",
+  "category": "Power Platform",
+  "description": "Transforming Excel files with multiple sheets, related data, and pivot tables into fully functional Power Apps using Dataverse, relationships, calculated columns, and AI-generated pages.",
+  "related_concepts": [
+    "powerapps-ecosystem",
+    "dataverse",
+    "excel-import"
+  ],
+  "sources": [
+    "powerapps-excel-to-powerapp-raza"
+  ],
+  "keywords": [
+    "Excel import",
+    "Dataverse",
+    "Data flows",
+    "Lookup columns",
+    "Calculated columns",
+    "Alternate keys",
+    "Relationships",
+    "Power Query",
+    "Pivot tables",
+    "Model-driven apps"
+  ],
+  "created_at": "2026-03-30"
+}

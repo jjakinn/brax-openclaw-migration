@@ -1,0 +1,42 @@
+CHUNK 15: NETWORKCHUCK'S VERDICT — REAL-WORLD USE
+Source: networkchuck-openclaw-review-2026 | Timestamp: 41:00 - 45:00
+
+Now touching on security once more be careful with skills and clawhub. 12% of skills were found with malware. I mean be very careful. Vet everything.
+
+Now at this point you don't have to freak out. your gateway is not exposed especially the UI is not exposed to the public internet only SSH is allowed and right now only you have the password so only you can log into this computer and then we'll just actually verify one more thing it should already be configured by default but I can say hey and I'm talking to Terry right now make sure I'm the only one allowed to talk to you can allow others to talk to your agent if you want I wouldn't do that
+
+security done now let's talk about what I think about this. Open claw is really fun, but for serious work, I am normally going to be using claw code. And I'm normally sitting down on my computer and working with claw code because I think it has a has better tooling and an overall better experience for things that I do, which is like research and scripting, a little bit of coding here and there.
+
+But I do use Open Claw. So, what do I use it for? Number of things recently actually. And this is kind of going to be an open claw series because I do think we need to unpack this a bit more.
+
+One thing I did, and this is going to be an episode, is an entire IT team. And I have them right now. They're running my home lab and my my studio lab, which is my NAS and everything. I have a CTO and then an army, like an a network engineer, a uh a storage engineer, a systems engineer. It works pretty well. Like, I'm impressed. They solve problems. We have ticketing.
+
+Also, I do have a personal assistant that I rely on. Like, being here in Japan, it's been massive. Her name's Hermione because I'm a nerd. I have her do things like Yeah. Yeah. I let her check my email and I taught her how to speak Japanese so she can actually make phone calls for me here in Japan in Japanese and make restaurant reservations for me.
+
+I also just recently set up Arnold Schwarzenegger, my personal training assistant for my health. He's going to help me lose weight hopefully and get yolked.
+
+So essentially, I have a bunch of very purpose-built agents I use. And I know I haven't fully unlocked the power because it's you have to spend a lot of time to think about that and figure it out. So, I'm kind of in dabble mode, but it is cool and I want to see what you can do with it.
+
+---
+
+KEY POINTS:
+- **Security final check**: Skills = 12% malware rate, vet carefully
+- **Verdict**: Fun, but for SERIOUS work → uses Claude Code instead
+- OpenClaw use cases (purpose-built agents):
+  1. **IT Team** (multi-agent):
+     - Ron Ezy — IT Manager
+     - Fred — Network Engineer
+     - George — Storage Engineer  
+     - Charlie — Systems Engineer
+     - Manages home lab + studio lab (NAS)
+     - Has ticketing system
+  2. **Personal Assistant (Hermione)**:
+     - Checks email
+     - Speaks Japanese
+     - Makes phone calls in Japan
+     - Restaurant reservations
+  3. **Personal Trainer (Arnold Schwarzenegger)**:
+     - Health/weight loss
+     - "Get yolked"
+- Status: Still in "dabble mode" — hasn't unlocked full power
+- Requires significant time investment to maximize

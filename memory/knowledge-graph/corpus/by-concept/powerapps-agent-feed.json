@@ -1,0 +1,228 @@
+{
+  "id": "powerapps-agent-feed",
+  "concept": "Agent Feed - Supervising Autonomous Agents in Power Apps",
+  "description": "Agent Feed makes Power Apps a central hub for human-agent collaboration by showing a complete activity feed of autonomous Copilot Studio agents, with to-do items for human intervention.",
+  "sources": ["powerapps-agent-feed-copilot-studio-raza"],
+  "related_concepts": [
+    "copilot-studio",
+    "autonomous-agents",
+    "model-driven-apps",
+    "plan-designer",
+    "human-in-the-loop"
+  ],
+  "key_capabilities": [
+    {
+      "feature": "Centralized Agent Activity Feed",
+      "description": "See all agent actions across multiple agents in one side panel",
+      "location": "Top of site map in model-driven app",
+      "display": "Side panel (expandable to full screen)"
+    },
+    {
+      "feature": "Agent Filtering",
+      "description": "View activity from specific agents or all agents",
+      "use_case": "Filter to see only claim evaluation agent activities"
+    },
+    {
+      "feature": "To-Do Items",
+      "description": "Actions requiring human attention",
+      "triggers": [
+        "Failed actions",
+        "Completed with errors",
+        "Waiting for user input"
+      ]
+    },
+    {
+      "feature": "Deep Linking to Records",
+      "description": "Click any record in activity feed to open directly in app",
+      "example": "Click claim record to review and approve/reject"
+    },
+    {
+      "feature": "Activity Transcripts",
+      "description": "Full detail of every action agent took for each activity",
+      "includes": ["Agent reasoning", "Tool calls", "Inputs/outputs"]
+    },
+    {
+      "feature": "Human Task Completion",
+      "description": "Mark tasks as complete after human intervention",
+      "workflow": "Review → Take action → Mark complete"
+    }
+  ],
+  "agent_setup_workflow": {
+    "phase_1_plan_designer": {
+      "description": "Create solution blueprint",
+      "steps": [
+        "Describe business problem (claims management)",
+        "Define user requirements",
+        "AI generates data model",
+        "Review and customize tables/columns",
+        "Add columns via Copilot (claim status, expense category)",
+        "Configure choice columns (submitted/approved/rejected)",
+        "Review tech recommendations (app + agent)",
+        "Save to solution"
+      ]
+    },
+    "phase_2_model_driven_app": {
+      "description": "Create employee-facing app",
+      "actions": ["Generate app from data model", "Publish"]
+    },
+    "phase_3_agent_creation": {
+      "description": "Build autonomous agent in Copilot Studio",
+      "steps": [
+        "Create agent (generative orchestration)",
+        "Add data source as knowledge (claims table)",
+        "Write instructions (approval criteria)",
+        "Add tools (Update row in Dataverse)",
+        "Configure tool parameters (option set values)",
+        "Reference tool in instructions"
+      ]
+    },
+    "phase_4_triggers": {
+      "description": "Set up autonomous execution",
+      "trigger_type": "When a row is added (Dataverse)",
+      "scope": "Organization",
+      "creates": "Agent Flow in Power Automate",
+      "customization": "Specify exact data passed to agent (row ID, title, amount)"
+    },
+    "phase_5_agent_feed": {
+      "description": "Enable supervision in Power Apps",
+      "steps": [
+        "Go to Agents → Agent Feed in app designer",
+        "Add published autonomous agents to feed",
+        "Publish app",
+        "Refresh app to see feed in site map"
+      ]
+    }
+  },
+  "autonomous_agent_components": {
+    "knowledge": {
+      "description": "Data sources agent can reference",
+      "example": "Claims table in Dataverse"
+    },
+    "instructions": {
+      "description": "System prompt defining agent behavior",
+      "example": "Approve if amount < $500 and supports health, not office equipment"
+    },
+    "tools": {
+      "description": "Actions agent can perform",
+      "example": {
+        "name": "review the claim",
+        "action": "Update row in Dataverse",
+        "parameters": {
+          "row_id": "dynamically filled",
+          "claim_status": "number value (option set)"
+        }
+      }
+    },
+    "triggers": {
+      "description": "Events that activate the agent",
+      "example": "When new claim submitted (row added)"
+    }
+  },
+  "option_set_handling": {
+    "description": "Working with Dataverse choice columns in agent tools",
+    "concept": "Option sets are key-value pairs where number correlates to value",
+    "configuration": {
+      "data_type": "Number",
+      "customization": "Add description explaining number values",
+      "example": "If approved, put 1. If rejected, put 2."
+    }
+  },
+  "human_in_the_loop_patterns": {
+    "escalation_trigger": {
+      "description": "Configure agent to request human help",
+      "implementation": "Add instruction for unclear cases",
+      "example": "Set claim to unknown if title too vague or health benefit unclear"
+    },
+    "agent_response": {
+      "description": "Agent asks for human input",
+      "transcript_message": "Please provide the claim status",
+      "status": "Waiting for user"
+    },
+    "human_resolution": {
+      "description": "User takes action via Agent Feed",
+      "steps": [
+        "See to-do item in Agent Feed",
+        "Click record to open in app",
+        "Review and make decision",
+        "Save record",
+        "Mark task complete in feed"
+      ]
+    }
+  },
+  "claims_processing_example": {
+    "business_rules": {
+      "approve_if": [
+        "Amount < $500",
+        "Directly supports physical/mental health",
+        "Not office equipment"
+      ],
+      "reject_if": [
+        "Amount >= $500"
+      ],
+      "escalate_if": [
+        "Title too vague",
+        "Health benefit unclear"
+      ]
+    },
+    "autonomous_outcomes": [
+      {
+        "claim": "Running shoes - $100",
+        "result": "Approved (agent)"
+      },
+      {
+        "claim": "Ergonomic chair - $600",
+        "result": "Rejected (agent)"
+      },
+      {
+        "claim": "Supplies - $50 (vague)",
+        "result": "Unknown → Human review"
+      }
+    ]
+  },
+  "agent_flow_customization": {
+    "default_behavior": "Sends entire record body to agent",
+    "optimization": "Send only necessary fields",
+    "recommended_fields": [
+      "Row ID (unique identifier)",
+      "Claim title",
+      "Amount"
+    ],
+    "benefit": "Cleaner context, better agent performance"
+  },
+  "key_quotes": [
+    {
+      "quote": "Agent feed in Power Apps makes apps a central hub for human agent collaboration by showing a complete activity feed of what agents do for them wherever they are in the app.",
+      "timestamp": "09:50",
+      "significance": "Core value proposition of Agent Feed"
+    },
+    {
+      "quote": "To-do shows actions that need our attention like those that have failed, completed with errors or are waiting for our input.",
+      "timestamp": "10:45",
+      "significance": "Human escalation workflow"
+    },
+    {
+      "quote": "Claim status is a choice column. This is the concept of option sets in data versse. You can think about these as key value pairs.",
+      "timestamp": "04:30",
+      "significance": "Technical detail on option sets"
+    }
+  ],
+  "use_cases": [
+    "Claims processing and reimbursement",
+    "Purchase order approval workflows",
+    "Document review and classification",
+    "Customer request routing",
+    "Expense report validation"
+  ],
+  "prerequisites": [
+    "Copilot Studio license",
+    "Power Apps Premium license",
+    "Dataverse environment",
+    "Understanding of Power Automate flows",
+    "Knowledge of option sets/choice columns"
+  ],
+  "limitations": [
+    "Agent Feed appears in model-driven apps only",
+    "Requires published autonomous agents",
+    "Human escalation requires careful instruction design"
+  ]
+}

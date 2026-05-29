@@ -1,0 +1,22 @@
+# Chunk 003: Templates with Jinja
+
+Templates separate HTML from Python logic. Flask uses Jinja templating engine.
+
+render_template() loads HTML files from templates/ folder.
+
+Variable substitution with {{ variable }}:
+```python
+return render_template("index.html", name="David")
+```
+
+Template:
+```html
+<body>hello, {{ name }}</body>
+```
+
+Template inheritance with layout.html:
+- Base template defines blocks with {% block body %}
+- Child templates extend with {% extends "layout.html" %}
+- Override blocks with {% block body %}content{% endblock %}
+
+This eliminates duplication across pages.

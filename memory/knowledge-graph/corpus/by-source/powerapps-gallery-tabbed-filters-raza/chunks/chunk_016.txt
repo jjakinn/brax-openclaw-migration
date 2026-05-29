@@ -1,0 +1,37 @@
+CHUNK 16: HEADER CONTAINER
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 16:30 - 17:15
+
+To add a header to this gallery, I'll insert a container control.
+
+---
+
+Position it between the gallery and the tab.
+
+---
+
+In this container, I will insert text. I'll call this "ID". I'll copy and paste. "Title". I'll keep doing the same for all my other columns.
+
+---
+
+Done. I'll pick any text in this container. Control+A. In one go, I can change the styles for all these controls.
+
+---
+
+Font, I'll select a particular font. Color, I'll make it white.
+
+---
+
+And this container, its fill property, I will set as my gallery of tabs, which in my case is called gallery1. So the container's fill property will be `gallery1.Selected.Color`.
+
+---
+
+So now if you notice, as I pick the tabs, the fill color of my container changes.
+
+---
+
+KEY POINTS:
+- Header: Container with text labels
+- Position: Between tabs and data gallery
+- Bulk styling: Ctrl+A to select all labels
+- Dynamic fill: `TabGallery.Selected.Color`
+- Result: Header color matches selected tab

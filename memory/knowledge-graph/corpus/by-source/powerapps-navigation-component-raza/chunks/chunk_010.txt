@@ -1,0 +1,33 @@
+CHUNK 10: NAVIGATION LOGIC AND LOGOUT
+Source: powerapps-navigation-component-raza | Timestamp: 13:30 - 15:00
+
+Under advanced properties for the button, we have OnSelect.
+
+So when the user selects a button which in this case is our navigation menu item, here I would like to navigate the user to the specific screen.
+
+Now I also have a special log out option. The key that I have set for logout is "logout".
+
+So on select of this button:
+
+`If(ThisItem.key <> "logout", Navigate(ThisItem.screen, ScreenTransition.CoverRight), Exit())`
+
+---
+
+Meaning: If this item's key is not equal to "logout" — for every other key — navigate the user to `ThisItem.screen`. I can also give a navigation effect, I'll pick CoverRight.
+
+If the key is "logout" — in that case I'll use the `Exit()` formula that will exit the user from the running app.
+
+Done.
+
+---
+
+Let's head back to our screens.
+
+---
+
+KEY POINTS:
+- OnSelect formula handles navigation and logout
+- Pattern: `If(ThisItem.key <> "logout", Navigate(ThisItem.screen, Transition), Exit())`
+- Navigation transition: CoverRight
+- Logout: Uses `Exit()` function
+- Special handling based on navigation item key

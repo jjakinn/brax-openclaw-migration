@@ -1,0 +1,33 @@
+CHUNK 6: BOARD LOCKING FEATURE
+Source: powerapps-kudo-board-raza | Timestamp: 03:15 - 04:00
+
+Raza, who created the board, has the option to lock the board.
+
+---
+
+Once the creator of the board locks the board, no more posts can be added to the board.
+
+---
+
+Notice for Sarah, the board for James shows as locked.
+
+---
+
+Sarah can select and see all the details but cannot add more posts to the board.
+
+---
+
+For any other boards that are open, Sarah can post to that board.
+
+---
+
+KEY POINTS:
+- Board locking: Creator can lock board
+- Effect of locking:
+  - No new posts allowed
+  - Existing posts remain visible
+  - Shows "locked" status
+- Permissions:
+  - Locked: View only for all users
+  - Open: Posting allowed
+- Creator control: Only board creator can lock

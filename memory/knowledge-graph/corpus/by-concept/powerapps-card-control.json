@@ -1,0 +1,27 @@
+{
+  "id": "powerapps-card-control",
+  "name": "Power Apps Card Control",
+  "category": "Power Platform",
+  "description": "Modern card control in Power Apps for building dynamic, responsive card experiences with images, headers, descriptions, and data binding to SharePoint and other data sources.",
+  "related_concepts": [
+    "powerapps-modern-controls",
+    "responsive-design",
+    "gallery"
+  ],
+  "sources": [
+    "powerapps-modern-card-control-raza"
+  ],
+  "keywords": [
+    "Card control",
+    "Modern controls",
+    "Responsive cards",
+    "Gallery",
+    "Thumbnails",
+    "SVG icons",
+    "SharePoint",
+    "Document library",
+    "Wrap count",
+    "Screen size"
+  ],
+  "created_at": "2026-03-30"
+}

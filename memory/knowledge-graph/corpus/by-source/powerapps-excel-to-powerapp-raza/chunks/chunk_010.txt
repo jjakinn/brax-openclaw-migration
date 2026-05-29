@@ -1,0 +1,38 @@
+CHUNK 10: CONFIGURING TABLE VIEWS AND FORMS
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 11:30 - 13:00
+
+The tables are created. I can see them listed under the table section in my solution.
+
+---
+
+If I select supplier, here is the supplier columns and data. Notice it says there are more columns that I can add to this view.
+
+---
+
+I can select this. I can select all the columns in one go or deselect and then decide what columns I would like to show.
+
+---
+
+In my case: contact person, email, address, phone, the supplier name, the rating, and the website. Save.
+
+---
+
+I can drag and drop and position these columns. That looks good.
+
+---
+
+There's an option here to update the forms and the views. These are the data experiences associated with this table. Let me go ahead and update them in one go here.
+
+---
+
+Select all. Apply it to my main form. And I can select the views of my table where I would like to apply this to. Update. Done.
+
+---
+
+KEY POINTS:
+- Table views: Customize visible columns
+- Column selection: Choose which to display
+- Reordering: Drag and drop columns
+- Bulk update: Apply to forms and views simultaneously
+- Forms: Data entry experiences
+- Views: Data display configurations

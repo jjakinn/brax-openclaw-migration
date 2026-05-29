@@ -1,0 +1,34 @@
+CHUNK 6: FLEXIBLE WIDTH AND MINIMUM WIDTH
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 08:30 - 11:00
+
+Because this is a horizontal container control, all the controls within it I can define whether they get flexible width or not. So if I select any control within this container and Ctrl A to select all the controls.
+
+If I turn on flexible width now it does show all the columns because it's trying to fit all of these controls within the real estate that's available for this container.
+
+So if I preview in a widescreen experience, if I go to a tablet experience, the controls become smaller. And as my screen size shrinks, now it comes to a point where it is not readable for the end user.
+
+---
+
+Item name, flexible width is turned on. However, there is also a property called minimum width. And this is where you can define what's the minimum width for this control. So no matter what the width of this control will not reduce below this value that you specify.
+
+If I set minimum width, on a widescreen experience if there is more width available for it to take beyond that value it will do that. But no matter what, even if I now go on a mobile experience, you can see it will respect that minimum width.
+
+And this is something that you should set for all of your controls.
+
+---
+
+There are certain controls where you know that the width is always going to be a certain fixed amount. For example, my item ID. This one I don't want flexible width. So I'll turn it off. I'll define a standard width for this. I'll set my width to 80.
+
+Same thing for my total value. I'll turn off flexible width and give it a defined width 90.
+
+---
+
+KEY POINTS:
+- Flexible width: Distributes available space among controls
+- Problem: Controls shrink too small on small screens
+- Solution: Set `MinimumWidth` property on each control
+- Behavior:
+  - Wide screen: Expands beyond minimum if space available
+  - Small screen: Respects minimum width, doesn't shrink below
+- Fixed width: Turn off flexible width, set specific width
+- Examples: Item ID = 80, Total Value = 90

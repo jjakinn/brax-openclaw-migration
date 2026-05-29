@@ -1,0 +1,42 @@
+CHUNK 7: VIBE CODING IN MODEL-DRIVEN APPS - GEN PAGES
+Source: powerapps-tools-ecosystem-raza | Timestamp: 09:00 - 11:00
+
+Now in model-driven apps, we now have vibe coding experiences and that is through gen pages.
+
+To create a page in a model app, if we head to add a page, now we have this new "describe a page" option.
+
+If I select this here, I can vibe code a page. This is a React page.
+
+---
+
+To this agent, I can provide context. I can attach an image as a reference. This as an inspiration to the agent to build a similar looking page.
+
+I can also add context to my tables. So, I'll add my claim table and I'll ask the agent to "build a modern gallery page for claims. Color code the items based on claim status."
+
+Generate. And now the app agent will build out a React page within seconds based on my description.
+
+---
+
+Creates a React page. This would have taken a team of developers hours, maybe even days to build out. Here I can go at 10x the speed.
+
+---
+
+To make changes, I can keep describing my changes to the agent and within seconds the agent will make the updates.
+
+Here I've asked the agent to add an option for the user to create a new claim, edit existing claims or delete a claim.
+
+So check this out. Now I have options to edit a claim, delete a claim, and create a new claim.
+
+---
+
+KEY POINTS:
+- Gen Pages: Vibe coding in model-driven apps
+- Location: Add page → "Describe a page"
+- Output: React page
+- Inputs:
+  - Natural language description
+  - Reference images (optional)
+  - Table context
+- Example: Modern gallery with color-coded status
+- Speed: 10x faster than traditional development
+- Iterative: Describe changes → Agent updates

@@ -1,0 +1,22 @@
+CHUNK 4: PROGRESS TRACKING AND TIMEOUT
+Source: powerapps-quiz-app-raza | Timestamp: 02:30 - 03:00
+
+The app does the calculations on the fly and gives me clear metrics as to how many more points I need to achieve my goal.
+
+---
+
+If I do not answer the question within the stipulated time frame, it will skip the question, not give me a point for it, and straight out move to the next question.
+
+---
+
+Jumps over to question three. Question two got timed out.
+
+---
+
+KEY POINTS:
+- Real-time calculations: Points needed to reach goal
+- Timeout behavior:
+  - Skip unanswered question
+  - No points awarded
+  - Auto-advance to next question
+- Progress tracking: Shows current position in quiz

@@ -1,0 +1,26 @@
+CHUNK 8: QUESTION CONFIGURATION
+Source: powerapps-quiz-app-raza | Timestamp: 05:00 - 05:45
+
+For each of these questions, I can define:
+- The title
+- Description
+- The number of points
+- The explanation of the answer
+- The four options
+- What's the correct answer from these options
+
+---
+
+As an admin, I can also explore all the attempts that have been taken by users.
+
+---
+
+KEY POINTS:
+- Question details:
+  - Title (question text)
+  - Description (optional context)
+  - Points value
+  - Explanation (shown after answering)
+  - Four answer options
+  - Correct answer designation
+- Monitoring: View all user attempts

@@ -1,0 +1,24 @@
+CHUNK 10: CREATING GENERATIVE PAGES
+Source: powerapps-kudo-board-raza | Timestamp: 06:15 - 06:45
+
+I've done a full series of videos on how to build generative pages. Do check that out.
+
+---
+
+To create them, simply go to new, describe a page.
+
+---
+
+Add references to your tables. Provide images as inspiration for the app agent. Describe what you need. Hit generate and it will start framing the gen page.
+
+---
+
+KEY POINTS:
+- Generative pages workflow:
+  1. New → Describe a page
+  2. Add table references
+  3. Provide inspiration images (optional)
+  4. Describe requirements
+  5. Generate
+- Output: React page created by AI
+- Resources: Full video series available

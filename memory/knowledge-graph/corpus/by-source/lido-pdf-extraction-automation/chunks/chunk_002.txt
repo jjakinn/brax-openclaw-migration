@@ -1,0 +1,15 @@
+CHUNK 2: LIDO INTERFACE OVERVIEW
+Source: lido-pdf-extraction-automation | Timestamp: 00:30 - 00:55
+
+Lido, as you can see, it just looks like a regular spreadsheet, a Google sheet, a Microsoft Excel sheet. We can name our sheet up here in the top left.
+
+But the thing that makes Lido special is this extract button right here. So we can extract data from many different sources.
+
+---
+
+KEY POINTS:
+- Lido interface resembles Google Sheets / Excel
+- Naming sheets available in top left
+- Key differentiator: "Extract" button for data extraction
+- Supports multiple data sources
+- UI is spreadsheet-native for easy adoption

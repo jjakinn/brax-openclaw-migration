@@ -1,0 +1,30 @@
+CHUNK 14: LOOKUP FUNCTION FOR DYNAMIC COLORS
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 14:00 - 15:00
+
+`fxTabs`, I can use this name. My gallery of tabs, items property will be `fxTabs`.
+
+---
+
+The button within my vertical gallery, the color palette, I'll set the formula as follows:
+
+`LookUp(fxTabs, Title = ThisItem.Status.Value).Color`
+
+---
+
+Look up `fxTabs`, that's the array, where the title matches the value of the status. So `ThisItem.Status.Value`. So it will get that record and from there, go pick the associated color.
+
+---
+
+So notice, completed is green, matches. In progress, yellow. Not started, purple, and so and so forth.
+
+---
+
+KEY POINTS:
+- Reuse named formula: Gallery items = `fxTabs`
+- Lookup pattern: `LookUp(Array, Condition).Property`
+- Status color: Match status value to tab color
+- Dynamic: Colors automatically match tab definitions
+- Examples:
+  - Completed → Green
+  - In Progress → Yellow
+  - Not Started → Purple

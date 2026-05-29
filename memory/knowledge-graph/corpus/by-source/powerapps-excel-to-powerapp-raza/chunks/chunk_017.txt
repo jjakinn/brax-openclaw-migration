@@ -1,0 +1,41 @@
+CHUNK 17: AI AGENT AND GENERATIVE PAGES
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 21:00 - 22:30
+
+Click play. I can run my app and here it is: products, locations, suppliers.
+
+---
+
+I can also explore the data by using an inbuilt agent as part of this application.
+
+---
+
+"Products with category tools and stock quantity less than 40."
+
+---
+
+I have plugged in my input and observe how the agent has gone ahead and filtered the data.
+
+---
+
+I can also visualize this data.
+
+---
+
+Beyond these views and form experiences, I can also create interactive pages in my app using an app agent.
+
+---
+
+Back to my model driven app designer. I'll go ahead and describe a page. Here I can add references to my table data. I'll pick my product table and I'll ask the agent to build me a modern looking page to showcase data from my products table.
+
+---
+
+The agent starts creating a React page within the application. The agent has full context of the schema of my table. And within a few seconds, I have a products showcase page.
+
+---
+
+KEY POINTS:
+- Inbuilt agent: Natural language data exploration
+- Example query: Category + stock filter
+- Generative pages: AI creates React pages
+- Context: Agent knows table schema
+- Output: Modern showcase page

@@ -1,0 +1,44 @@
+CHUNK 15: EXPANDABLE/COLLAPSIBLE SUBMENU LOGIC
+Source: powerapps-navigation-component-raza | Timestamp: 21:30 - 24:00
+
+Now let's make the submenus expand and collapse.
+
+To do that we'll head back to our component. In our main galMenu, we'll edit this and insert another modern button control.
+
+---
+
+This we'll position on the top right. The layout for this button we'll set as icon only.
+
+We'll pick an icon for now. I'll pick chevron right.
+
+Type transparent, icon style filled.
+
+---
+
+The X position of this button. Can't hardcode this. We'll set this as `Parent.TemplateWidth - Self.Width`. So as the width of the menu changes on the screen, this arrow will always stick on the top right of the menu items.
+
+---
+
+Now on select of this button, we are going to set a variable. A variable called `varSelectedMenu` and this I will set as `ThisItem.key`.
+
+---
+
+How can I set variables in a component? Well, that's because my component has `AccessAppScope` turned on. So my button sets this variable whenever it's clicked.
+
+---
+
+Now for my submenu visible property I'll set it as: `ThisItem.key = varSelectedMenu`
+
+---
+
+So now if you notice when I select it will show me that specific submenu.
+
+---
+
+KEY POINTS:
+- Expand button: Icon only, chevron right
+- Position: `Parent.TemplateWidth - Self.Width` (sticks to right)
+- Variable: `varSelectedMenu` stores clicked menu key
+- Submenu visibility: `ThisItem.key = varSelectedMenu`
+- Works because `AccessAppScope` allows variable access
+- Result: Click menu item → submenu appears

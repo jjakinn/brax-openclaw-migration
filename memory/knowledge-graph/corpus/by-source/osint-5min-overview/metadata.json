@@ -1,0 +1,17 @@
+{
+  "source_id": "osint-5min-overview",
+  "display_name": "Every OSINT Technique in 5 Minutes",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 677,
+    "total_chunks": 1,
+    "chunks_processed": 1
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

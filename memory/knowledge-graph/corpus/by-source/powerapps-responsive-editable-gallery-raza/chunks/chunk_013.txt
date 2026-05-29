@@ -1,0 +1,43 @@
+CHUNK 13: DISPLAY MODE AND SAVE LOGIC
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 22:30 - 24:30
+
+For all the controls that are editable in my gallery, I'll go ahead and select them by holding the control key. I'll select all of them. They have a property called display mode.
+
+By default, it's Edit. I'll change this now as follows:
+
+`If(varItemSelected.ItemID = ThisItem.ItemID, Edit, View)`
+
+---
+
+If that variable that I set when user clicks edit if the item ID that's the unique identifier for me in this table if it matches the current items ID then make all these controls editable else make them read only.
+
+---
+
+So observe right now only that item is editable. All the other ones I cannot make changes to.
+
+---
+
+The display mode property of the action button I'll set as that same formula. So now you can see only that item is in edit mode.
+
+The user clicked on edit that's why they are here. So this button should actually change now to save and for that this buttons icon property is what I will set dynamically.
+
+`If(varItemSelected.ItemID = ThisItem.ItemID, Icon.Save, Icon.Edit)`
+
+---
+
+So now the user can make changes and save.
+
+---
+
+Now when I click on save I want to apply the updates to my data source and the gallery now should change its behavior. So on select of this button I'll add a check:
+
+`If(varItemSelected.ItemID = ThisItem.ItemID, Set(varItemSelected, Blank()), Set(varItemSelected, ThisItem))`
+
+---
+
+KEY POINTS:
+- Display mode for editable controls: `If(varItemSelected.ID = ThisItem.ID, Edit, View)`
+- Only selected row becomes editable
+- Button icon toggle: Save when editing, Edit when not
+- Save logic: Set variable to blank to exit edit mode
+- Pattern: Check if current row is the selected row

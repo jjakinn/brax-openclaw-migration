@@ -1,0 +1,1132 @@
+Kind: captions
+Language: en
+Alrighty. Hi everyone. Thanks so much
+for tuning in. Look, I'm super excited
+to finally get a chance to chat with
+Keanu. Keanu Nie, I'm so sorry. I know I
+was gonna get your last name wrong. Uh,
+but we've been bantering. We've been
+having a chance to chat. And Keanu is a
+pentester, ethical hacker, red teamer,
+just doing some awesome offensive
+security work and the developer of Graph
+Spy. So, if you're up for it, Keanu, I'd
+love for you to tell me, hey, a little
+bit about yourself, what you're up to,
+and then we could get into a demo, maybe
+showcase a little bit of Graph Spy.
+Yeah, I'm a a pentestian indeed. I do
+some red team assessments and social
+engineering engagements, all kinds of
+fun stuff. And in general, I noticed a
+couple of years ago that there weren't
+that many good tools that you could use
+to enumerate Android and Azure kind of
+things, Azure stuff with access tokens
+because back then device code fishing
+was pretty new and I started looking
+into that and I was pretty successful
+with that. However, after you do device
+code fishing, and we'll go into that a
+little bit later, you will get access
+tokens and no username and password,
+then you can send API calls to Microsoft
+services. However, yeah, it wasn't that
+straightforward that useful to work from
+command line tools. So, that's when I
+started creating my own tools and after
+a while thought, okay, maybe this is
+growing into something that other people
+can also use. So, I pushed it on GitHub.
+>> Sweet. and graph spy. I know you
+mentioned to work with that graph API
+for like Microsoft Microsoft Azure
+Microsoft enter ID and all those but
+that opens up a whole wide world of all
+the things you could do like read emails
+look at teams messages maybe dig through
+SharePoint or one drive. I know there is
+a ton of opportunity and if you're up
+for it do we want to do some screen
+share maybe let off some fireworks dive
+in?
+>> Sure. So yeah, this is Gravy. So on
+GitHub you can find it uh fairly easy.
+The installation process is fairly
+selfexplanatory.
+So I'll in there there's some additional
+installation page if you want to go over
+that. And then there's also a full wiki
+that you can use. I try to update it as
+much as I can with new features.
+However, I still need to work a little
+bit on that. But in general, I think it
+will be most useful if I just open it up
+and go through it. So graspy, you can
+use it. I see the features over here or
+the the command line options over here.
+However, all you basically want to do is
+just run it like that and it will open
+up. I'm just going to create a new
+database over here so we can uh test it
+out in a clean environment where none of
+the access tokens of my previous clients
+will be in of course. So, you just
+launch it like that. I'm on a little bit
+of a pre-release version with some new
+features. So, we might be able to have a
+look into that as well. And then you can
+just open this in your browser. So if
+you launch graspy the first time you
+will see there will not be that much in
+there. So first thing you want to know
+in grass by is that in general
+everything will work with access tokens.
+You will see at the top you have quite a
+lot of options of things that you will
+be able to do. So enumeration stuff and
+also be able to modify uh some stuff.
+However, first you will need to get some
+access tokens or refresh tokens. And
+there are quite a lot of ways to be able
+to obtain these. You can either steal
+them from the devices of the user
+yourself. If you have compromised them
+or if there is malware running on there,
+you can get them over there. However,
+one of the most powerful options uh that
+Craft Spy supports is doing device code
+authentication. So with device code
+authentication you can basically trick
+users into signing in with a code that
+you create as an attacker in tools for
+example like Resp. You send them that
+code. This code is valid for like 15
+minutes only. But if the user fills in
+that code on any of the URLs that you
+see over here a legitimate Microsoft
+login URL that they might trust. They
+fill that over there and then sign in to
+their account or they already signed in.
+then you will see that um graspy will be
+able to instantly obtain these access
+and refresh tokens. So what we're going
+to do is first generate a normal uh
+access tok normal device code right you
+can select the resource this is
+basically the API that you will be uh
+able to send requests to after that the
+user is authenticated. So in general
+quite all of the the functionality in
+graphy use the Microsoft Grab API. They
+are also supported as well. But we'll
+select that one. We can change that
+later on. And uh then we can select a
+client ID. This one uh is a little bit
+more important because it will define
+what the user will see on their screen.
+So it is important to match that to the
+preix that you want to use. So for
+example, if we want to send the user a
+fake Microsoft Teams invitation, for
+example, with email, you want them to
+sign into Microsoft Teams, you might
+want to select the client ID for
+Microsoft Teams. You don't need to know
+them by hand. Jasper has these already
+in there. So you can select it and then
+you can click generate device code. You
+will see instantly it will obtain a
+device code from Microsoft. You'll see
+it will also automatically start
+polling. Every five seconds this will
+update and it will check that the user
+already authenticates or not. So right
+now it is still pulling. Uh so it will
+be blue but once the user authenticates
+you will see that this will turn to
+green. So let's do that really quickly
+within demo accounts. You can send any
+of these URLs over here. They all
+redirect to the same URL. You can copy
+and paste that. I will select the
+shortest one. And this is the one that
+you would basically send to your attack
+or your victim user. So I will select
+one of these URLs over here and then uh
+this is basically what would happen.
+Obviously first you send this to your
+victim user. You will just play as a
+victim user ourself over here so that
+you can see the flow. So we enter over
+here and you see this is a legitimate
+Microsoft login page. Right? So this is
+a legitimate website from Microsoft. It
+has some warning messages over here.
+this didn't used to be there but then
+Microsoft decided that it would be a
+good idea to put them over there because
+obviously this has been abused by the
+threats as well. So it does say over
+here do not enter codes from sources you
+don't trust. Obviously during our
+assessments that we do where we need to
+do social engineering we need to
+convince the user with the pretext that
+we are the source that they do trust.
+And even with this warning message over
+there, we still see that users fill in
+this code for from us. Let's do that
+really quickly. I'll fill in the code
+over there. Press next. Then you'll see
+there is already uh a lot of sign in
+sessions that I'm already signed into.
+Usually in a corporate environment, the
+user will already also be signed in to
+their corporate device, of course. So
+what the user would then do is just
+click on their account. Um yeah, this is
+a test user. don't mind the name but if
+I click on that it will say are you
+trying to sign into Microsoft Teams
+right remember our pretext would
+probably convince user that they are
+trying to sign into Microsoft Teams
+maybe you sent them a fake Microsoft
+Teams invite right with a Microsoft
+Teams code that they would need to use
+so they will probably say yeah I'm I'm
+trying to sign into Microsoft Teams
+right and they click continue over there
+you'll see the tech is actually already
+done and the moment you will see that
+the device code will update over here
+has done that and now if I scroll a bit
+to the right you will see that it has
+successfully authenticated over there
+actually can close this window right now
+so that we go back to class pipe so
+right now the user is already
+compromised actually even though we
+don't even have their username password
+so what can we do after that well you
+will see that we have obtained an access
+token over here it's green so it's still
+valid usually valid for about an hour
+and then some minutes and it says over
+here let's create to buy the device
+code. We can now use that access token
+to do all kinds of fun stuff in class by
+with the other features, right? So,
+first we would need to activate that
+one. Then you will see uh the active
+access token is over here. And if I open
+the sidebar over there, it will show us
+the current active access token with all
+of the scopes that we have. If you want
+to dive maybe a little bit deeper into
+this access token, this is our ra access
+token. It's a JSON web token. You can
+decode that with several tools but
+crespy also already does that for you.
+And then you can see everything that is
+in this access token already. So you
+have uh some information in here. Not
+all of it is going to be very useful for
+us but things that you will see that are
+in there. The IP address of where you
+generated the device codes will be in
+there. This is used for location based
+condition access policies for example.
+So this is how Microsoft knows where you
+are authenticating from. Then what else
+is there? the username of the user that
+we just compromised their email address
+is in there and then most importantly
+the application ID so over here and it's
+this way name we set that to Microsoft
+teams right and then the audience is the
+APIs that we now are able to send
+requests to and this one also very
+important the scope which this defines
+what we as now are able to do with this
+access token right so you can see all
+kinds of fun information in there such
+as real send chat message send we have
+probably somewhere files do read write
+all so we can now read files we can see
+sites on shareepoint so all of this we
+will now be able to do let's see if we
+can maybe find something by activate
+that access token quite a lot of modules
+we can use for example let's start with
+one drive just open that and normally
+what you would need to have to do is
+these access tokens you can't sadly just
+insert them into an active browser
+session and then go to actually one
+drive. So all you can do is send API
+calls with this but that's fairly
+annoying to do directory listing and to
+go to all all of the files in in one
+drive for example. So graspy is
+basically a a user interface a web
+application that allows you to just
+browse one drive for example like you
+are used to and it will handle all of
+the API calls in the background with
+access token for authentication. So we
+can see the one drive of the user. If we
+for example open want to open a folder,
+we can do that. Important info. This one
+seems important. Cupcake recypes. We can
+download that for example and then see
+what is in there as you can see over
+here. So not too important in this
+specific case. We could if we want
+upload some files. In a lot of cases we
+see like a desktop for example share to
+one drive. You could for example wow
+hijack a shortcut document that is on
+there and maybe change their Google
+Chrome shortcut to a malicious one that
+will execute PowerShell for example. So
+then you could spread mobile to their
+device or do something like that.
+>> That's a very wild like identity to
+endpoint attack vector in my opinion
+like that's that's crazy cool.
+[laughter]
+>> There are at least some uh some nice
+techniques that you can do if you think
+a little bit out of the box. So, I'm
+just going to go over a couple of the
+features and then you just stop me
+whenever uh you think something is
+relevant. Of course, recent files. So,
+the the files that were recently
+accessed by the specific user. So, we
+can already see some interesting ones of
+course over there that we might be able
+to download if you wanted to. We can see
+where it is hosted in um the SharePoint
+site it seems from sales and marketing.
+So, we could download that one. They can
+look at what is in there. see quite a
+lot of credentials that we might be able
+to uh use. So yeah, this from there it
+comes your standard enumeration process
+of course files shared with this user.
+So if someone shared a custom image with
+a specific user so that's also there and
+then for example in sharepoints we
+should be able to list all the
+shareepoint sites this user has access
+to because we have the sites read write
+all permission over there. So we will be
+able to list that and then we can just
+click through them sales and marketing
+click on documents for example and click
+through some for secrets and here we
+find the same um document that we saw
+previously right
+>> nice
+>> so there used to be a way where you
+would be able to open the outlook actual
+outlook application from just an access
+token sadly I've noticed that this
+doesn't really work that often anymore
+so this was an an old module that's
+still in there sometimes it works as It
+doesn't. I think Microsoft changed
+something over there that prevented this
+from being possible. So then I created
+the new Outlook graph module which uses
+just basically created the complete
+Outlook interface and grasp by myself
+and it uses the Microsoft Graph API in
+the background. As you can see over
+here, it instantly already lists all the
+folders I have access to. I can for
+example reload that over here and then
+we can see the emails that we have
+currently only one. We can select that,
+read that. Uh it seems like und
+deliverable notice. We can reply to the
+email, have everything we want in there
+with images. We can add attachments sent
+to BCCS and so forth. It's fairly
+detailed. You need emails as well. Do
+some custom search queries. I've also
+you can use custom ones or use the ones
+that are pre-built into crespy for
+example to search for password reset
+notices for example. But let's clear
+that and maybe look at the send items in
+loads. And here we can see some emails
+as well. So once again some secrets
+being shared your standard stuff.
+Obviously this is demo environments. I I
+added some things that we see quite a
+lot during our assessments. Uh so we'll
+find quite a bit of credential but yeah
+this is actual stuff that we do see
+during real assessments as well. Uh
+quite a lot. And if we did have the mail
+read shared scope and we had some
+permissions over shar shared mailbooks,
+you would also be able to to access the
+shared mailbox over there. I think
+currently I do not have that scope
+either uh set but this is a little bit
+technical but that is where the scopes
+and the clients gets a little bit funny.
+I've added a note over here. But since
+this access token is obtained through a
+Microsoft Teams access client ID, it
+will have all the scopes of the
+Microsoft Grab API that the Microsoft
+Teams application would normally have.
+And this one mailshar is not one of
+them. Even though mail sent is one, mail
+read is one of them, but the shared
+mailboxes isn't. What we would need to
+do then is change our client application
+to Outlook mobile because I know that
+this one does have the mail3.shared. So
+this is where something that I haven't
+really shown yet comes into practice.
+The the refresh tokens uh become
+important. We didn't only receive an
+access token when we did the device code
+fishing. We also received a refresh
+token which is even more important
+because if you look this access token
+original one is only valid for 1 hour.
+So this expires, we can't use it
+anymore. However, the refresh token that
+we got, this one stays valid for quite a
+bit longer. In fact, it stays valid for
+about uh 90 days. So quite a long time.
+And you can use this one to obtain new
+access tokens for restricted uh scopes.
+This becomes a little bit too technical.
+I don't know how technical you want to
+go, but there are specific limitations
+on which client ids and resource
+combinations you can use. If you see
+it's a fy token, a family of client ID
+token, then that means that we can do a
+little bit of magic and we can use this
+refresh token if I activate it. And not
+only over here it's activated now. Can
+not only use this one to obtain an
+access token for the Microsoft Teams
+client ID which will give me all the
+scopes I'm used to uh from previously.
+But I can also change this client ID to
+for example Microsoft Office. Usually
+this shouldn't be possible due to the
+forward and open ID connect
+specification which say that you should
+only be able to refresh access tokens
+for the same client ID right of your
+refresh token. But Microsoft is
+deviating a little bit from that and
+implemented something they call family
+of client IDs this fi and every client
+ID in this family can be used to obtain
+access tokens of different client IDs in
+the same family. And you will see that
+the scope differs a little bit from the
+previous one. For example, if I now
+select the outlook mobile one, submit
+that one. I activate that one. I can see
+the scope over here the side. And you
+see a little bit of different approaches
+that we have including mail.shared to
+create um shared mailboxes, right? I
+think this user doesn't even have access
+to a shared mailbox, but in caseh you
+would point that that's how you would be
+able to obtain that. So yeah, that's
+basically some basic information of what
+you can do. We can go a little bit
+further maybe uh in some more complex
+topics or some more fun topics. I might
+say for example notification methods,
+right? We now know that we can use a
+refresh token to obtain different types
+of access tokens for different APIs.
+Sadly for the Microsoft graph API, I'm
+not really able to like add multifactor
+authentication methods and things like
+that. For that you would need to go to
+my account.microsoft.com and it uses
+like a different API and you can
+actually obtain that in grass by as well
+because I've like reverse engineered how
+that signins API works and I've
+implemented it in grass by so you can
+use that and the application that we can
+use is also a family of client ID
+applications for example and Microsoft
+Azure CLI or Azure PowerShell. Let's use
+one of these. Let's submit that. You'll
+see this has now a different resource.
+So now it's it's not a URL in this case.
+Sometimes it's a URL like here.
+Sometimes it's an application ID. All
+that's important to over is that this
+application ID corresponds to the one
+that Microsoft would use to set
+multiffac authentication methods for
+example. Right? So once we activate this
+one, I can go to MFA methods. And if I
+load over here, we can see all of the
+multif authentication methods that are
+configured for this account. So we can
+see authenticator app. There's two of
+those configured. can see them over
+here. Gives a little bit of basic
+information for that. We don't have any
+photo keys added yet. Also, one mobile
+phone. I would be able to see that as
+well, but then you would need to blur
+that because that's my phone. But the
+very nice thing that you are able to do
+over here is add new authentication
+methods of course, right? So, you can
+either add one for your Microsoft
+authenticator for example. You can click
+on add. It will say it's failed over
+here. And I probably know why that is.
+And that's because our access token
+doesn't have a specific claim that it
+needs. So here it has MFA claims meaning
+that the access token was obtained using
+multiffactor authentication. Um but
+there is a special kind of claim that
+you need to actually modify
+multification methods then your MFA
+claim may not be older than like a
+couple of minutes and it has it's called
+a next gen MFA claim and we can obtain
+that if we would have fished the user
+directly with this specific box set then
+we would have obtained that. So we can
+do that uh really quickly so that you
+would be able to see that. So, um I'm
+going to take this one. Then I'm going
+to take uh this one for example.
+Actually, let's do it like this. This
+one is what I need. I click generate
+device codes. And now, if the user would
+sign in with this one, I'll do that
+really quickly. And then you will see
+that it will prompt me for
+authentication instantly. But we're
+still on the legitimate login page of
+Microsoft. So, that's fine. So, I'm
+quickly going to do that. 59. All right.
+All right. So, I've signed in over here.
+If I go back the right page, we'll see
+this update very soon. There we go. We
+got a refresh token and an access token.
+I'm going to activate this refresh token
+and the access token over here. I'm just
+going to refresh it once again for good
+measure because it needs to be in a
+specific format. So, my signins
+Microsoft Azure. So, we have the token
+over here. And now you will see in our
+token has this NGC MFA claim, right? And
+you'll also see this token is only valid
+for like 15 minutes because it's fairly
+powerful what you can do with that and
+I'll show you that right now. What I can
+do right now is go to MFA methods reload
+that and now I should be able to add new
+spectification methods to the account of
+the user. So you can see over here Q
+code I can now scan that add that and I
+have a new MFA method.
+>> That is wild. [laughter]
+I did not know about that NGC MFA like
+the nextG MFA clamp. That's cool.
+>> Yeah, it's something also fairly
+documented documented I think. Uh
+because yeah, normal users should not
+use this API of course,
+>> right?
+>> I'm not going to add this one. What I'm
+going to do instead maybe is add a F2
+security key. I also implemented that. I
+have a UB key right here. So I'm going
+to put that in test key John over there.
+Add security key. It will open this
+Windows browser or or window that you
+can use. You just need to enter the pin
+codes for your UB key of course. There
+we go. Then I need to touch it
+physically and you can see the status
+over there. It has now added this key to
+my account. So I can now go back reload
+this and I should see there is one
+registered right here. You can see over
+here it's there. So now this previous
+access token was only valid for 15
+minutes, right? because it had the
+special claim in there. Now I can
+basically sign into the account of the
+user anytime I want using their username
+and uh without you knowing their
+username and password and because it's a
+security key secure right it will have
+not factor authentication claims as
+well. So now I would just be able to
+sign into the account or the user I can
+actually do that really quickly if you
+want. So now I should be able to sign in
+over there to the account. I don't have
+the password, but I should be able to
+sign in with the security key. Yes, it
+detects that one. We enter the pin code
+of my security key, touch it, and we are
+signed in. [laughter]
+>> That is awesome.
+>> Just captured their account on your own
+little physical token. [laughter]
+>> Yeah, indeed. And it's very powerful
+because now even if the user resets
+their password or changes their
+parameters or their phone or whatever,
+you still have this uh security key,
+right? So regarding persistence, this is
+like very powerful and now we can even
+obviously use all applications that we
+want with the GUI. We wouldn't even need
+class anymore. We can just open Outlook
+over Teams or whatever we want, right?
+So it's a little bit of an upgrade from
+an access token to a full and persistent
+um user session. Now there will
+obviously be logs like there'll be
+records in the uh I don't know purview
+or whatever century how I don't know
+what Microsoft might call specifically
+those for the Azure enter ID logs right
+>> yes of course indeed there will be be
+logs that a user has added the fo key
+which obviously that by itself is not
+malicious because users can can add that
+of course however during incident
+response if users doesn't notice like
+some suspicious behavior on their
+accounts or you are a little bit too
+eager with the enumeration and grab
+quite a lot of files at once, then it
+might trigger an alert. Your blue team
+might start investigating that and they
+will indeed hopefully find out that you
+added the feeder to security key.
+>> Super cool.
+>> There are a couple more features I can
+show you. So, I'm going to close out
+this window and go back to where we
+were. So, I've showed you this one.
+Grass by can also act as like an MFA
+method itself. So, you can add that
+directly from here as well. And then it
+will will be able to generate like MV
+codes directly from grass by. But yeah,
+video keys are even more interesting. So
+let's stick with that one. Microsoft
+Teams, I haven't showed you that one.
+For that, there is a graph API for
+Microsoft Teams. However, that one you
+need specific scopes that you cannot
+really get as a regular user. Like even
+if I select like Microsoft Grav API and
+I select the Microsoft Teams client ID
+if I obtain an access token for that you
+will see in the scopes there is not
+something like chat read all or
+something similar chat read right and
+this is what you need to be able to read
+and send chat messages over the
+Microsoft Gra API. So even though you
+can the Microsoft teams client ID can
+authenticate to this Microsoft drive API
+for some reason it can send mail and it
+can read your meals but it cannot read
+chat messages. So what you do need then
+is what I implemented over here is the
+Skype API. So this is the Microsoft
+Teams API but it still uses the the
+Skype endpoint for some reason. So you
+can obtain that with the same client ID.
+We have user impersonation right. So
+once you activate this one, you will be
+able to go to Microsoft Teams and use
+this over here to see all the Teams
+messages of the user and go over them.
+So you would be able to send chat
+messages over there. Yeah. See
+everything you want. There's like some
+documents over there from SharePoint. We
+would also be able to get right. So even
+over there we can get that because we're
+[laughter]
+so yeah.
+>> Oh, sorry. I'm laughing at all the Bob
+the Builder memes.
+Oh yeah, this was from some kind of um I
+did some CTF some time ago and I used
+this and this is all chpt generated but
+nice. [laughter] So you have this you
+can send messages uh you can send images
+if you want read documents and so forth.
+So all kind of powerful can even list
+all other users that that are in the
+organization and send them some emails
+as some teams messages as well. So we
+could add them add some message to that
+and then it will create a new group for
+them. So we can do that over there. So
+over here we send now a new team's
+message. So also fairly useful as a red
+team because what we usually want to do
+is do some privilege escalation after we
+compromise a low privilege user. So a
+good way is always like finding out or
+figuring out uh with the IT guys are and
+sending them some messages saying that
+you have some issues and then you invite
+them in a Microsoft Teams call for
+example which is like the device fishing
+all over again. So then we get access to
+their account and then it's game over
+fairly soon.
+>> Wow.
+>> So these are some of the new features
+I've been working on from enter ID. So
+these are not all implemented in the
+public version just yet. It's in my
+private people or for the a limited
+group of people that have access to
+that. If you want they can give you
+access later on if you want to play with
+that a little bit. Right now this is
+public. So what you can do is is the
+enter ID users. So let me just you have
+some options over here to which specific
+properties you want to query load that
+and then you get a list of all the users
+in the organization that you can see
+okay which persons have group
+memberships uh and IDA roles and so
+forth. are synced to onrem or not. Could
+be useful to compromise them to to move
+to onrem for example. We can see some
+details of the user. Open them. See all
+of their properties, their phone number,
+when their password was changed, all the
+groups they are a member of. This one
+should also resolve. But I think let me
+try that again. But this specific access
+token there's a specific scope in here
+and otherwise it will not be able to
+obtain the the directory roles. But now
+it should be able. Okay. And now
+Microsoft is troubling me with that's
+just I know which one is going to work
+though. So here we should be able to
+also see the that this user has a global
+admin for example which devices it owns.
+So you can see some information from
+there. I'll show you some fun stuff for
+in devices in a little bit because you
+can do quite a lot of powerful stuff
+with that app assignments API
+permissions and so forth are all visible
+over here. Right. And we have basically
+a little bit of the same flow with a
+groups, right? So we can enumerate all
+the group memberships or all the groups
+in the organization. Then we can see how
+many members are part of that. And then
+we can once again open that, scroll down
+a little bit, see the transitive members
+of that one, see the owners of that
+group. All of these you can open up and
+see like some JSON information with some
+more details. uh you have that basically
+everywhere that if you want some more
+debug information or some more metadata
+of the specific entity as a security
+group. So there there is one dynamic one
+for example also something very useful
+for us as pentesters to look into
+because these have like membership rules
+and sometimes you can make your own user
+a member of that specific group by uh
+changing some properties like your own
+department. I don't think you can change
+that. There are some kind of properties
+that you can change on your own profile
+as a regular user that would result in
+you becoming part of that specific
+group. So that's also always interesting
+to look into. And then the one that I've
+been working on today just now. So this
+is like couple hours old this
+functionality the entic
+API. It's not going to work with the C
+access token because with the Microsoft
+Grav API you need specific permissions
+to be able to enumerate directory roles.
+So you you can enumerate like global
+admins that are active global admins but
+you cannot enumerate eligible group
+memberships as a low privilege user. You
+can do that with high privilege user but
+what I noticed is if you use like the
+undocumented API that Azure portal uses
+you can use that in that as a low
+privilege user. So what I did is I
+implemented that instead. But we know
+you can also obtain that using client ID
+a fry client ID. So uh with the same
+access token that we've been using
+previously, we can now request this new
+access token. So this is the Microsoft
+BIM one. Activate that. So we're there.
+And now we should be able to enumerate
+the wall assignments. So we see all the
+active rule assignments, how long they
+are valid for for the eligible ones as
+well. and so forth, right? Whether they
+are permanent or not. So now we can
+really start targeting some some high
+privilege users that we want to, right?
+Some authentication administrators, some
+global admins and things like that. So
+very very useful information
+>> that is super cool.
+>> One last thing I want to show you and
+this one is also like very powerful and
+it's on the same level of powerful as
+the Fed 2 update that we saw there. you
+had the device code to VTO to the where
+we would be able to with the UB key now
+get a full session as a user there's one
+other method of doing that for example
+if V2 keys are not enabled or you want
+to use something else and that works
+with registering devices and it's fairly
+complex but I've simplified it quite a
+lot in crashy so you have device
+certificates over here you can either
+import them from other devices as well
+that are compromised primary refresh
+tokens that you can also import and with
+those hello keys. And so all of these
+work quite nicely together. Right now we
+don't have any of these. Let's say we
+just start from scratch and we want to
+fish our user all over again. So what we
+can do is obtain an access token for the
+specific resource. This one enter ID
+device join then this one Microsoft
+authentication broker. This specific
+access token if we obtain that we will
+be able to register a new device. obtain
+a primary refresh token for that device
+and then also register Windows Hello for
+that allowing us to have full access
+over the account with a newly joined
+device. Even if we don't have the
+password of the user, we would now also
+have persistent access to the user
+session. It will all become clear in a
+little bit. You could do this manually,
+but since you only have like 15 minutes
+to register the device and register
+Windows Hello for that, it maybe if the
+user signs in at an inconvenient time
+when you're not at your computer, I have
+automated this. So, you can select this
+one for example, Windows Hello auto
+action in device codes section, it will
+set all the settings, right? And then
+you will see some additional options
+become there. So, I'm just going to add
+JH device over here. Can make it either
+enter ID joint or registered doesn't
+really matter. In a lot of cases, I see
+organizations restricting the ability to
+join devices to enter an id but not to
+register them. So I usually would set
+this to registered because this is what
+organizations use to for example
+register mobile phones of the user to
+their organization for specific
+purposes. Right? So usually this is left
+open and we can set the device type.
+It's basically metadata. It can be
+anything. You can just customize it.
+Microsoft will not validate it but it's
+just how it will show up in the logs.
+You can even make like custom operating
+systems like John OS. It doesn't really
+matter. It will just show up like that
+in the device blocks. So we will
+generate that device code. You will see
+the art action is ready. And now the
+user will need to sign into that. So
+let's do that again. Let's go to this
+one. Microsoft.com/device.
+Also side notes what I like to do is
+like during uh social engineering
+assessments where I can use visioning.
+and just call them tell them I'm from
+the help desk they need to register
+their device or whatever just say okay
+you need to go to this legitimate
+Microsoft website microsoft.com/device
+code or device login right and they say
+okay microsoft.com seems legitimate
+right they see the Microsoft logo over
+here you talk them through it enter this
+code it's only nine characters so they
+enter that and you just say okay you
+don't need to provide me your
+credentials right just select your
+account and sign in as normally
+obviously don't share your password over
+the phone that's not So secure you talk
+them through it and then usually they
+will sign in for you.
+>> That is awesome. [laughter]
+>> So a little bit tips and tricks over
+there.
+>> Social engineering. Yep.
+>> So let's sign in where you're trying to
+sign into Microsoft authentication
+broker. So this is a little bit of a
+tell but obviously in the pretext that I
+told right now you can say that this is
+Microsoft right? So you can say this is
+for registering your device. So it's
+very safe. Usually if you call a couple
+of employees they they you will find one
+that will do that. So we will continue
+over here and then the tech is done. But
+if you wait a couple more seconds you
+can see now action is in process. So I
+don't even need to be at my computer
+while doing this. The attack is already
+finished. We just like usually we have
+the refresh token. We have the access
+token. Right. However you will see we
+have a little bit of extra. We have now
+a device certificate. So there's now a
+new device registered in NF ID with that
+specific user as we would be able to
+copy the certificates and the private
+key of that device which are usually in
+the certificate store of the device and
+uh this one is protected by the TPM. So
+it's pretty hard to get those out of
+there but we now created a new one
+that's trusted by the organization and
+now you think okay what can we do with
+that? Well, once you have a device
+certificate and key, you can actually
+obtain primary refresh tokens. You see
+there are some primary refresh tokens
+already created over here. And these are
+basically refresh tokens that are more
+powerful than your regular ones because
+they are linked to a specific device to
+a device identity. What does that give
+us? Well, these primary fetch tokens are
+so powerful that you can sign in, but
+you can use them to obtain access tokens
+for any client ID and any resource. And
+previously, we're restricted to only
+like the family of client IDs if we
+fished a user for a specific client ID
+that was in the family of client IDs. We
+would be able to now refresh those to a
+specific access token in the same
+family. Now, we don't need that anymore.
+We can obtain access to refresh tokens
+for any clients, but even more, we can
+generate primary refresh token cookies.
+And this is basically how your devices
+do a single sign on. You've probably
+already noticed when you have a company
+device and you sign in with your pin
+coins or whatever one time on your
+Windows login screen. After that, you
+usually don't really need to
+authenticate that much anymore because
+you're already signed in and it will say
+signed in in Windows, right? Well, what
+it will basically be doing in the
+background is using these device
+credentials to obtain the primary
+refresh token and use these primary
+refresh tokens to obtain these cookies.
+So, I'm going to show you what that will
+look like. You can copy that over here.
+These cookies are valid for about 5
+minutes, but are very very powerful.
+Let's see. I'll open a new incognito
+window. Go to microsoft.com and just
+follow the instructions. Let's do it
+like this. Oh, my cookie is gone. Let's
+get a new one. So, all we need to do is
+we are now at microsoft.com. I'm going
+to go to the cookies tab. Clear all of
+them and just import this one. And this
+is like a completely empty window.
+There's no one signed in over here yet.
+So, by now going to my account.com.
+You'll see I'm just magically signed in.
+No credentials needed whatsoever. No
+username, no password, nothing, right?
+No multifactor authentication. However,
+this session even has multiffactor
+authentication claims, right? because it
+the device was generated with melt
+spectra authentication map. So very very
+powerful feature that you can use as
+well.
+>> And with the primary refresh token you
+could just swing from any app or any
+service right like because that doesn't
+need any specific client ID. You could
+just use any of them. That's wild.
+>> Yeah indeed. And yeah once again once
+you have this you don't need like for
+anything else anymore than just
+generating the cookies because you can
+just sign into any application that you
+want. They can now go to Azure for
+example and we will also just be signed
+in. These cookies I'll just spell it for
+like 5 minutes but you can generate them
+how much you want and once you sign into
+an application you will get like cookies
+session cookies for Azure portal
+specifically. And now yeah this session
+lasts for a couple of hours. uh probably
+if you sign into something like a
+shareepoint for example you will see
+that these sessions will stay valid for
+like multiple hours even days with just
+one cookie right and you can do this
+indefinitely right the last thing that
+uh it generated is the Windows Hello key
+right this also already got generated
+and basically what this allows us to do
+is the device that we now generated is
+now also enrolled with Windows Hello for
+business the feature that allows you to
+just enter your pin codes when you boot
+your device and suddenly you're
+magically signed into your account.
+Well, what happens is your device will
+actually have a Windows Hello key and it
+will use that to obtain new primary
+refresh tokens. And once you have this
+key and as long as this device stays
+valid and they it's not removed from the
+Azure portal, you are now able to obtain
+new primary refresh tokens or as much as
+you want, for as long as you want. As so
+you can see over here, new primary
+refresh token generated from that
+because these primary refresh tokens are
+valid for 14 days by default. So you can
+see it over here. But even if these
+expires, as long as I have the keys, I
+don't need the username and the
+password. I don't need not
+authentication and just keep generating
+this for as long as I So then we can do
+the same trick with the cookies as I
+showed previously.
+>> Conor, that is insane. [laughter]
+>> That is too cool. And graphy makes it
+too easy. Goodness gracious.
+Yeah. Yeah. It's sadly some some
+malicious actors are also using it. So
+from that perspective, it's just
+important to get these tools out there
+in the hands of good red teamers and
+pentesters so that they can use them
+during their assessments and show how
+easy it is for attackers to actually
+also use these because if I don't make
+these tools, they will just make them
+themselves. Of course.
+>> Agreed. Yeah, I think still the
+education, the awareness, like that's
+what's important. Like I know whatever
+research Yeah. falls into the wrong
+hands, but you still need to know to
+begin with because otherwise they'll do
+it all before before the good guys do.
+>> Exactly.
+>> Well, hey, this is awesome, my friend.
+Thank you. Thank you. Thank you for
+showing me the ropes. How can folks
+follow along? I know you shared the
+GitHub just previously. If anyone was
+looking out for Yeah. those new
+releases, those new updates that I know
+you were cooking up and then anything
+else that anyone else might maybe
+contribute, help, sponsor. Yeah, they
+can obviously come over here to the
+grass by GitHub, get the latest version
+over here. I do have like set up a
+little of a sponsor page as well. We
+have seven right now. And if you do
+sponsor over there, you can see that you
+will get access to um a pre-release
+version as well. It's like just a
+private version where I give a little
+bit uh of the the latest version a
+little bit earlier to the new people
+while I'm still developing the features
+that support me. So, I probably messed
+up that [laughter]
+perfect.
+>> All right.
+>> Yeah, maybe follow me on Twitter or on
+LinkedIn or whatever. I do usually make
+some post. I don't make too much post,
+but if I make a new version of Cass, for
+example, I will mention it over there as
+well.
+>> Excellent. Well, I'll include all those
+links in the video description for folks
+to be able to tune in and and track you
+down. But, uh, thank you. Thank you.
+Thank you, man. I can't say it enough.
+This is so cool. And I had no idea how
+much further it can go cuz I think I was
+following along for like oh maybe the
+first 10 maybe 15 minutes like I've done
+device code fishing and then I could go
+play with the account but I had not done
+any of the nextG MFA or even the token
+swapping that you were doing between
+refresh tokens and so awesome awesome
+stuff. Thank you so much. [laughter]
+>> No problem. Thank you for inviting

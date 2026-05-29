@@ -1,0 +1,29 @@
+{
+  "id": "powerapps-vibe-coding",
+  "name": "Power Apps Vibe Coding",
+  "category": "Power Platform",
+  "description": "AI-powered app development in Power Apps using natural language prompts, image references, and agent-driven iterative development with full-stack React output.",
+  "related_concepts": [
+    "dataverse",
+    "react-apps",
+    "ai-agents",
+    "power-platform",
+    "alm"
+  ],
+  "sources": [
+    "powerapps-vibe-coding-raza"
+  ],
+  "keywords": [
+    "Vibe coding",
+    "Power Apps",
+    "AI agents",
+    "natural language development",
+    "React apps",
+    "Dataverse",
+    "Copilot Studio",
+    "iterative development",
+    "inline editing",
+    "ALM"
+  ],
+  "created_at": "2026-03-30"
+}

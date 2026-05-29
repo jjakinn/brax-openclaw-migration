@@ -1,0 +1,30 @@
+CHUNK 15: REACT CODE AND CUSTOMIZATION
+Source: powerapps-quiz-app-raza | Timestamp: 11:00 - 11:45
+
+This is the preview of that page.
+
+---
+
+If I head over to code, this is the React code that I built along with the app agent.
+
+---
+
+There were scenarios needed where I had to edit the code manually.
+
+---
+
+So you have full flexibility whether you are a citizen developer or a pro-coder.
+
+---
+
+So using React code, I was able to build this Power App experience.
+
+---
+
+KEY POINTS:
+- Code access: Full React code available
+- Customization: Can edit manually
+- Flexibility:
+  - Citizen developers: Use AI-generated code
+  - Pro-coders: Manual editing
+- Result: Custom quiz taker UI in React

@@ -1,0 +1,29 @@
+CHUNK 2: WHAT IS A KUDO BOARD
+Source: powerapps-kudo-board-raza | Timestamp: 00:30 - 01:00
+
+A Kudo board is a collaborative board where your team can post messages, gifs, photos to celebrate a team member, a milestone, birthdays, farewells, more.
+
+---
+
+The homepage experience shows the list of all the boards.
+
+---
+
+Each board has been created by a user for a specific team member.
+
+---
+
+If I select a board, this will show all the posts that have been made for that specific board.
+
+---
+
+In this scenario, the board created was for Sarah titled "Sarah is celebrating 3 years in the organization."
+
+---
+
+KEY POINTS:
+- Kudo board definition: Collaborative celebration board
+- Content types: Messages, GIFs, photos
+- Homepage: List of all boards
+- Board creation: By users, for specific team members
+- Board view: Shows all posts for selected board

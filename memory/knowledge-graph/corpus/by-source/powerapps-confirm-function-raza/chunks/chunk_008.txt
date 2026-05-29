@@ -1,0 +1,45 @@
+CHUNK 8: SCENARIO 3 - UNSAVED CHANGES WARNING
+Source: powerapps-confirm-function-raza | Timestamp: 09:30 - 11:30
+
+The next scenario, gallery connected form experience.
+
+When I select an item, it leads me to a form screen where I have the option to modify any of the properties of that item.
+
+For this item, the status is blocked. I'll change to completed. Submit. And this will make the update to the status.
+
+Now when I go to this screen, I also have the option to go back to the previous screen. Click back takes me back.
+
+Plus, if I do make changes, I can cancel any of those changes. So it resets the form. But what if the user makes changes but decides to go back?
+
+Now, it would be nice to let the user know that you have made changes but you're going back. So, you will lose those changes. Basically, you have unsaved changes on the form. Are you sure you want to go back? A nice spot for us to use the confirm function once again.
+
+---
+
+So, let's try that. the back button on select. All I was doing is taking the user back.
+
+Now let's use the confirm function. But I want to show the confirm function only if there are unsaved changes on the form.
+
+My form control is called issue form. The form control has a property unsaved. So if issue form unsaved, if that's true, meaning the user has made changes and they're clicking on the back button, I want to display my confirm dialogue.
+
+---
+
+So here I'll add my if condition for confirm. My message is you have unsaved changes. My title I'll say unsaved changes. The confirm button text is yes. The cancel button text no close the confirm function. So if the user confirms that yes I am okay with the unsaved changes only then I'll execute the back function.
+
+So if there are unsaved changes you confirm. But if there are no unsaved changes, then you simply take the user back to the previous screen. It won't even put that confirm dialogue.
+
+---
+
+KEY POINTS:
+- Scenario 3: Unsaved changes warning on form exit
+- Form property: `Form.Unsaved` (true = changes made)
+- Pattern:
+  ```
+  If(Form.Unsaved,
+     If(Confirm("You have unsaved changes", {Title: "Unsaved Changes", ConfirmButton: "Yes", CancelButton: "No"}),
+        Back()),
+     Back())
+  ```
+- Logic:
+  - No changes → Immediate back navigation
+  - Changes exist → Show dialog → Confirm = Back, Cancel = Stay
+- Form.Unsaved automatically tracks dirty state

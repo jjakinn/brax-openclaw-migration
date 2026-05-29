@@ -1,0 +1,27 @@
+CHUNK 14: REACT CODE AND MCP ENDPOINT CALLS
+Source: powerapps-dataverse-mcp-raza | Timestamp: 15:30 - 17:00
+
+And here is my model driven Power App in which I have used generative pages which allows me to write React code.
+
+Here is my page for the SQL query executor. Here's the React code. All I'm doing here — the key part:
+
+I am calling the endpoint for MCP. I'm calling the tool "read query" here. I need to give the SQL query. That query is what I am allowing the user to enter right here.
+
+---
+
+For the one that lists out all the database tables, row counts and more, I have utilized multiple tools from the MCP server.
+
+Once again, API MCP, go call the tools:
+- Table description
+- List all the tables
+- Go fire the SQL query to get the count and more
+
+---
+
+KEY POINTS:
+- Generative pages: React code in model-driven apps
+- MCP endpoint: Called directly from React
+- Tool calling: Specify tool name (e.g., "read query")
+- Parameters: Pass SQL query from user input
+- Multi-tool workflows: Combine multiple MCP tools
+- Pattern: API → MCP → Tools → Dataverse

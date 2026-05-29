@@ -1,0 +1,42 @@
+CHUNK 6: CANVAS APP AND MODEL-DRIVEN APP FROM PLAN DESIGNER
+Source: powerapps-tools-ecosystem-raza | Timestamp: 07:30 - 09:00
+
+Now the tables have been saved. This is in Dataverse.
+
+Next, I can decide which objects I would like to create based on what's recommended by the technology agent.
+
+I can create canvas apps. I can create model-driven apps. I can create agents in Copilot Studio and more.
+
+---
+
+Here is the canvas app experience that has been created through plan designer.
+
+The app is connected to the tables related to the solution. The app gets bootstrapped with a few screens.
+
+You have full control over the UI.
+
+The syntax that you use is Power FX modeled on Excel.
+
+---
+
+If I click on the claims button, on select will navigate the user to a screen called claims screen. If I click claims, this navigates the user to the claims screen where the user can view all the claims, look at the claim details, create, edit, delete, and more.
+
+---
+
+On the other side, we have the model-driven Power App, which comes with the standard views and form experiences.
+
+So, here is the view listing out all the claims. I can select a specific claim, look at the details of the claim, full CRUD support and more.
+
+---
+
+KEY POINTS:
+- Output: Tables saved to Dataverse
+- Can create: Canvas apps, Model-driven apps, Copilot Studio agents
+- Canvas app:
+  - Pre-built screens
+  - Full UI control
+  - Power FX syntax (Excel-like)
+  - CRUD operations
+- Model-driven app:
+  - Standard views and forms
+  - Full CRUD support

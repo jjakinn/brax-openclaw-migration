@@ -1,0 +1,1653 @@
+{
+  "version": "2.0",
+  "description": "Sources Catalog - All books, courses, videos",
+  "last_updated": "2026-03-23",
+  "total_sources": 77,
+  "sources": {
+    "cs50-flask-web-programming": {
+      "source_id": "cs50-flask-web-programming",
+      "display_name": "CS50: Web Programming with Flask",
+      "author": "David J. Malan",
+      "type": "video",
+      "length": {
+        "words": 21543,
+        "duration_minutes": 144
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "coding"
+      ]
+    },
+    "cs50-full-course-2026": {
+      "source_id": "cs50-full-course-2026",
+      "display_name": "CS50 (2026) - Full Computer Science Course",
+      "author": "David J. Malan",
+      "type": "course",
+      "length": {
+        "words": 289746,
+        "duration_minutes": 1320
+      },
+      "concepts_covered": 11,
+      "domains": [
+        "coding"
+      ]
+    },
+    "veritasium-markov-chains": {
+      "source_id": "veritasium-markov-chains",
+      "display_name": "The Math Feud That Changed History (Markov Chains)",
+      "author": "Veritasium (Derek Muller)",
+      "type": "video",
+      "length": {
+        "words": 5429,
+        "duration_minutes": 32
+      },
+      "concepts_covered": 2,
+      "domains": [
+        "mathematics"
+      ]
+    },
+    "numerology-beginners": {
+      "source_id": "numerology-beginners",
+      "display_name": "Numerology For Beginners: Numerology Explained Step By Step",
+      "author": "Unknown (YouTube Creator)",
+      "type": "video",
+      "length": {
+        "words": 34651,
+        "duration_minutes": 198
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "mysticism",
+        "spirituality"
+      ]
+    },
+    "numerology-divine-triangle-1979": {
+      "source_id": "numerology-divine-triangle-1979",
+      "display_name": "Numerology and the Divine Triangle (1979 Audiobook)",
+      "author": "Faith Javane and Dusty Bunker",
+      "type": "audiobook",
+      "length": {
+        "words": 102433,
+        "duration_minutes": 665
+      },
+      "concepts_covered": 11,
+      "domains": [
+        "mysticism",
+        "spirituality"
+      ]
+    },
+    "cia-reality-document": {
+      "source_id": "cia-reality-document",
+      "display_name": "Leaked CIA Document Reveals How Reality Works",
+      "author": "YouTube Creator (Analysis)",
+      "type": "video",
+      "length": {
+        "words": 7006,
+        "duration_minutes": 45
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "classified-intelligence",
+        "consciousness"
+      ]
+    },
+    "cs50-python-2022": {
+      "source_id": "cs50-python-2022",
+      "display_name": "CS50's Introduction to Programming with Python (2022)",
+      "author": "David J. Malan (Harvard)",
+      "type": "course",
+      "length": {
+        "words": 183775,
+        "duration_minutes": 958
+      },
+      "concepts_covered": 17,
+      "domains": [
+        "coding",
+        "python"
+      ]
+    },
+    "java-full-course": {
+      "source_id": "java-full-course",
+      "display_name": "Java Full Course for Beginners",
+      "author": "Programming with Mosh (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 24994,
+        "duration_minutes": 151
+      },
+      "concepts_covered": 18,
+      "domains": [
+        "coding",
+        "java"
+      ]
+    },
+    "stanford-cs106a-lec1": {
+      "source_id": "stanford-cs106a-lec1",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 1",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 11403,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 7,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec2": {
+      "source_id": "stanford-cs106a-lec2",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 2",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10345,
+        "duration_minutes": 48
+      },
+      "concepts_covered": 6,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec3": {
+      "source_id": "stanford-cs106a-lec3",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 3",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 11184,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 6,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec4": {
+      "source_id": "stanford-cs106a-lec4",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 4",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10030,
+        "duration_minutes": 48
+      },
+      "concepts_covered": 4,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec5": {
+      "source_id": "stanford-cs106a-lec5",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 5",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10487,
+        "duration_minutes": 49
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec6": {
+      "source_id": "stanford-cs106a-lec6",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 6",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10053,
+        "duration_minutes": 46
+      },
+      "concepts_covered": 4,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec7": {
+      "source_id": "stanford-cs106a-lec7",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 7",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 11241,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec8": {
+      "source_id": "stanford-cs106a-lec8",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 8",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10295,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec9": {
+      "source_id": "stanford-cs106a-lec9",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 9",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 11272,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec10": {
+      "source_id": "stanford-cs106a-lec10",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 10",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10571,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec11": {
+      "source_id": "stanford-cs106a-lec11",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 11",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10917,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec12": {
+      "source_id": "stanford-cs106a-lec12",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 12",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10131,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec13": {
+      "source_id": "stanford-cs106a-lec13",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 13",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 9808,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec14": {
+      "source_id": "stanford-cs106a-lec14",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 14",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 9692,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec15": {
+      "source_id": "stanford-cs106a-lec15",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 15",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10372,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec16": {
+      "source_id": "stanford-cs106a-lec16",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 16",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10597,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec17": {
+      "source_id": "stanford-cs106a-lec17",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 17",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10858,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec18": {
+      "source_id": "stanford-cs106a-lec18",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 18",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10010,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec19": {
+      "source_id": "stanford-cs106a-lec19",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 19",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10354,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec20": {
+      "source_id": "stanford-cs106a-lec20",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 20",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 9464,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec21": {
+      "source_id": "stanford-cs106a-lec21",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 21",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10017,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec22": {
+      "source_id": "stanford-cs106a-lec22",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 22",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 9851,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec23": {
+      "source_id": "stanford-cs106a-lec23",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 23",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 8550,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec24": {
+      "source_id": "stanford-cs106a-lec24",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 24",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10574,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec25": {
+      "source_id": "stanford-cs106a-lec25",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 25",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 10393,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec26": {
+      "source_id": "stanford-cs106a-lec26",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 26",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 9766,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec27": {
+      "source_id": "stanford-cs106a-lec27",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 27",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 8755,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "stanford-cs106a-lec28": {
+      "source_id": "stanford-cs106a-lec28",
+      "display_name": "Stanford CS106A: Programming Methodology - Lecture 28",
+      "author": "Mehran Sahami (Stanford University)",
+      "type": "video",
+      "length": {
+        "words": 8357,
+        "duration_minutes": 50
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "coding",
+        "computer-science"
+      ]
+    },
+    "cpp-course-beginner-advanced": {
+      "source_id": "cpp-course-beginner-advanced",
+      "display_name": "C++ Programming Course - Beginner to Advanced",
+      "author": "CodeBeauty (YouTube)",
+      "type": "course",
+      "length": {
+        "words": 340477,
+        "duration_minutes": 1867
+      },
+      "concepts_covered": 27,
+      "domains": [
+        "coding",
+        "cpp"
+      ]
+    },
+    "generative-ai-full-course": {
+      "source_id": "generative-ai-full-course",
+      "display_name": "Generative AI Full Course \u2013 Gemini Pro, OpenAI, Llama, Langchain, Pinecone, Vector Databases",
+      "author": "FreeCodeCamp / YouTube Creator",
+      "type": "course",
+      "length": {
+        "words": 292238,
+        "duration_minutes": 1818
+      },
+      "concepts_covered": 19,
+      "domains": [
+        "ai",
+        "machine-learning",
+        "generative-ai"
+      ]
+    },
+    "openclaw-hacking-video": {
+      "source_id": "openclaw-hacking-video",
+      "display_name": "I Built an AI Agent That Hacks for Me | OpenClaw + Kali Linux",
+      "author": "YouTube Creator",
+      "type": "video",
+      "length": {
+        "words": 7720,
+        "duration_minutes": 41
+      },
+      "concepts_covered": 7,
+      "domains": [
+        "cybersecurity",
+        "ai",
+        "openclaw"
+      ]
+    },
+    "ai-hacker-beginner": {
+      "source_id": "ai-hacker-beginner",
+      "display_name": "become an AI HACKER (it's easier than you think)",
+      "author": "YouTube Creator",
+      "type": "video",
+      "length": {
+        "words": 3441,
+        "duration_minutes": 17
+      },
+      "concepts_covered": 4,
+      "domains": [
+        "cybersecurity",
+        "ai"
+      ]
+    },
+    "attacking-ai-jason-haddix": {
+      "source_id": "attacking-ai-jason-haddix",
+      "display_name": "Attacking AI Version 1.1 w/ Jason Haddix",
+      "author": "Antisyphon Training / Jason Haddix",
+      "type": "video",
+      "length": {
+        "words": 10776,
+        "duration_minutes": 61
+      },
+      "concepts_covered": 12,
+      "domains": [
+        "cybersecurity",
+        "ai",
+        "prompt-injection"
+      ]
+    },
+    "bug-hunter-methodology": {
+      "source_id": "bug-hunter-methodology",
+      "display_name": "The Bug Hunter's Methodology - Full 2-Hour Training",
+      "author": "Jason Haddix (Red Team Village)",
+      "type": "video",
+      "length": {
+        "words": 12677,
+        "duration_minutes": 113
+      },
+      "concepts_covered": 15,
+      "domains": [
+        "cybersecurity",
+        "bug-bounty",
+        "penetration-testing"
+      ]
+    },
+    "bug-hunter-app-analysis": {
+      "source_id": "bug-hunter-app-analysis",
+      "display_name": "The Bug Hunter's Methodology - Application Analysis",
+      "author": "Jason Haddix (HackerOne)",
+      "type": "video",
+      "length": {
+        "words": 7027,
+        "duration_minutes": 47
+      },
+      "concepts_covered": 10,
+      "domains": [
+        "cybersecurity",
+        "bug-bounty",
+        "application-security"
+      ]
+    },
+    "live-recon-snapchat": {
+      "source_id": "live-recon-snapchat",
+      "display_name": "Live Recon on Snapchat with @ITSecurityGuard (amass, FFUF, SecurityTrails Demo)",
+      "author": "NahamSec / ITSecurityGuard",
+      "type": "video",
+      "length": {
+        "words": 12958,
+        "duration_minutes": 101
+      },
+      "concepts_covered": 11,
+      "domains": [
+        "cybersecurity",
+        "reconnaissance",
+        "bug-bounty"
+      ]
+    },
+    "hacker101-javascript": {
+      "source_id": "hacker101-javascript",
+      "display_name": "Hacker101 - JavaScript for Hackers",
+      "author": "@STOKfredrik (HackerOne)",
+      "type": "video",
+      "length": {
+        "words": 3924,
+        "duration_minutes": 24
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "cybersecurity",
+        "javascript",
+        "web-security"
+      ]
+    },
+    "3b1b-neural-network": {
+      "source_id": "3b1b-neural-network",
+      "display_name": "But what is a neural network? | Deep learning chapter 1",
+      "author": "3Blue1Brown (Grant Sanderson)",
+      "type": "video",
+      "length": {
+        "words": 2869,
+        "duration_minutes": 18
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "machine-learning",
+        "neural-networks",
+        "mathematics"
+      ]
+    },
+    "3b1b-gradient-descent": {
+      "source_id": "3b1b-gradient-descent",
+      "display_name": "Gradient descent, how neural networks learn | Deep Learning Chapter 2",
+      "author": "3Blue1Brown (Grant Sanderson)",
+      "type": "video",
+      "length": {
+        "words": 3171,
+        "duration_minutes": 21
+      },
+      "concepts_covered": 7,
+      "domains": [
+        "machine-learning",
+        "neural-networks",
+        "mathematics"
+      ]
+    },
+    "3b1b-backprop-intuition": {
+      "source_id": "3b1b-backprop-intuition",
+      "display_name": "Backpropagation, intuitively | Deep Learning Chapter 3",
+      "author": "3Blue1Brown (Grant Sanderson)",
+      "type": "video",
+      "length": {
+        "words": 1936,
+        "duration_minutes": 13
+      },
+      "concepts_covered": 6,
+      "domains": [
+        "machine-learning",
+        "neural-networks",
+        "mathematics"
+      ]
+    },
+    "3b1b-backprop-calculus": {
+      "source_id": "3b1b-backprop-calculus",
+      "display_name": "Backpropagation calculus | Deep Learning Chapter 4",
+      "author": "3Blue1Brown (Grant Sanderson)",
+      "type": "video",
+      "length": {
+        "words": 1632,
+        "duration_minutes": 11
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "machine-learning",
+        "neural-networks",
+        "mathematics"
+      ]
+    },
+    "3b1b-llm-brief": {
+      "source_id": "3b1b-llm-brief",
+      "display_name": "Large Language Models explained briefly",
+      "author": "3Blue1Brown (Grant Sanderson)",
+      "type": "video",
+      "length": {
+        "words": 1113,
+        "duration_minutes": 6
+      },
+      "concepts_covered": 5,
+      "domains": [
+        "machine-learning",
+        "llm",
+        "ai"
+      ]
+    },
+    "3b1b-transformers": {
+      "source_id": "3b1b-transformers",
+      "display_name": "Transformers, the tech behind LLMs | Deep Learning Chapter 5",
+      "author": "3Blue1Brown (Grant Sanderson)",
+      "type": "video",
+      "length": {
+        "words": 4434,
+        "duration_minutes": 26
+      },
+      "concepts_covered": 9,
+      "domains": [
+        "machine-learning",
+        "transformers",
+        "llm",
+        "ai"
+      ]
+    },
+    "3b1b-attention": {
+      "source_id": "3b1b-attention",
+      "display_name": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+      "author": "3Blue1Brown (Grant Sanderson)",
+      "type": "video",
+      "length": {
+        "words": 4215,
+        "duration_minutes": 24
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "machine-learning",
+        "transformers",
+        "attention",
+        "ai"
+      ]
+    },
+    "3b1b-llm-facts": {
+      "source_id": "3b1b-llm-facts",
+      "display_name": "How might LLMs store facts | Deep Learning Chapter 7",
+      "author": "3Blue1Brown (Grant Sanderson)",
+      "type": "video",
+      "length": {
+        "words": 4089,
+        "duration_minutes": 15
+      },
+      "concepts_covered": 7,
+      "domains": [
+        "machine-learning",
+        "llm",
+        "ai"
+      ]
+    },
+    "3b1b-ai-images": {
+      "source_id": "3b1b-ai-images",
+      "display_name": "But how do AI images and videos actually work? | Guest video by Welch Labs",
+      "author": "Welch Labs (3Blue1Brown series)",
+      "type": "video",
+      "length": {
+        "words": 6497,
+        "duration_minutes": 22
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "machine-learning",
+        "generative-ai",
+        "diffusion-models",
+        "ai"
+      ]
+    },
+    "neural-network-scratch": {
+      "source_id": "neural-network-scratch",
+      "display_name": "I Built a Neural Network from Scratch",
+      "author": "Green Code (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 1601,
+        "duration_minutes": 9
+      },
+      "concepts_covered": 6,
+      "domains": [
+        "machine-learning",
+        "neural-networks",
+        "coding"
+      ]
+    },
+    "android-hacking-workshop": {
+      "source_id": "android-hacking-workshop",
+      "display_name": "Android Hacking Workshop by @B3nacSec",
+      "author": "B3nacSec (HackerOne)",
+      "type": "video",
+      "length": {
+        "words": 1814,
+        "duration_minutes": 18
+      },
+      "concepts_covered": 7,
+      "domains": [
+        "cybersecurity",
+        "mobile-security",
+        "android"
+      ]
+    },
+    "networkchuck-mitm-polish": {
+      "source_id": "networkchuck-mitm-polish",
+      "display_name": "how Hackers SNiFF (capture) network traffic // MiTM attack [Polish]",
+      "author": "NetworkChuck",
+      "type": "video",
+      "length": {
+        "words": 436,
+        "duration_minutes": 19
+      },
+      "concepts_covered": 6,
+      "domains": [
+        "cybersecurity",
+        "networking",
+        "mitm"
+      ],
+      "language": "Polish (auto-generated)",
+      "note": "Polish transcript - MiTM attacks, packet sniffing, network traffic capture"
+    },
+    "3b1b-manim-demo": {
+      "source_id": "3b1b-manim-demo",
+      "display_name": "How I animate 3Blue1Brown | A Manim demo with Ben Sparks",
+      "author": "3Blue1Brown (Grant Sanderson) with Ben Sparks",
+      "type": "video",
+      "length": {
+        "words": 11129,
+        "duration_minutes": 53
+      },
+      "concepts_covered": 10,
+      "domains": [
+        "animation",
+        "python",
+        "manim",
+        "mathematics"
+      ]
+    },
+    "manual-hacking-guide": {
+      "source_id": "manual-hacking-guide",
+      "display_name": "Manual Hacking FULL GUIDE | Bug Bounty Explained",
+      "author": "JakSec (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 13734,
+        "duration_minutes": 86
+      },
+      "concepts_covered": 12,
+      "domains": [
+        "cybersecurity",
+        "bug-bounty",
+        "manual-testing"
+      ]
+    },
+    "osint-beginners": {
+      "source_id": "osint-beginners",
+      "display_name": "OSINT for Beginners: Find Everything About Anyone!",
+      "author": "Loi Liang Yang (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 2416,
+        "duration_minutes": 14
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "cybersecurity",
+        "osint",
+        "reconnaissance"
+      ]
+    },
+    "osint-full-course": {
+      "source_id": "osint-full-course",
+      "display_name": "Open-Source Intelligence (OSINT) in 5 Hours - Full Course - Learn OSINT!",
+      "author": "The Cyber Mentor (Heath Adams)",
+      "type": "course",
+      "length": {
+        "words": 45245,
+        "duration_minutes": 269
+      },
+      "concepts_covered": 20,
+      "domains": [
+        "cybersecurity",
+        "osint",
+        "reconnaissance",
+        "investigation"
+      ]
+    },
+    "osint-5min": {
+      "source_id": "osint-5min",
+      "display_name": "Every OSINT Technique Explained in 5 Minutes",
+      "author": "Mr Ethical Hacker (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 677,
+        "duration_minutes": 4
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "cybersecurity",
+        "osint",
+        "reconnaissance"
+      ]
+    },
+    "openclaw-army": {
+      "source_id": "openclaw-army",
+      "display_name": "How to build an army of OpenClaw agents",
+      "author": "Alex Finn (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 3561,
+        "duration_minutes": 18
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "openclaw",
+        "ai",
+        "automation",
+        "workflow"
+      ]
+    },
+    "openclaw-master-course": {
+      "source_id": "openclaw-master-course",
+      "display_name": "Master OpenClaw in 10 Hours [I Created 5 AI Employees]",
+      "author": "Mani Kanasani (YouTube)",
+      "type": "course",
+      "length": {
+        "words": 64333,
+        "duration_minutes": 603
+      },
+      "concepts_covered": 25,
+      "domains": [
+        "openclaw",
+        "ai",
+        "automation",
+        "workflow",
+        "multi-agent"
+      ]
+    },
+    "openclaw-100hrs-condensed": {
+      "source_id": "openclaw-100hrs-condensed",
+      "display_name": "100 hours of OpenClaw lessons in 35 minutes",
+      "author": "Alex Finn (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 6748,
+        "duration_minutes": 35
+      },
+      "concepts_covered": 15,
+      "domains": [
+        "openclaw",
+        "ai",
+        "automation",
+        "workflow"
+      ]
+    },
+    "openclaw-6hour-course": {
+      "source_id": "openclaw-6hour-course",
+      "display_name": "OpenClaw AI FULL 6 Hour Course",
+      "author": "Julian Goldie SEO (YouTube)",
+      "type": "course",
+      "length": {
+        "words": 61905,
+        "duration_minutes": 359
+      },
+      "concepts_covered": 22,
+      "domains": [
+        "openclaw",
+        "ai",
+        "automation",
+        "workflow",
+        "seo"
+      ]
+    },
+    "openclaw-making-money": {
+      "source_id": "openclaw-making-money",
+      "display_name": "Making $$$ with OpenClaw",
+      "author": "Greg Isenberg (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 8005,
+        "duration_minutes": 52
+      },
+      "concepts_covered": 10,
+      "domains": [
+        "openclaw",
+        "ai",
+        "automation",
+        "business",
+        "monetization"
+      ]
+    },
+    "claude-code-course": {
+      "source_id": "claude-code-course",
+      "display_name": "CLAUDE CODE FULL COURSE 4 HOURS: Build & Sell (2026)",
+      "author": "Nick Saraev (YouTube)",
+      "type": "course",
+      "length": {
+        "words": 56345,
+        "duration_minutes": 250
+      },
+      "concepts_covered": 20,
+      "domains": [
+        "ai",
+        "coding",
+        "automation",
+        "business",
+        "claude"
+      ]
+    },
+    "openclaw-fixed-setup": {
+      "source_id": "openclaw-fixed-setup",
+      "display_name": "I fixed OpenClaw so it actually works (full setup)",
+      "author": "Greg Isenberg (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 8595,
+        "duration_minutes": 64
+      },
+      "concepts_covered": 10,
+      "domains": [
+        "openclaw",
+        "ai",
+        "automation",
+        "setup",
+        "troubleshooting"
+      ]
+    },
+    "agentic-workflows-course": {
+      "source_id": "agentic-workflows-course",
+      "display_name": "AGENTIC WORKFLOWS 6 HOUR COURSE: Beginner to Pro (2026)",
+      "author": "Nick Saraev (YouTube)",
+      "type": "course",
+      "length": {
+        "words": 66276,
+        "duration_minutes": 341
+      },
+      "concepts_covered": 22,
+      "domains": [
+        "ai",
+        "automation",
+        "workflows",
+        "agents",
+        "openclaw"
+      ]
+    },
+    "n8n-tutorial": {
+      "source_id": "n8n-tutorial",
+      "display_name": "n8n Tutorial \u2013 Zero to Hero Course",
+      "author": "freeCodeCamp.org",
+      "type": "course",
+      "length": {
+        "words": 35453,
+        "duration_minutes": 215
+      },
+      "concepts_covered": 18,
+      "domains": [
+        "automation",
+        "workflows",
+        "n8n",
+        "no-code"
+      ]
+    },
+    "claude-phone-calls": {
+      "source_id": "claude-phone-calls",
+      "display_name": "FREE Phone Calls with Claude Code",
+      "author": "NetworkChuck (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 3746,
+        "duration_minutes": 19
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "claude",
+        "ai",
+        "automation",
+        "voice",
+        "telephony"
+      ]
+    },
+    "dark-web-exposed": {
+      "source_id": "dark-web-exposed",
+      "display_name": "The Dark Web EXPOSED (FREE + Open-Source Tool)",
+      "author": "NetworkChuck (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 3800,
+        "duration_minutes": 20
+      },
+      "concepts_covered": 8,
+      "domains": [
+        "cybersecurity",
+        "dark-web",
+        "osint",
+        "privacy"
+      ]
+    },
+    "ai-prompting-secrets": {
+      "source_id": "ai-prompting-secrets",
+      "display_name": "You SUCK at Prompting AI (Here's the secret)",
+      "author": "NetworkChuck (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 4505,
+        "duration_minutes": 23
+      },
+      "concepts_covered": 10,
+      "domains": [
+        "ai",
+        "prompting",
+        "prompt-engineering",
+        "llm"
+      ]
+    },
+    "ai-hard-way": {
+      "source_id": "ai-hard-way",
+      "display_name": "You've Been Using AI the Hard Way (Use This Instead)",
+      "author": "NetworkChuck (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 6408,
+        "duration_minutes": 33
+      },
+      "concepts_covered": 10,
+      "domains": [
+        "ai",
+        "automation",
+        "workflows",
+        "productivity"
+      ]
+    },
+    "mcp-networkchuck": {
+      "source_id": "mcp-networkchuck",
+      "display_name": "you need to learn MCP RIGHT NOW!! (Model Context Protocol)",
+      "author": "NetworkChuck (YouTube)",
+      "type": "video",
+      "length": {
+        "words": 6714,
+        "duration_minutes": 38
+      },
+      "concepts_covered": 12,
+      "domains": [
+        "ai",
+        "mcp",
+        "model-context-protocol",
+        "automation"
+      ]
+    }
+  },
+  "by_type": {
+    "books": [],
+    "courses": [
+      "cs50-full-course-2026",
+      "cs50-python-2022",
+      "cpp-course-beginner-advanced",
+      "generative-ai-full-course",
+      "osint-full-course",
+      "openclaw-master-course",
+      "openclaw-6hour-course",
+      "claude-code-course",
+      "agentic-workflows-course",
+      "n8n-tutorial"
+    ],
+    "videos": [
+      "cs50-flask-web-programming",
+      "veritasium-markov-chains",
+      "numerology-beginners",
+      "cia-reality-document",
+      "java-full-course",
+      "stanford-cs106a-lec1",
+      "stanford-cs106a-lec2",
+      "stanford-cs106a-lec3",
+      "stanford-cs106a-lec4",
+      "stanford-cs106a-lec5",
+      "stanford-cs106a-lec6",
+      "stanford-cs106a-lec7",
+      "stanford-cs106a-lec8",
+      "stanford-cs106a-lec9",
+      "stanford-cs106a-lec10",
+      "stanford-cs106a-lec11",
+      "stanford-cs106a-lec12",
+      "stanford-cs106a-lec13",
+      "stanford-cs106a-lec14",
+      "stanford-cs106a-lec15",
+      "stanford-cs106a-lec16",
+      "stanford-cs106a-lec17",
+      "stanford-cs106a-lec18",
+      "stanford-cs106a-lec19",
+      "stanford-cs106a-lec20",
+      "stanford-cs106a-lec21",
+      "stanford-cs106a-lec22",
+      "stanford-cs106a-lec23",
+      "stanford-cs106a-lec24",
+      "stanford-cs106a-lec25",
+      "stanford-cs106a-lec26",
+      "stanford-cs106a-lec27",
+      "stanford-cs106a-lec28",
+      "openclaw-hacking-video",
+      "ai-hacker-beginner",
+      "attacking-ai-jason-haddix",
+      "bug-hunter-methodology",
+      "bug-hunter-app-analysis",
+      "live-recon-snapchat",
+      "hacker101-javascript",
+      "3b1b-neural-network",
+      "3b1b-gradient-descent",
+      "3b1b-backprop-intuition",
+      "3b1b-backprop-calculus",
+      "3b1b-llm-brief",
+      "3b1b-transformers",
+      "3b1b-attention",
+      "3b1b-llm-facts",
+      "3b1b-ai-images",
+      "neural-network-scratch",
+      "android-hacking-workshop",
+      "networkchuck-mitm-polish",
+      "3b1b-manim-demo",
+      "manual-hacking-guide",
+      "osint-beginners",
+      "osint-5min",
+      "openclaw-army",
+      "openclaw-100hrs-condensed",
+      "openclaw-making-money",
+      "openclaw-fixed-setup",
+      "claude-phone-calls",
+      "dark-web-exposed",
+      "ai-prompting-secrets",
+      "ai-hard-way",
+      "mcp-networkchuck",
+      "ollama-claude-code-local"
+    ],
+    "audiobooks": [
+      "numerology-divine-triangle-1979"
+    ],
+    "documents": []
+  },
+  "by_domain": {
+    "coding": [
+      "cs50-flask-web-programming",
+      "cs50-full-course-2026",
+      "cs50-python-2022",
+      "java-full-course",
+      "stanford-cs106a-lec1",
+      "stanford-cs106a-lec2",
+      "stanford-cs106a-lec3",
+      "stanford-cs106a-lec4",
+      "stanford-cs106a-lec5",
+      "stanford-cs106a-lec6",
+      "stanford-cs106a-lec7",
+      "stanford-cs106a-lec8",
+      "stanford-cs106a-lec9",
+      "stanford-cs106a-lec10",
+      "stanford-cs106a-lec11",
+      "stanford-cs106a-lec12",
+      "stanford-cs106a-lec13",
+      "stanford-cs106a-lec14",
+      "stanford-cs106a-lec15",
+      "stanford-cs106a-lec16",
+      "stanford-cs106a-lec17",
+      "stanford-cs106a-lec18",
+      "stanford-cs106a-lec19",
+      "stanford-cs106a-lec20",
+      "stanford-cs106a-lec21",
+      "stanford-cs106a-lec22",
+      "stanford-cs106a-lec23",
+      "stanford-cs106a-lec24",
+      "stanford-cs106a-lec25",
+      "stanford-cs106a-lec26",
+      "stanford-cs106a-lec27",
+      "stanford-cs106a-lec28",
+      "cpp-course-beginner-advanced",
+      "neural-network-scratch",
+      "claude-code-course"
+    ],
+    "computer-science": [
+      "stanford-cs106a-lec1",
+      "stanford-cs106a-lec2",
+      "stanford-cs106a-lec3",
+      "stanford-cs106a-lec4",
+      "stanford-cs106a-lec5",
+      "stanford-cs106a-lec6",
+      "stanford-cs106a-lec7",
+      "stanford-cs106a-lec8",
+      "stanford-cs106a-lec9",
+      "stanford-cs106a-lec10",
+      "stanford-cs106a-lec11",
+      "stanford-cs106a-lec12",
+      "stanford-cs106a-lec13",
+      "stanford-cs106a-lec14",
+      "stanford-cs106a-lec15",
+      "stanford-cs106a-lec16",
+      "stanford-cs106a-lec17",
+      "stanford-cs106a-lec18",
+      "stanford-cs106a-lec19",
+      "stanford-cs106a-lec20",
+      "stanford-cs106a-lec21",
+      "stanford-cs106a-lec22",
+      "stanford-cs106a-lec23",
+      "stanford-cs106a-lec24",
+      "stanford-cs106a-lec25",
+      "stanford-cs106a-lec26",
+      "stanford-cs106a-lec27",
+      "stanford-cs106a-lec28"
+    ],
+    "python": [
+      "cs50-python-2022",
+      "3b1b-manim-demo"
+    ],
+    "java": [
+      "java-full-course"
+    ],
+    "mathematics": [
+      "veritasium-markov-chains",
+      "3b1b-neural-network",
+      "3b1b-gradient-descent",
+      "3b1b-backprop-intuition",
+      "3b1b-backprop-calculus",
+      "3b1b-manim-demo"
+    ],
+    "mysticism": [
+      "numerology-beginners",
+      "numerology-divine-triangle-1979"
+    ],
+    "classified-intelligence": [
+      "cia-reality-document"
+    ],
+    "consciousness": [
+      "cia-reality-document"
+    ],
+    "powerapps": [],
+    "ancient-history": [],
+    "cpp": [
+      "cpp-course-beginner-advanced"
+    ],
+    "ai": [
+      "generative-ai-full-course",
+      "attacking-ai-jason-haddix",
+      "3b1b-llm-brief",
+      "3b1b-transformers",
+      "3b1b-attention",
+      "3b1b-llm-facts",
+      "3b1b-ai-images",
+      "openclaw-army",
+      "openclaw-master-course",
+      "openclaw-100hrs-condensed",
+      "openclaw-6hour-course",
+      "openclaw-making-money",
+      "claude-code-course",
+      "openclaw-fixed-setup",
+      "agentic-workflows-course",
+      "claude-phone-calls",
+      "ai-prompting-secrets",
+      "ai-hard-way",
+      "mcp-networkchuck"
+    ],
+    "machine-learning": [
+      "generative-ai-full-course",
+      "3b1b-neural-network",
+      "3b1b-gradient-descent",
+      "3b1b-backprop-intuition",
+      "3b1b-backprop-calculus",
+      "3b1b-llm-brief",
+      "3b1b-transformers",
+      "3b1b-attention",
+      "3b1b-llm-facts",
+      "3b1b-ai-images",
+      "neural-network-scratch"
+    ],
+    "generative-ai": [
+      "generative-ai-full-course",
+      "3b1b-ai-images"
+    ],
+    "cybersecurity": [
+      "openclaw-hacking-video",
+      "ai-hacker-beginner",
+      "attacking-ai-jason-haddix",
+      "bug-hunter-methodology",
+      "bug-hunter-app-analysis",
+      "live-recon-snapchat",
+      "hacker101-javascript",
+      "android-hacking-workshop",
+      "networkchuck-mitm-polish",
+      "manual-hacking-guide",
+      "osint-beginners",
+      "osint-full-course",
+      "osint-5min",
+      "dark-web-exposed"
+    ],
+    "openclaw": [
+      "openclaw-hacking-video",
+      "openclaw-army",
+      "openclaw-master-course",
+      "openclaw-100hrs-condensed",
+      "openclaw-6hour-course",
+      "openclaw-making-money",
+      "openclaw-fixed-setup",
+      "agentic-workflows-course"
+    ],
+    "prompt-injection": [
+      "attacking-ai-jason-haddix"
+    ],
+    "bug-bounty": [
+      "bug-hunter-methodology",
+      "bug-hunter-app-analysis",
+      "live-recon-snapchat",
+      "manual-hacking-guide"
+    ],
+    "penetration-testing": [
+      "bug-hunter-methodology"
+    ],
+    "application-security": [
+      "bug-hunter-app-analysis"
+    ],
+    "reconnaissance": [
+      "live-recon-snapchat",
+      "osint-beginners",
+      "osint-full-course",
+      "osint-5min"
+    ],
+    "javascript": [
+      "hacker101-javascript"
+    ],
+    "web-security": [
+      "hacker101-javascript"
+    ],
+    "neural-networks": [
+      "3b1b-neural-network",
+      "3b1b-gradient-descent",
+      "3b1b-backprop-intuition",
+      "3b1b-backprop-calculus",
+      "neural-network-scratch"
+    ],
+    "llm": [
+      "3b1b-llm-brief",
+      "3b1b-transformers",
+      "3b1b-llm-facts",
+      "ai-prompting-secrets"
+    ],
+    "transformers": [
+      "3b1b-transformers",
+      "3b1b-attention"
+    ],
+    "attention": [
+      "3b1b-attention"
+    ],
+    "diffusion-models": [
+      "3b1b-ai-images"
+    ],
+    "mobile-security": [
+      "android-hacking-workshop"
+    ],
+    "android": [
+      "android-hacking-workshop"
+    ],
+    "networking": [
+      "networkchuck-mitm-polish"
+    ],
+    "mitm": [
+      "networkchuck-mitm-polish"
+    ],
+    "animation": [
+      "3b1b-manim-demo"
+    ],
+    "manim": [
+      "3b1b-manim-demo"
+    ],
+    "manual-testing": [
+      "manual-hacking-guide"
+    ],
+    "osint": [
+      "osint-beginners",
+      "osint-full-course",
+      "osint-5min",
+      "dark-web-exposed"
+    ],
+    "investigation": [
+      "osint-full-course"
+    ],
+    "automation": [
+      "openclaw-army",
+      "openclaw-master-course",
+      "openclaw-100hrs-condensed",
+      "openclaw-6hour-course",
+      "openclaw-making-money",
+      "claude-code-course",
+      "openclaw-fixed-setup",
+      "agentic-workflows-course",
+      "n8n-tutorial",
+      "claude-phone-calls",
+      "ai-hard-way",
+      "mcp-networkchuck"
+    ],
+    "workflow": [
+      "openclaw-army",
+      "openclaw-master-course",
+      "openclaw-100hrs-condensed",
+      "openclaw-6hour-course"
+    ],
+    "multi-agent": [
+      "openclaw-master-course"
+    ],
+    "seo": [
+      "openclaw-6hour-course"
+    ],
+    "business": [
+      "openclaw-making-money",
+      "claude-code-course"
+    ],
+    "monetization": [
+      "openclaw-making-money"
+    ],
+    "claude": [
+      "claude-code-course",
+      "claude-phone-calls"
+    ],
+    "setup": [
+      "openclaw-fixed-setup"
+    ],
+    "troubleshooting": [
+      "openclaw-fixed-setup"
+    ],
+    "workflows": [
+      "agentic-workflows-course",
+      "n8n-tutorial",
+      "ai-hard-way"
+    ],
+    "agents": [
+      "agentic-workflows-course"
+    ],
+    "n8n": [
+      "n8n-tutorial"
+    ],
+    "no-code": [
+      "n8n-tutorial"
+    ],
+    "voice": [
+      "claude-phone-calls"
+    ],
+    "telephony": [
+      "claude-phone-calls"
+    ],
+    "dark-web": [
+      "dark-web-exposed"
+    ],
+    "privacy": [
+      "dark-web-exposed"
+    ],
+    "prompting": [
+      "ai-prompting-secrets"
+    ],
+    "prompt-engineering": [
+      "ai-prompting-secrets"
+    ],
+    "productivity": [
+      "ai-hard-way"
+    ],
+    "mcp": [
+      "mcp-networkchuck"
+    ],
+    "model-context-protocol": [
+      "mcp-networkchuck"
+    ]
+  }
+} [
+      "claude-phone-calls"
+    ],
+    "telephony": [
+      "claude-phone-calls"
+    ],
+    "dark-web": [
+      "dark-web-exposed"
+    ],
+    "privacy": [
+      "dark-web-exposed"
+    ],
+    "prompting": [
+      "ai-prompting-secrets"
+    ],
+    "prompt-engineering": [
+      "ai-prompting-secrets"
+    ],
+    "productivity": [
+      "ai-hard-way"
+    ],
+    "mcp": [
+      "mcp-networkchuck"
+    ],
+    "model-context-protocol": [
+      "mcp-networkchuck"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+CHUNK 8: TESTING RESPONSIVE DESIGN
+Source: powerapps-grid-container-raza | Timestamp: 09:30 - 10:30
+
+Done. I can now test this out.
+
+For testing responsive design, we had to play the app and then pick the different options to view it in different screen sizes. That is still supported.
+
+But apart from that, right here, while designing the app itself, I can pick different screen sizes:
+- Large
+- Medium - you can see how the grid is adjusting the sizing
+- Small
+
+---
+
+And if I preview, this is on a widescreen experience. Here's on a tablet experience held horizontally, held vertically. You can see how well this functions.
+
+---
+
+KEY POINTS:
+- Responsive testing: In-designer screen size picker
+- Options: Large, Medium, Small
+- Preview mode: Test different device experiences
+- Grid automatically adjusts to screen size

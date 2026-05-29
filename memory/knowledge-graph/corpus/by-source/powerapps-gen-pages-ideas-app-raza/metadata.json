@@ -1,0 +1,36 @@
+{
+  "id": "powerapps-gen-pages-ideas-app-raza",
+  "title": "Generative Pages in Power Apps - AI Powered App Creation",
+  "instructor": "Reza (Raza)",
+  "channel": "Power Apps",
+  "url": "https://www.youtube.com/watch?v=p-gjoQJ8Gew",
+  "duration": "11 min",
+  "word_count": 1397,
+  "difficulty": "Intermediate",
+  "category": "Power Platform",
+  "concepts": [
+    "generative-pages",
+    "power-apps",
+    "model-driven-apps",
+    "canvas-apps",
+    "dataverse",
+    "ai-app-creation",
+    "react-pages",
+    "image-to-ui",
+    "theme-switching",
+    "voting-system",
+    "excel-export",
+    "app-agent",
+    "natural-language-development"
+  ],
+  "prerequisites": [
+    "powerapps-fundamentals",
+    "dataverse-basics"
+  ],
+  "related_sources": [
+    "powerapps-model-driven-modern-raza",
+    "powerapps-vibe-coding-raza"
+  ],
+  "ingested": "2026-03-31",
+  "chunks": 3
+}

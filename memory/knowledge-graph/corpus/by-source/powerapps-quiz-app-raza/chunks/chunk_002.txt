@@ -1,0 +1,32 @@
+CHUNK 2: QUIZ TAKER EXPERIENCE - HOME SCREEN
+Source: powerapps-quiz-app-raza | Timestamp: 00:45 - 01:30
+
+The quiz taker Power App experience.
+
+---
+
+The home screen lists out all the available quizzes that have been set up by the administrators of the system.
+
+---
+
+You have the title, description of the quiz. It also includes how many maximum attempts are allowed for the quiz.
+
+---
+
+Currently, I have not taken any of these quizzes. That's why the attempts highlights as zero out of the maximum number that's allowed for that quiz.
+
+---
+
+So, let's take the general knowledge quiz.
+
+---
+
+KEY POINTS:
+- Home screen: Lists available quizzes
+- Quiz info displayed:
+  - Title
+  - Description
+  - Maximum attempts allowed
+  - Current attempts (0 if not taken)
+- Attempt tracking: Shows X out of max attempts
+- Quiz selection: User picks quiz to take

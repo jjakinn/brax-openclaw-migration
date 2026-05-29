@@ -1,0 +1,26 @@
+{
+  "id": "powerapps-excel-to-powerapp-raza",
+  "title": "Transform Excel to Power App - Multi-Sheet Data, Pivot Tables, Relationships",
+  "url": "https://www.youtube.com/watch?v=z9IRLTvBInU",
+  "platform": "YouTube",
+  "duration": "22 min",
+  "duration_seconds": 1320,
+  "word_count": 2850,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "excel-import",
+    "dataverse",
+    "data-model",
+    "lookup-columns",
+    "calculated-columns",
+    "alternate-keys",
+    "data-flows",
+    "model-driven-apps",
+    "pivot-tables"
+  ],
+  "description": "Complete tutorial on transforming Excel files with multiple sheets, related data, and pivot tables into fully functional Power Apps. Covers Dataverse table creation, relationships, calculated columns, data import with lookup mapping, and AI-generated pages."
+}

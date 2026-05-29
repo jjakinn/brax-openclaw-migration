@@ -1,0 +1,34 @@
+{
+  "version": "2.0",
+  "description": "Concept Template - Created automatically during ingestion",
+  
+  "concept_id": "kebab-case-concept-name",
+  "display_name": "Human Readable Concept Name",
+  "category": "domain/subdomain",
+  
+  "mentions": {
+    "index_format": {
+      "source_id": "source-id",
+      "chunk_ids": ["001", "005", "012"],
+      "context_snippets": ["...", "..."],
+      "relevance_score": 0.95
+    },
+    "sources": []
+  },
+  
+  "synthesis": {
+    "available": false,
+    "file_path": "corpus/by-concept/{concept-id}/synthesis.md",
+    "last_updated": ""
+  },
+  
+  "contradictions": {
+    "available": false,
+    "count": 0,
+    "file_path": "corpus/by-concept/{concept-id}/contradictions.json"
+  },
+  
+  "related_concepts": [],
+  "prerequisites": [],
+  "difficulty": "beginner|intermediate|advanced"
+}

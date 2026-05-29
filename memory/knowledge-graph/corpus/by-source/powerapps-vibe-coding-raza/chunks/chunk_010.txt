@@ -1,0 +1,38 @@
+CHUNK 10: BRINGING EXISTING DATA
+Source: powerapps-vibe-coding-raza | Timestamp: 22:00 - 25:00
+
+Now if I head back to data, Vibe is recommending new tables to begin with. And I can see that they are all draft mode right now because they are not yet created. And I can confirm all of this because if I head back to my solution in this context, my preferred solution, you will note that the solution is completely empty.
+
+What if I already have a customer table? I do not need a new customer table that Vibe is suggesting.
+
+So what I will do here is I will first go ahead and remove the customer table. Now bear in mind when I remove this table, this table there is a many to one relationship with the order table. So that will remove that relationship as well. If I remove this table. So I'll go ahead and remove the customer table.
+
+Observe the table's gone. The order table currently does not have a customer reference.
+
+---
+
+I have my own customer table that is already created in this environment. So I'll go to add table and I can bring in my existing data as well. You can frame your entire data model from your existing tables if desired.
+
+I'll go to existing. I have a table called customer info. I'll select add that table right here and close the chat panel for now.
+
+Here is customer info. This is an actual table in Dataverse. You can see the symbol for Dataverse. There's no draft notation.
+
+If I look at view data, this has details about customers including metadata.
+
+---
+
+Let's launch the chat panel again. Now I'll say create a relationship between order and customer info tables. Go. I could have done this manually as well.
+
+You can see the relationship created. I'll go to view data. Now customer info will be empty. But observe if I double click it's listing out all my customers from the customer info table. This I'm exploring through the order table column.
+
+---
+
+KEY POINTS:
+- Draft tables confirmed by empty solution initially
+- Can REMOVE auto-generated tables if not needed
+- Removing tables removes their relationships too
+- **Bring existing data**: Add table → Existing → Select Dataverse table
+- Existing tables show Dataverse symbol (no "draft" label)
+- Can build entire data model from existing tables
+- Agent can create relationships between tables via prompt
+- Relationship appears in column lookup

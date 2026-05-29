@@ -1,0 +1,53 @@
+{
+  "source_id": "stanford-cs106a-lec1",
+  "display_name": "Stanford CS106A: Programming Methodology - Lecture 1",
+  "author": "Mehran Sahami (Stanford University)",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "Stanford University",
+    "year": 2020,
+    "url": "https://www.youtube.com/watch?v=KkMDCCdjyW8",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 3
+  },
+  "length": {
+    "pages": 0,
+    "words": 11403,
+    "duration_minutes": 50,
+    "chunk_count": 3
+  },
+  "structure": {
+    "parts": [
+      "Introduction",
+      "What is Programming?",
+      "Karel the Robot",
+      "First Programs"
+    ],
+    "chapters": [
+      "Course Introduction",
+      "History of Computing",
+      "Programming Fundamentals",
+      "Karel Programming Environment"
+    ]
+  },
+  "concepts_covered": [
+    "programming-methodology",
+    "karel-the-robot",
+    "algorithms",
+    "problem-solving",
+    "syntax",
+    "semantics",
+    "computer-science-fundamentals"
+  ],
+  "domains": [
+    "coding",
+    "computer-science"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/stanford-cs106a-lec1/chunks/"
+  }
+}

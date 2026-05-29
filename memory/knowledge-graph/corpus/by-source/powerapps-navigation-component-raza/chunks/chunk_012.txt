@@ -1,0 +1,21 @@
+CHUNK 12: TESTING NAVIGATION
+Source: powerapps-navigation-component-raza | Timestamp: 16:30 - 17:30
+
+Now they can navigate to the other screens. If I click on work, this takes me to the work screen. All I have to do is set up my navigation component.
+
+Done.
+
+My navigation component is ready in my work screen. Click on home takes me to the home screen. Click on work takes me to the work screen.
+
+---
+
+Log out will not work when I am editing the app. But if I publish the app and if I play the app, when the user clicks log out, it will exit the user from the app.
+
+---
+
+KEY POINTS:
+- Navigation works across screens
+- Component appears on all screens where inserted
+- Active indicator updates based on current screen
+- Logout: Only works in published/played app (not in editor)
+- Exit() function closes the running app

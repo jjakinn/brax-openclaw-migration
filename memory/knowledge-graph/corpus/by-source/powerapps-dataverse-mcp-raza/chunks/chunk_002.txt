@@ -1,0 +1,19 @@
+CHUNK 2: WHAT IS MCP - MODEL CONTEXT PROTOCOL
+Source: powerapps-dataverse-mcp-raza | Timestamp: 01:00 - 02:00
+
+MCP stands for Model Context Protocol. It is an open standard that allows large language models to safely interact with external systems, data, and tools.
+
+Think of MCP as a bridge or a translator. It lets AI agents communicate with systems, tools, and data safely and in a structured way.
+
+---
+
+MCP works like a USB port for AI. Every tool fits because MCP is that universal connection format.
+
+---
+
+KEY POINTS:
+- MCP = Model Context Protocol
+- Type: Open standard
+- Purpose: LLMs safely interact with external systems, data, tools
+- Analogy: Bridge/translator between AI and systems
+- Another analogy: USB port for AI (universal connection)

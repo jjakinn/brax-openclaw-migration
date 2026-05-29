@@ -1,0 +1,47 @@
+CHUNK 5: PLAN DESIGNER - AI-ASSISTED LOW CODE
+Source: powerapps-tools-ecosystem-raza | Timestamp: 05:00 - 07:30
+
+We have plan designer.
+
+I can simply describe a problem statement, a scenario. "Build a simple claims reimbursement system. Users can submit claims. Each claim has a status. Admin can view and update the status."
+
+I'll click generate.
+
+---
+
+And the plan designer's suite of agents spring into action:
+- The requirements agent
+- The data agent
+- The solution agent
+
+Requirements agent lists out the user requirements which can be fully customized.
+
+---
+
+Next, the data agent frames the data model. We can see the data model that it is recommending.
+
+We have full flexibility to change the data model, add new tables, add columns, update columns, create relationships, bring data from existing tables and more.
+
+---
+
+Once your data model is defined, I'll say looks good. And then comes the technology agent that recommends a suite of objects that you can create to solve your business problem:
+- Model-driven apps
+- Canvas apps
+- Power Automate flows
+- Agents
+- Pages and more
+
+---
+
+These are simply recommendations. I'll say looks good.
+
+---
+
+KEY POINTS:
+- Plan Designer: AI-assisted low-code development
+- Three agents:
+  1. Requirements agent: User requirements (customizable)
+  2. Data agent: Data model recommendations
+  3. Technology agent: Suggests apps, flows, agents, pages
+- Human control: Can customize everything before proceeding
+- Data model flexibility: Modify tables, columns, relationships

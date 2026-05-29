@@ -1,0 +1,24 @@
+{
+  "id": "powerapps-modern-card-control-raza",
+  "title": "Power Apps Modern Card Control - Build Dynamic Responsive Cards",
+  "url": "https://www.youtube.com/watch?v=vkmdsIL_zXA",
+  "platform": "YouTube",
+  "duration": "12 min",
+  "duration_seconds": 720,
+  "word_count": 1900,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "powerapps-modern-controls",
+    "card-control",
+    "responsive-design",
+    "gallery",
+    "sharepoint",
+    "thumbnails",
+    "svg-icons"
+  ],
+  "description": "Complete guide to the modern card control in Power Apps. Learn to build dynamic, responsive card experiences with images, headers, descriptions, and data binding to SharePoint document libraries and lists."
+}

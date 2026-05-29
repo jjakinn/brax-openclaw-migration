@@ -1,0 +1,37 @@
+{
+  "checkpoint_type": "batch_ingestion_complete",
+  "batch_id": "stanford-cs106a-lectures-7-28",
+  "timestamp": "2026-03-23T17:50:00Z",
+  "status": "COMPLETE",
+  "summary": {
+    "lectures_processed": 22,
+    "lecture_range": "7-28",
+    "total_words": 221845,
+    "total_chunks": 76,
+    "playlist": "Stanford CS106A Programming Methodology"
+  },
+  "lectures": {
+    "7": {"words": 11241, "chunks": 4},
+    "8": {"words": 10295, "chunks": 3},
+    "9": {"words": 11272, "chunks": 4},
+    "10": {"words": 10571, "chunks": 4},
+    "11": {"words": 10917, "chunks": 4},
+    "12": {"words": 10131, "chunks": 3},
+    "13": {"words": 9808, "chunks": 3},
+    "14": {"words": 9692, "chunks": 3},
+    "15": {"words": 10372, "chunks": 3},
+    "16": {"words": 10597, "chunks": 4},
+    "17": {"words": 10858, "chunks": 4},
+    "18": {"words": 10010, "chunks": 3},
+    "19": {"words": 10354, "chunks": 3},
+    "20": {"words": 9464, "chunks": 3},
+    "21": {"words": 10017, "chunks": 3},
+    "22": {"words": 9851, "chunks": 3},
+    "23": {"words": 8550, "chunks": 3},
+    "24": {"words": 10574, "chunks": 4},
+    "25": {"words": 10393, "chunks": 3},
+    "26": {"words": 9766, "chunks": 3},
+    "27": {"words": 8755, "chunks": 3},
+    "28": {"words": 8357, "chunks": 3}
+  }
+}

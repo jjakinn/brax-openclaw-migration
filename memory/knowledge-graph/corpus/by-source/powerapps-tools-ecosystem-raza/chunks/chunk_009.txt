@@ -1,0 +1,43 @@
+CHUNK 9: VIBE CODING - VIBE.POWERAPPS.COM
+Source: powerapps-tools-ecosystem-raza | Timestamp: 11:45 - 14:00
+
+Vibe code for makers and developers. We now have a new endpoint: vibe.powerapps.com
+
+which allows us to build a full stack app. Currently the data source that it designs is Dataverse.
+
+This isn't a canvas app. This isn't a model driven app. It's vibe. The app type is a code app.
+
+In make.powerapps.com, we have an option to try out the new experience which has the endpoint that we can directly fire as well which is vibe.powerapps.com which takes us to a brand new experience for creating applications.
+
+---
+
+Enterprise scale, full stack, the app is built in a solution context, ALM supported and more.
+
+Let's describe what we want to build: "I need a comprehensive project portfolio and status tracker. The system should allow users to create, categorize and manage multiple projects with detailed metadata. Include dashboard boards and milestone tracking."
+
+Go. The magic begins.
+
+---
+
+Four agents are working with me:
+- The requirements agent to create the plan that defines the user roles based on the description.
+- The data agent that designs the data model. All of this completely customizable by us, the human in control.
+- The code agent that builds out the full stack React app
+- The solution agent analyzes our business problem and uses AI to help generate the design of our app.
+
+---
+
+KEY POINTS:
+- Vibe portal: vibe.powerapps.com
+- Output: Full-stack React app (code app type)
+- Data source: Dataverse
+- Not: Canvas app or Model-driven app
+- Enterprise features:
+  - Solution context
+  - ALM support
+  - Full-stack
+- Four agents:
+  1. Requirements agent: User roles and plan
+  2. Data agent: Data model design
+  3. Code agent: React app build
+  4. Solution agent: App design

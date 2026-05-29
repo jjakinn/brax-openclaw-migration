@@ -1,0 +1,31 @@
+CHUNK 15: FILTER INDICATOR IN HEADER
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 18:30 - 19:30
+
+Now when an actual filter is applied on the title column, I would like to give an indicator next to the title button in the header.
+
+---
+
+For that, I'll simply copy this reset icon. Go to my header container. Paste. Position this right next to title.
+
+---
+
+The icon I'll pick: Filter.
+
+---
+
+Visible property for this icon will be: `txtTitle.Value <> ""`
+
+The text input control value is not equal to an empty string.
+
+---
+
+I'll search for "review". Now the filter is applied. I can see the filter icon for the title column. If I click this, it will clear the filter.
+
+---
+
+KEY POINTS:
+- Filter indicator: Visual cue that filter is active
+- Icon: Filter icon next to column header
+- Visibility: `FilterIcon.Visible = (TextInput.Text <> "")`
+- Placement: In header container next to sort button
+- Interactivity: Click icon to clear filter (optional enhancement)

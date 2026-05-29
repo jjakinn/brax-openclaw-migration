@@ -1,0 +1,24 @@
+CHUNK 1: INTRODUCTION — THE HYPE VS REALITY
+Source: networkchuck-openclaw-review-2026 | Timestamp: 00:00 - 01:45
+
+Okay, here we go. Open Claw. We're going to need two copies for this.
+
+This software is the reason AI has been stressing me out so much. See this video here, but you can't ignore it, even though I want to, even though I kind of hate it. It's here. Currently, it has 308,000 GitHub stars, beating React and the Linux kernel somehow. The creator got aqua hired by OpenAI, and everyone's copying it. Just last week, Anthropic dropped channels in Dispatch.
+
+So, that begs the question, do we even need OpenClaw? Am I using OpenClaw? Short answer, yes. I've been using it since it first came out. I've got seven agents running. And I've been talking to Peter, the creator of OpenClaw, before it was even called OpenClaw, actually helped with the rebrand. But I also kind of hate it. And it's not what you think it is.
+
+---
+
+But you have to admit it's pretty cool. Put the hype aside. Look at this. Remember when we built our news aggregator inside N8N? A bunch of nodes, a bunch of hours. It was cool, but then Open Claw can oneshot this in one sentence. Same thing for our IT engineer. We spent a lot of time building that inside N8. Open Claw crushes it in seconds.
+
+So my goal for this video is to put the hype aside and really answer the question, should you care about this? And normally I would say by the end of this video, you're going to have your very own OpenClaw agent set up. No, I'm going to break a YouTube rule right now. I'm going to walk you through setting it up right now at the beginning because I think it's one of those things where you just have to try it. Like get it set up and have it do something. It'll take 5 minutes.
+
+---
+
+KEY POINTS:
+- OpenClaw: 308K GitHub stars, beating React and Linux kernel
+- Creator (Peter) acqui-hired by OpenAI
+- Everyone copying it: Anthropic channels, etc.
+- NetworkChuck uses 7 agents, helped with rebrand
+- N8N comparison: What took hours in N8N, OpenClaw does in one sentence
+- Video structure: Setup FIRST (5 min), then theory, then security

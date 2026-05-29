@@ -1,0 +1,51 @@
+{
+  "source_id": "stanford-cs106a-lec2",
+  "display_name": "Stanford CS106A: Programming Methodology - Lecture 2",
+  "author": "Mehran Sahami (Stanford University)",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "Stanford University",
+    "year": 2020,
+    "url": "https://www.youtube.com/watch?v=0LoKDDRlfZc",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 3
+  },
+  "length": {
+    "pages": 0,
+    "words": 10345,
+    "duration_minutes": 48,
+    "chunk_count": 3
+  },
+  "structure": {
+    "parts": [
+      "Karel Programming",
+      "Problem Solving",
+      "Algorithms"
+    ],
+    "chapters": [
+      "Karel Commands Review",
+      "Building Programs",
+      "Control Structures",
+      "Problem Decomposition"
+    ]
+  },
+  "concepts_covered": [
+    "karel-programming",
+    "algorithms",
+    "problem-solving",
+    "decomposition",
+    "control-structures",
+    "program-design"
+  ],
+  "domains": [
+    "coding",
+    "computer-science"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/stanford-cs106a-lec2/chunks/"
+  }
+}

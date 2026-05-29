@@ -1,0 +1,46 @@
+CHUNK 12: CODE APPS DEMO AND INVENTORY
+Source: powerapps-tools-ecosystem-raza | Timestamp: 17:30 - 19:30
+
+Here is my code app that I built in Visual Studio Code. Full stack React app.
+
+We have the power to run it locally and at the same time it can leverage the connector ecosystem.
+
+In case of my app, the data source that I've connected to is a SharePoint list. Here is my app that shows data from that list in a table.
+
+---
+
+Now let's try and make changes to the code while I'm running it locally.
+
+My main app file I'll update the code. I've changed the styles of the table. I'll save.
+
+Live. It has made the updates.
+
+---
+
+For me to deploy this. I'll just run the build and one single command pack code push will push the changes to my connected Power Platform environment.
+
+---
+
+Here are some examples of code apps that I built and deployed in my Power Platform environments.
+
+An app inventory, an inventory that gives you visibility into every type of app that is created in the Power Platform ecosystem.
+
+And this thanks to the new inventory reports in the admin center.
+
+---
+
+Here is the maker inventory of all my environments.
+
+Now the inventory shows every type of app agents and flows. So if I would like to see all the app builder apps, I can filter down to this level.
+
+I can look at canvas apps, model driven apps and code apps.
+
+---
+
+KEY POINTS:
+- Local development: Run locally + leverage connectors
+- Data source example: SharePoint list
+- Live reload: Changes reflect immediately during development
+- Deployment: `pac code push` command
+- App inventory: New admin center reports show ALL app types
+- Unified view: App Builder, Canvas, Model-driven, Code apps

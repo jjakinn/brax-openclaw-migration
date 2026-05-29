@@ -1,0 +1,17 @@
+CHUNK 2/2
+
+[03:00 - 06:00]
+
+Back to preview. Let's keep prompting the app agent. Style my dashboard based on my company's brand standards. Create a professional dashboard theme using a dark background. I'm being specific with the color code with primary colors, secondary accent colors, over states, card styles, and more. I'll hit send. The app agent will regenerate the page with the updated code and the app agent has made the updates and see the hover states the theme colors all described by me to the agent.
+
+The charts let's add some animations to it. Make the charts come to life with smooth quick animations. Bar charts should grow from the bottom up when they appear. Lines should draw themselves across the chart from left to right and more. You can get very specific with the kind of animations and transitions you would like to have.
+
+Once again, I'll ask the app agent to generate the React page. The app agent has made the updates, added the animations, the hover effects. We can save, publish, and play the app. Here is my dashboard screen in the model app with the chart experience. Here we can also make it interactive. Meaning when the user clicks or selects a part of a chart, it should filter the tickets table to only show the tickets that match that chart selection.
+
+Let's ask the app agent to do that for us. The updates are made. Let's look at the 59 hardware tickets interactive. It applies the filter on the tickets list and it lists out all the hardware tickets.
+
+You can keep describing the updates you need to your app agent. Add a simple toggle to switch between dark mode, light mode. I hit submit and it begins the magic.
+
+On similar lines, this is the dashboard that I built. I've added that toggle switch on the top right. When the user selects, you can see how the theme of the dashboard changes.
+
+If you enjoyed this video, then do like, comment, and subscribe to my YouTube channel. And thank you so much for watching.

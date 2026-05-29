@@ -1,0 +1,27 @@
+CHUNK 3/4
+
+[06:30 - 09:45]
+
+for the agent to act autonomously when a new claim is submitted. We will set up a trigger for the agent.
+
+The trigger will be when a row is added in Microsoft data versse. The trigger name I'll say when a row is submitted creates the connection to copilot studio and data versse. I'll click next.
+
+change type added. So when a row is added in my claims table scope organization and in the instructions it uses the content from body.
+
+Let's create the trigger. This in turn behind the scenes creates an agent flow. The trigger has been added. I'll click close.
+
+Here's the trigger. Let's click on it. And this will launch the agent flow in Power Automate. The flow triggers when an item is added in my claims table and then it will send a prompt to our co-pilot which is our claim evaluation agent.
+
+And the prompt is as follows. Now let's change this. Instead of sending the body that includes the entire record details, let's be very specific to the agent. First thing I would like to pass is the row ID. That's the unique identifier of the record. Next, I'll give it the title of the claim. And then I will provide the amount of the claim. These are the three key pieces of information that my agent would need. I'll go ahead and publish my agent flow.
+
+The agent flow is published. My agent is ready. Let me go ahead and publish my agent as well.
+
+To test the trigger, we have the option for test trigger. This looks at any recent triggered runs of the flow. I don't have one because I need to first go ahead and create a claim.
+
+So, let's go ahead and add a claim in my app. I'll go ahead and create a new claim. I'll say running shoes, my purchase date, my purchase price. I will go ahead and save this. Here's my record. The claim status submitted the trigger. Let's test. There is no event yet. That's because the flow has not yet triggered.
+
+My flow has triggered successfully in the agent. If we head over to activity, we can see the actions that the agent has performed. The last step that the agent executed was running our tool which is review the claim. You can see the agent got initiated with the following details and then call the review the claim action to update the status in my app. If I look at running shoes, the claim is approved because it's a valid claim and it is less than $500.
+
+Let's try another one. ergonomic chair more than the amount. Submit my request. Once the flow is triggered, here is another activity. It's gone ahead and completed the request. In this case, the claim has been rejected as it's greater than the desired amount.
+
+So the agent is autonomously able to handle my claims reimbursement based upon my company policy.

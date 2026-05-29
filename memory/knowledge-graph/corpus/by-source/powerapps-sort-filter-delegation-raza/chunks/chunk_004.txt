@@ -1,0 +1,35 @@
+CHUNK 4: SHAREPOINT DELEGABLE SORT COLUMNS
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 02:30 - 03:30
+
+Let's try sorting on the priority column which in my case is a choice column.
+
+So `priority.value`
+
+Observe that this is a non-delegable query.
+
+---
+
+If we explore the documentation specifically to delegation with SharePoint, the only columns that we can sort on that are delegable are:
+- Number (that's the ID column)
+- Text (the title column in my case)
+- Boolean
+- Date time (that's my due date column)
+
+---
+
+We cannot perform a delegable sort on complex type columns like choice, lookup, person and more. That's a limitation.
+
+---
+
+KEY POINTS:
+- SharePoint delegable sort columns:
+  - Number (ID)
+  - Text (Title)
+  - Boolean
+  - Date/Time
+- Non-delegable sort columns:
+  - Choice
+  - Lookup
+  - Person
+  - Complex types
+- Workaround: Use `.Value` for choice columns (but not delegable)

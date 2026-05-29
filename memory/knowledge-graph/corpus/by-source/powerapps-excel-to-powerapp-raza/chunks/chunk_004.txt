@@ -1,0 +1,36 @@
+CHUNK 4: SUPPLIER TABLE CONFIGURATION
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 03:15 - 04:30
+
+So at this point as we can see it's connecting. It's going to recommend tables that it would create based upon the information coming from my Excel file.
+
+---
+
+So let's begin with the supplier table. Ellipses → View data.
+
+---
+
+This shows all the columns that it has mapped from my Excel file. It also shows the data that it would be importing.
+
+---
+
+Each of the columns here has an associated data type and a format. Here you have the option to change the display name or the data types.
+
+---
+
+Supplier name: I would want to make this a required field. So I'll go ahead and update.
+
+---
+
+Contact person, I'll make this required as well. Email, phone, website, address, and rating: I'll keep it as is.
+
+---
+
+Notice how these different columns are being mapped to different types of data.
+
+---
+
+KEY POINTS:
+- Review imported columns: Data types, formats
+- Required fields: Supplier name, Contact person
+- Data types: Text, Email, Phone, etc.
+- First row: Headers identified automatically

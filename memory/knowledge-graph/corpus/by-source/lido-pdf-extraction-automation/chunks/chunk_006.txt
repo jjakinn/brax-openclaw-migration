@@ -1,0 +1,20 @@
+CHUNK 6: BATCH PROCESSING MULTIPLE INVOICES
+Source: lido-pdf-extraction-automation | Timestamp: 03:40 - 04:40
+
+All right, let's delete those rows. Let's delete this document, this file. Let's click to upload two files this time. I'm going to take that one again, and then this second one, open them both up. And I know that it's going to have these same columns that I want in here. So, I'm going to click extract. And then I'm going to click extract.
+
+It already processed this one quickly because it saw that was the same document that it had previously uploaded, but then it goes through and it extracts the data from the second document as well. So, we've got a running list of rows for all of the data here.
+
+---
+
+KEY POINTS:
+- Batch processing: Upload multiple PDFs at once
+- Workflow for batch extraction:
+  1. Delete previous rows
+  2. Delete previous document
+  3. Upload multiple files
+  4. Click Extract
+- Caching: Previously processed documents extract instantly
+- New documents processed sequentially
+- Result: Running list of all extracted data rows from multiple invoices
+- Efficient for bulk invoice processing

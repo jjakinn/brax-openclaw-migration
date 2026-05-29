@@ -1,0 +1,76 @@
+{
+  "source_id": "cs50-python-2022",
+  "display_name": "CS50's Introduction to Programming with Python (2022)",
+  "author": "David J. Malan (Harvard)",
+  "type": "course",
+  "format": "url",
+  "metadata": {
+    "publisher": "Harvard University",
+    "year": 2022,
+    "url": "https://www.youtube.com/watch?v=nLRL_NcnK-4",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 37
+  },
+  "length": {
+    "pages": 0,
+    "words": 183775,
+    "duration_minutes": 958,
+    "chunk_count": 37
+  },
+  "structure": {
+    "parts": [
+      "Functions and Variables",
+      "Conditionals",
+      "Loops",
+      "Exceptions",
+      "Libraries",
+      "Unit Tests",
+      "File I/O",
+      "Regular Expressions",
+      "Object-Oriented Programming",
+      "Et Cetera"
+    ],
+    "chapters": [
+      "Python Basics",
+      "Functions",
+      "Booleans and Conditionals",
+      "Loops",
+      "Exceptions",
+      "Libraries and APIs",
+      "Unit Testing",
+      "File I/O",
+      "Regular Expressions",
+      "Object-Oriented Programming",
+      "Advanced Topics"
+    ]
+  },
+  "concepts_covered": [
+    "python",
+    "functions",
+    "variables",
+    "conditionals",
+    "loops",
+    "exceptions",
+    "libraries",
+    "apis",
+    "unit-testing",
+    "file-io",
+    "regular-expressions",
+    "oop",
+    "classes",
+    "inheritance",
+    "decorators",
+    "comprehensions",
+    "generators"
+  ],
+  "domains": [
+    "coding",
+    "python"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/cs50-python-2022/chunks/"
+  }
+}

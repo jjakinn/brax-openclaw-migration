@@ -1,0 +1,21 @@
+CHUNK 4: CONCATENATE IN ITEM LABELS
+Source: powerapps-modern-combo-box-raza | Timestamp: 06:00 - 07:00
+
+Now I can select it. My selection is done.
+
+Item label text. You're not limited to display just one property here. I could use the concatenate function to concatenate the title along with other properties coming from my data source.
+
+I'll concatenate text hyphen and then I'll concatenate thisItem.ID.
+
+So now if you observe when I open the combo box or when I'm searching or when I make my selections it will include the title hyphen the ID.
+
+---
+
+KEY POINTS:
+- Item label text supports formula expressions
+- Can display multiple properties using `Concatenate()`
+- Example: `Concatenate(thisItem.Title, " - ", thisItem.ID)`
+- Concatenated display appears in:
+  - Dropdown list
+  - Search results
+  - Selected items

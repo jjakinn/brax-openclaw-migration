@@ -1,0 +1,41 @@
+CHUNK 17: RESPONSIVE ICON-ONLY MODE
+Source: powerapps-navigation-component-raza | Timestamp: 26:00 - 28:00
+
+Here I now have an option for reports. Here is the submenu for reports.
+
+The menu works fine in a widescreen experience, tablet experience. But if I go to the mobile experience, you can see there's not enough real estate here to show the text.
+
+So what if I want to only show the icons in this case? We can easily do that.
+
+---
+
+For the component where I have these buttons. The layout is icon before. There is also a layout that says icon only.
+
+All I have to do is change the layout dynamically depending upon the width that's available.
+
+`If(Parent.Width < 200, IconOnly, IconBefore)`
+
+---
+
+I want to do this for the main button as well as the button showing the submenus.
+
+---
+
+Now notice it changes to icon only.
+
+---
+
+I can do the same thing for the image on the top. Let's not show the user's name and department if there is not enough real estate to do so. So these will be visible only if the `Parent.Width > 200`.
+
+---
+
+There we go.
+
+---
+
+KEY POINTS:
+- Responsive behavior: Switch to icon-only on narrow screens
+- Layout formula: `If(Parent.Width < 200, IconOnly, IconBefore)`
+- Apply to: Main menu buttons AND submenu buttons
+- User info visibility: `Visible = Parent.Width > 200`
+- Mobile optimization: Clean icon-only interface

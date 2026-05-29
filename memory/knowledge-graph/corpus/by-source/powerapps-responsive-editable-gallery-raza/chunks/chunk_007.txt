@@ -1,0 +1,39 @@
+CHUNK 7: HORIZONTAL SCROLL SETUP
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 11:00 - 13:00
+
+Now my gallery, you can see I get the vertical scroll because it's a vertical gallery and there is not enough real estate to fit the rows. But how do I get that horizontal scroll?
+
+---
+
+So here's the trick. This gallery has a minimum width property. This minimum width you set it to the last control that you are lining up in your container in the gallery.
+
+My last control is my combo box for stock status.
+
+---
+
+So for the gallery's layout minimum width property I'll use the following formula: my stock status combo box.X position plus the combo box width.
+
+---
+
+Now if I preview I still don't see the horizontal scroll. Well that's because the container in which this gallery is sitting has a horizontal overflow property. It's set to hide. Let's change that to scroll.
+
+---
+
+Now if I preview observe I get this horizontal scroll experience.
+
+I'm on a tablet device. Let's change the orientation. You see how well it scrolls through all the columns.
+
+If I go to a widescreen experience, there's enough real estate to fit all the columns. No need for that scroll.
+
+Mobile experience. Here's the scroll that takes me through all the columns. The horizontal scroll is working very well.
+
+---
+
+KEY POINTS:
+- Gallery has vertical scroll by default
+- Horizontal scroll requires two settings:
+  1. **Gallery Layout MinimumWidth**: `LastControl.X + LastControl.Width`
+  2. **Parent container HorizontalOverflow**: Change from "Hide" to "Scroll"
+- Last control: Rightmost control in the gallery row
+- Result: Horizontal scroll appears when content exceeds screen width
+- Responsive: Works on all device sizes (desktop, tablet, mobile)

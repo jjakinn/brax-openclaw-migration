@@ -1,0 +1,42 @@
+CHUNK 8: FOLLOW-UP QUESTIONS AND UPDATE OPERATIONS
+Source: powerapps-dataverse-mcp-raza | Timestamp: 08:00 - 09:00
+
+Let's ask a follow-up question: "How many claims are more than $200?"
+
+And it responds with, "There are five claims with an amount greater than $200."
+
+---
+
+"Get me the details for the claim fitness mat."
+
+Here are the details.
+
+---
+
+"I want to update the amount for this to $200."
+
+Currently, it was set to 300. Done. It's changed the amount to $200.
+
+---
+
+All of this is happening live against my data source.
+
+If we explore my table for claim fitness mat, the amount has been updated to $200.
+
+---
+
+And you can also see the tool that the Dataverse MCP server utilized to perform the update.
+
+---
+
+My copilot is responding using real Dataverse data and it can work with any table.
+
+---
+
+KEY POINTS:
+- Follow-up questions: Contextual understanding
+- Aggregation: "How many..." returns counts
+- Update operations: Natural language → Record update
+- Verification: Changes reflected in Dataverse
+- Tool visibility: Can see which MCP tool was used
+- Universal: Works with any table in environment

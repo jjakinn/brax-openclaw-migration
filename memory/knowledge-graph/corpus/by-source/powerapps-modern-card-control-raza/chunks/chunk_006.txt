@@ -1,0 +1,15 @@
+CHUNK 6: CARD SAMPLES
+Source: powerapps-modern-card-control-raza | Timestamp: 05:30 - 06:00
+
+Let me showcase a few card samples.
+
+Here's a vertical card with description. Here is a vertical card experience with the header on the top. And here is a horizontal card experience with a long description, no image.
+
+---
+
+KEY POINTS:
+- Sample layouts:
+  1. Vertical card with description
+  2. Vertical card with header on top
+  3. Horizontal card with long description, no image
+- Flexible layout options

@@ -1,0 +1,17 @@
+CHUNK 6: PEOPLE PICKER IN ACTION
+Source: powerapps-modern-combo-box-raza | Timestamp: 09:30 - 10:30
+
+Now, if I open the combo box, it lists out users from Microsoft Entra in my tenant. I only have a few users. Imagine having 10,000 users. If I open this, it will load up to 999.
+
+I can of course search for users. For example, if I search for Raza, I have two users with that display name. I can select done.
+
+I can open make other selections. Done. Easily able to multi-select. This was not possible before because the combo box had certain limitations which have now been addressed with the recent updates.
+
+---
+
+KEY POINTS:
+- Opens showing up to 999 users from Entra
+- Search filters across all users in tenant
+- Multi-select: Select multiple users, click Done
+- Previous limitation: Couldn't do multi-select people picker
+- Recent updates: Fixed these limitations

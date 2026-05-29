@@ -1,0 +1,30 @@
+CHUNK 9: BUILDING FORM WITH GRID CONTAINER
+Source: powerapps-grid-container-raza | Timestamp: 10:30 - 11:30
+
+And now let's try to build a screen in which we will add controls to create a form experience for the end users.
+
+To build a screen like this using the grid container.
+
+Once again, start with a screen template. I'll pick header and footer. Remove the footer.
+
+For the header, I'll pick the modern header control. I'll call this "New Customer Form".
+
+---
+
+The main container, I'll remove this. I'll select the main screen container. In the main screen container, I will insert the grid container.
+
+---
+
+Now to design the form, I need labels, input fields, and more. Now, it's important for us to define the number of columns and rows we need for our grid container.
+
+I need 2 columns and I need around 9 rows.
+
+My grid container number of columns I'll set to 2. Number of rows I've set to 9.
+
+---
+
+KEY POINTS:
+- Form design with grid: 2 columns, 9 rows
+- Setup: Header + Grid container
+- Modern header control for form title
+- Define grid dimensions before adding controls

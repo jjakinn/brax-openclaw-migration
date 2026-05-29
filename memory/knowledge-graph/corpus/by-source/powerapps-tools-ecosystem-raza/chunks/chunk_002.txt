@@ -1,0 +1,34 @@
+CHUNK 2: APP BUILDER AGENT IN M365 COPILOT
+Source: powerapps-tools-ecosystem-raza | Timestamp: 01:00 - 03:00
+
+The app builder agent in M365 Copilot is meant for personal and team productivity based scenarios.
+
+For enterprise scale scenarios, there are options from low code to vibe code to pro code.
+
+---
+
+Now let's go through each of these experiences one by one. Let's start with app builder specific to M365 Copilot.
+
+The back end that it utilizes is SharePoint. No connectors, no formulas, no Power App Studio. You simply describe your app needs in natural language.
+
+---
+
+In M365 Copilot, in the Frontier program, we have the new app builder agent.
+
+Here we can simply describe in everyday words what kind of an application we would like to build. Since it's a part of M365 copilot, the creator of this application and the users to whom you share this app with will require an M365 Copilot license.
+
+---
+
+My description: "Build me an app where people can submit ideas. It should capture the title, description, impact, and let others vote on the ideas."
+
+I'll go ahead and begin the process of creating this app.
+
+---
+
+KEY POINTS:
+- App Builder Agent: Personal and team productivity scenarios
+- Location: M365 Copilot (Frontier program)
+- Backend: SharePoint
+- Requirements: M365 Copilot license for creator AND users
+- Approach: Natural language description → App generated
+- No: Connectors, formulas, Power Apps Studio needed

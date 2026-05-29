@@ -1,0 +1,37 @@
+CHUNK 7: ADMIN EXPERIENCE - QUIZ MANAGEMENT
+Source: powerapps-quiz-app-raza | Timestamp: 04:00 - 05:00
+
+Now let's explore the admin experience.
+
+---
+
+The quiz admin app shows a list of active quizzes.
+
+---
+
+For each quiz, I can define:
+- The name
+- Description
+- The category
+- The pass percentage
+- The maximum number of attempts allowed
+
+---
+
+Once I have my quiz defined, I can go ahead and start framing my questions.
+
+---
+
+These are all the questions for the general knowledge quiz.
+
+---
+
+KEY POINTS:
+- Admin app: Separate from quiz taker app
+- Quiz configuration:
+  - Name
+  - Description
+  - Category
+  - Pass percentage
+  - Max attempts
+- Question management: Add/edit questions per quiz

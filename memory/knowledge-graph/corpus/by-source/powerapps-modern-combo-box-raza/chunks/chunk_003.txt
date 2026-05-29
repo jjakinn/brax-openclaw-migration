@@ -1,0 +1,44 @@
+CHUNK 3: THE SEARCH PROBLEM & SERVER-SIDE FILTERING SOLUTION
+Source: powerapps-modern-combo-box-raza | Timestamp: 03:30 - 06:00
+
+Now, from a user experience standpoint, you do not want a user to go and multi-select items from 9,000 plus rows of data. So, we need an option for the user to search.
+
+The good part by default in the combo box, the user can search. If I search for training, this will list out all the items that have the text training within them.
+
+---
+
+Now the catch here is it is searching on the number of items it has loaded which is 2,000. It is possible that there are items beyond 2,000 that have the text training.
+
+My SharePoint list I have sorted this based on the latest item right on top. This one is prepare tax documentation for Kontoso.
+
+If I search for that prepare it does not list out that item.
+
+So that proves it that it is searching only based on the items that it has loaded.
+
+---
+
+However, for very large data sets greater than 2,000 we do have a search text output property that the modern combo box control exposes that we can leverage for serverside filtering of data meaning delegable queries. So with this our control can work with large data.
+
+---
+
+My combo boxes items property here I can write delegable queries. I can perform a search query but search is not a delegable function with SharePoint. If I'm using Dataverse I can simply use search but with SharePoint I can use the filter function.
+
+Filter on starts with. So the text I want to check that's my title column, the text to check that text will come from self meaning the control itself dot the output property search text.
+
+I'll close the starts with function. Close the filter function. Done.
+
+---
+
+This time if I type prepare observe I get a lot more values. Prepare tax documentation for there we go. It is performing a serverside filter query and returning the results.
+
+---
+
+KEY POINTS:
+- **Problem**: Default search only searches loaded items (max 2,000), not full dataset
+- **Proof**: "Prepare" search misses item that exists beyond 2,000 row limit
+- **Solution**: `SearchText` output property for server-side filtering
+- Delegable queries work with large datasets
+- SharePoint limitation: `Search()` not delegable
+- SharePoint solution: Use `Filter()` + `StartsWith()`
+- Formula pattern: `Filter(DataSource, StartsWith(Title, Self.SearchText))`
+- Result: Server-side query returns matches from ALL 9,000+ rows

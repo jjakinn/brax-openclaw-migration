@@ -1,0 +1,32 @@
+CHUNK 3: APP BUILDER AGENT IN ACTION
+Source: powerapps-tools-ecosystem-raza | Timestamp: 03:00 - 04:00
+
+The app builder agent starts weaving its magic. This is also vibe coding in action.
+
+The app builder agent builds out the application.
+
+All the data is stored in a dedicated SharePoint site that gets created for each app that's built.
+
+---
+
+Here is the application. User can submit an idea.
+
+Each of the ideas listed, users can vote for it. There's also a chart showing the top voted ideas.
+
+---
+
+To share this app, you simply share with users or security groups in your organization.
+
+To make modifications to the app, the only option we have is to work with the app agent.
+
+---
+
+KEY POINTS:
+- Data storage: Dedicated SharePoint site per app
+- Features generated:
+  - Submit ideas form
+  - Idea listing with voting
+  - Charts for top voted ideas
+- Sharing: Users or security groups in organization
+- Modifications: Only through app agent (natural language)
+- Classification: Vibe coding experience

@@ -1,0 +1,30 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "stanford-cs106a-lec5",
+  "source_url": "https://www.youtube.com/watch?v=NPzPnycCFuE",
+  "timestamp": "2026-03-23T17:40:00Z",
+  "status": "COMPLETE",
+  "verification": {
+    "video_duration_minutes": 48.99,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 48:59",
+    "total_events": 2818,
+    "word_count": 10487,
+    "chunks_created": 3
+  },
+  "summary": {
+    "title": "Stanford CS106A: Programming Methodology - Lecture 5",
+    "author": "Mehran Sahami (Stanford University)",
+    "domain": "coding/computer-science",
+    "key_topics": [
+      "Defining Methods",
+      "Method Parameters",
+      "Return Statements",
+      "Method Scope"
+    ]
+  },
+  "files_created": [
+    "corpus/by-source/stanford-cs106a-lec5/metadata.json",
+    "corpus/by-source/stanford-cs106a-lec5/chunks/chunk_001-003.txt"
+  ]
+}

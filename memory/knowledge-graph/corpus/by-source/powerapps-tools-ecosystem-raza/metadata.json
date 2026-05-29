@@ -1,0 +1,25 @@
+{
+  "id": "powerapps-tools-ecosystem-raza",
+  "title": "Power Apps Tools Ecosystem - From No-Code to Pro-Code",
+  "url": "https://www.youtube.com/watch?v=jnV7h-0bu7o",
+  "platform": "YouTube",
+  "duration": "16 min",
+  "duration_seconds": 960,
+  "word_count": 2700,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "powerapps-ecosystem",
+    "no-code",
+    "low-code",
+    "vibe-coding",
+    "pro-code",
+    "app-builder-agent",
+    "plan-designer",
+    "code-apps"
+  ],
+  "description": "Comprehensive overview of the Power Apps ecosystem spanning no-code (App Builder Agent), low-code (Canvas/Model-driven), vibe coding (Vibe portal), and pro-code (Code Apps) experiences. Covers each approach with practical demonstrations."
+}

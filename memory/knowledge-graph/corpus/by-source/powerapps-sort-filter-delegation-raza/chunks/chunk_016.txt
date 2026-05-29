@@ -1,0 +1,37 @@
+CHUNK 16: CHOICE COLUMN FILTERS WITH COMBO BOX
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 19:30 - 21:00
+
+Now let's try and add two more filters. These for priority and status, both of which are choice columns.
+
+---
+
+I'll add two text controls: Priority, Status.
+
+---
+
+Now I'll insert two combo box controls. All modern controls.
+
+---
+
+For the priority combo box: Items property will be `Choices([@SharePointList].Priority)`
+
+And for the status combo box: The formula will be `Choices([@SharePointList].Status)`
+
+---
+
+Now by default if nothing is selected it says "Find items". This text is coming from the `InputTextPlaceholder` property.
+
+I'll change this to "All" for both the combo box controls.
+
+---
+
+Let's also add the reset option.
+
+---
+
+KEY POINTS:
+- Choice column filters: Use combo box controls
+- Items formula: `Choices([@ListName].ColumnName)`
+- Multiple filters: Priority and Status
+- Default text: `InputTextPlaceholder = "All"`
+- Modern controls: Combo box with theming

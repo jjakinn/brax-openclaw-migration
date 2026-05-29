@@ -1,0 +1,29 @@
+CHUNK 10: TOOLS, CRONS & HEARTBEATS — THE AGENT COMES ALIVE
+Source: networkchuck-openclaw-review-2026 | Timestamp: 19:30 - 24:00
+
+And I lied about three things. There's actually four things. And this might be the coolest thing depending on how you look at it and which is why people were using Mac minis for this and that's the tools available to this openclaw agent. You're installing openclaw on a machine and saying this is your machine. Here are the tools I'm allowing you to have.
+
+So in our VPS example, we're saying this is your VPS. You can run bash scripts. You can use cron to schedule jobs. You can use heartbeats to remind yourself to do things for me.
+
+>> Hey Chuck from the future here. I feel like I didn't explain enough on this crons and heartbeats. So, here it is. And this is what makes it feel alive. It's the heartbeats and the crons. Heartbeats make you feel alive. Just realize that. I will say that OpenClaw does this better than anyone else right now because uh Claude and everyone else is trying to copy.
+
+And you saw a bit of this in the agents file that I showed you earlier. You can tell your agent, hey, check in every hour or so just to make sure I'm doing okay. or with our news briefing. That would have been a cron news briefing every day 6 am. It's setting up real cron jobs on your server and that's all it is. Like it does feel like magic, but it's just a stinking scheduled task on your server. Genius for how simple that is.
+
+Let's actually watch this happen. Let's have Terry do something. Okay, I'm going to have Terry actually create a heartbeat. Let's do that right now. I'll say every 30 minutes, remind me to drink coffee. This should set up a heartbeat. And also, I'll say every hour, just pop in to say hi and see how I'm doing.
+
+Let's see if it made the cron for coffee. Let's see if it's in heartbeats or heartbeat. MD. It should be there. No. Let's get back to the open claw directory, cd dot dot, and look in the cron directory. We'll cat those jobs. Yeah, there it is. I wonder why it didn't set heartbeats. Oh, it made a smart choice. think crons would be better. We can also see the crons with open claw cron I think. Oh, open claw cron list. And yes, openclaw does have a pretty extensive CLI tool list. There it all is right there.
+
+---
+
+KEY POINTS:
+- Fourth pillar: TOOLS — Bash scripts, cron jobs, heartbeats
+- Philosophy: "This is YOUR machine. Here are YOUR tools."
+- **Heartbeats**: Agent-initiated check-ins ("Hey, just checking on you")
+- **Crons**: Scheduled tasks on the actual server cron
+- Makes agent feel "alive" — proactivity vs reactivity
+- Example heartbeats:
+  - Every 30 min: "Remind me to drink coffee"
+  - Every hour: "Pop in and say hi"
+- Cron jobs are REAL system crontab entries
+- CLI: `openclaw cron list` to view all scheduled jobs
+- Agent can choose cron vs heartbeat based on task

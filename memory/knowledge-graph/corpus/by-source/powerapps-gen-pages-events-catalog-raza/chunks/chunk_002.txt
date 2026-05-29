@@ -1,0 +1,31 @@
+CHUNK 2/3
+
+[04:00 - 07:30]
+
+Now, let's add more functionality to this. When read more is clicked, open a dialogue to show full details about the event. Also add options on top right of screen for user to add a new event and edit an existing event that they select in the gallery. The add edit form should fly in from left to right off the screen.
+
+I'll hit send once again. The app agent starts reviving its magic.
+
+You can always take a look at the agent thoughts. These are the requirements that it has understood. Read more dialogue, add edit buttons, and more.
+
+If the page that it builds out doesn't match your expectations, you can always undo or you can start over from scratch.
+
+The app agent has made the updates. Let's click on read more. Here is a dialogue that shows details about that event.
+
+I also have the option to add an event. Here is the flyyout form. The user can also select an existing event and modify it.
+
+Let's publish. Let's refresh our page. The summer fest. Let's update. This one's going to start now on the 11th and end on the 11th. Save. There's the update.
+
+Let's try and add a new event. Power Platform Conference. Add. Let's go to October. Here is my event.
+
+That's how easily I can build a calendar screen in a modeldriven app.
+
+The most asked question, does this only work for data versse? Currently, yes. However, what if I have data in a different data source, for example, a SharePoint list or a SQL table and I would like to build gen page based on this data.
+
+Now one of the options that I have is to use data flows where I can bring data into data versse from a different data source and that will create a data vers table build out the schema and also import my data.
+
+Another option is when I'm building tables, I'll say I want to create a new table. Here I can start describing my tables to copilot or import from a SharePoint list, Excel file, CSV file. I have a lot of options to bring data into database.
+
+But let's say in this scenario, I have a product catalog list that is maintained in SharePoint. I want to keep my data in SharePoint, but I still want to build a database table that understands this schema and allows me to build a model driven app so I can create gen pages.
+
+Let's see how we can do that.

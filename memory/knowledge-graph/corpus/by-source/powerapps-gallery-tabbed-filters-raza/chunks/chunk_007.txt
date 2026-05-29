@@ -1,0 +1,48 @@
+CHUNK 7: BUTTON TEXT AND ICONS
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 05:30 - 07:00
+
+Let's select the button.
+
+---
+
+Button's text property, I will set as `ThisItem`. This will expose the properties that I set in the items property. I want the text to be the title.
+
+---
+
+So, you can see how all my title values are being displayed.
+
+---
+
+The modern button control has an icon property. If I open this drop down, it lists out all the icons that are available for us to choose from.
+
+---
+
+If you select any of the icons, the icon property will have its value. So, you can check all the icon values that are available for you to choose from.
+
+---
+
+Now coming back to the gallery's items property, within the object, I have the icon property. This is where I'll start putting the icon values that I would like to show for this specific item.
+
+---
+
+For not started, I'll pick "circle". In progress, "airplane". Completed, "check mark circle". Blocked, "dismiss circle".
+
+---
+
+Back to my button control, the icon property, instead of hardcoding, I will pick `ThisItem.icon`.
+
+---
+
+Now, you can see how each button has its own unique icon associated.
+
+---
+
+KEY POINTS:
+- Button text: `ThisItem.title`
+- Icon selection: Browse modern icon dropdown
+- Dynamic icons: `ThisItem.icon` references array property
+- Tab icons:
+  - Not Started: Circle
+  - In Progress: Airplane
+  - Completed: Check mark circle
+  - Blocked: Dismiss circle

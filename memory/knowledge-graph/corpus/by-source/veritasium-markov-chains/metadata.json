@@ -1,0 +1,57 @@
+{
+  "source_id": "veritasium-markov-chains",
+  "display_name": "The Math Feud That Changed History (Markov Chains)",
+  "author": "Veritasium (Derek Muller)",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube/Veritasium",
+    "year": 2024,
+    "url": "https://www.youtube.com/watch?v=KZeIEiBrT_w",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "chunks_processed": 2,
+    "total_words": 5429
+  },
+  "length": {
+    "pages": 0,
+    "words": 5429,
+    "duration_minutes": 32,
+    "chunk_count": 4,
+    "actual_duration_verified": true,
+    "notes": "32-minute video with extensive visual demonstrations (card shuffling, animations). Only ~50% of segments contain narration; visual sections have no transcript text."
+  },
+  "structure": {
+    "parts": [
+      "Introduction",
+      "Historical Context",
+      "Mathematical Concepts",
+      "Applications"
+    ],
+    "chapters": [
+      "The 1905 Russian Revolution",
+      "Nekrasov vs Markov Feud",
+      "Law of Large Numbers",
+      "Markov Chains Theory",
+      "Applications Today"
+    ]
+  },
+  "concepts_covered": [
+    "markov-chains",
+    "probability-theory",
+    "law-of-large-numbers",
+    "random-processes",
+    "stochastic-processes",
+    "history-of-mathematics"
+  ],
+  "domains": [
+    "mathematics",
+    "history",
+    "computer-science"
+  ],
+  "files": {
+    "raw_transcript": "library/inbox/markov-chains.txt",
+    "chunks": "corpus/by-source/veritasium-markov-chains/chunks/"
+  }
+}

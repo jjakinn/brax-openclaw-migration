@@ -1,0 +1,24 @@
+{
+  "id": "powerapps-navigation-component-raza",
+  "title": "Power Apps Navigation Component - Two-Level Expandable Menu",
+  "url": "https://www.youtube.com/watch?v=REmbj0GKnZk",
+  "platform": "YouTube",
+  "duration": "21 min",
+  "duration_seconds": 1260,
+  "word_count": 2800,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "powerapps-component",
+    "navigation-menu",
+    "two-level-menu",
+    "expandable-menu",
+    "responsive-design",
+    "modern-controls",
+    "security-trimming"
+  ],
+  "description": "Build a reusable two-level navigation component in Power Apps with expandable/collapsible submenus, responsive design, user profile display, and security role trimming. Uses modern controls and component architecture."
+}

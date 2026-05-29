@@ -1,0 +1,35 @@
+CHUNK 1/4
+
+[00:00 - 03:15]
+
+Hello everyone, Raza here. In this video, we will learn how to supervise agents that we build in Microsoft Copilot Studio in apps using a feature called agent feed. Here we can connect multiple autonomous copilot studio agents and check all the agent activity in one go plus take actions. I will also show how to build an autonomous agent from scratch for the demo. So let's begin.
+
+for the agent feed. I need agents. Let's begin with creating a claims review agent.
+
+This entire solution we will build from scratch by leveraging plan designer.
+
+I will provide the description. I need to manage reimbursement claims in a simple way. Employees can purchase items that improve physical, financial or mental health and these purchases can be reimbursed.
+
+My requirements a single app for managing claims. Employees will submit the claims. An AI agent should automatically review the claims and provide a recommendation according to the company guidelines.
+
+Let's click generate.
+
+Plan designer begins creating the blueprint for addressing the business problem that I described.
+
+Defines the user requirements. I'll say this looks good. Starts framing the data model. Here I will go to show details which will take me to the data workspace.
+
+For the purpose of the demo I will keep the data model very simple. I will only keep the main claims table.
+
+I go to view data. It has three columns. Claim title, purchase date, and amount. I'll want two more columns. So, I'll ask Copilot to build it for me.
+
+Add columns for claim status and expense category.
+
+Claim status. I'll edit this column. submitted, approved, rejected. I'll keep these three options. And by default, any claim that's submitted, I want to start with the submitted status. I'll update. My table schema is ready. It will also come with some sample data that AI has generated. I'll click back.
+
+My data model. I'll say it looks good. And now the solutions agent in plan designer will recommend the tech that I can enable for the business problem that I stated. Two main things I need an app for employees to submit the claim and my claim review agent.
+
+The tech recommendations they look good. Let's save our tables.
+
+All of the artifacts that plan designer will generate they will be stored in a solution. I'll click save.
+
+Next, let's create the model driven app. The app is created. I'll click publish.

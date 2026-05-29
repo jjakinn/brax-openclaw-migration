@@ -1,0 +1,98 @@
+{
+  "source_id": "graphspy-john-hammond",
+  "display_name": "GraphSpy: Hacker's Tooling Deep Dive (w/ creator @RedByte1337!)",
+  "author": "John Hammond (feat. Keanu / RedByte1337)",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2025,
+    "url": "https://www.youtube.com/watch?v=qEtoKC32UoE",
+    "channel": "John Hammond",
+    "ingested_date": "2026-03-28",
+    "processed_by": "agent:main",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 1,
+    "total_words": 8098
+  },
+  "length": {
+    "pages": 0,
+    "words": 8098,
+    "duration_minutes": 42,
+    "chunk_count": 1
+  },
+  "structure": {
+    "parts": [
+      "Introduction \u2014 Keanu (RedByte1337) background & GraphSpy origins",
+      "Device Code Phishing \u2014 Generating codes, tricking users via legitimate Microsoft login",
+      "Access Tokens & Refresh Tokens \u2014 JWT decoding, scopes, activation",
+      "OneDrive & SharePoint Enumeration \u2014 File browsing, credential harvesting",
+      "Outlook Graph Module \u2014 Full email read/send/reply via Graph API",
+      "Family of Client IDs (FOCI) \u2014 Token swapping between client IDs",
+      "MFA Method Manipulation \u2014 NextGen MFA claims, adding FIDO2 keys & authenticator apps",
+      "Microsoft Teams via Skype API \u2014 Reading/sending Teams messages",
+      "Entra ID Enumeration \u2014 Users, groups, dynamic groups, PIM role assignments",
+      "Device Registration & Primary Refresh Tokens (PRT) \u2014 SSO cookie generation",
+      "Windows Hello for Business \u2014 Persistent access without credentials",
+      "Social Engineering Tips \u2014 Vishing for device code phishing",
+      "Closing \u2014 GitHub, sponsorship, follow links"
+    ]
+  },
+  "concepts_covered": [
+    "graphspy",
+    "microsoft-graph-api",
+    "azure-entra-id",
+    "device-code-phishing",
+    "access-tokens",
+    "refresh-tokens",
+    "jwt-decoding",
+    "family-of-client-ids-foci",
+    "token-swapping",
+    "onedrive-enumeration",
+    "sharepoint-enumeration",
+    "outlook-graph-api",
+    "mfa-manipulation",
+    "nextgen-mfa-claims",
+    "fido2-security-keys",
+    "yubikey-persistence",
+    "microsoft-teams-skype-api",
+    "entra-id-enumeration",
+    "dynamic-group-abuse",
+    "pim-role-assignments",
+    "device-registration",
+    "primary-refresh-tokens",
+    "sso-cookie-generation",
+    "windows-hello-for-business",
+    "social-engineering-vishing",
+    "red-team-persistence",
+    "identity-to-endpoint-attack"
+  ],
+  "domains": [
+    "cybersecurity",
+    "red-teaming",
+    "azure-security",
+    "identity-attacks",
+    "post-exploitation"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/graphspy-john-hammond/chunks/"
+  },
+  "key_takeaways": [
+    "GraphSpy = web-based post-exploitation tool for Microsoft/Azure/Entra ID environments, works entirely with access tokens (no username/password needed)",
+    "Device Code Phishing: Generate device code \u2192 user authenticates on legitimate Microsoft login page \u2192 attacker gets access + refresh tokens instantly",
+    "Client ID selection matters: match it to your pretext (e.g., Microsoft Teams client ID for fake Teams invite)",
+    "Access tokens valid ~1 hour; Refresh tokens valid ~90 days \u2014 refresh tokens are more valuable",
+    "Family of Client IDs (FOCI): Microsoft deviates from OpenID Connect spec \u2014 refresh tokens from one client ID can generate access tokens for ANY client ID in the same family",
+    "GraphSpy provides full GUI for OneDrive browsing, SharePoint enumeration, Outlook email (read/send/reply), Teams messages \u2014 all via API calls with stolen tokens",
+    "Teams messages use legacy Skype API endpoint (not Graph API) because Graph API doesn't grant chat.read scope to Teams client ID",
+    "NextGen MFA claim: Special short-lived (~15 min) claim needed to modify MFA methods \u2014 obtainable via device code phishing with specific parameters",
+    "With NGC MFA claim: Can add FIDO2 security keys (YubiKey) or authenticator apps to victim's account \u2014 persistent access even after password reset",
+    "Identity-to-endpoint attack: Hijack OneDrive-synced shortcuts (e.g., replace Chrome shortcut with malicious PowerShell launcher)",
+    "Device Registration attack chain: Register new device \u2192 get device certificate \u2192 obtain Primary Refresh Token (PRT) \u2192 generate SSO cookies \u2192 sign into ANY Microsoft service without credentials",
+    "PRT cookies valid ~5 min but regeneratable indefinitely; resulting session cookies last hours to days",
+    "Windows Hello for Business key: Once registered, generates new PRTs indefinitely without username/password/MFA \u2014 ultimate persistence until device is removed from Azure portal",
+    "Dynamic groups in Entra ID: Membership rules based on user properties \u2014 some properties self-editable, enabling privilege escalation",
+    "Social engineering tip: Call target claiming to be helpdesk, direct them to microsoft.com/devicelogin (legitimate URL), talk them through entering your code \u2014 never ask for their password"
+  ]
+}

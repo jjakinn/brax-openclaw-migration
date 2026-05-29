@@ -1,0 +1,28 @@
+CHUNK 11: VERTICAL GALLERY FOR DATA
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 10:30 - 11:30
+
+Now that my tabs are ready, next step is to create my gallery to show the data from my work tracker list.
+
+---
+
+In my screen, I'll insert another gallery. This time, I'll pick the vertical gallery.
+
+---
+
+I'll position the gallery right below the tabs.
+
+---
+
+The data for this gallery will come from my work tracker SharePoint list.
+
+---
+
+The layout, I'll start with blank.
+
+---
+
+KEY POINTS:
+- Second gallery: Vertical for data display
+- Position: Below tabs
+- Data source: SharePoint list (Work Tracker)
+- Layout: Blank (custom design)

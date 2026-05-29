@@ -1,0 +1,38 @@
+CHUNK 6: BUILDING HOME SCREEN WITH GRID CONTAINER
+Source: powerapps-grid-container-raza | Timestamp: 05:45 - 08:00
+
+Now let's try and build a home screen in which we will utilize the grid container.
+
+I'll create a new screen and select header and footer. So there's a header container. Now this is the horizontal or vertical container controls.
+
+---
+
+The grid container complements those horizontal vertical container controls. The grid container is not here to replace the vertical or horizontal containers.
+
+I have this main container and then I have the footer. Now in my case, I'll remove the footer and the main container. So I'll keep the header section.
+
+---
+
+Here I'll insert a text control. Alignment and container stretch, flexible width. Yes.
+
+The text: "Welcome to our app". Vertical alignment middle.
+
+So I have my welcome message ready.
+
+---
+
+Now in the main screen container which is a vertical container I will insert the new grid container.
+
+I'll give this container a background color of white. And within this container is where I would like to add a card-like interface that shows an image, a button. I would like to showcase a drop shadow effect.
+
+---
+
+For the grid container, I'll define how many rows and columns I need. I'll set this to 2x2.
+
+---
+
+KEY POINTS:
+- Grid container complements (not replaces) horizontal/vertical containers
+- Home screen setup: Header + Grid container in main container
+- Grid for card interface: 2x2 layout
+- Can nest containers within grid cells

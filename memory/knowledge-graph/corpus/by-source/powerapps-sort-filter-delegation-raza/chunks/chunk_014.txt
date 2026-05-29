@@ -1,0 +1,35 @@
+CHUNK 14: FILTER PLACEHOLDER AND RESET BUTTON
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 17:30 - 18:30
+
+Now when this filter text box is empty, I would suggest for the placeholder text, this is where you can give some hints to the user about what this control does.
+
+I'll say: "The text to search at the beginning of title"
+
+---
+
+To give the user an easy option to clear the search text, I'll insert the modern button.
+
+Position it right next to the input text.
+
+---
+
+The layout of this button: Icon only.
+
+The icon I'll search for "reset" and select arrow reset.
+
+---
+
+On select of this I will use the `Reset()` function to reset that text input control.
+
+Click. Resets it. Done.
+
+---
+
+KEY POINTS:
+- Placeholder text: Hint to user about expected input
+- Example: "The text to search at the beginning of title"
+- Reset button:
+  - Layout: Icon only
+  - Icon: Arrow reset
+  - OnSelect: `Reset(TextInputControl)`
+- UX: Easy way to clear filters

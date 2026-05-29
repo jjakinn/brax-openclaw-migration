@@ -1,0 +1,76 @@
+Kind: captions
+Language: en
+
+Hello everyone, Resza here. Generative pages in Power Apps, AI powered app creation for canvas Power Apps. In this video, I'll show you the power of gen pages based on an app that I designed in canvas. So let's begin.
+
+Canvas apps allows us to get full control over the UI UX of our application. This is an ideas management app. I did a video on this step by step for canvas apps that I will link in the description for this video. So do check it out.
+
+This home screen experience was designed using containers, galleries, controls, and more. To build a screen like this requires understanding of how to use the controls, how to best write your formulas and more. My back end is Microsoft Dataverse.
+
+Now, this is a canvas app. Let's say I have a scenario where I need to update this. I need to add additional filters. For each idea, I want to allow users to submit commands. I need to provide light mode, dark mode options for my screen. All of this requires work.
+
+Now since this is built on Microsoft Dataverse I have another option that opens up for me now which is the new gen pages experience exclusive to model-driven Power Apps.
+
+I have an out-of-the-box model-driven Power App experience that is connected to those four tables: ideas, the categories, users can vote for ideas and then they can also comment on ideas.
+
+Now let's try and design this experience and enhance it further by using gen pages in my model driven app. I'll describe my page.
+
+First up, I will give context to the app agent. I'll add tables. I'll pick idea. So, it's added the reference to the idea table in Dataverse. I'll add category, vote, and command. Plus, I will attach an image. And this image is a screenshot of my canvas app landing screen. This I have added as an inspiration for my generative page.
+
+Now I'm going to describe what I would like the app agent to build me. Build me an idea app home screen based on attached image. Data for idea will come from the idea table.
+
+Generate — the magic begins. Here is that screenshot that I provided as a reference. Gen pages starts building out the React-based page for me in the model driven Power App. It has the context of my underlying tables. It's starting to frame my generative page.
+
+And my generative page is ready. I'll go ahead and save this. I can give this page a name. I'll put an emoji and say ideas. Publish this.
+
+You can see a preview of the page right here. It's showing all the ideas from my idea table. It's gone ahead and styled it very similar to the screenshot that I provided.
+
+The app's published. Let's refresh the model driven app. And here is my ideas generative page. It's got the data from my ideas table. I also have the option here to search. So the filters are working accurately.
+
+Search by category. Typed health. So it's giving me the ideas that are related to that category.
+
+Let's keep working with our app agent. Filter by section. Replace search by date with a date range. Make search by category a drop-down. Add an option to reset filters.
+
+I'm simply describing what changes I need. The agent has summarized the updates that it is planning to perform and it's gone ahead and made the updates.
+
+Categories is now a drop down. Tech. So, it only filters and shows the ideas for technology. I even have the option to reset filters. I can define the date range now for which I would like to see the ideas submitted.
+
+That's how easily I was able to make the updates in a gen page.
+
+The top five categories. I'll say the width of each category should be in alignment with how many ideas it has. That's a bar chart also sorted by most ideas in a category on top.
+
+Once again, the app agent starts weaving its magic. Done. Top five categories updated. If any of the changes that the app agent makes is not in alignment with what you described, you can always undo that step.
+
+Now when new idea is clicked, I would like to give the option to the user to submit a new idea. So I want a form for that. So I'll say when new ideas is clicked, user should be presented with a modern form to submit their idea. The form should fly out from the top.
+
+Let's see what Gen Pages builds out. The update is made. New idea click. The form flies out from the top. How cool is that?
+
+Let's publish. Let's test it out in our app. New ideas. Let's give the idea a title. Pick my category. Notice I'm submitting one for tech. Keep an eye out on the left hand side for the tech bar. It will increase to four. I'm submitting my idea.
+
+Idea submitted. Look at that. This got updated live and here is my gen pages record. I can also ask it to sort based on the newest idea on top and it will make that update.
+
+For each idea, I have the option to vote for it. Not clickable at this moment. Let's ask Genpage to do that. On click of the star, users vote for that idea should be added to the vote table. Also a user can only vote once per idea and if user clicks star again then remove vote from the table.
+
+Natural language — gen pages begins the work. The update is made here. If I click it's adding my vote to AI features. Here is my votes table. Here it's added my vote for this idea. I can also remove the vote.
+
+Change the theme of the app to be in dark mode. Add a modern looking icon to change from light mode to dark mode and back. Go.
+
+And there we go. It's gone ahead and added this option on the top right for me to change the theme of the app. How cool is that?
+
+Add a column chart on top showing number of ideas per year. It should act as a year filter. It's added the year filter on the top. And this is interactive. Select 2022. It only shows me the ideas that were submitted in 2022. I can even clear that filter. Let's pick 2025. This was the idea that I just submitted.
+
+So you can see how powerful Gen pages are. Let's ask it to add a feature to export the data to Excel. And the feature is ready. Let's publish. Here it is. Export to Excel. Click. Here is the exported data.
+
+How about I ask the gen page to add an option for user to add a command to ideas. The command should be stored in the commands table. Also, for each idea, user should be able to see the commands history.
+
+Let's see what magic gen pages does for us. I think I stretched gen pages too far. The feature is in preview.
+
+I'm trying to recreate my gen page with all the inputs that I provided earlier. This time when I recreated, you can see it's created a similar look, different styles. I'm giving it the same instructions again. This time my instructions in bulk.
+
+The app agent begins the work now. Let's try that line again. The command history. Let's see what it does. It's gone ahead and added the feature for commands as well. For each of my ideas, I can click to view and add commands. It shows the commands history. I can add a comment on the fly. Here it is in the context of the model driven app itself.
+
+Let's pick gen pages is awesome and add a command. Comment added. Here it is in the command history. A running thread of commands. All of this getting stored in the commands table.
+
+This entire page, all this functionality I was able to build in a matter of minutes by simply describing what I need in natural language to the app agent.
+
+If you enjoyed this video, then do like, comment, and subscribe to my YouTube channel. And thank you so much for watching.

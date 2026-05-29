@@ -1,0 +1,32 @@
+CHUNK 6: SCENARIO 1 - DELETE CONFIRMATION IN GALLERY
+Source: powerapps-confirm-function-raza | Timestamp: 06:30 - 08:00
+
+Let's now see how we can use this in different scenarios.
+
+I have a gallery that showcases data from a data source, in this case a SharePoint list. And when the user clicks on the delete icon, I go ahead and remove the item from my data source.
+
+Now, deleting ideally we should always confirm with the user. What if they clicked on it by mistake? Let's always make sure we give them a confirmed dialogue.
+
+Now with the new confirm function here is the delete icon in my gallery. On select of this, I was simply removing the item. Now I'll add the following logic.
+
+If confirm, are you sure you want to delete the item? This is my message. Additionally, I can add the options. I'll keep it simple for this one. So, I'll just simply display that confirm message. If the user confirms, then I will go ahead and remove the item.
+
+Very simple.
+
+---
+
+Let's try it out. I click delete. I get the confirm dialogue. Are you sure you want to delete the item? If I cancel the item is not deleted. If I confirm at that moment that item gets deleted.
+
+I can also add the notify function to this to let the user know that the item was deleted successfully.
+
+---
+
+KEY POINTS:
+- Scenario 1: Gallery item delete confirmation
+- Formula: `If(Confirm("Are you sure?"), Remove(DataSource, ThisItem); Notify("Deleted", NotificationType.Success))`
+- User flow:
+  1. Click delete icon → Dialog appears
+  2. Cancel → Item remains
+  3. Confirm → Item deleted + notification
+- Best practice: Always confirm destructive actions
+- Mobile: Dialog is fully responsive

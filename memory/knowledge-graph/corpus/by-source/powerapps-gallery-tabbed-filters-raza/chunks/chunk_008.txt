@@ -1,0 +1,36 @@
+CHUNK 8: BUTTON COLORS AND ACTIVE STATE
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 07:00 - 08:30
+
+The color of these buttons, the button control has a color palette property.
+
+---
+
+The base palette color, I'll select as `ThisItem.color`. And there, it lists out all my colors.
+
+---
+
+Now these buttons are a part of the gallery. The user has the option to select an item, in this case a button in the gallery.
+
+---
+
+And when the user selects the button, I want that button to be active. So, I want its color to be highlighted.
+
+---
+
+If it's not active, I do not want any color to apply. So, this will act as a visual indicator to the end user around which tab is currently selected.
+
+---
+
+To do this, the button has a property called type. It's currently set to primary.
+
+---
+
+If I change it to secondary, you can see how the color goes away. So, I would like to define this type property dynamically.
+
+---
+
+KEY POINTS:
+- Button color: `ThisItem.color` from array
+- Active state: Highlight selected tab
+- Button type: Primary (active) vs Secondary (inactive)
+- Visual indicator: Shows currently selected tab

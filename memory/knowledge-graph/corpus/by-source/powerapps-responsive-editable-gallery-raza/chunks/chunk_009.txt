@@ -1,0 +1,41 @@
+CHUNK 9: ADDING HEADERS
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 14:30 - 17:30
+
+My gallery is set but there are no headers. This is item ID. This is item name. this is category and so and so forth.
+
+For that in the main container I will go and insert another horizontal container.
+
+This container right click reorder move to the top. I'll rename this to header container.
+
+Flexible height I'll turn off. And I'll give this a defined height of let's say 40.
+
+---
+
+Now in this container I want to add my headers. I'll insert text. This one I'll call it header item ID. The text property for this item ID.
+
+On similar lines, I'll add for item name and so and so forth. I have gone ahead and added all my headers.
+
+---
+
+Now, this is a horizontal container. Padding I'll set to all zeros.
+
+Select a control within it. Ctrl A selects all my headers. Same concept as before, right? If I turn on flexible width, it will distribute the width amongst all these header controls, but I want these headers to line up exactly where my controls are.
+
+---
+
+Now, these controls can have flexible width, they can have fixed width, they may have a minimum width. I can point the header control properties to the properties in the gallery.
+
+---
+
+KEY POINTS:
+- Headers: Separate horizontal container above gallery
+- Steps:
+  1. Insert horizontal container in main container
+  2. Reorder: Move to top
+  3. Name: "header container"
+  4. Flexible height: OFF
+  5. Height: 40
+  6. Add text controls for each column header
+  7. Padding: 0
+- Challenge: Headers must align perfectly with gallery columns
+- Solution: Link header properties to gallery control properties

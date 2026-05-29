@@ -1,0 +1,36 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "java-full-course",
+  "source_url": "https://www.youtube.com/watch?v=eIrMbAQSU34",
+  "timestamp": "2026-03-23T17:15:00Z",
+  "status": "COMPLETE",
+  "verification": {
+    "video_duration_minutes": 150.62,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 150:37",
+    "total_events": 1748,
+    "word_count": 24994,
+    "chunks_created": 5
+  },
+  "summary": {
+    "title": "Java Full Course for Beginners",
+    "author": "Programming with Mosh (YouTube)",
+    "domain": "coding/java",
+    "key_topics": [
+      "Java Basics",
+      "Variables and Data Types",
+      "Control Flow and Loops",
+      "Methods",
+      "Object-Oriented Programming",
+      "Inheritance",
+      "Interfaces",
+      "Exception Handling",
+      "Collections Framework"
+    ]
+  },
+  "files_created": [
+    "corpus/by-source/java-full-course/metadata.json",
+    "corpus/by-source/java-full-course/chunks/chunk_001-005.txt",
+    "summaries/L0-executive/java-full-course.md"
+  ]
+}

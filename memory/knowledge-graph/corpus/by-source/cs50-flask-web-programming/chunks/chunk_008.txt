@@ -1,0 +1,24 @@
+# Chunk 008: Sessions and Cookies
+
+HTTP is stateless - each request is independent. Sessions maintain state across requests.
+
+Cookies store session IDs:
+1. Server sends Set-Cookie header with random session ID
+2. Browser stores cookie
+3. Browser sends Cookie header with each request
+4. Server looks up session data by ID
+
+Flask sessions:
+```python
+from flask_session import Session
+
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
+
+@app.route("/login", methods=["POST"])
+def login():
+    session["user_id"] = request.form.get("username")
+    return redirect("/")
+```
+
+session acts like a dictionary stored server-side, keyed by cookie.

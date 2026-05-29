@@ -1,0 +1,40 @@
+CHUNK 11: UPDATE PROPERTY FOR MULTI-SELECT SUBMISSION
+Source: powerapps-modern-combo-box-raza | Timestamp: 18:30 - 20:00
+
+There is one more property to update for the data card. That property is called update.
+
+ForAll my combo box selected items. The format that SharePoint expects for a person type column does not change. It's that same concept. Claims token, display name, email needed. Remaining we can leave it blank.
+
+The key here is the ForAll logic which ensures that it is getting updated as a table of data in the format that SharePoint expects.
+
+Done.
+
+---
+
+Now let's try this out. For user polls stakeholders I'll pick Raza and Sarah. I'll submit.
+
+On click of submit I'm submitting the data to my data source. If it's successful meaning on success of the form I redirect the user to my home screen so guaranteed it is successful to confirm that I can also go to the back end and check so here is that user polls record the stakeholders Raza and Sarah this is a multi select person column
+
+---
+
+if I open that item again notice how the default value is being maintained.
+
+I can change this. I'll remove Raza. Now it's Sarah. Let's add James and Alice. Three users now. Submit. Done. If I look at my backend data source, three stakeholders.
+
+If I pick a different item, the default value will show the value for that item. I'll pick Raza and Sarah. Submit. Done.
+
+---
+
+KEY POINTS:
+- Data card `Update` property: Submit data back to SharePoint
+- Formula pattern: `ForAll(ComboBox.SelectedItems, {Claims: "i:0#.f|membership|" & Email, DisplayName: DisplayName, Email: Email})`
+- SharePoint person format (same for single/multi):
+  - `Claims`: Required prefix + email
+  - `DisplayName`: User's display name
+  - `Email`: User's email
+- `ForAll` creates table of person objects for multi-select
+- Testing:
+  - Select multiple users → Submit
+  - Verify in SharePoint backend
+  - Reopen form → Default values load correctly
+  - Modify selections → Updates persist

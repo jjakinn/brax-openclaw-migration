@@ -1,0 +1,38 @@
+{
+  "id": "powerapps-gen-pages-events-catalog-raza",
+  "title": "Generative Pages in Power Apps - Event Calendar & Product Catalog with Dataverse/SharePoint",
+  "instructor": "Raza",
+  "channel": "Power Apps",
+  "url": "https://www.youtube.com/watch?v=sdRlLcHPK8g",
+  "duration": "11 min",
+  "word_count": 1378,
+  "difficulty": "Intermediate",
+  "category": "Power Platform",
+  "concepts": [
+    "generative-pages",
+    "power-apps",
+    "model-driven-apps",
+    "dataverse",
+    "virtual-tables",
+    "sharepoint-integration",
+    "event-calendar",
+    "product-catalog",
+    "react-pages",
+    "app-agent",
+    "iframe-embedding",
+    "flyout-forms",
+    "dialog-boxes",
+    "data-flows"
+  ],
+  "prerequisites": [
+    "powerapps-fundamentals",
+    "dataverse-basics",
+    "sharepoint-basics"
+  ],
+  "related_sources": [
+    "powerapps-gen-pages-ideas-app-raza",
+    "powerapps-model-driven-modern-raza"
+  ],
+  "ingested": "2026-03-31",
+  "chunks": 3
+}

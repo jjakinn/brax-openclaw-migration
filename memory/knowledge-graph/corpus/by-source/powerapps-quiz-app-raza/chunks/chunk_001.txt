@@ -1,0 +1,19 @@
+CHUNK 1: INTRODUCTION TO QUIZ APPLICATION
+Source: powerapps-quiz-app-raza | Timestamp: 00:00 - 00:45
+
+Hello everyone, Raza here. In this video, I will showcase a complete quiz application that I built using Microsoft Power Apps and with the help of agents.
+
+From the quiz taker experience to the quiz admin experience to building React pages, data modeling, security roles, and more, this video will showcase it all. So, let's begin.
+
+---
+
+KEY POINTS:
+- Complete quiz application built with Power Apps
+- Components covered:
+  - Quiz taker experience
+  - Quiz admin experience
+  - React pages
+  - Data modeling
+  - Security roles
+- Built with AI agent assistance
+- End-to-end solution demonstration

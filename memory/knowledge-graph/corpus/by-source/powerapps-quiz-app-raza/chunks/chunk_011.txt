@@ -1,0 +1,46 @@
+CHUNK 11: MULTI-USER EXPERIENCE AND ATTEMPT LIMITS
+Source: powerapps-quiz-app-raza | Timestamp: 07:30 - 08:30
+
+Here is a user named Sarah who is using the quiz taker app.
+
+---
+
+Here is the latest one, Power Apps. Sarah can start answering the questions.
+
+---
+
+These are all the questions that the administrator set up.
+
+---
+
+In this case, did not pass on the first attempt. Let's try and retake.
+
+---
+
+Did not pass in the second attempt.
+
+---
+
+Notice no more attempts are allowed because Sarah has completed the maximum number of allowed attempts for that quiz.
+
+---
+
+As long as attempts are allowed, Sarah can take any other quiz that's available.
+
+---
+
+Sarah achieves 100% for the general knowledge quiz.
+
+---
+
+My attempts will list out all the results for Sarah.
+
+---
+
+KEY POINTS:
+- Multi-user: Different users (Sarah example)
+- Attempt tracking: Per user, per quiz
+- Maximum attempts: Enforced limit
+- Failed attempts: Can retake if attempts remain
+- Attempt exhaustion: Cannot retake after max reached
+- Other quizzes: Can attempt different quizzes

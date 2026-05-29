@@ -1,0 +1,24 @@
+{
+  "id": "powerapps-sort-filter-delegation-raza",
+  "title": "Power Apps Sort and Filter Multiple Columns with Delegation",
+  "url": "https://www.youtube.com/watch?v=MURSkbnO61s",
+  "platform": "YouTube",
+  "duration": "23 min",
+  "duration_seconds": 1380,
+  "word_count": 3150,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "powerapps-delegation",
+    "sort-function",
+    "sortbycolumns",
+    "filter-function",
+    "sharepoint",
+    "delegable-queries",
+    "multiple-columns"
+  ],
+  "description": "Complete guide to sorting and filtering on multiple columns in Power Apps with SharePoint. Covers delegation limits, Sort vs SortByColumns, dynamic user-driven sorting, and multi-column filtering with delegable queries."
+}

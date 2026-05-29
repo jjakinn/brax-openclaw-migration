@@ -1,0 +1,39 @@
+CHUNK 12: RETURNING TO PROJECT & DARK MODE
+Source: powerapps-vibe-coding-raza | Timestamp: 28:00 - 30:30
+
+If I head back to data, none of those tables have the draft designation.
+
+Let's assume I closed my browser experience and I go back to vibe.powerapps.com.
+
+I have things saved and published. My home screen for Vibe. I'll jump over to plans. Again, make sure you're in the context of the right environment. Here is my plan. I select it will take me directly back to the Vibe Designer interface.
+
+---
+
+Orders. Remember the customer reference was empty now because I changed my table. But now I can pick data from my table and make those updates.
+
+Fully functional application. Here are the invoices. I can view. I can change the status as paid. I can explore all the payments that have been made. I can record payments.
+
+Pick an invoice and say yes, I received this invoice. Let me go ahead and record that. That's for invoice 10001 that was marked as paid.
+
+---
+
+And at this point as well, iterative development.
+
+Add a light dark mode toggle to the app. For dark mode, use a glass morphism theme with neon accents.
+
+If you have your company's branding guidelines, your primary colors, accent colors, and more, you can provide all that information here to the agent and it will make all the updates.
+
+My app will refresh. Here we go. Here's my app in dark mode with those neon accents.
+
+When a user views an existing order, I can see the order details. I want to print this experience. Allow an option for the user to print the order details.
+
+---
+
+KEY POINTS:
+- Returning to project: vibe.powerapps.com → Plans → Select plan
+- Always verify environment context
+- Fully functional: Invoice status updates, payment recording
+- **Theming**: Dark mode + glass morphism + neon accents via prompt
+- Can provide brand guidelines (colors, fonts, etc.) to agent
+- **Print functionality**: Can add print dialog to any view
+- Print can also save as PDF

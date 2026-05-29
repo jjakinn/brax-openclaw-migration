@@ -1,0 +1,26 @@
+{
+  "id": "powerapps-navigation-component",
+  "name": "Power Apps Navigation Component",
+  "category": "Power Platform",
+  "description": "Building reusable navigation components in Power Apps with two-level expandable menus, security trimming, responsive design, and modern controls.",
+  "related_concepts": [
+    "powerapps-modern-controls",
+    "responsive-design",
+    "security-trimming"
+  ],
+  "sources": [
+    "powerapps-navigation-component-raza"
+  ],
+  "keywords": [
+    "Navigation component",
+    "Two-level menu",
+    "Expandable menu",
+    "Collapsible menu",
+    "Security trimming",
+    "AccessAppScope",
+    "Component architecture",
+    "Submenu",
+    "Responsive navigation"
+  ],
+  "created_at": "2026-03-30"
+}

@@ -1,0 +1,40 @@
+CHUNK 11: ONSELECT ACTION AND ASSET MANAGER EXAMPLE
+Source: powerapps-modern-card-control-raza | Timestamp: 11:30 - 12:30
+
+Now on select of these cards let's take an action. So the on select function of the card, I'll use the launch function.
+
+`Launch(ThisItem.'Link to item')`
+
+---
+
+Preview. I'll select this one, the inspection report. It launches the inspection report.
+
+---
+
+The same card control and gallery logic experience I have utilized here to showcase data from a SharePoint list.
+
+My list is called asset manager. It has metadata about devices that my organization has procured.
+
+---
+
+Device photo is an image type column. This gallery is connected to my asset manager SharePoint list.
+
+And once again just a single card control in my gallery and I have this experience.
+
+---
+
+The card controls image property is set to my image column. I can pick the size of the image that I would like to pull.
+
+---
+
+When I select an item, I navigate the user to my form screen. So if the user selects an item, navigates the user to the form screen experience.
+
+---
+
+KEY POINTS:
+- OnSelect action: `Launch(ThisItem.'Link to item')` opens document
+- Second example: Asset manager SharePoint list
+- Image column: Device photos
+- Same pattern: Single card control in gallery
+- Navigation: Card OnSelect → Form screen
+- Gallery → Form pattern for detail view

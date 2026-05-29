@@ -1,0 +1,31 @@
+CHUNK 2: DESCRIBING THE APP WITH IMAGES & PROMPTS
+Source: powerapps-vibe-coding-raza | Timestamp: 02:00 - 04:00
+
+Now I'm in the context of my correct environment in Vibe. Now on the home experience is where I'm provided with this area in which I can describe what I would like to build.
+
+Some new things, we now have the option to add images up front. Use this to inspire guide the agents to build the solution that we need.
+
+Here are five images that I will be adding as an inspiration to my agent. I'm building an order management solution. I need a dashboard page, an invoices page, orders, customers, payments, the style, the design, the different components that I would like to have. These are images that I will add as inspiration to my agent. So, let's add that up front.
+
+I've gone ahead and attached all my five images. Next, I'll describe what I would like to build.
+
+Build an internal order management application used by employees to manage customers, orders, products, invoices, and payments. And the application should support the following: Managing customers, create and managing orders, adding multiple items to an order, generating invoice, tracking payments, use the attached screenshots as reference for the layout and structure of the application screens.
+
+---
+
+Now that's how I am describing my problem statement to Vibe. There are options here to further enhance the prompt. AI will look at the description that you've provided and enhance it further.
+
+There is also a new dictation option wherein you can use your voice to turn speech into text. No typing needed.
+
+Once ready, we can submit our project description. I'll click submit.
+
+---
+
+KEY POINTS:
+- Can upload images UP FRONT as inspiration/design reference
+- Use images to guide: layout, style, components, page structure
+- Natural language prompt describes: purpose, users, features
+- Features mentioned: customers, orders, products, invoices, payments
+- AI prompt enhancement available (AI rewrites your description)
+- Dictation option: Voice-to-text for prompts
+- Reference images included in prompt for layout/structure

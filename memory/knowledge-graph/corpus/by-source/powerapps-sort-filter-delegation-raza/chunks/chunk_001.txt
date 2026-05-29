@@ -1,0 +1,14 @@
+CHUNK 1: INTRODUCTION TO SORTING AND FILTERING
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 00:00 - 00:30
+
+Hello everyone, Raza here. In this video, we will learn how to sort and filter on multiple columns of a SharePoint list in Power Apps.
+
+This by respecting delegation so we can handle large data when sorting and filtering. The concept can be applied to other data sources as well. So let's begin with the video.
+
+---
+
+KEY POINTS:
+- Topic: Sort and filter multiple columns in Power Apps
+- Data source: SharePoint list (concepts apply to other sources)
+- Critical requirement: Respect delegation for large datasets
+- Scope: Multiple column sorting and filtering

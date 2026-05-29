@@ -1,0 +1,32 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "numerology-beginners",
+  "source_url": "https://www.youtube.com/watch?v=J8OvJ9ziV6M",
+  "timestamp": "2026-03-23T16:17:00Z",
+  "status": "COMPLETE",
+  "verification": {
+    "video_duration_minutes": 198.4,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 198:41",
+    "total_events": 11420,
+    "word_count": 34651,
+    "chunks_created": 12
+  },
+  "summary": {
+    "title": "Numerology For Beginners: Numerology Explained Step By Step",
+    "domain": "mysticism/spirituality",
+    "key_topics": [
+      "Life Path Numbers",
+      "Destiny/Expression Numbers",
+      "Soul Urge Numbers",
+      "Master Numbers (11, 22, 33)",
+      "Karmic Debt Numbers",
+      "Pythagorean and Chaldean systems"
+    ]
+  },
+  "files_created": [
+    "corpus/by-source/numerology-beginners/metadata.json",
+    "corpus/by-source/numerology-beginners/chunks/chunk_001-012.txt",
+    "summaries/L0-executive/numerology-beginners.md"
+  ]
+}

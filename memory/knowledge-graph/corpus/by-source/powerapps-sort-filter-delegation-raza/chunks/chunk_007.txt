@@ -1,0 +1,36 @@
+CHUNK 7: SORT VARIABLES AND SWITCH FUNCTION
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 06:00 - 08:00
+
+I'll set a variable called `varSortBy`. I will set it to the name of my column which is "ID".
+
+And another variable. I'll call it `varSortDirection`. This will be a boolean variable. I'll set its value to `Not(varSortDirection)`.
+
+If this variable is false, you set it to true. If it is true, you set it to false.
+
+---
+
+The items property of my gallery will be as follows:
+
+`Switch(varSortBy, ...)`
+
+On `varSortBy` that's my column name. If the name is "ID", in that case you sort my SharePoint list based on the ID column in ascending or descending order based on that variable.
+
+---
+
+So I'll check to see if my variable `varSortDirection` is set or not. If it is true then I'll sort it in ascending order. Else I will sort it in descending order.
+
+Close the if function. Close the sort function. Close the switch function.
+
+---
+
+Format text. This is what my formula looks like.
+
+---
+
+KEY POINTS:
+- Variables:
+  - `varSortBy`: Stores column name (text)
+  - `varSortDirection`: Boolean (true/false for asc/desc)
+- Toggle direction: `Set(varSortDirection, Not(varSortDirection))`
+- Switch pattern: Check which column, apply appropriate sort
+- Conditional sort order: `If(varSortDirection, Ascending, Descending)`

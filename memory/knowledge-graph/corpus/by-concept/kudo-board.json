@@ -1,0 +1,27 @@
+{
+  "id": "kudo-board",
+  "name": "Kudo Board Application",
+  "category": "Power Platform",
+  "description": "Building collaborative Kudo board applications in Power Apps for team celebrations, featuring generative React pages, rich text posts, image/GIF uploads, board locking, and multi-user collaboration.",
+  "related_concepts": [
+    "generative-pages",
+    "model-driven-apps",
+    "collaboration"
+  ],
+  "sources": [
+    "powerapps-kudo-board-raza"
+  ],
+  "keywords": [
+    "Kudo board",
+    "Team celebration",
+    "Generative pages",
+    "React",
+    "Rich text",
+    "Image upload",
+    "GIF",
+    "Board locking",
+    "Collaboration",
+    "Dataverse"
+  ],
+  "created_at": "2026-03-30"
+}

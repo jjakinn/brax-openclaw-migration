@@ -1,0 +1,44 @@
+{
+  "version": "2.0",
+  "description": "Source Template - Create one per book/course/video",
+  
+  "source_id": "kebab-case-title-author",
+  "display_name": "Full Title",
+  "author": "Author/Creator Name",
+  "type": "book|course|video|document",
+  "format": "pdf|epub|txt|mp4|url",
+  
+  "metadata": {
+    "publisher": "",
+    "year": 0,
+    "isbn": "",
+    "url": "",
+    "ingested_date": "2026-03-23",
+    "processed_by": "session-id"
+  },
+  
+  "length": {
+    "pages": 0,
+    "words": 0,
+    "duration_minutes": 0,
+    "chunk_count": 0
+  },
+  
+  "structure": {
+    "parts": [],
+    "chapters": [],
+    "sections": []
+  },
+  
+  "concepts_covered": [],
+  "domains": [],
+  
+  "files": {
+    "raw": "raw/original.{ext}",
+    "chunks": "chunks/",
+    "entities": "entities.json",
+    "l0_summary": "summaries/L0-executive/{source-id}.md",
+    "l1_summary": "summaries/L1-overview/{source-id}.md",
+    "l2_summary": "summaries/L2-detailed/{source-id}/"
+  }
+}

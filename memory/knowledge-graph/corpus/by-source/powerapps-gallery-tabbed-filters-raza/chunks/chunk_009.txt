@@ -1,0 +1,26 @@
+CHUNK 9: DYNAMIC BUTTON APPEARANCE
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 08:30 - 09:30
+
+And for this, button's appearance property will be:
+
+`If(ThisItem.IsSelected, ButtonCanvas.Appearance.Primary, ButtonCanvas.Appearance.Secondary)`
+
+---
+
+If `ThisItem.IsSelected`, then you show the primary color, else secondary.
+
+---
+
+Done. Now, the button I select, the user gets a clear visual indicator of the same.
+
+---
+
+You have full flexibility to design how these buttons look like.
+
+---
+
+KEY POINTS:
+- Appearance formula: `If(ThisItem.IsSelected, Primary, Secondary)`
+- IsSelected: Gallery's built-in property for selected item
+- Result: Selected tab highlighted, others muted
+- Flexible: Can customize styling further

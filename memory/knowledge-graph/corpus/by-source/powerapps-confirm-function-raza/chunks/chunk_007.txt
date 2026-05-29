@@ -1,0 +1,35 @@
+CHUNK 7: SCENARIO 2 - BULK DELETE CONFIRMATION
+Source: powerapps-confirm-function-raza | Timestamp: 08:00 - 09:30
+
+Next scenario. I have the modern table control connected to my SharePoint list.
+
+The table control has an option to allow multiple selections. So the user can select multiple items and decide whether they would like to delete them all in one go. Once again, I can take the advantage of the confirm function.
+
+This was my code. Remove from my data source the selected items of the table.
+
+Now for me to add a confirmation dialogue.
+
+Are you sure you want to delete? Put an ampersand to concatenate text. My table control is called table issues. The selected items that the user has made. I'll use the count rows function on it. So I can display the number of items that the user has selected for deletion.
+
+Concatenate this with items as text. So are you sure you want to delete so many items?
+
+Comma. I'll give my confirm dialogue a title. I'll call it delete confirmation and the confirm button I will call it delete. That completes my confirm function.
+
+---
+
+If yes then go ahead and remove all those items. Plus, I will notify the user that the items have been deleted successfully.
+
+---
+
+Let's preview. Delete. Here's my dialogue. If I cancel, they won't be deleted.
+
+Selected a couple of items. So, it says delete two items. Select. Confirm. Yes. Delete. Now, they will be deleted. Here is the notification. and those items have been removed from my data source.
+
+---
+
+KEY POINTS:
+- Scenario 2: Bulk delete with count display
+- Formula: `If(Confirm("Delete " & CountRows(Table.SelectedItems) & " items?", {Title: "Delete Confirmation", ConfirmButton: "Delete"}), Remove(DataSource, Table.SelectedItems); Notify("Deleted", Success))`
+- Dynamic message: Shows actual count of selected items
+- Custom button text: "Delete" instead of "Confirm"
+- Table control: Has built-in multi-select capability

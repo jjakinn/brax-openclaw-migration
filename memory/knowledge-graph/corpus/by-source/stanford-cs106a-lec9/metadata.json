@@ -1,0 +1,30 @@
+{
+  "source_id": "stanford-cs106a-lec9",
+  "display_name": "Stanford CS106A: Programming Methodology - Lecture 9",
+  "author": "Mehran Sahami (Stanford University)",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "Stanford University",
+    "year": 2020,
+    "url": "https://www.youtube.com/watch?v=PLACEHOLDER_LEC9",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "chunks_processed": 4,
+    "total_words": 11272
+  },
+  "length": {
+    "pages": 0,
+    "words": 11272,
+    "duration_minutes": 50,
+    "chunk_count": 4
+  },
+  "domains": [
+    "coding",
+    "computer-science"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/stanford-cs106a-lec9/chunks/"
+  }
+}

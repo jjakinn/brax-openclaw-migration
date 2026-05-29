@@ -1,0 +1,24 @@
+CHUNK 5: DEMO PROJECT 1 — NEWS AGGREGATOR DASHBOARD
+Source: networkchuck-openclaw-review-2026 | Timestamp: 07:15 - 09:10
+
+You just configured OpenClaw. One of the most insecure things out there. Prompt injection. malware hidden in the skills. You're a walking talking CVE. Later in this video, I'll show you how to add some security features to get you to where you're not scared.
+
+But before you do, let's actually do something with our open claw. People say, "Oh, it's just an assistant. What's how is it useful?" And I get that. I live that sometimes. But let's do something to make you go, "Oh, okay."
+
+Step one, news briefing or project one. Now, remember N8N? This took us forever. This is a whole video teaching you N8N how to use the nodes, how to program it, Python, all kinds of stuff. Watch this. I'm just going to tell it, hey, I want to see some news. Cyber security, you know who I am. Network Chuck, you know what I'm into. Give me YouTube videos. Scrape Reddit. Check hacker news. And don't just give me stuff. Tell me if it's worth my time to read it or watch it. Rate it for me. We tried to do that with N8N. It took forever.
+
+Ready, set, go. And Terry just does it for me. Done. Let's make it a dashboard. Let's have him make one right now after we put him in high thinking mode. Let's do the same for us right now. That took a minute, but it's done. Let's check it out. It gave me the DNS name. That's sick. And that's actually pretty cool. It told me I should maybe watch this video from David Bombell.
+
+---
+
+KEY POINTS:
+- OpenClaw without security = prompt injection risk, malware in skills
+- Demo Project 1: News Aggregator Dashboard
+- N8N comparison: Hours of node programming → OpenClaw one natural language sentence
+- Natural language request structure:
+  - Topic: Cybersecurity news
+  - Context: "You know who I am, what I'm into"
+  - Sources: YouTube, Reddit, Hacker News
+  - Intelligence: Rate content worthiness, don't just list
+- Result: Live dashboard with DNS name, content ratings
+- Execution: "Terry just does it"

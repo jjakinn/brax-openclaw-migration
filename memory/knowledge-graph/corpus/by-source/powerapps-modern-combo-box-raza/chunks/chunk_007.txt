@@ -1,0 +1,41 @@
+CHUNK 7: SINGLE-SELECT PERSON COLUMN (FORM CONTEXT RECAP)
+Source: powerapps-modern-combo-box-raza | Timestamp: 10:30 - 12:30
+
+But what if I want to use this in the context of the modern form control or I want to patch this information back to my data source. It sounds easy but it's not.
+
+---
+
+Let's take a scenario. I have a project task management screen in which I have a gallery that lists out data from a data source, my SharePoint list. for any of these items I can open. So it will redirect me to a form screen that will show the data for that selected item.
+
+Now if we explore the SharePoint list assign to is a single select person column person type allow multi selections off.
+
+---
+
+I had done a video showing how to do this using the modern combo box control. And to quickly recap, all I had done was I used that same concept Office 365 users search user v2 to allow the user to search for people in Microsoft Entra.
+
+Now, because it's in the context of a data card in the form control, there's the data card. We are in the form control.
+
+---
+
+This modern combo box default selected items the formula is once again search user based on the current value of that column it's a person column so I'm picking the email just get one record so that's what it populates here single select
+
+---
+
+And lastly the data card has an update property this is how I can update data back to the data source the SharePoint list if that combo box control dot selected.mail is equal to blank meaning the user has not selected anything then you update its value to blank else this is the token that a person type column in SharePoint expects
+
+So if you're patching this is how you would patch the data these are the properties that are needed the must fill is claims display name and email. All of which I'm getting from the combo box controls selected item.
+
+---
+
+KEY POINTS:
+- Using in Form control context is more complex
+- Scenario: Project task management with SharePoint
+- Single-select person column: "Assigned To" (multi-selections: OFF)
+- Previous video recap for single-select:
+  - Use `Office365Users.SearchUserV2()` in combo box items
+  - `DefaultSelectedItems`: Search for current value by email
+  - `Update` property: Check if blank, format for SharePoint
+- SharePoint person column token requires:
+  - `Claims` (required)
+  - `DisplayName`
+  - `Email`

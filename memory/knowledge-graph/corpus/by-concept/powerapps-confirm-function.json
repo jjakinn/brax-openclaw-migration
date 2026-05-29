@@ -1,0 +1,25 @@
+{
+  "id": "powerapps-confirm-function",
+  "name": "Power Apps Confirm Function",
+  "category": "Power Platform",
+  "description": "Native dialog function in Power Apps for creating consistent confirmation dialogs without custom containers. Supports customizable buttons, tracks user selections, and integrates with forms and galleries.",
+  "related_concepts": [
+    "powerapps-modern-controls",
+    "user-experience",
+    "form-validation"
+  ],
+  "sources": [
+    "powerapps-confirm-function-raza"
+  ],
+  "keywords": [
+    "Confirm function",
+    "Dialog box",
+    "Modern controls",
+    "User confirmation",
+    "Delete confirmation",
+    "Unsaved changes",
+    "Bulk operations",
+    "Notification"
+  ],
+  "created_at": "2026-03-30"
+}

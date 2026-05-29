@@ -1,0 +1,22 @@
+CHUNK 3: DESIGNING TAB EXPERIENCE
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 01:45 - 02:15
+
+Let's first begin designing this tab experience.
+
+---
+
+These tabs are the status values of my work tracker items in my SharePoint list.
+
+Status in my scenario is a choice column.
+
+---
+
+To use modern controls: In app settings, updates, ensure modern controls and themes are turned on for your app.
+
+---
+
+KEY POINTS:
+- Tabs represent: Status values from SharePoint
+- Status column: Choice type
+- Controls used: Gallery + Button (modern)
+- Prerequisite: Modern controls and themes = ON

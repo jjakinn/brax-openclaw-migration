@@ -1,0 +1,17 @@
+{
+  "source_id": "openclaw-condensed-lessons",
+  "display_name": "100 Hours of OpenClaw Lessons in 35 Min (Alex Finn)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 6748,
+    "total_chunks": 3,
+    "chunks_processed": 3
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

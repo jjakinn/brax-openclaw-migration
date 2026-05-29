@@ -1,0 +1,40 @@
+{
+  "version": "2.0",
+  "description": "Query Patterns - Common question types and retrieval strategies",
+  "patterns": {
+    "what_do_sources_say": {
+      "description": "Synthesize all sources on a topic",
+      "load_order": ["concepts-master", "by-concept/synthesis", "L2-detailed", "L3-chunks"],
+      "max_chunks": 5,
+      "include_contradictions": true
+    },
+    "where_did_i_read": {
+      "description": "Find specific quote or reference",
+      "load_order": ["concepts-master", "L3-chunks"],
+      "max_chunks": 3,
+      "include_context": true
+    },
+    "prerequisites_for": {
+      "description": "What do I need to know first",
+      "load_order": ["ontology/prerequisites", "L1-overview"],
+      "max_chunks": 2
+    },
+    "contradictions_on": {
+      "description": "Find disagreements between sources",
+      "load_order": ["by-concept/contradictions", "L2-detailed"],
+      "max_chunks": 5
+    },
+    "how_to_build": {
+      "description": "Use procedural knowledge to help with task",
+      "load_order": ["procedures/patterns", "by-concept/mentions", "L3-chunks"],
+      "max_chunks": 5,
+      "include_procedures": true
+    },
+    "deep_dive": {
+      "description": "Comprehensive exploration of topic",
+      "load_order": ["concepts-master", "L2-detailed", "L3-chunks"],
+      "max_chunks": 10,
+      "include_all_levels": true
+    }
+  }
+}

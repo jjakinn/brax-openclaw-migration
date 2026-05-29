@@ -1,0 +1,17 @@
+{
+  "source_id": "claude-code-course",
+  "display_name": "Claude Code Full Course 4 Hours (Nick Saraev)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 56345,
+    "total_chunks": 19,
+    "chunks_processed": 19
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

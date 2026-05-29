@@ -1,0 +1,40 @@
+CHUNK 3: TAKING A QUIZ - QUESTIONS AND TIMER
+Source: powerapps-quiz-app-raza | Timestamp: 01:30 - 02:30
+
+The first question is presented including the four choices.
+
+---
+
+The design is modeled on "Who Wants to Be a Millionaire."
+
+---
+
+Top right hand corner is a 60-second countdown timer.
+
+---
+
+I'll go ahead, provide my response, lock in my answer. The quiz moves ahead to the next question.
+
+---
+
+Question one, I did answer correctly. So, it gives me a score.
+
+---
+
+For each of the questions, the admin can define how many points.
+
+---
+
+The admin has set up a goal. That's the pass percentage needed for this quiz.
+
+---
+
+KEY POINTS:
+- Question format:
+  - Question text
+  - Four multiple choice options
+  - Design: "Who Wants to Be a Millionaire" style
+- Timer: 60-second countdown (top right)
+- Answer submission: Lock in answer to proceed
+- Scoring: Points per question (admin configurable)
+- Pass goal: Percentage threshold to pass quiz

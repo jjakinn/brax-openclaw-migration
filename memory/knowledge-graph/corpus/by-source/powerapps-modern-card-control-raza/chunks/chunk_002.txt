@@ -1,0 +1,19 @@
+CHUNK 2: PREREQUISITES AND CARD PROPERTIES OVERVIEW
+Source: powerapps-modern-card-control-raza | Timestamp: 01:00 - 02:00
+
+To add a card control, insert, we have the card control. If you don't see this one, make sure under settings and app updates modern controls and themes are turned on. Card is a modern control.
+
+Second, make sure your app authoring version is set to this or above this. If you need to change your app authoring version, simply click on edit and change the authoring version and apply it.
+
+---
+
+Let's explore the properties of the modern card control.
+
+---
+
+KEY POINTS:
+- Prerequisites:
+  1. Settings → Updates: Modern controls and themes = ON
+  2. Settings → Support: App authoring version = current or higher
+- Card control location: Insert menu
+- Modern control requirements

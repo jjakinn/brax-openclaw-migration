@@ -1,0 +1,52 @@
+CHUNK 10: MULTIPLE COLUMN SORT AND INITIAL VALUES
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 11:30 - 13:00
+
+Text: "Title" column. Selection: "Title"
+
+That's my formula for items.
+
+---
+
+Let's preview. Click. Title sorted in ascending. Title sorted in descending.
+
+Now the sort is on the ID column.
+
+---
+
+Let's try the same for due date. Pattern similar.
+
+Copy the button. Paste. Text: "Due Date"
+
+Gallery items property. Due date the column I'll select due date.
+
+Done.
+
+---
+
+Preview. Now I can sort on date, title and ID.
+
+---
+
+When a user launches the app the first time at that point we need to have the values set: `varSortBy` and `varSortDirection`.
+
+---
+
+For the app's OnStart function, I'll set the two variables: `varSortBy`: "Due Date". The sort direction: false. So it would be descending.
+
+---
+
+So observe if I right click on the app object and run OnStart, this is the experience of what the user will get when they first run the app.
+
+---
+
+By default it will sort on due date. The user is free to change the sort on any of the columns that are sortable.
+
+---
+
+KEY POINTS:
+- Add more columns: Copy button, change text, add Switch case
+- OnStart initialization:
+  - `Set(varSortBy, "DueDate")`
+  - `Set(varSortDirection, false)` // false = descending
+- Default sort: Set when app starts
+- User freedom: Can change to any sortable column

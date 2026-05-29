@@ -1,0 +1,23 @@
+CHUNK 8: MULTI-SELECT PERSON COLUMN CHALLENGE
+Source: powerapps-modern-combo-box-raza | Timestamp: 12:30 - 13:30
+
+What if I have a person type column that allows multiple selections? Now the game is very different.
+
+I'll select my form control which is connected to that same SharePoint list. Under fields, I'll go and add my stakeholders column which is person column multi select.
+
+I'll add this. It does add the modern combo box control.
+
+But if you observe, it doesn't load any information.
+
+If you explore the items property of this combo box, it uses this formula. Choices of the SharePoint list dot the person column which is multi select stakeholders.
+
+You will note that even if it did load the data and you can try it with the classic form control with the classic combo box it still does not list all your users from Microsoft Entra.
+
+---
+
+KEY POINTS:
+- Multi-select person column = completely different implementation
+- Adding to form: Uses `Choices()` function
+- Problem: `Choices([@SharePointList].Stakeholders)` doesn't show all Entra users
+- Classic combo box has same limitation
+- Need custom implementation using Office 365 Users connector

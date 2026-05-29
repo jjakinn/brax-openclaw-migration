@@ -1,0 +1,49 @@
+CHUNK 11: SYNCING CHANGES & SAVING
+Source: powerapps-vibe-coding-raza | Timestamp: 25:00 - 28:00
+
+Now if I head to app from that data view after I make the changes notice it synchronizes the changes, right? Because I made some changes to the data model. So, it's going to go ahead and sync.
+
+But if I go to customers, notice the customers page doesn't load any data because the code is still referring to the previous table that I now removed.
+
+So, how about I give it another prompt. Update all the pages to ensure customer data comes from the customer info table.
+
+It's going to go ahead make the updates. Notice it says it's made the updates to areas on the code, but it's always best to evaluate. Notice the customers page says failed to load customers even that you can let the agent know so it can go validate it again and make sure it's made all the updates.
+
+Now this is actually showing the data from my table.
+
+---
+
+Now once done I can click save. This will save my vibe project and its artifacts let's keep an eye out on the solution as well.
+
+Still empty.
+
+Now starting to load with information.
+
+My plan — the plan attachments were those images that I uploaded. My plan artifacts are the technology recommendations that it makes. Data workspace is the data tab that shows you the tables, the relationships. Notice no tables are here yet because nothing's been published as of now. Neither is the app.
+
+---
+
+Now that it's been saved, I'll click publish.
+
+Here's the name of my app. It's given it a nice description. It's going to be published in my environment. And now my draft tables will be published to Microsoft Dataverse.
+
+It's publishing the tables. Then it will go and prepare my app, build my app and deploy my app.
+
+Publishing completed.
+
+Now if I explore my solution, here is the app. That's my vibe app. It gets designated as the type code app. And here are my tables. Invoice, order, order item, payment, and product.
+
+---
+
+KEY POINTS:
+- Data model changes trigger sync notification
+- Code may still reference old table names — requires agent update
+- Iterative fix: Prompt agent to "Update all pages to use [new table]"
+- Evaluation critical: Verify changes work correctly
+- Save: Stores Vibe project + artifacts (not yet to solution)
+- Publish process:
+  1. Tables published to Dataverse
+  2. App prepared
+  3. App built
+  4. App deployed
+- Result: App appears in solution as "code" type + tables created

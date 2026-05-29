@@ -1,0 +1,148 @@
+{
+  "source_id": "cs50-full-course-2026",
+  "total_words": 289746,
+  "total_chunks": 20,
+  "chunk_size": 15000,
+  "chunks": [
+    {
+      "chunk_id": 1,
+      "file": "chunk_001.txt",
+      "word_count": 15000,
+      "start_word": 0,
+      "end_word": 15000
+    },
+    {
+      "chunk_id": 2,
+      "file": "chunk_002.txt",
+      "word_count": 15000,
+      "start_word": 15000,
+      "end_word": 30000
+    },
+    {
+      "chunk_id": 3,
+      "file": "chunk_003.txt",
+      "word_count": 15000,
+      "start_word": 30000,
+      "end_word": 45000
+    },
+    {
+      "chunk_id": 4,
+      "file": "chunk_004.txt",
+      "word_count": 15000,
+      "start_word": 45000,
+      "end_word": 60000
+    },
+    {
+      "chunk_id": 5,
+      "file": "chunk_005.txt",
+      "word_count": 15000,
+      "start_word": 60000,
+      "end_word": 75000
+    },
+    {
+      "chunk_id": 6,
+      "file": "chunk_006.txt",
+      "word_count": 15000,
+      "start_word": 75000,
+      "end_word": 90000
+    },
+    {
+      "chunk_id": 7,
+      "file": "chunk_007.txt",
+      "word_count": 15000,
+      "start_word": 90000,
+      "end_word": 105000
+    },
+    {
+      "chunk_id": 8,
+      "file": "chunk_008.txt",
+      "word_count": 15000,
+      "start_word": 105000,
+      "end_word": 120000
+    },
+    {
+      "chunk_id": 9,
+      "file": "chunk_009.txt",
+      "word_count": 15000,
+      "start_word": 120000,
+      "end_word": 135000
+    },
+    {
+      "chunk_id": 10,
+      "file": "chunk_010.txt",
+      "word_count": 15000,
+      "start_word": 135000,
+      "end_word": 150000
+    },
+    {
+      "chunk_id": 11,
+      "file": "chunk_011.txt",
+      "word_count": 15000,
+      "start_word": 150000,
+      "end_word": 165000
+    },
+    {
+      "chunk_id": 12,
+      "file": "chunk_012.txt",
+      "word_count": 15000,
+      "start_word": 165000,
+      "end_word": 180000
+    },
+    {
+      "chunk_id": 13,
+      "file": "chunk_013.txt",
+      "word_count": 15000,
+      "start_word": 180000,
+      "end_word": 195000
+    },
+    {
+      "chunk_id": 14,
+      "file": "chunk_014.txt",
+      "word_count": 15000,
+      "start_word": 195000,
+      "end_word": 210000
+    },
+    {
+      "chunk_id": 15,
+      "file": "chunk_015.txt",
+      "word_count": 15000,
+      "start_word": 210000,
+      "end_word": 225000
+    },
+    {
+      "chunk_id": 16,
+      "file": "chunk_016.txt",
+      "word_count": 15000,
+      "start_word": 225000,
+      "end_word": 240000
+    },
+    {
+      "chunk_id": 17,
+      "file": "chunk_017.txt",
+      "word_count": 15000,
+      "start_word": 240000,
+      "end_word": 255000
+    },
+    {
+      "chunk_id": 18,
+      "file": "chunk_018.txt",
+      "word_count": 15000,
+      "start_word": 255000,
+      "end_word": 270000
+    },
+    {
+      "chunk_id": 19,
+      "file": "chunk_019.txt",
+      "word_count": 15000,
+      "start_word": 270000,
+      "end_word": 285000
+    },
+    {
+      "chunk_id": 20,
+      "file": "chunk_020.txt",
+      "word_count": 4746,
+      "start_word": 285000,
+      "end_word": 289746
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+CHUNK 11: SKILLS & CLAWHUB — EXTENDING CAPABILITIES
+Source: networkchuck-openclaw-review-2026 | Timestamp: 24:00 - 27:30
+
+Hey, quick afterthought transition. I want to show you a few things here on the skills clawub skills the browser access and sub aents. Here you go. Openclaw also has skills which is both a good thing and a bad thing. They have a whole website called clawhub. Let's go check it out. This is a directory of skills that just give your agent extra things it can do. Skills.
+
+So, if I go to browse skills, you can see that there's over 33,000 skills. Please be careful. There's a lot of bad stuff in there. Lots of malware. It became a problem. Um, let's find a simple one to install. Let's give our agent some ability like the ability to make Microsoft Word documents. Perfect.
+
+You can see that they partner with Virus Total because, again, there were problems. This is benign. We should be okay. Now to install, we'll want to have actually Clawhub installed. So we'll do npm-i-g clawhub to install clawhub. And then we'll do clawhub install. What's it called again? Word docx. It's installed. Let's see if he has it. He sees it.
+
+Let's have him create a word document. Let's have him create his own resume. Okay, finished the document. Told me it's coffee time. Let's take a look at it. And there's Terry's resume. Four CCIEs. I love it. Also a little creepy how good that is.
+
+I can also have Terry browse the web. Go to networkchuck. coffee and your web browser and tell me what you see. Yes, he does have a headless browser. Add default route to your cart and added a product to its cart.
+
+You can also do sub agents. Deploy a sub aent to research the best way to make coffee. Now here in Telegram, you also have a lot of commands you can use. For example, I can do for/status. It's being cued right now, but I can see everything that's going on right now, including sub aents active. I can do forward slash sub aents list. It's extremely powerful.
+
+---
+
+And that's just a sub aent. You can actually install multiple agents like Terry under one gateway. I actually have that right now with my IT department. I have Ron Ezy the IT manager and then Fred, George, Charlie as individual IT employees, network engineer, storage engineer. I can message them all on Slack. It's awesome.
+
+---
+
+KEY POINTS:
+- ClawHub: Skill marketplace (33,000+ skills)
+- **WARNING**: 12% of skills found with malware — vet everything
+- VirusTotal partnership for scanning
+- Install workflow:
+  1. `npm i -g clawhub` — Install CLI
+  2. `clawhub install <skill-name>` — Install skill
+- Demo: Word/DOCX skill → Agent creates its own resume
+- Built-in tools:
+  - Headless browser (can browse websites, add to cart)
+  - Sub-agents (delegate research tasks)
+- Telegram commands:
+  - `/status` — View current activity
+  - `/subagents list` — View sub-agents
+- Multi-agent setup: One gateway, multiple specialized agents (CTO, network engineer, storage engineer, etc.)

@@ -1,0 +1,27 @@
+CHUNK 10: PREVIEW AND RESPONSIVE BEHAVIOR
+Source: powerapps-modern-card-control-raza | Timestamp: 10:30 - 11:30
+
+So if I preview this it shows me all the documents from my document library. The thumbnail. Here is the image showcasing the file type, the name, who created the file, what date, what time.
+
+I built all of this in a gallery by using a single control, the card control.
+
+---
+
+So you can see how the control adapts to the layout that I as a maker choose to configure thereby enabling consistent patterns without requiring multiple independent controls. A lot faster for it to render.
+
+---
+
+And this is fully responsive because I'm using a gallery in a responsive container control and the card control has been positioned to be responsive.
+
+So observe as the device size and orientation changes the control automatically adapts itself.
+
+---
+
+KEY POINTS:
+- Single control: Card control handles entire card experience
+- Benefits:
+  - Consistent patterns
+  - No multiple independent controls needed
+  - Faster rendering
+- Fully responsive: Adapts to device size and orientation
+- Gallery + responsive container + card control = responsive cards

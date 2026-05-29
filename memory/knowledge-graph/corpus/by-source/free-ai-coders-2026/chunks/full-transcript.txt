@@ -1,0 +1,335 @@
+Kind: captions
+Language: en
+[music]
+Hi, welcome to another video. So, in
+this one, I want to do a proper all free
+AI coder tools lineup video. A lot of
+people think AI coding in 2026 is
+basically just a subscription trap where
+you keep stacking $20 plans until your
+bank account starts crying. You pay for
+the IDE, then the model, then the agent,
+then the design tool, and then some
+random browser automation thing on top.
+But believe it or not, there are
+actually a lot of genuinely useful tools
+you can still use for free. Now, I do
+want to be honest before we go further.
+As I'm recording this in March 2026,
+some of these are open- source and free
+by design, some are free tiers, some are
+public previews, and some are free for a
+limited time. So, take the exact limits
+with a grain of salt because these
+companies keep changing things. But if
+your budget is basically zero, these are
+the tools that I think are the most
+worth knowing right now. Let's start
+with UI because if your design reference
+is bad, then your generated app is
+usually also bad. And for that, Stitch
+is still one of the nicest free tools
+out there. Stitch is basically Google's
+AI design tool in labs. You give it a
+prompt, screenshots, or references, and
+it gives you UI screens, flows,
+variants, and prototypes. This is really
+useful because instead of asking your
+coding agent to make it look modern and
+hoping for the best, you can first get
+the visual direction right in Stitch and
+then pass that into the coder. That
+alone improves results a lot. What I
+like about Stitch is that it fits the
+real workflow. It is not just a toy that
+spits out one pretty screen and then
+dies. You can generate full flows, make
+variants, organize the canvas, and
+export things for handoff. So, if you're
+building landing pages, dashboards,
+mobile screens, or onboarding flows,
+Stitch is a really good free starting
+point. It is one of those tools that
+saves you from bad prompting later. Now,
+once the UI idea is clear, you need an
+actual coding agent. And if you want the
+async delegate at come back later type
+of workflow, Codex free tier is
+surprisingly relevant right now. Open
+AAI says Codex is included for a limited
+time with chat GPT free and go. I'm
+emphasizing limited time because that
+part matters. This is not me pretending
+it is guaranteed forever. But right now,
+if you want cloud agents that can take a
+task, go work on it and come back with
+changes. Codeex is in the conversation
+even on the free side. The good thing
+about Codeex is that it is not just one
+interface anymore. You can use it across
+the app, CLI, web, and IDE extension
+with the same chat GPT login. So, if you
+like the idea of delegating a bug fix, a
+refactor, or a code review task while
+you keep doing something else, Codeex is
+pretty amazing for that. I still would
+not call it the perfect everything tool,
+and OpenAI's limits can change fast. But
+as a free option today, it is definitely
+worth trying. If you want Google's
+answer to that same async workflow, then
+Jules is also a very strong option.
+Jules is now available to everyone and
+Google describes it as having a nocost
+tier with paid pro and ultra tiers above
+that. This is great because Jules is
+very good when you have explicit GitHub
+tasks, add tests, fix this issue,
+improve the docs, refactor this
+component, modernize this thing. It is
+less about chatting forever and more
+about sending work off properly.
+Personally, I think Jules and Codeex sit
+in a similar category, but they feel a
+bit different. Codex feels more like a
+broader coding agent ecosystem now while
+Jules feels very GitHub task oriented
+and quite clean for that. So if your
+repo is already on GitHub and you like
+the batchwork style, Jules is a really
+good free option as well. Now if you
+want the terminal route, which many of
+you watching this channel probably do,
+then Gemini CLI is still one of the best
+free tools in the entire but before we
+get into that, I want to quickly talk
+about today's sponsor on demand. If
+you've been trying to build AI agents,
+you know the pain. You find one tool for
+summarization, another for web scraping,
+another for data analysis, and then you
+spend more time stitching them together
+than actually getting work done. On
+demand solves this. On demand is a
+platform where you can discover,
+assemble, and automate AI agents all in
+one place. They have an agent
+marketplace with over 400 agentic tools
+ready to go. So instead of hunting for
+tools and figuring out APIs, you just
+browse, pick what you need, and deploy.
+That gives you over 1,200 possible agent
+combinations, which is insane. But the
+cool part is the playground. You take
+these agents and assemble them into a
+workflow for your exact use case. And
+once it works, you turn it into a full
+automation using their flow builder.
+It's visual, no code, and lets you chain
+multi- aent workflows that run
+repeatedly without you touching
+anything. You can also bring your own
+models, and it's privacy first with
+secure connectors. Sign up through my
+link in the description, and you'll get
+$5 in free credit. Go check it out.
+Honestly, it is hard to overstate how
+important this thing has become. It is
+open- source. It runs locally in your
+terminal. It supports MCP and all kinds
+of workflows. And Google's own repo
+currently says that if you sign in with
+your Google account, you get a free tier
+with up to 60 requests per minute and
+1,000 requests per day. That is kind of
+insane for a free tier, especially
+considering the model quality. This is
+why I keep recommending Gemini CLI to
+people who do not want to spend cloud
+code money. It is flexible, it is
+scriptable, it works well, and it has
+enough free usage that you can actually
+build stuff instead of just poke at a
+demo. If you want one terminal native
+agent that gives you the most mileage
+for $0, Gemini CLI is absolutely in the
+top tier. And if you do not like staying
+in the terminal all the time, then
+Gemini Code Assist is also worth
+mentioning. Google explicitly positions
+it as the IDE side companion to Gemini
+CLI and it has a free tier too. So you
+can use code assist in VS Code or
+Jetrains for inline help edits,
+explanations and agent mode while
+keeping Gemini CLI around for heavier
+terminal workflows. That combination is
+really nice because it gives you both
+editor comfort and terminal power
+without paying. Now let's come to
+anti-gravity because this is the one
+that I think shocks the most people on
+the free tier. Google recently said that
+free users still get all product
+features, unlimited tab code
+completions, and access to things like
+agent manager and browser integration,
+while the free plan now uses a bigger
+weekly rate limit, so you do not hit the
+wall instantly during one project. That
+is a huge deal if you ask me.
+Anti-gravity has one of the best free
+tiers in AI coding right now. It is not
+perfect. The agent manager can still
+feel a bit weird at times, and some
+parts are more polished than others, but
+the raw value is kind of crazy. You get
+a serious agentic coding environment
+with browser control, planning, model
+choice, and powerful coding models on
+the free tier that is literally better
+than a lot of paid tools. So, if you
+want a more complete editor plus agent
+experience instead of just a CLI,
+anti-gravity is a really good option for
+sure. Now, another tool that deserves a
+spot in this lineup is GitHub Copilot
+Free. I know, I know a lot of people
+like to ignore Copilot now because it is
+not as flashy as the newer agent tools,
+but free is free and GitHub's own docs
+still show 2,000 code completions and 50
+premium requests per month on the free
+plan. If you mostly want inline help,
+quick code completion, the occasional
+multi-file assist, and a very tight VS
+Code integration, it is still useful. I
+would not say Copilot Free is the best
+free tier overall. I think Gemini CLI
+and anti-gravity are stronger if you
+really push them. But Copilot Free is
+extremely easy to set up. It sits right
+inside the editor many people already
+use. And sometimes convenience is the
+thing that matters, especially for
+students or beginners. That matters a
+lot. Now, if you want a more open-
+source terminal agent alternative, then
+Quen Code is also really, really
+interesting. Their GitHub repo says it
+is open source, and if you sign in with
+Qen Oath, they currently give 1,000 free
+requests per day. That is a serious
+amount for a free terminal agent. And
+the nice thing here is that QN code
+feels very similar in spirit to Gemini
+CLI. It is terminal first, agentic, and
+made for people who actually want to
+work inside code bases, not just ask
+random chatbot questions. So, if your
+thing is open tooling and you want
+another 0 agent in the terminal
+category, Qen Code is absolutely worth
+checking out. I especially like that we
+are no longer in a place where there is
+only one viable terminal agent unless
+you pay competition. Here is great. Now,
+many of you also asked me about Mistl
+Vibe and Devstrol. So, let me give the
+honest version of that. Mistral Vibe is
+not my main all free recommendation, but
+Devstrol absolutely still belongs in the
+free conversation. Now, if you're in the
+OpenClaw ecosystem, then the weird wild
+card you should absolutely keep an eye
+on is Xiaomi Mimo. OpenClaw's official
+docs currently show Xiaomi Mimo V2 Flash
+Pro and Omniwired up with zero token
+costs in the provider config. If that
+holds, then this is one of the wildest
+free back-end options for OpenClaw
+users. I'm saying if that holds because
+these provider economics can change fast
+and I do not want to oversell it. But
+right now, this is exactly the type of
+thing I would test if I were building a
+cheap or fully free OpenClaw stack. And
+this is important because OpenClaw type
+workflows are where a lot of people get
+scared by cost. They want autonomous
+agents, browser use, tools, planning,
+memory, all of that. And then they think
+they need to attach some expensive API
+to make it usable.
+But if you combine OpenClaw with zero
+cost or free-ish providers like this,
+suddenly the experiment becomes much
+more accessible, which is pretty amazing
+to be honest. So what would my actually
+recommended free workflow look like if I
+had to build one from scratch today. For
+UI and mockups, I would start with
+Stitch. For async background work on
+repos, I would test codeex free tier and
+Jules and see which one fits the task
+better. For terminal first coding, I
+would use Gemini CLI as the main
+workhorse. If I wanted a second open
+source terminal option, I would keep QN
+code around. For the full Aentic editor
+experience, I would absolutely keep
+anti-gravity installed. If I wanted the
+simplest editor native free option for
+casual use, I would also keep GitHub
+C-Pilot free or Gemini code assist
+around. And if I wanted the more
+experimental hacker route, then I would
+play with OpenClaw plus Xiaomi Mimo or
+Devstrol on the free Mistl experiment
+plan. That is already a seriously
+powerful stack and it costs $0 to start.
+Now, one thing I really want to
+emphasize is that free does not always
+mean best for every single situation.
+Sometimes the free tier is rate limited.
+Sometimes it is public preview.
+Sometimes it is free for a limited time.
+Sometimes it is amazing, but only for
+one kind of workflow. That is why I do
+not think there is a single winner here.
+The real win is that we now have
+categories. If you want design, use
+stitch. If you want async GitHub work,
+use jewels or codeex. If you want
+terminal power, use Gemini code assist.
+If you want the open and experimental
+route, use Devstrol and Open Claw. That
+is the proper way to think about this.
+And honestly, this is way better than
+the old situation where everyone just
+told you to buy one proprietary tool and
+live with whatever limits or rug pulls
+came later. I would much rather have a
+stack like this where I can mix and
+match based on the task and based on how
+much money I want to spend, which right
+now can literally be nothing. So, if
+you're a student, a hobbyist, or just
+someone tired of every AI tool trying to
+squeeze another $20 out of you, this is
+actually a really good time. You can do
+UI generation, code editing, async
+delegation, IDE assistance, and terminal
+agent workflows without paying. That
+would have sounded fake not that long
+ago, but it is real now. Overall, it's
+pretty cool. Anyway, let me know your
+thoughts in the comments. [music] If you
+like this video, consider donating
+through the super thanks option or
+becoming a member by clicking the join
+[music] button. Also give this video a
+thumbs up and subscribe to my channel.
+I'll see you in the [music] next one.
+Until then, bye.
+>> [music]

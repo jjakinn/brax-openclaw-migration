@@ -1,0 +1,310 @@
+{
+  "name": "ClawMind \u2014 Auto-Learning Engine",
+  "nodes": [
+    {
+      "name": "Trigger",
+      "type": "n8n-nodes-base.cron",
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 15
+            }
+          ]
+        }
+      },
+      "position": [
+        250,
+        300
+      ],
+      "typeVersion": 1,
+      "id": "426b8913-36ad-482e-b61c-2b7221dd7d77"
+    },
+    {
+      "name": "Check Inbox",
+      "type": "n8n-nodes-base.readBinaryFiles",
+      "parameters": {
+        "fileSelector": "=/Users/Jakin/ClawMind/inbox/*.md"
+      },
+      "position": [
+        450,
+        300
+      ],
+      "typeVersion": 1,
+      "id": "add27cac-1921-4d72-a24a-1314c4d98ec4"
+    },
+    {
+      "name": "Has Content?",
+      "type": "n8n-nodes-base.if",
+      "parameters": {
+        "conditions": {
+          "options": {
+            "leftValue": "={{ $json.length }}",
+            "operator": {
+              "type": "number",
+              "operation": "gt"
+            },
+            "rightValue": "0"
+          }
+        }
+      },
+      "position": [
+        650,
+        300
+      ],
+      "typeVersion": 1,
+      "id": "9f0784ab-08c3-4190-b144-1716ab5ed3cf"
+    },
+    {
+      "name": "Process Each Item",
+      "type": "n8n-nodes-base.splitInBatches",
+      "parameters": {
+        "batchSize": 1
+      },
+      "position": [
+        850,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "10e8f547-0029-4778-8dd2-83a31f08790d"
+    },
+    {
+      "name": "Extract Metadata",
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "jsCode": "const content = $input.first().json.data;\nconst filename = $input.first().json.fileName;\nconst frontmatterMatch = content.match(/^---\\s*\\n([\\s\\S]*?)\\n---/);\nlet metadata = {};\nif (frontmatterMatch) {\n  const fm = frontmatterMatch[1];\n  fm.split('\\n').forEach(line => {\n    const [key, ...vals] = line.split(':');\n    if (key && vals.length) {\n      metadata[key.trim()] = vals.join(':').trim();\n    }\n  });\n}\nconst wikiLinkRegex = /\\[\\[([^\\]|]+)\\|?([^\\]]*)\\]\\]/g;\nconst links = [];\nlet match;\nwhile ((match = wikiLinkRegex.exec(content)) !== null) {\n  links.push({target: match[1].trim(), display: match[2]?.trim() || match[1].trim()});\n}\nconst topicRegex = /\\b([A-Z][a-z]+(?:\\s+[A-Z][a-z]+)+)\\b/g;\nconst topics = [...content.matchAll(topicRegex)].map(m => m[1]).slice(0, 10);\nlet noteType = 'general';\nif (content.includes('# Project') || metadata.tags?.includes('project')) {\n  noteType = 'project';\n} else if (content.includes('# Person') || metadata.tags?.includes('person')) {\n  noteType = 'person';\n} else if (content.includes('# Concept') || metadata.tags?.includes('concept')) {\n  noteType = 'concept';\n} else if (filename.includes('Conversation') || filename.includes('Session')) {\n  noteType = 'conversation';\n}\nreturn [{filename, content, metadata, links, topics: [...new Set(topics)], noteType, processedAt: new Date().toISOString(), wordCount: content.split(/\\s+/).length}];"
+      },
+      "position": [
+        1050,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "5f365f1d-f054-4ed0-b0fc-5f6b889de1a1"
+    },
+    {
+      "name": "Check for Duplicates",
+      "type": "n8n-nodes-base.readBinaryFiles",
+      "parameters": {
+        "fileSelector": "=/Users/Jakin/ClawMind/{{ $json.topics[0] }}.md",
+        "options": {
+          "continueOnFail": true
+        }
+      },
+      "position": [
+        1250,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "027f1f46-0857-43a8-9c02-c87fe5742418"
+    },
+    {
+      "name": "Route Action",
+      "type": "n8n-nodes-base.switch",
+      "parameters": {
+        "rules": {
+          "rules": [
+            {
+              "value": "create",
+              "output": 0,
+              "conditions": [
+                {
+                  "value": "={{ $json.error }}",
+                  "operator": {
+                    "type": "boolean",
+                    "operation": "equals"
+                  },
+                  "rightValue": "true"
+                }
+              ]
+            },
+            {
+              "value": "update",
+              "output": 1,
+              "conditions": [
+                {
+                  "value": "={{ $json.error }}",
+                  "operator": {
+                    "type": "boolean",
+                    "operation": "notEquals"
+                  },
+                  "rightValue": "true"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "position": [
+        1450,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "5dd6fa2f-7541-4652-a3e9-319f76f3266d"
+    },
+    {
+      "name": "Create New Note",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "parameters": {
+        "fileName": "=/Users/Jakin/ClawMind/{{ $('Extract Metadata').item.json.topics[0] || $('Extract Metadata').item.json.metadata.title || 'Note' }}.md",
+        "data": "={{ $base64Encode($('Extract Metadata').item.json.content) }}"
+      },
+      "position": [
+        1650,
+        100
+      ],
+      "typeVersion": 1,
+      "id": "44b53c43-95b3-4326-a9ef-f4043c04f915"
+    },
+    {
+      "name": "Log Activity",
+      "type": "n8n-nodes-base.googleSheets",
+      "parameters": {
+        "operation": "append",
+        "documentId": "={{ $env.CLAWMIND_LOG_SHEET_ID }}",
+        "sheetName": "LearningLog",
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "timestamp": "={{ $now }}",
+            "action": "created",
+            "note": "={{ $('Extract Metadata').item.json.topics[0] || $('Extract Metadata').item.json.metadata.title }}",
+            "type": "={{ $('Extract Metadata').item.json.noteType }}",
+            "wordCount": "={{ $('Extract Metadata').item.json.wordCount }}",
+            "linksFound": "={{ $('Extract Metadata').item.json.links.length }}"
+          }
+        }
+      },
+      "position": [
+        2850,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "48ee879a-9057-45aa-94de-a9060724daaa"
+    },
+    {
+      "name": "No Content",
+      "type": "n8n-nodes-base.noOp",
+      "parameters": {},
+      "position": [
+        850,
+        400
+      ],
+      "typeVersion": 1,
+      "id": "5d42a5f3-f295-4795-8e0d-9dc0662fba62"
+    }
+  ],
+  "connections": {
+    "Trigger": {
+      "main": [
+        [
+          {
+            "node": "Check Inbox",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Inbox": {
+      "main": [
+        [
+          {
+            "node": "Has Content?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has Content?": {
+      "main": [
+        [
+          {
+            "node": "Process Each Item",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Content",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Each Item": {
+      "main": [
+        [
+          {
+            "node": "Extract Metadata",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Metadata": {
+      "main": [
+        [
+          {
+            "node": "Check for Duplicates",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check for Duplicates": {
+      "main": [
+        [
+          {
+            "node": "Route Action",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Route Action": {
+      "main": [
+        [
+          {
+            "node": "Create New Note",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create New Note": {
+      "main": [
+        [
+          {
+            "node": "Log Activity",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ClawMind \u2014 Error Handler"
+  },
+  "tags": [
+    {
+      "name": "clawmind",
+      "id": "clawmind-tag"
+    },
+    {
+      "name": "learning",
+      "id": "learning-tag"
+    }
+  ],
+  "active": false,
+  "id": "95e79f0e-d90a-4127-a2e0-74614deb6f21"
+}

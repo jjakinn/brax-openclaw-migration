@@ -1,0 +1,18 @@
+CHUNK 2: 5-MINUTE SETUP — VPS DEPLOYMENT
+Source: networkchuck-openclaw-review-2026 | Timestamp: 01:45 - 03:20
+
+5 minutes on the clock. We're going to get you set up with Open Claw fast. I'm not sure I could do that, but we're going to try. Now, what do you need? You don't need a Mac Mini, even though it is pretty cool and I tried it. It's fun. But you do need somewhere to install the Open Claw Gateway. This somewhere can really be anywhere. I'm going to show you in the cloud inside of EPS on Hostinger. They are the sponsor of this video and the sponsor of getting you spun up as quickly as possible.
+
+So head out to hostinger.com/ncopenclaw. Now, you would think we might click on the one-click setup because it's faster. No, we're not going to do that. Instead, we'll go to services, click on VPS hosting, choose KVM2 because it's an entire home lab in the cloud. Put in coupon code network chuck and watch magic happen and your VPS is brewing.
+
+And boom, you got a server. And by the way, this isn't just for OpenClaw. It's for whatever you want to do. You'll see. Once your server is done brewing, we're going to grab that SSH command. Just copy it. Launch your favorite terminal. Paste that command and we're in.
+
+---
+
+KEY POINTS:
+- Requirements: Just a server (VPS, Mac Mini, anything)
+- Hostinger VPS setup: KVM2 plan recommended
+- URL: hostinger.com/ncopenclaw
+- Avoid one-click setup — use manual VPS for control
+- SSH into server to begin installation
+- VPS is a full home lab in the cloud

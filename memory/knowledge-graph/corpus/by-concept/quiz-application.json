@@ -1,0 +1,27 @@
+{
+  "id": "quiz-application",
+  "name": "Quiz Application with Power Apps",
+  "category": "Power Platform",
+  "description": "Building complete quiz applications using Power Apps with Plan Designer for data modeling, generative React pages for UI, security roles for access control, timer functionality, and Excel import for bulk questions.",
+  "related_concepts": [
+    "powerapps-ecosystem",
+    "plan-designer",
+    "generative-pages"
+  ],
+  "sources": [
+    "powerapps-quiz-app-raza"
+  ],
+  "keywords": [
+    "Quiz application",
+    "Plan Designer",
+    "Generative pages",
+    "React",
+    "Security roles",
+    "Timer",
+    "Attempts tracking",
+    "Excel import",
+    "Model-driven apps",
+    "Data model"
+  ],
+  "created_at": "2026-03-30"
+}

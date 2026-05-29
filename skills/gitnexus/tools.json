@@ -1,0 +1,165 @@
+{
+  "tools": {
+    "gitnexus_analyze": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["analyze", "--path", "${path:-.}", "--embeddings"],
+      "flags": {
+        "force": "--force",
+        "skills": "--skills",
+        "skip_agents_md": "--skip-agents-md"
+      },
+      "description": "Index a repository into the GitNexus knowledge graph",
+      "parameters": {
+        "path": {"type": "string", "default": ".", "description": "Path to repository"},
+        "force": {"type": "boolean", "default": false, "description": "Force full re-index"},
+        "embeddings": {"type": "boolean", "default": true, "description": "Generate embeddings"},
+        "skills": {"type": "boolean", "default": false, "description": "Generate skill files"},
+        "skip_agents_md": {"type": "boolean", "default": false, "description": "Preserve custom AGENTS.md edits"}
+      }
+    },
+    
+    "gitnexus_query": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["query", "--query", "${query}", "--limit", "${limit:-10}"],
+      "flags": {
+        "repo": "--repo"
+      },
+      "description": "Hybrid search across the knowledge graph (BM25 + semantic + RRF)",
+      "parameters": {
+        "query": {"type": "string", "required": true, "description": "Search query"},
+        "repo": {"type": "string", "description": "Repository name (optional if only one indexed)"},
+        "limit": {"type": "number", "default": 10, "description": "Max results"}
+      }
+    },
+    
+    "gitnexus_context": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["context", "--name", "${name}"],
+      "flags": {
+        "repo": "--repo",
+        "type": "--type"
+      },
+      "description": "360-degree symbol view with full context",
+      "parameters": {
+        "name": {"type": "string", "required": true, "description": "Symbol name"},
+        "repo": {"type": "string", "description": "Repository name"},
+        "type": {"type": "string", "description": "Symbol type (function, class, etc.)"}
+      }
+    },
+    
+    "gitnexus_impact": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["impact", "--target", "${target}", "--direction", "${direction:-upstream}", "--depth", "${depth:-2}", "--min-confidence", "${min_confidence:-0.8}"],
+      "flags": {
+        "repo": "--repo"
+      },
+      "description": "Blast radius analysis for code changes",
+      "parameters": {
+        "target": {"type": "string", "required": true, "description": "Symbol to analyze"},
+        "direction": {"type": "string", "default": "upstream", "enum": ["upstream", "downstream"], "description": "upstream (depends on) or downstream (depends from)"},
+        "depth": {"type": "number", "default": 2, "description": "Analysis depth"},
+        "min_confidence": {"type": "number", "default": 0.8, "description": "Minimum relationship confidence"},
+        "repo": {"type": "string", "description": "Repository name"}
+      }
+    },
+    
+    "gitnexus_detect_changes": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["detect-changes", "--scope", "${scope:-all}"],
+      "flags": {
+        "repo": "--repo"
+      },
+      "description": "Git-diff impact analysis",
+      "parameters": {
+        "scope": {"type": "string", "default": "all", "enum": ["all", "staged", "unstaged"], "description": "Change scope"},
+        "repo": {"type": "string", "description": "Repository name"}
+      }
+    },
+    
+    "gitnexus_cypher": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["cypher", "--query", "${query}"],
+      "flags": {
+        "repo": "--repo"
+      },
+      "description": "Raw Cypher graph query",
+      "parameters": {
+        "query": {"type": "string", "required": true, "description": "Cypher query"},
+        "repo": {"type": "string", "description": "Repository name"}
+      }
+    },
+    
+    "gitnexus_rename": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["rename", "--symbol-name", "${symbol_name}", "--new-name", "${new_name}", "--dry-run"],
+      "flags": {
+        "repo": "--repo",
+        "dry_run": "--dry-run"
+      },
+      "description": "Multi-file coordinated rename with impact analysis",
+      "parameters": {
+        "symbol_name": {"type": "string", "required": true, "description": "Current symbol name"},
+        "new_name": {"type": "string", "required": true, "description": "New symbol name"},
+        "dry_run": {"type": "boolean", "default": true, "description": "Preview changes without applying"},
+        "repo": {"type": "string", "description": "Repository name"}
+      }
+    },
+    
+    "gitnexus_list": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["list"],
+      "description": "List all indexed repositories"
+    },
+    
+    "gitnexus_status": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["status"],
+      "flags": {
+        "repo": "--repo"
+      },
+      "description": "Check index status for current/specified repo",
+      "parameters": {
+        "repo": {"type": "string", "description": "Repository name"}
+      }
+    },
+    
+    "gitnexus_wiki": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["wiki"],
+      "flags": {
+        "repo": "--repo",
+        "model": "--model",
+        "base_url": "--base-url"
+      },
+      "description": "Generate repository wiki from knowledge graph",
+      "parameters": {
+        "repo": {"type": "string", "description": "Repository name"},
+        "model": {"type": "string", "default": "gpt-4o-mini", "description": "LLM model"},
+        "base_url": {"type": "string", "description": "Custom API base URL"}
+      }
+    },
+    
+    "gitnexus_serve": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["serve", "--port", "${port:-3001}"],
+      "description": "Start local HTTP server for web UI bridge",
+      "parameters": {
+        "port": {"type": "number", "default": 3001, "description": "HTTP server port"}
+      }
+    },
+    
+    "gitnexus_clean": {
+      "command": "/Users/Jakin/.openclaw/workspace/skills/gitnexus/gitnexus-tool",
+      "args": ["clean"],
+      "flags": {
+        "repo": "--repo",
+        "all": "--all"
+      },
+      "description": "Delete index for current/specified repo",
+      "parameters": {
+        "repo": {"type": "string", "description": "Repository name"},
+        "all": {"type": "boolean", "default": false, "description": "Delete all indexes"}
+      }
+    }
+  }
+}

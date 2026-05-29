@@ -1,0 +1,22 @@
+CHUNK 2: SETTING UP AND INSERTING GRID CONTAINER
+Source: powerapps-grid-container-raza | Timestamp: 01:00 - 02:00
+
+In the Power Apps maker portal, we will head over to create and start with a blank canvas app.
+
+We'll pick the responsive design option. This will lead us to the canvas studio. The screen will have a standard set of vertical and horizontal containers available where we can drop our controls and start building out our screen.
+
+---
+
+If we head over to settings, support, and ensure that our authoring version is set to this or above, we have some new features to play with.
+
+---
+
+The latest control that has been added is the new grid container control. So let's try and learn about it. I'll create a blank screen first and insert the new grid container.
+
+---
+
+KEY POINTS:
+- Start: Blank canvas app → Responsive design option
+- Prerequisite: App authoring version current or higher
+- New control: Grid container (complements horizontal/vertical containers)
+- Insert: Blank screen → Insert → Grid container

@@ -1,0 +1,40 @@
+CHUNK 16: TOGGLE EXPAND/COLLAPSE
+Source: powerapps-navigation-component-raza | Timestamp: 24:00 - 26:00
+
+So let's try this out. Back to my screens. Select work. Here's work. I'll go to completed tasks.
+
+Click on home. This takes me home. But notice this menu is still open.
+
+---
+
+So for this button that we added, we'll add one extra logic here:
+
+`If(varSelectedMenu = ThisItem.key, Set(varSelectedMenu, Blank()), Set(varSelectedMenu, ThisItem.key))`
+
+---
+
+If `varSelectedMenu` is this item's key, then you set this variable to blank (close), else use our original formula (open).
+
+---
+
+Also for the main navigation button OnSelect: Whenever a main navigation item is clicked I'll set that variable which is `varSelectedMenu` to blank.
+
+---
+
+Now let's go back to screens. Let's go to home. It's my home screen. Go to work. It's my work screen.
+
+Let's open. Go to approvals. Now I'm on a submenu that's selected.
+
+This time if I go to home, you see how it closes that submenu.
+
+---
+
+And to change my navigation menu, remove an item, add new menu items, all I have to do is update the formula for the nav structure and automatically my menu gets updated.
+
+---
+
+KEY POINTS:
+- Toggle logic: If already open, close it; if closed, open it
+- Navigation closes submenu: `Set(varSelectedMenu, Blank())` on main menu click
+- Result: Changing main menu closes previous submenu
+- Dynamic updates: Edit `navStructure` formula → menu updates automatically

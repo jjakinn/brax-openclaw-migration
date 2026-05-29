@@ -1,0 +1,18 @@
+CHUNK 6: ATTEMPT HISTORY
+Source: powerapps-quiz-app-raza | Timestamp: 03:45 - 04:00
+
+If I go to my attempts, this will list out all the attempts that I have made across all the quizzes.
+
+---
+
+We'll highlight the score, the percent I achieved, and whether I passed or not.
+
+---
+
+KEY POINTS:
+- Attempts screen: History of all quiz attempts
+- Information displayed:
+  - Score
+  - Percentage achieved
+  - Pass/Fail status
+  - Across all quizzes

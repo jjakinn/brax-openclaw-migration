@@ -1,0 +1,44 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "cs50-full-course-2026",
+  "source_url": "https://www.youtube.com/watch?v=gmuTjeQUbTM",
+  "timestamp": "2026-03-23T06:14:00Z",
+  "status": "COMPLETE",
+  "progress": {
+    "total_duration_hours": 22,
+    "total_words": 289746,
+    "total_chunks": 20,
+    "chunks_processed": 20,
+    "percent_complete": 100
+  },
+  "summary": {
+    "transcript_downloaded": true,
+    "transcript_converted": true,
+    "chunks_created": 20,
+    "concepts_extracted": 18,
+    "summaries_created": 1,
+    "indexes_updated": true
+  },
+  "files_created": [
+    "corpus/by-source/cs50-full-course/metadata.json",
+    "corpus/by-source/cs50-full-course/chunks/chunk_001.txt through chunk_020.txt",
+    "summaries/L0-executive/cs50-full-course-2026.md",
+    "corpus/by-concept/cs50-full-course-concepts.json",
+    "indexes/concepts-master.json (updated)",
+    "indexes/sources-catalog.json (updated)",
+    "indexes/master-catalog.md (updated)"
+  ],
+  "concepts_indexed": [
+    "flask", "http-methods", "jinja-templates", "web-forms", 
+    "sql-injection-prevention", "sessions-cookies", "rest-apis", "mvc-pattern",
+    "scratch", "c-programming", "python", "sql", "html-css", "javascript",
+    "pointers", "data-structures", "algorithms", "memory-management"
+  ],
+  "next_steps": [
+    "Create L1/L2 detailed summaries for each major topic",
+    "Extract code examples into procedures/patterns",
+    "Build prerequisite chains (C → Python → Flask)",
+    "Cross-reference with future sources"
+  ],
+  "notes": "Full 22-hour CS50 course ingested. 290K words chunked into 20 segments. All major concepts indexed. Ready for query."
+}

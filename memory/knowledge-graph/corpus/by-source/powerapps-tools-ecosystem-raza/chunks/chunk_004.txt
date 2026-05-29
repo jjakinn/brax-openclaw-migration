@@ -1,0 +1,23 @@
+CHUNK 4: LOW CODE - CANVAS AND MODEL-DRIVEN APPS
+Source: powerapps-tools-ecosystem-raza | Timestamp: 04:00 - 05:00
+
+Low code. The canvas model app experiences is one that's always been a part of the power platform.
+
+We have the full connector ecosystem available. Most popular being Dataverse, SharePoint, SQL.
+
+This we will build in make.powerapps.com.
+
+These applications we can build in the context of solutions. They support application life cycle management, enterprise-grade scale and these you will build in the context of a power platform environment.
+
+---
+
+KEY POINTS:
+- Low code: Traditional Power Apps experience
+- URL: make.powerapps.com
+- App types: Canvas apps, Model-driven apps
+- Connectors: Full ecosystem (Dataverse, SharePoint, SQL)
+- Enterprise features:
+  - Solutions context
+  - Application Lifecycle Management (ALM)
+  - Enterprise-grade scale
+  - Power Platform environment

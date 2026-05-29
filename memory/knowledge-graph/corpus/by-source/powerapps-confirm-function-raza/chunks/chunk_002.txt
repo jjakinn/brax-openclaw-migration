@@ -1,0 +1,39 @@
+CHUNK 2: PREREQUISITES & SYNTAX
+Source: powerapps-confirm-function-raza | Timestamp: 01:15 - 02:30
+
+Here is the on select function of this button wherein I'm using the confirm function.
+
+First things first, there are a few things you need to ensure you have on.
+
+Under settings for the app updates, make sure modern controls and themes are turned on.
+
+Also under support, make sure your app authoring version is set to this or any number higher than this.
+
+---
+
+The syntax for the confirm function is simple.
+
+Title — the text to display as the title of the dialog box.
+Subtitle — appears below the title.
+Confirm button — the text to display on the confirm button
+And then cancel button — the text to display on the cancel button.
+
+We can also give a message. The message in my case a short description that makers can add easily.
+
+---
+
+So the syntax of the confirm function is as follows: Confirm message which is required. And then optionally you can add the options which are title, subtitle, confirm button and cancel button to create this dialogue experience.
+
+---
+
+KEY POINTS:
+- Prerequisites:
+  1. Settings → Updates: Modern controls and themes = ON
+  2. Settings → Support: App authoring version = current or higher
+- Syntax: `Confirm(Message, {Title: "", Subtitle: "", ConfirmButton: "", CancelButton: ""})`
+- Required: Message text
+- Optional parameters:
+  - `Title`: Dialog title
+  - `Subtitle`: Text below title
+  - `ConfirmButton`: Custom confirm button text
+  - `CancelButton`: Custom cancel button text

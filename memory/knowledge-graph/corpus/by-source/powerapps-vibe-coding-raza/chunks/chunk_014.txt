@@ -1,0 +1,39 @@
+CHUNK 14: SHARING & SECURITY ROLES
+Source: powerapps-vibe-coding-raza | Timestamp: 31:30 - 33:00
+
+I can play this. If I scan this, I can directly run it on a mobile device.
+
+If I click on play, this will now play the power app directly in my browser experience. Here is that same application. Order details. Remember I said printing. Here is the print dialogue. I can also save this as a PDF.
+
+---
+
+And to share this application, click share. Select the users you want to share the application with. We can also now share apps with groups in Vibe if the group is Entra ID security enabled.
+
+And when I'm sharing with users, very important, this is Microsoft Dataverse. That's where the data is being stored. They will need a security role that gives them access on those tables.
+
+And these are the different security roles available that I can grant Sarah access to.
+
+---
+
+So you can simply share right here. Give them a security role. We are in the context of a solution. Go and create a security role.
+
+So create your own security role. Let's just say order management users. Save.
+
+These are all my tables that users with the security role, order management user, will need access to. Notice they all begin with the prefix new underscore.
+
+Here's my security role. I'll search for new underscore. Here it is. The customer info table. I'll give those users read access. For the order table, I'll give them collaborate access or full access or so and so forth.
+
+Powerful row-level security support in Microsoft Dataverse. You build your security role, add the privileges for the different tables. And then when you share the application, in this case I've shared it with Sarah, I can pick those security roles right here and apply while sharing in one go.
+
+---
+
+KEY POINTS:
+- Mobile: QR code scan to run on mobile device
+- Browser: Play button runs in browser
+- Sharing: Click share → Select users/groups
+- Group sharing: Supported if Entra ID security-enabled
+- **Critical**: Users need Dataverse security roles for table access
+- Custom security roles: Create in solution context
+- Privilege levels: Read, Collaborate, Full access per table
+- Row-level security: Built into Dataverse
+- One-go sharing: Assign security role during share operation

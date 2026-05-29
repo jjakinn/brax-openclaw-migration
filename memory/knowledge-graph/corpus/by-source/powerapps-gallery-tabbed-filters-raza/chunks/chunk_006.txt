@@ -1,0 +1,36 @@
+CHUNK 6: DESIGNING TAB BUTTONS
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 04:15 - 05:30
+
+Now let's design the gallery to show those values.
+
+---
+
+The gallery layout, let's pick blank. I'll reduce the height of this gallery.
+
+---
+
+I'll click on the pencil icon to edit the gallery. And in here, I will insert the button control.
+
+---
+
+This button, I'll position it top left, increase the width and some height.
+
+---
+
+If I select the first gallery item, this is the size of the template of the gallery. I can reduce it to match the button height and the button width.
+
+---
+
+And if I select the gallery itself, I can increase its width so it fits all those buttons.
+
+---
+
+Why is it showing five buttons? Well, because the items property of the gallery includes an array that has five objects.
+
+---
+
+KEY POINTS:
+- Gallery layout: Blank
+- Template sizing: Adjust to button dimensions
+- Gallery width: Expand to fit all tabs
+- Button: Modern button control inside gallery

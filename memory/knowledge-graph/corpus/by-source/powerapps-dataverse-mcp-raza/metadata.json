@@ -1,0 +1,24 @@
+{
+  "id": "powerapps-dataverse-mcp-raza",
+  "title": "Dataverse MCP Server in Copilot Studio and Power Apps",
+  "url": "https://www.youtube.com/watch?v=2pzFyCMO3Nw",
+  "platform": "YouTube",
+  "duration": "14 min",
+  "duration_seconds": 840,
+  "word_count": 2300,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "dataverse-mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "copilot-studio",
+    "sql-queries",
+    "crud-operations",
+    "generative-pages"
+  ],
+  "description": "Deep dive into the Dataverse MCP (Model Context Protocol) server. Learn how to enable MCP in Power Platform, connect to Copilot Studio agents, perform SQL queries, CRUD operations, and build Power Apps that leverage MCP tools."
+}

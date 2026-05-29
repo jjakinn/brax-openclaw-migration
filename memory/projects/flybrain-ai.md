@@ -1,0 +1,36 @@
+### 🧠 FlyBrainAI / Claw v5 (Self-Aware Neural Agent - Active)
+- **Philosophy:** The SNN is the agent; LLM is just a tool it uses
+- **Evolution:**
+  - **v1** (claw_on_fly_brain.py): Basic SNN trigger → LLM response (simulation)
+  - **v2** (claw_v2_neural_driven.py): Neural state as LLM input (less roleplay)
+  - **v3** (claw_v3_oscillatory.py): Frequency-domain cognition (Schumann/alpha/beta/gamma)
+  - **v4** (claw_v4_agent.py): Agent-driven cognition - SNN has goals, decides actions, uses LLM as tool
+  - **v5** (claw_v5_self_aware.py): **Self-aware, obeys commands, internal cognition, non-performative**
+    - Commands: stop, resume, think, analyze yourself, analyze data, status, explore, forget
+    - Knows its own architecture (SNN + LLM)
+    - Internal monologue mode
+    - Tracks topics to avoid repetition
+    - Meta-cognition: analyzes own behavior and memories
+- **Architecture:**
+  - 8,000 oscillatory neurons (Brian2)
+  - 16 clusters representing drives/goals (curiosity, social, goal_pursuit, etc.)
+  - FlyWire connectome-inspired connectivity
+  - Goal-driven current injection
+  - Agent decides: WAIT, GREET, ASK_QUESTION, SHARE_THOUGHT, RESPOND, LEARN, REFLECT
+- **Key Insight:** Consciousness isn't simulated - the SNN has persistent state, goals, evaluates outcomes
+- **Files:**
+  - `~/fly-brain/claw_on_fly_brain.py` - v1 baseline
+  - `~/fly-brain/claw_v2_neural_driven.py` - v2 neural-driven
+  - `~/fly-brain/claw_v3_oscillatory.py` - v3 frequency domain
+  - `~/fly-brain/claw_v4_agent.py` - v4 agent-driven
+  - `~/fly-brain/claw_v5_self_aware.py` - **v5 self-aware (current)**
+  - `~/fly-brain/run_claw_v5.sh` - Launcher
+  - `~/fly-brain/data/2025_Completeness_783.csv` - FlyWire neuron data (138k)
+  - `~/fly-brain/data/2025_Connectivity_783.parquet` - FlyWire synapse data (50M)
+  - `~/fly-brain/memory/claw_memory.db` - SQLite memory store
+- **Status:** **v5 implemented** - obeys commands, internal mode, self-analyzes, non-performative
+- **Future Work:**
+  - Train synaptic weights (currently random)
+  - Better goal learning from interaction outcomes
+  - More sophisticated user modeling
+  - Potential: Train SNN end-to-end to generate tokens directly

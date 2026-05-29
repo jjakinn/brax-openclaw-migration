@@ -1,0 +1,87 @@
+{
+  "source_id": "cpp-course-beginner-advanced",
+  "display_name": "C++ Programming Course - Beginner to Advanced",
+  "author": "CodeBeauty (YouTube)",
+  "type": "course",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2024,
+    "url": "https://www.youtube.com/watch?v=8jLOx1hD3_o",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 69
+  },
+  "length": {
+    "pages": 0,
+    "words": 340477,
+    "duration_minutes": 1867,
+    "chunk_count": 69
+  },
+  "structure": {
+    "parts": [
+      "Basics",
+      "Intermediate",
+      "Advanced",
+      "Projects"
+    ],
+    "chapters": [
+      "Introduction to C++",
+      "Variables and Data Types",
+      "Operators",
+      "Control Flow",
+      "Functions",
+      "Arrays and Strings",
+      "Pointers",
+      "Object-Oriented Programming",
+      "Classes and Objects",
+      "Inheritance",
+      "Polymorphism",
+      "Templates",
+      "STL",
+      "File Handling",
+      "Exception Handling",
+      "Memory Management"
+    ]
+  },
+  "concepts_covered": [
+    "cpp",
+    "c-plus-plus",
+    "variables",
+    "data-types",
+    "operators",
+    "control-flow",
+    "functions",
+    "arrays",
+    "strings",
+    "pointers",
+    "references",
+    "oop",
+    "classes",
+    "objects",
+    "constructors",
+    "destructors",
+    "inheritance",
+    "polymorphism",
+    "encapsulation",
+    "abstraction",
+    "templates",
+    "stl",
+    "vectors",
+    "maps",
+    "file-io",
+    "exception-handling",
+    "memory-management",
+    "smart-pointers"
+  ],
+  "domains": [
+    "coding",
+    "cpp",
+    "c-plus-plus"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/cpp-course-beginner-advanced/chunks/"
+  }
+}

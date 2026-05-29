@@ -1,0 +1,45 @@
+CHUNK 18: HANDLING BLANK FILTER VALUES
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 22:30 - 23:30
+
+And for that, where that filter is being applied for the combo box, I'll add an Or condition:
+
+`Or(cmbPriority.Selected.Value = Blank(), cmbPriority.Selected.Value = Priority.Value)`
+
+Combo box priority selected value is equal to blank OR the filter.
+
+---
+
+The same pattern I will use for status as well.
+
+---
+
+Now if I try it out, observe it shows all the data to begin with.
+
+---
+
+Now I can filter on priority, showing me all the high priority items. I can even filter on status. I can even filter on title.
+
+All the three filters working together.
+
+---
+
+Back to gallery items property. This filter condition, I'll copy and now apply it to all the other sort formulas.
+
+---
+
+Done.
+
+---
+
+KEY POINTS:
+- Blank handling pattern:
+  ```
+  Or(
+    ComboBox.Selected.Value = Blank(),
+    ComboBox.Selected.Value = Column.Value
+  )
+  ```
+- Logic: If blank, show all; if selected, filter by value
+- Apply to all combo box filters
+- Result: All filters work together (AND logic)
+- Apply filter pattern to all sort Switch cases

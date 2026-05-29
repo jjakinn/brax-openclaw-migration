@@ -1,0 +1,17 @@
+{
+  "source_id": "3b1b-ch2-gradient-descent",
+  "display_name": "3Blue1Brown Ch2: Gradient Descent",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 3171,
+    "total_chunks": 2,
+    "chunks_processed": 2
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

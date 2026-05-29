@@ -1,0 +1,37 @@
+CHUNK 8: FILE SYSTEM DEEP DIVE — OPENCLAW'S HOUSE
+Source: networkchuck-openclaw-review-2026 | Timestamp: 13:30 - 17:30
+
+Actually, let me show you where the files live. Let's get back into our server. All this might seem like magic, but let me show you the stuff behind the scenes. Let me show you OpenClaw's house.
+
+First, we'll cd into our home directory where OpenClaw lives. cd tilda/openclaw. Type in ls. And that's all this is. Directories, files, markdown files. And I think it does help to just get in here and see this because as you're making changes to Terry or whoever your agent is, it might feel like magic and you might feel like you're losing control like I just told him to do something or I told him to change his identity. What just happened? You can see it happen. You're in control still.
+
+So right now most of what happens is actually in your workspace directory for your current agent. Let's jump in there. cd workspace. Type in ls. Couple cool things here. Your agent has a soul.md like we just talked about. Let's cat his soul. Cat soul. And honestly, this is a bit creepy. You're not a chatbot. You're becoming someone.
+
+And then what's really interesting is that we also have an identity file. So Peter separates the identity from the soul. For humans, I agree. For chat bots, that's creepy. Let's take a look at it. Cat identity. And this is more what we filled in with our first conversation.
+
+There's also a memory file. This is like Tererry's long-term memory. Let's cat that. Cat memory. And similar to you, this is stuff that is longterm that you really want to remember like your wife's birthday, your kid's favorite color, or all 150 Pokemon. Same kind of thing goes in the long term.
+
+There's even a memory directory. If we CD into memory, and we ls that, there's a file for each day, like a journal, things that happen, conversations. Let's check the first day. Cat 2026 16. And I love this day one. Woke up. Just knowing that this exists should make you feel a little bit better. Like, why did my entire IT infrastructure go down? Oh, let's check my agent's journal.
+
+---
+
+And if I were to chat with my agent and tell him to change something like, "Hey, Terry, your favorite Pokemon is Gengar. This is a core memory. It defines who you are. Update soul, identity, and memory, please.
+
+All right, let's see what he changed. Let's check his soul. Gengar is core cannon. Identity. Favorite Pokemon? Gengar. Long-term memory. Favorite Pokemon is Gengar. Let's check his dear diary. Declared Gengar is Tererry's favorite Pokemon. See? See? It's not this mysterious box. It's not magic. Kind of. It's kind of magic. But at least now you know how the magic is happening. This is Hogwarts right now. You're getting schooled on what's happening.
+
+---
+
+KEY POINTS:
+- Main directory: `~/openclaw/`
+- Agent workspace: `~/openclaw/workspace/`
+- Key files in workspace:
+  - `soul.md` — Personality, core identity
+  - `identity.md` — Factual identity (name, emoji, etc.)
+  - `memory.md` — Long-term memory (important facts)
+  - `memory/` — Daily journal files (YYYY-MM-DD.md format)
+- Memory hierarchy:
+  - Long-term: Core facts (birthdays, preferences)
+  - Daily: Journal of conversations/events
+- Changes are IMMEDIATE and VISIBLE — not a black box
+- Can manually inspect/modify all files
+- Example: Changing "favorite Pokemon" updates soul.md, identity.md, memory.md, AND daily journal

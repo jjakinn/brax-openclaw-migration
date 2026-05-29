@@ -1,0 +1,28 @@
+CHUNK 1: INTRODUCTION TO CONFIRM FUNCTION
+Source: powerapps-confirm-function-raza | Timestamp: 00:00 - 01:15
+
+Hello everyone, Raza here. In canvas power apps, have you ever tried building a dialogue box? It's a lot of work. You have to overlay controls. You have to change the background color to give the users the visual indicator of a dialog like experience. You need to write logic to open and close the dialogue and more.
+
+How about a brand new confirm function directly available out of the box that you can call and easily create dialogue experiences? I'll show how you can use this in various scenarios in this video.
+
+---
+
+So let's begin the confirm function in Power Apps.
+
+The confirm function displays this dialogue box on top of the current screen. Two buttons are provided for us, a confirm button and a cancel button which we can rename.
+
+The user must confirm or cancel before the dialogue box is dismissed.
+
+Plus, if the user selects outside of the scope of the dialogue box, the dialogue box gets dismissed.
+
+---
+
+KEY POINTS:
+- Old way: Custom containers, overlays, background colors, visibility variables — lots of work
+- New solution: Native `Confirm()` function
+- Features:
+  - Displays dialog on top of current screen
+  - Two customizable buttons (Confirm + Cancel)
+  - User MUST interact before dismissal
+  - Clicking outside dismisses dialog
+- Benefits: Consistent dialog experience across all apps

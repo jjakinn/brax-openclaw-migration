@@ -1,0 +1,46 @@
+{
+  "name": "Test Simple Workflow",
+  "nodes": [
+    {
+      "id": "test-trigger-1",
+      "name": "When clicking Test workflow",
+      "type": "n8n-nodes-base.manualTrigger",
+      "position": [
+        250,
+        300
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "test-code-1",
+      "name": "Code",
+      "type": "n8n-nodes-base.code",
+      "position": [
+        450,
+        300
+      ],
+      "parameters": {
+        "jsCode": "return [{json: {test: true}}];"
+      }
+    }
+  ],
+  "connections": {
+    "When clicking Test workflow": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": [],
+  "active": false,
+  "id": "44529b15-fbd9-4d51-b08b-59754cb7f522"
+}

@@ -1,0 +1,41 @@
+CHUNK 16: SECURITY ROLES AND SHARING
+Source: powerapps-quiz-app-raza | Timestamp: 11:45 - 12:45
+
+No solution is complete without defining the security roles. So I've defined two security roles:
+
+1. One for administrators - they have full control over the tables
+2. Second are quiz takers - they only have private access to their own data
+
+---
+
+And how did I share the apps?
+
+---
+
+The quiz admin: Sharing this application - the security role "Quiz Admin" is needed.
+
+---
+
+Anyone who has the security role, in this case Reza has the quiz admin security role assigned. So Reza has the access to run this application.
+
+---
+
+On the other side, the quiz taker experience requires the quiz taker security role.
+
+---
+
+That's what I assigned to Sarah.
+
+---
+
+KEY POINTS:
+- Security roles:
+  - Quiz Admin: Full control over all tables
+  - Quiz Taker: Private access to own data only
+- App sharing:
+  - Assign security roles to users
+  - Quiz Admin app: Requires Quiz Admin role
+  - Quiz Taker app: Requires Quiz Taker role
+- Examples:
+  - Reza: Quiz Admin
+  - Sarah: Quiz Taker

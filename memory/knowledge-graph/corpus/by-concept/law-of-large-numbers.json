@@ -1,0 +1,15 @@
+{
+  "concept_id": "law-of-large-numbers",
+  "display_name": "Law of Large Numbers",
+  "category": "mathematics/probability",
+  "description": "The average of the results obtained from a large number of trials should be close to the expected value, and will tend to become closer as more trials are performed",
+  "sources": ["veritasium-markov-chains"],
+  "chunks": ["001"],
+  "synthesis": {
+    "available": false,
+    "file_path": "corpus/by-concept/law-of-large-numbers/synthesis.md"
+  },
+  "related_concepts": ["probability-theory", "statistics"],
+  "prerequisites": ["probability-basics"],
+  "difficulty": "beginner"
+}

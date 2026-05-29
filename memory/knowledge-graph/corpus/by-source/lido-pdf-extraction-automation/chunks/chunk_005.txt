@@ -1,0 +1,19 @@
+CHUNK 5: PROCESSING & COLUMN CUSTOMIZATION
+Source: lido-pdf-extraction-automation | Timestamp: 02:40 - 03:40
+
+Let's click process files. And it's going to show you processing a number of percentages over there. And it doesn't take long for a document like this. We just have a couple items on it.
+
+And you can see over here in our spreadsheet, we've got the vendor name, invoice, item description, quantity, and the amount.
+
+Now, what if we wanted the uh total amount? See, I've only got the item amount over there. Let's add that column. I'm going to delete these two rows in our sheet because we going to have it extract the data again. We're going to reset the document and then re-extract it again. And it's going to pull in this time that total amount as well as the item amount.
+
+---
+
+KEY POINTS:
+- Click "Process Files" to start extraction
+- Shows processing percentage during extraction
+- Fast processing for simple documents
+- Initial extraction columns: Vendor name, Invoice, Item description, Quantity, Amount
+- Can modify columns after seeing initial results
+- Workflow to add columns: Delete rows → Reset document → Re-extract with new column
+- Example: Adding "Total Amount" column in addition to "Item Amount"

@@ -1,0 +1,41 @@
+CHUNK 7: NESTED CONTAINERS AND CARD INTERFACE
+Source: powerapps-grid-container-raza | Timestamp: 08:00 - 09:30
+
+And within the grid container, I can insert other containers. I'll insert a vertical container.
+
+In this, I will add an image. And in my vertical container, I will add a button.
+
+---
+
+The image: Alignment and container stretch, flexible height on.
+
+---
+
+Now this container I want to repeat it 4 times so I'll copy this, go to my grid container, paste, once again select grid container, paste, select grid container, paste.
+
+My grid is 2x2, I have 4 containers within this grid. So you can see it's placed in a 2x2 format.
+
+---
+
+The grid container gap I'll set 40 and I will use the same for all the padding.
+
+---
+
+Now all I have to do is add my images. I already have a few images available. I'll go and add them.
+
+For each of the image controls, I'll define the image:
+- Dashboard
+- Connect
+- Search
+- Settings
+
+And the buttons, I'll set my text.
+
+---
+
+KEY POINTS:
+- Nested containers: Can insert containers inside grid cells
+- Pattern: Vertical container → Image + Button
+- Copy/paste: Replicate structure across grid cells
+- Gap and padding: Consistent spacing (40)
+- Each cell becomes a card with image and button

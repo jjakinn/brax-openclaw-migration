@@ -1,0 +1,17 @@
+{
+  "source_id": "prompting-ai-networkchuck",
+  "display_name": "You Suck at Prompting AI (NetworkChuck)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 4505,
+    "total_chunks": 2,
+    "chunks_processed": 2
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

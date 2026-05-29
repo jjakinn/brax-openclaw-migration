@@ -1,0 +1,29 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "stanford-cs106a-lec4",
+  "source_url": "https://www.youtube.com/watch?v=nWheM30THaY",
+  "timestamp": "2026-03-23T17:35:00Z",
+  "status": "COMPLETE",
+  "verification": {
+    "video_duration_minutes": 48.21,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 48:21",
+    "total_events": 2814,
+    "word_count": 10030,
+    "chunks_created": 4
+  },
+  "summary": {
+    "title": "Stanford CS106A: Programming Methodology - Lecture 4",
+    "author": "Mehran Sahami (Stanford University)",
+    "domain": "coding/computer-science",
+    "key_topics": [
+      "Graphics Programs",
+      "Random Number Generation",
+      "Animation Basics"
+    ]
+  },
+  "files_created": [
+    "corpus/by-source/stanford-cs106a-lec4/metadata.json",
+    "corpus/by-source/stanford-cs106a-lec4/chunks/chunk_001-004.txt"
+  ]
+}

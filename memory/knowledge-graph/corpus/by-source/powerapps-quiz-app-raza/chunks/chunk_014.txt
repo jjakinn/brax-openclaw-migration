@@ -1,0 +1,37 @@
+CHUNK 14: MODEL-DRIVEN APPS AND GENERATIVE PAGES
+Source: powerapps-quiz-app-raza | Timestamp: 10:00 - 11:00
+
+Once my data model was defined, I then leveraged the tech that Plan Designer recommended to support my scenario.
+
+---
+
+Two model-driven applications were created:
+1. Quiz admin experience
+2. Quiz taker experience
+
+---
+
+Quiz admin experience includes three Dataverse tables that were connected in the app experience: Quiz, Questions, and Attempts.
+
+---
+
+The second model-driven app is the quiz taker experience. That's what leads to this UI design.
+
+---
+
+To build this, I took the advantage of the new generative pages experience which provides me an app agent.
+
+---
+
+I can simply describe my needs by prompting the agent that's powered by GPT models and it can help build out a React page.
+
+---
+
+KEY POINTS:
+- Two model-driven apps:
+  1. Quiz Admin (Quiz, Questions, Attempts tables)
+  2. Quiz Taker (custom UI)
+- Generative pages: AI-powered React page creation
+- App agent: Powered by GPT models
+- Input: Natural language description
+- Output: React page code

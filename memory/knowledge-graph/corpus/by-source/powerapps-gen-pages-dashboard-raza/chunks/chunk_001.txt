@@ -1,0 +1,33 @@
+CHUNK 1/2
+
+[00:00 - 03:00]
+
+Hello everyone, Raza here. In this video, I will show you how to easily build dashboard screens in Power Apps. We will leverage the power of generative pages that will enable us to build interactive charts with animations and a lot more. Gen pages is now powered with GPD5. Better quality, improved performance. So, let's check this video out in action.
+
+I have a power app that is showcasing data from a table that stores help desk ticket details. This is showcasing the standard view experience.
+
+And I would like to build a dashboard in my app that helps users monitor, visualize, and search for tickets at a glance.
+
+This includes total ticket counts, open tickets, and other data aggregation metrics.
+
+We also have visualizations that showcase tickets by category, ticket trends in the last 6 months, ticket status distribution, plus a table that shows data from my tickets table.
+
+Users can search for information.
+
+These charts have animations. They are interactive.
+
+Let's click on software category. The tickets table gets the filter applied based upon the selection that I made in the chart.
+
+We can build a dashboard screen similar to this by simply prompting our app agent.
+
+Here's my model driven power app. I'll go and add a page by simply describing my needs. First up, I'll give it context to my my help desk ticket table.
+
+I've added my description. Build a dashboard UI for data from my help desk ticket table. Show key KPIs at the top, total tickets, open tickets, close tickets. add those three charts, bar chart, line chart, and then include a table listing out certain metadata from my tickets table. Once I'm done describing, I'll click generate.
+
+This is where Gen AI springs into action and starts building out a React page based upon the details that I provided. It's well aware of the context of my data set that I provided. I asked it to build me a dashboard screen for charts visualizations.
+
+It uses the D3 library which is designed for producing dynamic interactive data visualizations. It heavily uses SVGs.
+
+You can see how the entire React code is being framed by the app agent.
+
+It generated a reactbased page. We can explore the code of this page. You can see how it uses the D3 library to generate the visualizations. Please note the code at this moment is read only. In future we will have the option to edit the code.

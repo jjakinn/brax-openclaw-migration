@@ -1,0 +1,17 @@
+{
+  "source_id": "agentic-workflows-course",
+  "display_name": "Agentic Workflows 6 Hour Course (Nick Saraev)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 66276,
+    "total_chunks": 23,
+    "chunks_processed": 23
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

@@ -1,0 +1,30 @@
+CHUNK 4: TELEGRAM BOT SETUP & FIRST AGENT
+Source: networkchuck-openclaw-review-2026 | Timestamp: 05:00 - 07:15
+
+And now we're hitting something that makes Open Claw kind of awesome. And that's how you talk to it. Pick what you want, but we're going to start with Telegram. It's very easy. Now, we need to create a Telegram bot and get our bot token. For this, we'll launch Telegram, and you'll start a chat with a guy named the bot father. This kind of feels like a video game. You'll create a new bot. Name your bot. Give it a username. It must end in bot. Create that bot. And that's it. Click on copy and that gets you your bot token.
+
+Get back to your terminal. Hit enter to enter your Telegram bot token. Paste that in. Hit enter. Hey, this is actually new. I've never seen this. We'll go with Brave. Ah, we need an API key. I just hit enter to skip it. Configure skills now. Uh, not right now. Hit no. And for hooks, go ahead and do hooks. Enable boot, bootstrap, command logger, and session memory. Hit enter.
+
+And that's pretty much it. Now it's time to hatch your OpenClaw agent. We could do the web UI, but come on. We're going to do the TUI. Select TUI, the terminal user interface. Hit enter. And we're waking up our friend. Again, this kind of feels like a Pokémon game or something like Poctopia.
+
+Now, this is what makes OpenClaw feel kind of weird. And what's interesting is when you configure OpenClaw, this is it. Like, you're talking to it to configure it itself. So, we'll tell it who it is, who we are, and get started. You're Terry Cruz. You are a Network Chuck fan. You're chaotic muscles emoji. Now, what's really creepy about this is that all this written right here was written to his soul.md file. His soul.
+
+---
+
+Now, enough talking in the terminal. That's cool. We like that. But Telegram awaits. Let's go to Telegram real quick. Let's click on our Terry 3bot and let's start a conversation. Let's message him. Start. And this is one of the security features I like. Not just anyone can talk to Terry 3.0 out the gate. We have to sync it up. So I'll just take this. This will be your first experience configuring OpenClaw with OpenClaw. We're just going to copy all this mess and say, "Hey, continue configuring Telegram for me. I'm lazy." Paste that in.
+
+Done. Ignore that security risk stuff. We don't care about that right now. But now in theory, I could say, "Hey, you there? Terry's typing and he's here talking in Telegram.
+
+---
+
+KEY POINTS:
+- Channel setup: Telegram recommended as easiest
+- BotFather workflow: Create bot → name → username (must end in 'bot') → copy token
+- Optional: Brave API key (can skip)
+- Skills: Can configure later
+- Hooks to enable: boot, bootstrap, command logger, session memory
+- Interface: TUI (Terminal User Interface) vs Web UI
+- First configuration happens THROUGH the agent itself
+- soul.md file created automatically from configuration
+- Security: Not just anyone can talk to agent — requires sync/approval
+- Agent works across devices (phone, desktop) via Telegram

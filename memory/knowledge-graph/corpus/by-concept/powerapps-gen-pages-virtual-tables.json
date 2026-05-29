@@ -1,0 +1,146 @@
+{
+  "id": "powerapps-gen-pages-virtual-tables",
+  "concept": "Generative Pages with Virtual Tables - External Data Sources",
+  "description": "Using Generative Pages with data sources beyond native Dataverse through virtual tables - connecting to SharePoint, SQL, Snowflake and other external systems while maintaining full CRUD capabilities.",
+  "sources": ["powerapps-gen-pages-events-catalog-raza"],
+  "related_concepts": [
+    "generative-pages",
+    "powerapps-model-driven-apps",
+    "dataverse-virtual-tables",
+    "sharepoint-integration",
+    "external-data-sources"
+  ],
+  "key_capabilities": [
+    {
+      "feature": "Virtual Tables",
+      "description": "Dataverse tables that connect to external data sources without data migration",
+      "supported_sources": ["SharePoint", "SQL Server", "Snowflake", "Excel", "CSV"],
+      "behavior": "Schema lives in Dataverse, actual data queried from source in real-time"
+    },
+    {
+      "feature": "Dialog Boxes",
+      "description": "Modal dialogs for displaying full record details",
+      "trigger": "Click 'read more' or similar action",
+      "example": "Event details dialog showing full event information"
+    },
+    {
+      "feature": "Flyout Forms (Left-to-Right)",
+      "description": "Forms that slide in from screen edges for add/edit operations",
+      "natural_language": "The add edit form should fly in from left to right off the screen",
+      "use_case": "Add new event, edit existing event"
+    },
+    {
+      "feature": "Category Filtering",
+      "description": "Side panel with clickable category filters",
+      "behavior": "Multi-select categories, dynamic gallery updates",
+      "example": "Product catalog filtered by Electronics, Automotive"
+    },
+    {
+      "feature": "Price Range Filtering",
+      "description": "Slider or range selector for numeric filtering",
+      "example": "Show products in specific price range"
+    }
+  ],
+  "data_source_options": [
+    {
+      "method": "Virtual Tables (Recommended)",
+      "use_case": "Keep data in external source, enable Gen Pages in model-driven app",
+      "steps": [
+        "Create new table in Dataverse",
+        "Select 'Create a virtual table'",
+        "Choose data source (SharePoint/SQL/Snowflake)",
+        "Configure connection",
+        "Select site/list or database/table",
+        "Map columns",
+        "Full CRUD operations against original data source"
+      ],
+      "pros": ["Data stays in original location", "Real-time sync", "Full CRUD supported"]
+    },
+    {
+      "method": "Data Flows",
+      "use_case": "Import/copy data into Dataverse",
+      "behavior": "Creates Dataverse table with schema + imports data",
+      "pros": ["Native Dataverse performance", "Offline capabilities"],
+      "cons": ["Data duplication", "Sync latency"]
+    },
+    {
+      "method": "Import from File",
+      "use_case": "One-time or scheduled imports",
+      "sources": ["Excel", "CSV", "SharePoint list"],
+      "integration": "Copilot-assisted table creation"
+    }
+  ],
+  "events_table_schema": {
+    "table_name": "events",
+    "columns": [
+      "name (event name)",
+      "start_date",
+      "end_date", 
+      "location",
+      "category"
+    ],
+    "features_demonstrated": [
+      "Search by keyword (jazz festival)",
+      "Filter by category",
+      "Dialog for full details",
+      "Add/Edit with flyout forms"
+    ]
+  },
+  "sharepoint_embedding": {
+    "scenario": "Embed model-driven app Gen Page inside SharePoint",
+    "method": "iframe embedding",
+    "steps": [
+      "Get model-driven app URL",
+      "Create iframe code with src=app URL",
+      "Add web part → Embed",
+      "Paste iframe code",
+      "If blocked: Site Settings → HTML Field Security",
+      "Add domain to allowed iframe sources",
+      "Refresh and republish"
+    ],
+    "limitation": "Standard Power Apps web part only supports canvas apps, not model-driven",
+    "workaround": "Use Embed web part with iframe HTML"
+  },
+  "app_agent_features": [
+    "Agent Thoughts - shows AI's understanding of requirements",
+    "Undo functionality - revert changes that don't match expectations",
+    "Start from scratch - full regeneration if needed",
+    "Natural language iteration throughout build process"
+  ],
+  "design_inspiration_workflow": [
+    "Find design on Dribbble or similar",
+    "Screenshot the desired UI",
+    "Attach as inspiration image in Gen Pages",
+    "Describe functionality in natural language",
+    "Add data context (tables/virtual tables)",
+    "Generate React-based page"
+  ],
+  "key_quotes": [
+    {
+      "quote": "A virtual table is one where the data lives in your data source... In data versse, it will create the schema. It will query your underlying data source to bring the data.",
+      "timestamp": "07:45",
+      "significance": "Core concept of virtual tables explained"
+    },
+    {
+      "quote": "All of this create, read, update, delete actions will be against my data source. In this case, SharePoint list in my SharePoint site.",
+      "timestamp": "10:15",
+      "significance": "Full CRUD operations work against original external data source"
+    },
+    {
+      "quote": "The Microsoft Power Apps one only allows canvas apps for model driven. If I go to embed, I can add embed code.",
+      "timestamp": "10:25",
+      "significance": "Workaround for embedding model-driven apps in SharePoint"
+    }
+  ],
+  "limitations_notes": [
+    "Gen Pages currently requires Dataverse (can't connect directly to SharePoint/SQL without virtual table)",
+    "Virtual tables require proper connection setup and permissions",
+    "iframe embedding requires HTML Field Security configuration in SharePoint"
+  ],
+  "prerequisites": [
+    "Dataverse environment",
+    "Understanding of virtual table concepts",
+    "SharePoint site access (if using SharePoint virtual table)",
+    "Model-driven app fundamentals"
+  ]
+}

@@ -1,0 +1,42 @@
+CHUNK 10: ALIGNING HEADERS WITH GALLERY COLUMNS
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 17:30 - 19:30
+
+I'll show how to do it for two of my columns.
+
+LBL item ID that shows the ID of the item. I'll go to the corresponding header.
+
+The fill portions property I'll set to: my label control.FillPortions
+The width will be: my label control.Width
+and the layout minimum width will be: my label control.LayoutMinimumWidth
+
+---
+
+The width of the header and this control is exactly the same.
+
+---
+
+Let's try it out for the next one. txt item name with my header item name.
+
+So once again:
+- Fill portions: txtItemName.FillPortions
+- Width: txtItemName.Width
+- Layout minimum width: txtItemName.LayoutMinimumWidth
+
+---
+
+Now notice there is some gap here. Well that's because the container in the gallery we had added a gap of 10. So I need to make sure that even my header container has exactly that same gap between controls which is a gap of 10.
+
+And now you can see how they perfectly align.
+
+All I have to do is repeat the same process for all my other columns.
+
+---
+
+KEY POINTS:
+- Header alignment formula (link to gallery control):
+  - `FillPortions`: GalleryControl.FillPortions
+  - `Width`: GalleryControl.Width  
+  - `LayoutMinimumWidth`: GalleryControl.LayoutMinimumWidth
+- Match container gap: Header container gap = Gallery container gap (10)
+- Result: Headers perfectly align with columns regardless of screen size
+- Repeat for all columns

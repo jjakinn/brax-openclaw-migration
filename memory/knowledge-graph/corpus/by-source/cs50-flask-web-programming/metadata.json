@@ -1,0 +1,88 @@
+{
+  "source_id": "cs50-flask-web-programming",
+  "display_name": "CS50: Web Programming with Flask",
+  "author": "David J. Malan (Harvard)",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "Harvard CS50",
+    "year": 2026,
+    "url": "https://www.youtube.com/watch?v=gmuTjeQUbTM",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "total_duration_minutes": 1320,
+    "processed_minutes": 144,
+    "remaining_minutes": 1176,
+    "segments_processed": 1,
+    "segments_total": 11,
+    "chunks_processed": 11,
+    "total_words": 908
+  },
+  "length": {
+    "pages": 0,
+    "words": 21543,
+    "duration_minutes": 144,
+    "chunk_count": 22
+  },
+  "structure": {
+    "parts": [
+      "Introduction",
+      "Flask Basics",
+      "Templates",
+      "Forms",
+      "Sessions",
+      "Database Integration",
+      "APIs"
+    ],
+    "chapters": [
+      "HTTP and Web Servers",
+      "Flask Framework",
+      "Routes and Views",
+      "Templates with Jinja",
+      "GET vs POST",
+      "Form Validation",
+      "SQL Integration",
+      "Sessions and Cookies",
+      "REST APIs"
+    ],
+    "sections": [
+      "Creating a Flask App",
+      "Rendering Templates",
+      "Handling Form Data",
+      "Database Operations",
+      "User Authentication",
+      "Shopping Cart Example"
+    ]
+  },
+  "concepts_covered": [
+    "flask",
+    "web-frameworks",
+    "http",
+    "routes",
+    "templates",
+    "jinja",
+    "get-post",
+    "forms",
+    "validation",
+    "sql",
+    "sqlite",
+    "sessions",
+    "cookies",
+    "apis",
+    "json",
+    "mvc-pattern"
+  ],
+  "domains": [
+    "coding",
+    "web-development"
+  ],
+  "files": {
+    "raw": "raw/transcript.txt",
+    "chunks": "chunks/",
+    "entities": "entities.json",
+    "l0_summary": "summaries/L0-executive/cs50-flask-web-programming.md",
+    "l1_summary": "summaries/L1-overview/cs50-flask-web-programming.md",
+    "l2_summary": "summaries/L2-detailed/cs50-flask-web-programming/"
+  }
+}

@@ -1,0 +1,37 @@
+CHUNK 5: POST MANAGEMENT AND MULTI-USER EXPERIENCE
+Source: powerapps-kudo-board-raza | Timestamp: 02:15 - 03:15
+
+Since this message was posted by me, I have the option to delete the post.
+
+---
+
+I can add multiple posts.
+
+---
+
+Now I'm signed in as another user, Sarah.
+
+---
+
+Here is a board giving kudos to Sarah. Sarah can see all the kudos that she has received.
+
+---
+
+For James' farewell, Sarah wants to post here. She can add to the board because the board is open.
+
+---
+
+And Sarah has gone ahead and posted to the board.
+
+---
+
+On similar lines, other users can do the same.
+
+---
+
+KEY POINTS:
+- Post management: Creator can delete own posts
+- Multiple posts: Users can add multiple entries
+- Multi-user: Different users can post (Sarah example)
+- Recipient view: Can see all kudos received
+- Open boards: Any authorized user can post

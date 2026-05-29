@@ -1,0 +1,15 @@
+CHUNK 1: INTRODUCTION TO NAVIGATION COMPONENT
+Source: powerapps-navigation-component-raza | Timestamp: 00:00 - 00:45
+
+Hello everyone, Raza here. Do you want to build a navigation menu in Power Apps? Then this video has you covered. I will show step by step how to build a two-level navigation menu, expandable, collapsible, responsive using modern controls.
+
+This will be a navigation component that you can add to the screens of your Power App and a lot more. So, let's check this video out in action.
+
+---
+
+KEY POINTS:
+- Build: Two-level navigation menu
+- Features: Expandable, collapsible, responsive
+- Technology: Modern controls
+- Output: Reusable navigation component
+- Benefits: Add to any screen, consistent navigation experience

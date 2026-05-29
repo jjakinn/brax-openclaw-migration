@@ -1,0 +1,27 @@
+{
+  "id": "powerapps-responsive-gallery",
+  "name": "Power Apps Responsive Gallery",
+  "category": "Power Platform",
+  "description": "Building responsive editable galleries in Power Apps with horizontal and vertical scrolling, CRUD operations, dynamic headers, and flexible width layouts.",
+  "related_concepts": [
+    "powerapps-modern-controls",
+    "responsive-design",
+    "crud-operations"
+  ],
+  "sources": [
+    "powerapps-responsive-editable-gallery-raza"
+  ],
+  "keywords": [
+    "Responsive gallery",
+    "Horizontal scroll",
+    "Vertical scroll",
+    "Editable grid",
+    "CRUD",
+    "Flexible width",
+    "Minimum width",
+    "Container layout",
+    "Gallery headers",
+    "Patch function"
+  ],
+  "created_at": "2026-03-30"
+}

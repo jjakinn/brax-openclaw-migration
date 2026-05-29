@@ -1,0 +1,27 @@
+{
+  "id": "powerapps-tabbed-filters",
+  "name": "Power Apps Tabbed Filters",
+  "category": "Power Platform",
+  "description": "Building gallery experiences with tabbed filters in Power Apps using horizontal galleries, named formulas, Lookup function, and dynamic filtering based on tab selection.",
+  "related_concepts": [
+    "powerapps-modern-controls",
+    "powerapps-gallery",
+    "sharepoint"
+  ],
+  "sources": [
+    "powerapps-gallery-tabbed-filters-raza"
+  ],
+  "keywords": [
+    "Tabbed filters",
+    "Horizontal gallery",
+    "Named formulas",
+    "Lookup",
+    "Filter",
+    "Gallery tabs",
+    "Modern controls",
+    "Choice columns",
+    "Dynamic colors",
+    "Visual indicators"
+  ],
+  "created_at": "2026-03-30"
+}

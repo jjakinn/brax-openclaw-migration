@@ -1,0 +1,26 @@
+CHUNK 3: CREATING POSTS AND BOARD CONTENT
+Source: powerapps-kudo-board-raza | Timestamp: 01:00 - 01:30
+
+Team members can then add posts to the board.
+
+---
+
+The post includes:
+- A title
+- A description
+- Rich text
+
+---
+
+They can select from the available GIFs or upload any image or GIF of their choice.
+
+---
+
+KEY POINTS:
+- Post creation: Team members add to board
+- Post components:
+  - Title
+  - Description
+  - Rich text formatting
+  - GIF selection (from available options)
+  - Image upload (custom)

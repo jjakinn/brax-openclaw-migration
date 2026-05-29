@@ -1,0 +1,30 @@
+CHUNK 5: SORTBYCOLUMNS FOR MULTIPLE COLUMNS
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 03:30 - 04:30
+
+Apart from sort, there is also a SortByColumns formula.
+
+So what's the difference? With SortByColumns, I can sort on multiple columns.
+
+---
+
+Sort based on due date in descending order. Two items here where the sort date is 30th of November. Now the second sort I want to perform on the title in ascending order.
+
+---
+
+Comma title, `SortDirection.Ascending`.
+
+The two items for 30th November. The second sort is on the title column.
+
+---
+
+With SortByColumns you cannot type in expressions. You simply pick columns. You cannot pick columns that are of type complex.
+
+---
+
+KEY POINTS:
+- SortByColumns: Multiple column sorting
+- Syntax: `SortByColumns(DataSource, Column1, Order1, Column2, Order2, ...)`
+- Limitations:
+  - No expressions allowed
+  - No complex type columns
+- Example: `SortByColumns(WorkTracker, "DueDate", Descending, "Title", Ascending)`

@@ -1,0 +1,20 @@
+CHUNK 3: DOCUMENT ANALYSIS & COLUMN DETECTION
+Source: lido-pdf-extraction-automation | Timestamp: 00:55 - 01:50
+
+And what we're going to do is just throw in one of those PDFs. Here's the first one right here. And it analyzes the document first. So it's going to pull in different columns of data that it thinks we are going to want.
+
+And you're going to see them in two places. The first is over here in the spreadsheet itself. Vendor name, invoice name, etc. And then the second is down here in this little dialogue box where we can actually edit things.
+
+So here are the things it thinks that we're going to want based on that PDF invoice that we had it analyze. But if for instance we don't want, I don't know, the invoice number, maybe that's not important. We can X this out. Anything we do right there will also take effect right over here. So we've removed that invoice number from here. If we decide, uh, actually, I want that in there, we can type it back in, and it gets added right back into our data.
+
+---
+
+KEY POINTS:
+- Upload PDF via click-to-upload
+- AI analyzes document and auto-detects columns
+- Detected fields appear in TWO places:
+  1. Spreadsheet preview columns
+  2. Editable dialogue box below
+- Fields are customizable — can remove (X out) or add back
+- Example fields detected: Vendor name, Invoice name, etc.
+- Changes in dialogue box sync to spreadsheet preview in real-time

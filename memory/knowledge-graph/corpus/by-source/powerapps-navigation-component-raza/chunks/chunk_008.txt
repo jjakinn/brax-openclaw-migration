@@ -1,0 +1,41 @@
+CHUNK 8: MENU BUTTON CONFIGURATION
+Source: powerapps-navigation-component-raza | Timestamp: 10:00 - 12:30
+
+I'll place it on the top left. This is a flexible height gallery. If I press the alt key, you can see how all the controls are aligned.
+
+Why do I see three buttons? Because I have three top level navigation menu items that I defined.
+
+---
+
+The button's text property I will set as `ThisItem.` These are all the properties that we defined for our navigation structure. Here I'll pick the title.
+
+The button also has an icon property. `ThisItem.icon`.
+
+---
+
+Now I can increase decrease the width. However, let's make the width dynamic. Width will be `Parent.TemplateWidth`. So this will take the entire width that's available for this entire component.
+
+Now the text is in the center. Button's alignment property I'll set to the left.
+
+---
+
+The type — there are different styling and theming options that we can choose from. I'll pick the transparent theme.
+
+So, as I hover over these buttons, you can see how it applies a hover color to this, that color comes from the color of the theme that's set for my Power App.
+
+---
+
+These are modern themes. You can add your own custom theme. And once you select a specific theme, as you hover over these buttons, you can see how that theme color comes into effect.
+
+The icon style for the button control I'll set to filled.
+
+---
+
+KEY POINTS:
+- Button text: `ThisItem.title`
+- Button icon: `ThisItem.icon`
+- Width: `Parent.TemplateWidth` (full width)
+- Alignment: Left
+- Type: Transparent (shows hover effect)
+- Icon style: Filled
+- Theme: Hover color from app theme

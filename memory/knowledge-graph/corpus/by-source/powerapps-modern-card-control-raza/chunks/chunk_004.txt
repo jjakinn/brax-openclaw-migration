@@ -1,0 +1,31 @@
+CHUNK 4: CARD PROPERTIES - IMAGE AND HEADER IMAGE
+Source: powerapps-modern-card-control-raza | Timestamp: 03:00 - 04:30
+
+Image. This is the main preview image for the card. So at this moment if you notice the image property is set to the sample card image that's why it has this image to begin with.
+
+---
+
+I can set this to none. The value is empty so there's no image.
+
+I can pick from any of the stock images. Or I can also upload an image of my choice.
+
+---
+
+Image placement: Is this image placed before the header or after the header? I'll move it back to before.
+
+---
+
+Image style: Right now, it's trying to fill the entire space. I can ask it to fit. So, based on the dimensions of the image, it will fit. Stretch, center, or tile. Different options to play with.
+
+---
+
+Header image: small avatar or icon displayed in the header with the title and subtitle. I can change this pick any of the stock images or upload an image of my choice.
+
+---
+
+KEY POINTS:
+- `Image`: Main preview image
+  - Options: None, stock images, upload custom
+- `ImagePlacement`: Before or after header
+- `ImageStyle`: Fill, Fit, Stretch, Center, Tile
+- `HeaderImage`: Small avatar/icon in header

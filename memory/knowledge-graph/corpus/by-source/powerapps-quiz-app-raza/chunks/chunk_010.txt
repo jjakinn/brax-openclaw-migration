@@ -1,0 +1,40 @@
+CHUNK 10: EXCEL IMPORT FOR BULK QUESTIONS
+Source: powerapps-quiz-app-raza | Timestamp: 06:30 - 07:30
+
+Now if I head over to the questions page and filter the quiz to pick all the questions related to the quiz named Power Apps. Currently I have this one question.
+
+---
+
+I have an Excel file in which I have already framed my questions with the options and the answer. Let's go ahead and import this directly in the app.
+
+---
+
+So instead of creating these questions one by one, I will go ahead and import.
+
+---
+
+I'll select my file. Next, review. Finish import.
+
+---
+
+This kicks off the process to import all the data into my questions table.
+
+---
+
+Refresh. Here are all the questions.
+
+---
+
+That's how easily I can set up a quiz as an administrator.
+
+---
+
+KEY POINTS:
+- Bulk import: Excel file with pre-framed questions
+- Import process:
+  1. Select file
+  2. Review mapping
+  3. Finish import
+  4. Refresh to see imported questions
+- Efficiency: Import many questions at once
+- Alternative to: Creating questions one by one

@@ -1,0 +1,41 @@
+CHUNK 14: PATCH OPERATION AND VISUAL INDICATOR
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 24:30 - 27:00
+
+Now right now even though I'm making changes and saving nothing is actually saving. So now I need to write the logic to save my changes.
+
+When they hit save I need to patch the data. So on select of the button if the selected item is the current item and the user is clicking on the button meaning the user is saving then right before setting that variable to blank I want to patch:
+
+`Patch(DataSource, ThisItem, {Column: Control.Value, ...}); Set(varItemSelected, Blank())`
+
+---
+
+Patch to my data source which in my case is my inventories table. I want to patch this item, the context of the current item.
+
+And then I can pick the columns that I would like to patch:
+- Item name: txtItemName.Value
+- Category: cmbCategory.Selected.Value
+- Bin location: txtBinLocation.Value
+- etc.
+
+Once I have all my columns defined that I want to update, I'll close the update record, close the patch function, put a semicolon.
+
+Done. This will now go ahead and actually update the data in my data source.
+
+---
+
+Let's pick the first one. I'll change the stock quantity to 50. Save. Now it is saving the data in my data source as well. And you can see how the total value got recalculated on the fly.
+
+---
+
+If you want to give a visual indicator to the user of the line that they are editing the container, our horizontal one that we added in the gallery, I'll set its fill property as follows:
+
+`If(varItemSelected.ItemID = ThisItem.ItemID, LighterThemeColor, Transparent)`
+
+---
+
+KEY POINTS:
+- Patch formula saves changes before clearing variable
+- Pattern: `Patch(DataSource, ThisItem, {Column: Control.Property})`
+- Calculated columns update automatically (total value recalculated)
+- Visual indicator: Container fill changes for editing row
+- Fill formula: `If(varItemSelected.ID = ThisItem.ID, LightThemeColor, Transparent)`

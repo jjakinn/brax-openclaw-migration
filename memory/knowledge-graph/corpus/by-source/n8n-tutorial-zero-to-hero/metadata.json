@@ -1,0 +1,17 @@
+{
+  "source_id": "n8n-tutorial-zero-to-hero",
+  "display_name": "n8n Tutorial Zero to Hero (freeCodeCamp)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 35453,
+    "total_chunks": 12,
+    "chunks_processed": 12
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

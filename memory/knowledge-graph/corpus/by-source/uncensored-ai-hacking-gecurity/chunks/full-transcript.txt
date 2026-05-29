@@ -1,0 +1,261 @@
+Kind: captions Language: en In this video, I'm going to show you how to run your very own 
+uncensored AI model, so you can ask it any question, even if it's related to hacking. And we're 
+going to install it on the cloud. So, you can communicate with it from any device, whether it's a 
+phone, computer, tablet, and from anywhere in the world. So, look, I can simply ask it to create a 
+Windows key logger for me. And it's going to go ahead and generate the code without any refusals. 
+And without any of that, I'm sorry, I can't help you. Nonsense. This is Zade from Gecurity and I 
+hack for fun. So, make sure you subscribe and hit the bell so you get notified when I upload new 
+videos like this. And guys, if you help us, we'll be able to make more videos. And you can easily 
+help us by sharing this video on your social media and with friends and liking it. And as a result, 
+I'll be able to be more consistent and we'll be able to publish more videos. So first we need to 
+find an uncensored AI model. A model that we can ask it any question even if it's related to 
+hacking and it will answer us without any refusals. And the best place to discover new AI models in 
+general is this website right here hugenface.co. So you can think of this like the GitHub for large 
+language models or AI. So, if we click here on the models, you'll see that we have access to over 2 
+million models that we can actually download and run on our own hardware. And you can use the 
+filters here on the left to filter these models. So, as you can see, we have text generation 
+models, image to text, image to image, and so on. And obviously, what we're interested in is text 
+generation. And then, if we scroll down, you can also see that we can filter based on the 
+parameters. The bigger usually the better the AI is, but also the bigger the more resources you 
+need. So a 128 or 500 billion parameter model would be way too big for what we are able to run 
+currently. So I'm going to bring it down to 64, but even 32bit is pretty good. And you can even go 
+with the small ones. Some of the small models are actually really good. And I show how to even run 
+these locally on your own computer in my master class if you're interested in that. But we're going 
+to keep it at this since we're going to run this on the cloud. And if you scroll down, you can also 
+see that we can filter them based on the library and the app that we're going to use to run these 
+AI models. Now, again, in my courses, I use LM Studio, but we're going to go with the Olama in this 
+example, and I'm going to show you how to install it literally with a few clicks using Hostinger in 
+a second. But we're going to keep going. And in here, if you scroll down, you can also filter based 
+on the inference provider, but that's not really what we're looking for. But as you can see with 
+our filters, we got to bring it down to 25,000 models that we can pick from. But this is still not 
+exactly what we want because we want an AI model that is fully uncensored. So we can ask it any 
+questions that we want, even if it's related to hacking, and it will never refuse to answer us. So 
+to do that, we're going to go up here to the URL and I'm going to add an amperand to add another 
+filter. And the other filter that I want to add is called other, as you can see. and we're going to 
+set it equal to uncensored. So basically, we're saying we want all of these filters plus we want 
+the uncensored AI models so that we only get the models that will always answer our question. And 
+as you can see, once we hit enter, we're going to get 811 AI models. All of these are uncensored. 
+All of these will never refuse to answer you, even if you ask questions related to hacking. And as 
+you can see, these are sorted based on how trending they are. And this is actually usually a good 
+metric to find the best AI models out there. But you can also sort it based on the most likes, most 
+downloaded, recently created, or updated, and it will sort it out for you in here. And I highly 
+recommend spending some time messing with these models and finding the ones that will work for your 
+case. And if you click on any of these models, you'll get a lot of information on what they are, 
+how they work, the specifications required, and so on. Now, from this page, from the first page, I 
+selected two models that I want to show you how to install. This one and this one. But keep in mind 
+these steps that I'm going to show you going forward will work with any AI model that is compatible 
+with Olama, which is what we selected in here. So you can follow the exact same steps that I'm 
+going to show you in this video to install any model that is compatible with Olama. So the first 
+model that I want to show you is this one right here. And again, as you can see, you have a lot of 
+information in here about it, how it's made, how it's been uncensored, and so on. And if you scroll 
+down in here, this is really, really important. As you can see, there are multiple types or 
+versions of this AI model. And as you can see, each one of them has a different size. So as we 
+scroll down, as you can see, this size gets bigger and the quality gets better. So as you can see, 
+this one is for the desperate. It's only 6.5 GB, but it's probably not going to give you great 
+results. If you scroll down more, you can see that this one is lower quality and it's going to take 
+11.9 GB. And if we keep scrolling down, as you can see, we have what they recommend, which will 
+take 18.7 GB. And this is the type or the version which is I1 Q4 KM for medium. So Q stands for the 
+quantization which is the amount of compression that has been applied to this model. And we're 
+going with the medium size of the Q4 version. So when we get to install it, we're going to be 
+selecting this version right here. And as you can see, this will require 18.7 GB. So like I said, 
+you can use these instructions to install any AI model from HugenFace that is compatible with 
+Olama. The only restriction is the amount of resources that you have available to run this specific 
+AI model. And you can easily check if you can run this AI model on your resources by first signing 
+up with HuggenFace and then go ahead and sign in. It's very, very easy. I'm not going to show you 
+how to do that. As you can see, I'm already logged in. And once you're logged in, you can actually 
+scroll down in here where you see hardware compatibility. You can click on add hardware. And in 
+here, you can add your specifications whether it is a cloud computer or your own local computer. So 
+I asked Gemini and chat GPT on what's the most common computer configuration just to show you in 
+this example and both of them said it is i5 or i7 in terms of processor and 8 GB or 16 GB in terms 
+of memory. So let's go ahead and do that. I'm going to set the CPU to Intel. We're going to set the 
+type to an i7. So we're going to make this a bit more on the powerful side. And we're going to give 
+it 16 GB of memory. If you click add, it'll show you the amount of computing power that you have 
+now. And if you go back, it'll tell you which versions you can run, which versions you'll be able 
+to run, but it might be slow or it might crash. And then the versions that you're not going to be 
+able to run. Now, again, if we scroll down, you'll see that it is telling us the recommended fast 
+one is the Q4KM. So, if we scroll up in here, you'll see that we're not going to be able to install 
+the Q4KM with the configuration that I specified. But if you have a more powerful computer, then 
+that's fine. You'll be able to do it. Or you can install it on the cloud, which will offload all of 
+the heavy lifting and computation to the cloud without using any of your system resources and 
+without slowing down your computer. The second benefit of having it on the cloud is that it's going 
+to be always on and always available. And because all of the heavy lifting is happening on the 
+cloud, you'll be able to use it from any device, a phone, a tablet, a computer and from anywhere in 
+the world. Now, you can use any cloud provider that you want and follow these steps. I'm going to 
+go with Hostinger, the sponsor of this video, because they actually have machines fully built with 
+pre-installed applications to run AI. So, I'll be able to get started very quickly without having 
+to run any commands. And at the moment they are running a massive promotion which makes it cheaper 
+to go with them than to sign up with the smallest subscription with chat GPT. Let me show you. Just 
+go to hostinger.com/zsecurity. As you can see, you can get a server from 7.49 per month. Now, this 
+is the KVM2 server, so it only has 8 GB of RAM. For what we want, you want to go with the KVM4 or 
+the KVM8 because that one has 32 GB of RAM and eight virtual CPU cores, which is a beast of a 
+machine. It's only going to cost you 20 per month. And you're also going to be able to get a 
+further 10% discount when you use our code, which I'm going to show you in a second. And that's 
+actually going to work out to be cheaper than the cheapest subscription with Chat GPT. So, all you 
+have to do is use a coupon code and type Z security. And when you do that, you're going to get a 
+further 10% discount. Now, you're getting the highest discount right now because it is set to 24 
+months. But even if we set it to 12 months, you'll see that the monthly price is still $17.99, 
+which is way cheaper than the lowest subscription with Chat GPT. But this way, we'll be able to 
+install multiple AI models at the same time, and I'm going to show you how to do that in just a 
+minute. And most importantly, we'll be able to install and use uncensored AI models that will 
+always answer our questions without any refusals. And finally, also keep in mind, this is going to 
+be your computer on the cloud. So, you don't always have to necessarily use it for AI. You can 
+actually use it to run your own VPN or your own C2 servers and use it for hacking like I showed in 
+previous videos and I'll link them up if you're interested in this. So to continue, scroll down. 
+I'm going to keep the country as is to the United Kingdom cuz that's the closest to me. And from 
+here you want to select either the operating system, the panel or the application that you want to 
+be installed on that operating system. So quickly I just want to show you that you can actually 
+start a Cali machine straight away from here and you'll have your own Cali machine on the cloud 
+that you can access from any computer in the world. Previously I also showed how to use the OS with 
+panel when we went with the cyber panel and showed how we can hack Android. So check out that video 
+if you're interested in that. But what we're going to do today is go with the application. And from 
+here, you can create a server on the cloud with an operating system and a specific application 
+already installed. And previously, I showed how to use this option to run your own VPN with 
+WireGuard. So, check that out if you're interested in it. But what we're trying to do is to run AI 
+and we want to run it with Olama as I said previously. So, I'm going to click Olama in here. And as 
+you can see, it's saying that it's going to create a Ubuntu Linux machine for us on the cloud. And 
+it's going to automatically install O Lama on it, which is a platform to simplify access to large 
+language models. And it'll also install Open Web UI, which is a web interface that will allow us to 
+install more AI models, interact with the AI models, chat with them, ask them to do stuff for us, 
+and manage them fully from any web browser. And as a result, we'll be able to access our AI model 
+from our phones, tablets, and anywhere in the world. So, I'm going to click confirm in here, and 
+we're going to scroll up and click continue. Now, if you're not registered, you're going to have to 
+register in here. You can use Google or GitHub to also register or use your email. I'm going to 
+click login because I already have an account with them. And I'm going to log in to my account. 
+Once logged in, it's going to ask you to fill in your billing and payment information. I'm going to 
+fast forward through this because it is very simple and very easy to do. And once done, you will be 
+redirected to this page that will ask you to create a root or an admin password for the computer 
+that Hostinger is creating for you on the cloud. So, I'm simply going to set it up in here. Just 
+make sure you remember it. And I'm going to untick the malware scanner. I'm not going to need that. 
+And that's it. Now, all you have to do is give it a minute or two. It's going to go ahead create a 
+new machine for you on the cloud. Install a Linux operating system on it called YUbuntu. Then 
+install the framework that we're going to use to run the AI Olama. And then it's going to install a 
+web interface, open web UI so that we can interact with the AI models using any web enabled device 
+like a computer, a tablet or a phone. And it's going to do all of that for us automatically without 
+us having to run a single command. And while we're waiting, now it's a great time to go ahead and 
+smash that like button and share the video on your social media and with friends. Guys, this really 
+helps us keep this consistent and post more. And perfect. As you can see, we are fully done and 
+ready to go. You can access the app by clicking here, but I'm not going to do that. I'm actually 
+just going to go back to the homepage of my panel on Hostinger just to show you how you would 
+access it if you come back and log back in. So all you have to do is click on VPS and as you can 
+see I have a few servers running. So this is the one that we just installed and if I click on 
+manage I'll go to the management page of this server. As you can see, it's running YUbuntu and we 
+have Olama as the application installed on it. And I can access the terminal by clicking on the 
+terminal in here or click on manage app to go to the open web UI management page, which is the web 
+interface that I told you that we're going to use to interact with our AI models. So, you're going 
+to have to click on get started in here. And it's going to ask you to put in your name, email, and 
+put in a password. and click create admin to create your admin account. And because this is the 
+first time we load it, it's going to show us a change log. We're going to say okay, let's go. And 
+perfect. As you can see, we have a very intuitive web interface. I can share this with anybody in 
+the world. And you'll be able to access it using your phone, tablet, or computer. And you'll be 
+able to interact with this AI model that is pre-installed on this web interface, which is called 
+Lama 3.2. 1 billion for 1 billion parameters. So we can come in here and ask it any question like 
+what is DNS spoofing and it's going to go ahead and answer that question for us which is really 
+really nice and also as you can see in here you have the plus to upload files or capture screenshot 
+and so on. You can attach a web page attach notes you can manage integrations in here and turn on 
+code interpreter if your AI model is capable of that. You can use dictation or you can use the 
+voice mode so that you can directly speak with the AI model in here. So as you can see we have 
+really really nice features similar to when you use chat GPT or any other AI model. The only thing 
+is just like Chachi PT and any other AI model, if we ask it a question related to hacking like give 
+me code for a Windows key logger, it's going to refuse to do that because it's going to say that 
+this is illegal to do. And that's where uncensored models such as the one that we have in here 
+become very very handy. So this is the first model that I want to show you how to install. It's the 
+Quen 3 coder. So it is a coding model. It's got 30 billion parameters. So it's big enough. And 
+because it's a coder, it's actually pretty good at hacking. Now, like I said, you should experiment 
+and try different AI models. And probably maybe when you're watching this, there is better models. 
+So let me know in the comments if you think there are better models that I should be using with 
+this. But like I said, the process of installing these models is identical. So all we have to do is 
+click on use this model and scroll down. Click on Olama because we want to install it with Olama. 
+And as you can see, by default, it's selecting the Q4KM, which when we scroll down earlier, we saw 
+that this was the one that they said that they recommend. So, we can keep it at this and we can 
+simply copy this code. Now, all we have to do is go back to the open web UI. We're going to go down 
+to our thumbnail. Click the profile picture. Go to the admin panel. Go to the settings and models. 
+We're going to click on the manage models in here. And in here, we can use this option to pull 
+models. Now, it says pull models from ola.com, but you can actually pull models from hugenface 
+using the code that we already copied. So, all I have to do is paste that code in here and click 
+pull model. Now, keep in mind that we are pulling or downloading this model to Hostinger's cloud 
+server or whatever cloud server that you are using yourself. So, even though the size of this model 
+was 18 GB, I think as you can see, the download speed is pretty quick. I'm not speeding this up. 
+And that's the beauty of using the cloud for this. You're not putting your resources under any 
+stress. Everything is being downloaded to the cloud. And when we run it, we're going to also be 
+running it from the cloud. So, this will not take any storage space from our computer. and will not 
+use any of our resources such as our RAM and CPU. And that's why we're going to be able to access 
+this from any device in the world as long as the device has a web browser because all of the 
+computations and the heavy lifting is happening on the cloud on Hostinger's servers in my example. 
+Now, I'm going to speed it up from here onwards. And perfect, the download is complete. So, it's 
+probably just going to double check its signature and install it for us. So, this might take one 
+more second or so. And perfect. As you can see, the model has been successfully downloaded. Now, 
+before we go ahead and use this model, I'm actually going to go ahead and download another model 
+just so that you can see that we can use multiple models in this. And that's why it's really, 
+really cool. So, right here I have another model. And the nice thing about this one is that this is 
+a reasoning or a thinking model. So when you ask it a question, it's going to give an answer and 
+then reflect on that answer before it gives you the final answer, which in many cases results in a 
+better answer, but a slower answer also at the same time. So to get this, just like what we did 
+previously, and that's the idea that I'm trying to get across. The steps are always going to be 
+exactly the same as long as you select models compatible with Olama. All we have to do is click 
+this link in here. Use this model and click on Olama again. Just like we seen earlier, it is 
+automatically selecting this size for us. The one that it is recommended by the creators. So, we're 
+going to copy the code. Go back to where we were. We're already at the installation page or the 
+pull page. So, I'm just going to paste it in here and click download. And again, this is 
+downloading it straight from HugenFace to Hostinger servers. Nothing is being downloaded to my 
+computer. So just there while we're watching this video, I am downloading 13 GB for the Q4KM for 
+this model. And for the coder model, we downloaded 18.6 GB. But none of this is being stored on my 
+computer, so I don't really care. Now I'm going to speed it up from here onwards. And perfect, that 
+model is downloaded as well. So now if we close this and refresh the page, you will see that we 
+have two new models downloaded beside the one that was installed by default. And we can actually 
+click the pencil in here just to edit their name because their name is really long and it just 
+doesn't look that good. So we can keep it at Quen 3. And we can remove all of this. I'll leave the 
+size as well cuz that's important. And we already know that is uncensored. And I'll also keep the 
+quantization because that is important. You can also change the icon in here so that in the future 
+when you're selecting the models, it's nice and easy for you. And you can edit so many other 
+settings in here. You should spend some time playing with this, but I'm going to keep it at the 
+default. And I'm just going to go ahead and edit the name in here real quick, just like what we 
+did. And I'm going to save it. and let's go ahead and test these models. So, we're clicking on a 
+new chat in here and we're going to change the model from here. And let's test the coder model 
+first because this one doesn't think it doesn't have reasoning. So, it'll actually be quicker in 
+giving us the answer. And let's go ahead and straight away ask it to give me code for a Windows key 
+logger. I'm going to copy this so I use it with the next model in a second. And the first time you 
+run the model, it might take a second to load, but then the subsequent questions would be a lot 
+faster once it's loaded. And perfect. As you can see straight away, without any refusals, without 
+any fluff, it's giving us code for a Windows key logger written in Python. And I know this will 
+work because it is actually using PI input, which is the library I use in my Python for hackers 
+course where I teach how to create key loggers and back doors and so on using Python. And as you 
+can see, it is also telling us how to use it and so on. And you can go ahead and improve it even 
+you can tell it make it send the logs to my Gmail. And let's just assume my Gmail is jhngmail.com. 
+And it'll modify the code so that it sends the registered keystrikes to your own Gmail account. And 
+again, you get the answer quickly without any fluff. It's telling you where you should fill up your 
+information. And you can go ahead and run this. And once you run it on Windows, it's going to 
+listen for every single keystrike typed by the target and it will send you an email with a report 
+of everything that the target has typed. So really, really good, really amazing. And all of this is 
+running on our own server that we fully control. And the really nice thing about this is that we 
+don't only have this AI model. We actually have other AI models and you can have so many from 
+HuggenFace. So let's go ahead and test the other model that we have, the reasoning model. So I'm 
+going to stop this and we're going to open up a new chat. We're gonna click in here and I'm 
+actually going to click this icon in here that says eject which basically means that it's going to 
+unload this model just so that I free resources for the next model that I'm going to use which is 
+this model right here the quan 322B the thinking model and let's go ahead and give it the same 
+question hit enter and let's see if it's going to answer us without any refusals now as you can see 
+this model is thinking about my question so if I click in here you You can see it's chain of 
+thought similar to what you would get with chat GPT, Google and so on. So as you can see the user 
+is asking for code for Windows key logger. It's thinking about using a different library instead of 
+PI input. So as you can see this model is obviously taking a lot longer than the previous one, but 
+that's because it is a reasoning or a thinking model. It thinks about the question before it 
+actually spits out the final answer. And now it's writing up a plan on how it should respond to my 
+question. And then it remembered that some of the keys might not be standard characters like enter, 
+shift, and cancel. And again, it's going to improve the code for that. It's going to write the code 
+for pi hook first. And while this is loading guys, if you're interested in learning more about how 
+to use AI for hacking, then I highly recommend you check out my hacking master class as I have a 
+full series in there or even a full course on how to use AI for hacking. Not just to ask it 
+questions and gives you the answers, but we even talk about agents and how to get the agents to go 
+and automatically hack and gather information on your behalf, discover bots and take actions on 
+your behalf. So all you have to do is say make me a backdoor or discover a bug in this website and 
+it'll actually go ahead and do that. So that would have been how to use AI for hacking. And just 
+recently we started a new series within the hacking master class where we are covering how to use 
+prompt injection to hack AI models instead of using them for hacking. And looks like this guy is 
+still going. So I'm just going to speed it up cuz I don't want to be wasting your time. And 
+perfect. As you can see now that it is finished thinking it's starting to give us the final answer 
+that it decided is best. And just like before you can go ahead and ask it to improve it or you can 
+like I said ask it any other question and it will never refuse to answer you. And like I said guys 
+you can follow these steps to install any AI model from HugenFase as long as it's compatible with 
+Olama. So go ahead and have a look at the models in there and let me know if there's anything 
+interesting that I should check out myself. And also let me in the comments if there are any other 
+topics that you would like me to cover in the future. Here we 

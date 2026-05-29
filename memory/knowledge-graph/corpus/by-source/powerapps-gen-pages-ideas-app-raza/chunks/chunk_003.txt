@@ -1,0 +1,27 @@
+CHUNK 3/3
+
+[07:00 - 11:00]
+
+Add a column chart on top showing number of ideas per year. It should act as a year filter.
+
+It's added the year filter on the top. And this is interactive. Select 2022. It only shows me the ideas that were submitted in 2022. I can even clear that filter. Let's pick 2025. This was the idea that I just submitted. So you can see how powerful Gen pages are.
+
+Let's ask it to add a feature to export the data to Excel. And the feature is ready.
+
+Let's publish. Here it is. Export to Excel. Click. Here is the exported data.
+
+How about I ask the gen page to add an option for user to add a command to ideas. The command should be stored in the commands table. Also, for each idea, user should be able to see the commands history.
+
+Let's see what magic gen pages does for us. I think I stretched gen pages too far. The feature is in preview.
+
+I'm trying to recreate my gen page with all the inputs that I provided earlier. This time when I recreated, you can see it's created a similar look, different styles. I'm giving it the same instructions again. This time my instructions in bulk.
+
+The app agent begins the work now. Let's try that line again. The command history. Let's see what it does.
+
+It's gone ahead and added the feature for commands as well. For each of my ideas, I can click to view and add commands. It shows the commands history. I can add a comment on the fly. Here it is in the context of the model driven app itself.
+
+Let's pick gen pages is awesome and add a command. Comment added. Here it is in the command history. A running thread of commands. All of this getting stored in the commands table.
+
+This entire page, all this functionality I was able to build in a matter of minutes by simply describing what I need in natural language to the app agent.
+
+If you enjoyed this video, then do like, comment, and subscribe to my YouTube channel. And thank you so much for watching.

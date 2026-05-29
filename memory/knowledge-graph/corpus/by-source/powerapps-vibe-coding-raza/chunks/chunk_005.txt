@@ -1,0 +1,32 @@
+CHUNK 5: CUSTOMIZING THE PLAN
+Source: powerapps-vibe-coding-raza | Timestamp: 09:30 - 10:30
+
+Now if I head back to the plan the personas as I mentioned I can edit and add my own roles and requirements. So I could do that manually or I can ask the agent to make updates.
+
+I can do the same for the data model experience and for the tech experience as well.
+
+---
+
+Now if we head over to the data tab, this is the data model that the Vibe experience is recommending to support my solution. Multiple tables to manage products, orders, invoices, payments, and more.
+
+Each of these tables has different columns as well as sample data to begin with which is great as I am developing this application currently in my development environment.
+
+You have the full flexibility to add new columns. Rich data types available right here. We can go and add new draft tables. And we can also manually create relationships between the different tables.
+
+Apart from this, prompt the agent in the chat experience to make modifications.
+
+---
+
+KEY POINTS:
+- Plan is fully customizable:
+  - Edit personas manually or via agent prompts
+  - Modify data model recommendations
+  - Adjust technology recommendations
+- Data tab shows recommended data model
+- Tables include: products, orders, invoices, payments
+- Pre-populated with sample data for development
+- Flexibility to:
+  - Add new columns with rich data types
+  - Add new draft tables
+  - Create relationships between tables
+  - Prompt agent to make modifications

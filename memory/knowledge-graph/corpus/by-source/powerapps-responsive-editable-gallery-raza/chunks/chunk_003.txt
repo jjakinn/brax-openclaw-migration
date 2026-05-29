@@ -1,0 +1,38 @@
+CHUNK 3: ENABLING MODERN CONTROLS & GALLERY CONFIGURATION
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 02:30 - 03:30
+
+Now I would like to show the data from that table. In this gallery I am utilizing the modern controls.
+
+To enable modern controls in your app, make sure under app settings, updates, you have modern controls and themes turned on.
+
+---
+
+My gallery. I'll first rename this to GAL inventory. Best practice, always name your controls.
+
+To add controls within the gallery, I will edit the gallery by clicking on this pencil icon. Head over to insert.
+
+The first control that I will be adding is a horizontal container. Pick horizontal container.
+
+---
+
+Now this container its X property I'll set to zero. Its Y property I will set to zero. So it begins from the top left.
+
+The width will be parent.templateWidth and the height will be parent.templateHeight.
+
+So you can see how this horizontal container is sitting within this gallery.
+
+---
+
+This container as well has some padding that I will remove.
+
+---
+
+KEY POINTS:
+- Modern controls prerequisite: Settings → Updates → Modern controls and themes = ON
+- Naming: GAL_ prefix for gallery (best practice)
+- Edit gallery: Click pencil icon
+- Container setup:
+  - X: 0, Y: 0 (top left)
+  - Width: Parent.TemplateWidth
+  - Height: Parent.TemplateHeight
+  - Remove padding

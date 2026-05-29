@@ -1,0 +1,34 @@
+CHUNK 8: VISUAL SORT INDICATOR
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 08:00 - 09:30
+
+Nothing is being shown because none of the variables are set yet. But if I click now it is sorting. That variable is set to true. The column is ID. So it's sorting on ID and ascending.
+
+If I click now it is sorting on ID and descending.
+
+However, there is no visual indicator to the user of the sort direction.
+
+---
+
+Let's do that by updating the icon property of this button. The icon property I'll set as follows:
+
+`If(varSortBy = "ID", If(varSortDirection, Icon.ArrowUp, Icon.ArrowDown), Icon.ArrowSort)`
+
+---
+
+If `varSortBy` is "ID" then you check the sort direction. So if `varSortDirection` if it's true that means it's sorting in ascending. So I'll use the icon arrow up. If not, so arrow down.
+
+I'll close the if. And if that variable `varSortBy` is not "ID", in that case you show arrow sort.
+
+---
+
+Let's preview. Descending. Ascending. The user is getting a clear indicator of the sort direction for the data in this gallery.
+
+---
+
+KEY POINTS:
+- Visual indicator: Dynamic icon based on sort state
+- Icon logic:
+  - Sorting this column + Ascending = ArrowUp
+  - Sorting this column + Descending = ArrowDown
+  - Not sorting this column = ArrowSort
+- Pattern: `If(varSortBy = "Column", If(varSortDirection, Up, Down), Default)`

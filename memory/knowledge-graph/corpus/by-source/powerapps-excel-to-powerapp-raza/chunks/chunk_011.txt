@@ -1,0 +1,45 @@
+CHUNK 11: ALTERNATE KEYS FOR LOOKUP MAPPING
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 13:00 - 14:30
+
+Now comes my main product table.
+
+---
+
+To import the data from my inventory sheet into this table, two columns — supplier and location — are lookup columns.
+
+---
+
+The values that are stored here as text in Excel is the name of the supplier and the name of the location.
+
+---
+
+In order for me to import this from Excel and for it to directly map it to the lookup column, I need to go to the target tables.
+
+---
+
+Let's begin with supplier here. I'll create a key. I'll call this key "supplier name". And the column I'll select is my supplier name.
+
+---
+
+Save. This will create the key. Make sure the status becomes active.
+
+---
+
+I'll do the same for my location table. I'll create a new key. Here I'll pick the name column that has the name of the location.
+
+---
+
+You can see the key in the supplier table. The status is active. So ready to go. Check the same in your location table.
+
+---
+
+KEY POINTS:
+- Problem: Text values need to map to lookups
+- Solution: Alternate keys
+- Process:
+  1. Go to target table (Supplier/Location)
+  2. Create key
+  3. Select matching column (name)
+  4. Save and activate
+- Status: Must be "Active" to work
+- Result: Excel text can map to lookup

@@ -1,0 +1,34 @@
+{
+  "concept_id": "bug-bounty-methodology",
+  "display_name": "Bug Bounty Methodology",
+  "category": "cybersecurity",
+  "description": "Systematic approach to finding security vulnerabilities in scope targets, including reconnaissance, enumeration, and exploitation techniques",
+  "sources": [
+    "bug-hunter-methodology",
+    "bug-hunter-app-analysis",
+    "live-recon-snapchat",
+    "manual-hacking-guide"
+  ],
+  "synthesis": {
+    "available": true,
+    "file_path": "corpus/by-concept/syntheses/bug-bounty-methodology.md",
+    "word_count": 7074,
+    "sources_synthesized": 4
+  },
+  "related_concepts": [
+    "reconnaissance",
+    "osint",
+    "web-application-security",
+    "api-security",
+    "subdomain-enumeration"
+  ],
+  "prerequisites": ["networking-basics", "web-fundamentals"],
+  "difficulty": "intermediate",
+  "tools": [
+    "amass",
+    "burp-suite",
+    "shodan",
+    "ffuf",
+    "subfinder"
+  ]
+}

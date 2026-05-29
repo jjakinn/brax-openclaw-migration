@@ -1,0 +1,25 @@
+{
+  "id": "powerapps-modern-combo-box-raza",
+  "title": "Power Apps Modern Combo Box - Major Updates (800+ Items, People Picker)",
+  "url": "https://www.youtube.com/watch?v=3tcmlvxgafk",
+  "platform": "YouTube",
+  "duration": "18 min",
+  "duration_seconds": 1080,
+  "word_count": 2700,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "powerapps-modern-controls",
+    "combo-box",
+    "delegable-queries",
+    "people-picker",
+    "sharepoint",
+    "office365-users",
+    "multi-select",
+    "server-side-filtering"
+  ],
+  "description": "Deep dive into Power Apps modern combo box control updates: 800+ item limit lifted, server-side filtering with searchText, multi-select people picker with Office 365 Users connector, and patching multi-select person columns to SharePoint."
+}

@@ -1,0 +1,75 @@
+{
+  "source_id": "free-ebooks-audiobooks-libby-hoopla",
+  "display_name": "How to get ALL ebooks & audiobooks free - even if your library sucks!",
+  "author": "Matt's Fantasy Book Reviews",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2024,
+    "url": "https://www.youtube.com/watch?v=xafwrZQ7FSk",
+    "channel": "Matt's Fantasy Book Reviews",
+    "ingested_date": "2026-03-28",
+    "processed_by": "agent:main",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 1,
+    "total_words": 2834
+  },
+  "length": {
+    "pages": 0,
+    "words": 2834,
+    "duration_minutes": 13,
+    "chunk_count": 1
+  },
+  "structure": {
+    "parts": [
+      "Introduction \u2014 250 books read, only paid for ~10",
+      "Libby/Overdrive \u2014 Free ebooks & audiobooks from local library",
+      "How Holds Work \u2014 Waitlists, push-back strategy",
+      "Hoopla \u2014 No waitlist alternative (4 books/month)",
+      "Reciprocal Library Agreements \u2014 Access neighboring systems",
+      "State Reciprocity Laws \u2014 Get cards statewide (e.g., California)",
+      "Orange County Florida Library Card \u2014 $125/year, worldwide access",
+      "Library Extension (Chrome) \u2014 Power user tool for multi-library search",
+      "Closing"
+    ]
+  },
+  "concepts_covered": [
+    "libby-app",
+    "overdrive",
+    "hoopla",
+    "free-ebooks",
+    "free-audiobooks",
+    "kindle-library-lending",
+    "library-hold-system",
+    "reciprocal-library-agreements",
+    "state-library-reciprocity",
+    "orange-county-florida-library-card",
+    "library-extension-chrome",
+    "goodreads-integration"
+  ],
+  "domains": [
+    "books",
+    "free-resources",
+    "life-hacks",
+    "libraries"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/free-ebooks-audiobooks-libby-hoopla/chunks/"
+  },
+  "key_takeaways": [
+    "Libby (by Overdrive) = free ebooks & audiobooks from your local library, sent directly to Kindle or listened in-app",
+    "Ebooks borrow for 21 days (some libraries 14 days), audiobooks sync across browser and phone app",
+    "Hold strategy: place holds on tons of books, push back delivery date until you're ready to read \u2014 waitlists move faster than estimated",
+    "Return books early to be a good samaritan \u2014 next person in waitlist gets notified immediately",
+    "Hoopla = no waitlist alternative, but limited to 4 books/month \u2014 check Overdrive first, then Hoopla as backup",
+    "Reciprocal library agreements: call neighboring library systems and ask if you can get a card \u2014 often gives 3-4x the catalog",
+    "State reciprocity laws: some states (California, others) allow you to get a library card at ANY library in the state by showing up with state ID",
+    "Pro move: stop at libraries when traveling to collect cards from different systems across the state",
+    "Orange County Florida Library System: $125/year non-resident card, available to ANYONE worldwide (including international), enormous catalog",
+    "Only need to read ~10 books/year to make $125 card worthwhile vs buying",
+    "Library Extension (Chrome extension): shows book availability across ALL your library systems on Goodreads and Amazon pages \u2014 one-click borrow from whichever library has it available",
+    "Audiobook quality in Libby is identical to Audible \u2014 same recordings, speed controls, bookmarks, sync across devices"
+  ]
+}

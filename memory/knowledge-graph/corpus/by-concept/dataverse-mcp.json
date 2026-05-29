@@ -1,0 +1,26 @@
+{
+  "id": "dataverse-mcp",
+  "name": "Dataverse MCP Server",
+  "category": "Power Platform",
+  "description": "Model Context Protocol (MCP) server for Dataverse enabling AI agents to perform SQL queries and CRUD operations via natural language in Copilot Studio and Power Apps.",
+  "related_concepts": [
+    "powerapps-ecosystem",
+    "mcp-protocol"
+  ],
+  "sources": [
+    "powerapps-dataverse-mcp-raza"
+  ],
+  "keywords": [
+    "MCP",
+    "Model Context Protocol",
+    "Dataverse",
+    "Copilot Studio",
+    "SQL queries",
+    "CRUD",
+    "AI agents",
+    "Natural language",
+    "TDS endpoint",
+    "Generative pages"
+  ],
+  "created_at": "2026-03-30"
+}

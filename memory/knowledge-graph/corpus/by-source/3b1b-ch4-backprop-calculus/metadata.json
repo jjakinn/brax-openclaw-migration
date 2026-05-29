@@ -1,0 +1,17 @@
+{
+  "source_id": "3b1b-ch4-backprop-calculus",
+  "display_name": "3Blue1Brown Ch4: Backpropagation Calculus",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 1632,
+    "total_chunks": 1,
+    "chunks_processed": 1
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

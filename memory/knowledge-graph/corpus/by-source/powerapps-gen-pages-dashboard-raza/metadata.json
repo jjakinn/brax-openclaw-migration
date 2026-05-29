@@ -1,0 +1,39 @@
+{
+  "id": "powerapps-gen-pages-dashboard-raza",
+  "title": "Building Dashboard Screens in Power Apps with Generative Pages (GPT-5)",
+  "instructor": "Raza",
+  "channel": "Power Apps",
+  "url": "https://www.youtube.com/watch?v=0seSFb4MrgE",
+  "duration": "6 min",
+  "word_count": 843,
+  "difficulty": "Intermediate",
+  "category": "Power Platform",
+  "concepts": [
+    "generative-pages",
+    "power-apps",
+    "model-driven-apps",
+    "dashboard",
+    "d3-library",
+    "data-visualization",
+    "kpi",
+    "charts",
+    "animations",
+    "interactive-filters",
+    "theme-switching",
+    "gpt-5",
+    "react",
+    "svg"
+  ],
+  "prerequisites": [
+    "powerapps-fundamentals",
+    "dataverse-basics",
+    "generative-pages-basics"
+  ],
+  "related_sources": [
+    "powerapps-gen-pages-ideas-app-raza",
+    "powerapps-gen-pages-events-catalog-raza",
+    "powerapps-model-driven-modern-raza"
+  ],
+  "ingested": "2026-03-31",
+  "chunks": 2
+}

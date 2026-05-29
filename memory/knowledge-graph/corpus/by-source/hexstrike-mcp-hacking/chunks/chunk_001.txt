@@ -1,0 +1,15 @@
+SOURCE: HexStrike MCP Hacking Tutorial (ZeroDay Gym)
+URL: https://www.youtube.com/watch?v=PQOwpjZXzMo
+CHUNK: 1/3 - Introduction and Setup
+
+---
+
+Hello everyone and welcome back to yet another video. Today I'm going to talk about a tool called Hexrike AI MCPS. And this is basically a collection of MCP servers that you connect you can connect to your AI or LLM. And it can uh use certain tools to hack for you. And this is basically a part two to my video automating bug bounty server. But this one is quite a bit better. And uh this video became really popular. So I thought that I would introduce a part two to this video. And I will showcase this Hackri AI tool. And uh first of all, I'm going to show you how to set it up. And after setting it up, we will uh use it against real challenges. These are like bug bounty challenges. And if it can do that, it can do bug bounty. Um and uh you can basically try it out yourself. And I will just showcase how to set it up step by step with Claude desktop. So without further ado, let's get into the video.
+
+So to download this tool, you would just have to go to their GitHub. So if you go to hexri.com, they have a GitHub up here or you can just go to this Hexrike AI GitHub. And what you uh want to do is just copy this GitHub link. And I'm in my tools directory. So I'm just going to get clone this Hackri AI. Now I'm going to going to CD into this Hackri AI repository. And if you just go ahead and scroll a little bit down, you will see some instructions on how to install it.
+
+I'm going to use UV. So I'm going to do UV uh vanv. And this is going to create a virtual environment. So if I do source ven uh bin activate fish, it called for me activate.fish. Uh then I'm going to be activated into my environment. And then what I will do is I will just uh copy this command p u p3 install recommen requirements.txt. So I'm going to do uv pip I think install-r requirements.txt like that and it's going to install requirements really really quickly for me. So it's just going to take a little bit here and then it should be fully set up.
+
+Then if we scroll down we can see a lot of different documentation but what we are interested in is cloud desktop integration and that's basically showcasing how to set up the hexrike AI MCP inside cloud desktop and for me I have already done that. So if I open another pane and I new vim that you can see that I have uh this directory here and it is automatically set up for me because uh I did it a little bit before.
+
+So I'm just going to wait for the last of these packages to download and then I will show you how to use this. So to start the server you just have to do python 3 hackstrike server.py Pi and then uh inside of your uh I guess cloud desktop or any AI that you use configuration make sure that it's hexri mcp.py and not hexrike server.py because those are two different things. Uh now our our hexri has installed. So I'm going to do python 3. And the reason why I don't use uv because in this configuration I also specified python 3 and these might collide. So uh I I uh recommend to you you to use uh Python 3. And now it is working.

@@ -1,0 +1,33 @@
+CHUNK 1: INTRODUCTION TO MODERN COMBO BOX UPDATES
+Source: powerapps-modern-combo-box-raza | Timestamp: 00:00 - 01:30
+
+Hello everyone, Raza here. Modern controls in canvas power apps have got major quality updates.
+
+The one I will be focused on is the modern combo box control. The 800 item limit lifted. I will show how to query a very large data set plus multi selection capabilities have been improved allowing us to create a multi-select people picker experience. So, let's check this video out in action.
+
+Updates to modern controls in canvas apps. The latest Power Apps blog post calls out all the key updates to a wide variety of modern controls from combo box updates to date picker to text input and more.
+
+The documentation dives deeper into the available updates for each of those controls.
+
+Quite a few controls have been updated, but the one that I want to focus on is the combo box control.
+
+---
+
+Here I am in my canvas power app. First thing to note, settings, support, authoring version. Your authoring version must be this or higher.
+
+Second, under settings, updates, modern controls and themes must be turned on.
+
+Let's go and insert the modern combo box control.
+
+---
+
+KEY POINTS:
+- Modern controls received major quality updates
+- Focus: Combo box control
+- Key improvements:
+  1. 800 item limit LIFTED
+  2. Multi-selection capabilities improved
+  3. Can create multi-select people picker
+- Prerequisites:
+  - Authoring version must be current or higher (check Settings → Support)
+  - Modern controls and themes must be ON (Settings → Updates)

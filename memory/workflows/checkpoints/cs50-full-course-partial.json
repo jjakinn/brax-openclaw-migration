@@ -1,0 +1,35 @@
+{
+  "checkpoint_type": "partial_ingestion",
+  "source_id": "cs50-full-course-2026",
+  "source_url": "https://www.youtube.com/watch?v=gmuTjeQUbTM",
+  "timestamp": "2026-03-23T06:08:00Z",
+  "status": "PAUSED",
+  "progress": {
+    "total_duration_hours": 22,
+    "processed_hours": 2.4,
+    "remaining_hours": 19.6,
+    "percent_complete": 11
+  },
+  "current_segment": {
+    "segment_number": 1,
+    "time_range": "00:00:00 - 02:24:00",
+    "topic": "Flask Web Programming",
+    "chunks_created": 11,
+    "concepts_extracted": 8
+  },
+  "next_segment": {
+    "segment_number": 2,
+    "time_range": "02:24:00 - 04:30:00",
+    "estimated_chunks": 10,
+    "ready_to_process": true
+  },
+  "plan": {
+    "sessions_required": 10,
+    "hours_per_session": 2.2,
+    "strategy": "Process 2-hour segments, checkpoint at 78%, spawn continuation"
+  },
+  "files_created": [
+    "corpus/by-source/cs50-flask-web-programming/"
+  ],
+  "notes": "First segment complete. Full course is 22 hours. Will process incrementally across multiple sessions."
+}

@@ -1,0 +1,39 @@
+CHUNK 10: SCOPED AGENT BEHAVIOR AND PROJECT QUERIES
+Source: powerapps-dataverse-mcp-raza | Timestamp: 10:30 - 12:00
+
+Now, if I try and ask the same question (the question was related to my orders table), this time, it says "I can only assist with project and task data stored in Dataverse" because that's what I have directed my agent to do.
+
+---
+
+"How many projects?"
+
+I misspelled projects. That's okay. AI is smart enough to understand my intent.
+
+The response: "There are a total of 15 projects."
+
+---
+
+"List the projects where the budget is greater than 150K."
+
+The MCP server weaves its magic. And check that out. Within seconds, it's able to grab that information.
+
+---
+
+"Show me the project owner information as well."
+
+I'll ask my question again. Now it's also going to the user table to grab the related information.
+
+You can see how powerful this is. And here is the full list.
+
+---
+
+It's broken it down by who the project owners are, what projects are they owning, and it is only showcasing those projects where the budget is greater than 150K.
+
+---
+
+KEY POINTS:
+- Scope enforcement: Agent refuses out-of-scope queries
+- Spelling tolerance: AI understands intent despite typos
+- Related data: Can query across tables (projects + users)
+- Filtering: Budget > 150K automatically applied
+- Aggregation: Groups and summarizes data intelligently

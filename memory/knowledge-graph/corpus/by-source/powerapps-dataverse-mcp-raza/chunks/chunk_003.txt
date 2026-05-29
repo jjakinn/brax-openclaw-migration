@@ -1,0 +1,25 @@
+CHUNK 3: MCP VERSUS API
+Source: powerapps-dataverse-mcp-raza | Timestamp: 02:00 - 03:00
+
+MCP versus API.
+
+The API is the interface that the system like Dataverse, SharePoint or SQL exposes so that other softwares can access data or actions.
+
+On the other side, MCP is the AI's official way to use those doorways.
+
+---
+
+MCP doesn't replace APIs. Instead, it provides a standard language and structure. So, AI systems and agents can safely call APIs via MCP tools without needing custom code or direct development work.
+
+---
+
+The API is the system's access point and MCP is the protocol that lets AI use those access points safely and automatically.
+
+---
+
+KEY POINTS:
+- API: System's interface (Dataverse, SharePoint, SQL)
+- MCP: AI's way to use APIs
+- Relationship: MCP doesn't replace APIs
+- Benefit: Standard language/structure for AI to call APIs
+- Result: No custom code needed for AI to access systems

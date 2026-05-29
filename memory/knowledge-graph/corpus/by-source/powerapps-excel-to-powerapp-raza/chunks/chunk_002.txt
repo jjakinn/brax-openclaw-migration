@@ -1,0 +1,28 @@
+CHUNK 2: CREATING SOLUTION AND PUBLISHER
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 01:00 - 02:00
+
+Now let's see how we can take this Excel file and transform it into a Power App in Power Platform in my environment.
+
+---
+
+I'll go ahead and first create a solution. Think about a solution as a folder where I will be storing all the artifacts of my inventory management application.
+
+---
+
+I'll give it a name. Publisher: I'll create a new one. I'll call it "Contoso" — fictitious name for my org. I'll give it the prefix. So every object that gets created in this solution will get this naming standard.
+
+---
+
+I'll click save. That creates my publisher.
+
+---
+
+Here's the name of my solution, associated publisher. I'll click create. My solution is ready.
+
+---
+
+KEY POINTS:
+- Solution: Container for app artifacts
+- Publisher: Defines naming prefix (e.g., "Contoso")
+- All objects get prefix (e.g., "Contoso_")
+- Best practice: Create solution first

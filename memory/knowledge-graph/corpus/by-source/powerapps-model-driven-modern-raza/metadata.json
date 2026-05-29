@@ -1,0 +1,79 @@
+{
+  "source_id": "powerapps-model-driven-modern-raza",
+  "title": "How to build Model-Driven Power Apps the Modern Way",
+  "instructor": "Resza",
+  "platform": "YouTube",
+  "url": "https://www.youtube.com/watch?v=S3WVKpNWp2c&list=PLTyFh-qDKAiEIVlidnhELx5BusnzlDzkR&index=18",
+  "playlist": "Power Platform Tutorials by Resza",
+  "playlist_position": 18,
+  "duration": "8 min",
+  "duration_seconds": 480,
+  "word_count": 1533,
+  "language": "en",
+  "difficulty": "Intermediate",
+  "category": "Power Platform",
+  "subcategory": "Model-Driven Apps",
+  "date_ingested": "2026-03-31",
+  "tags": [
+    "powerapps",
+    "model-driven-apps",
+    "dataverse",
+    "copilot",
+    "plan-designer",
+    "generative-pages",
+    "react",
+    "tables",
+    "relationships",
+    "lookup-columns",
+    "app-designer",
+    "data-exploration-agent",
+    "data-visualization-agent",
+    "in-app-agents",
+    "business-requirements",
+    "data-model",
+    "crud-operations",
+    "swim-lanes",
+    "task-board",
+    "calendar-view",
+    "dashboard",
+    "pcf-controls"
+  ],
+  "concepts_covered": [
+    "model-driven-app-fundamentals",
+    "dataverse-tables",
+    "table-relationships",
+    "copilot-data-modeling",
+    "plan-designer-workflow",
+    "generative-pages",
+    "custom-react-pages",
+    "in-app-agents",
+    "data-exploration",
+    "data-visualization",
+    "views-and-forms",
+    "lookup-relationships"
+  ],
+  "prerequisites": [
+    "powerapps-basics",
+    "dataverse-fundamentals"
+  ],
+  "related_sources": [
+    "powerapps-vibe-coding-raza",
+    "powerapps-tools-ecosystem-raza",
+    "powerapps-dataverse-mcp-raza",
+    "powerapps-quiz-app-raza"
+  ],
+  "key_takeaways": [
+    "Model-driven apps require a data model in Dataverse - no data model means no app",
+    "Modern approach uses Copilot to describe tables and generate data models automatically",
+    "Plan Designer can create entire apps from business problem descriptions using AI agents",
+    "Generative pages allow custom React-based UI within model-driven apps",
+    "In-app agents (data exploration, visualization) enable natural language interaction with data",
+    "Relationships between tables are automatically created via lookup columns",
+    "Gen pages can create task boards, calendar views, dashboards without custom code"
+  ],
+  "cross_references": {
+    "dataverse-mcp": "Related - Dataverse MCP server for AI agent data access",
+    "powerapps-vibe-coding": "Related - AI-assisted app development",
+    "plan-designer": "Core concept covered extensively"
+  }
+}

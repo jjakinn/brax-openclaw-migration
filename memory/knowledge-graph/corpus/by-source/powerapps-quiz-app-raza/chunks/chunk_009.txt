@@ -1,0 +1,49 @@
+CHUNK 9: CREATING A NEW QUIZ
+Source: powerapps-quiz-app-raza | Timestamp: 05:45 - 06:30
+
+Let's try and set up a new quiz.
+
+---
+
+I'll click on "New". Power Apps. I'll give it a description. Category: tech.
+
+---
+
+Publish this. Pass percentage: 75. Maximum attempts allowed: two. Save.
+
+---
+
+Now I'll go to questions. Let's add a new question.
+
+---
+
+Question is: "Which app type can be generated from your data model?"
+
+---
+
+I'll give a description for this. The number of points I would like to give for this question.
+
+---
+
+My four options: Canvas, Model-driven, Power Pages, Power BI.
+
+---
+
+The answer is Model-driven. So option two. And I can also give an explanation for the answer.
+
+---
+
+Done. Save and close.
+
+---
+
+KEY POINTS:
+- New quiz workflow:
+  1. Click New
+  2. Enter name, description, category
+  3. Set pass percentage
+  4. Set max attempts
+  5. Save
+  6. Add questions
+- Question creation: Full question builder interface
+- Example question: Power Platform app types

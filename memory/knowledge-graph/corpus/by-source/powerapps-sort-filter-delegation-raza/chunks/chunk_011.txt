@@ -1,0 +1,39 @@
+CHUNK 11: FILTER CONTAINER AND TITLE FILTER SETUP
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 13:00 - 14:30
+
+The icon right next to the column name is an indicator that I can sort the column. The other three columns, they are complex type columns in my data source. I can sort on them, but it will not work for large data due to delegation.
+
+---
+
+Next, let's add an option for end users to filter on multiple columns. Sorting and filtering working together.
+
+---
+
+I'll insert a container. This would be the section where I'll add my filters.
+
+The fill property for this container I'll set as `App.Theme.Colors.Primary`.
+
+---
+
+I'm using modern controls and themes. So if I head over to themes, observe as I change the theme of my app, the modern controls accordingly change their colors.
+
+---
+
+Now in this container, I'll go and insert the text control. The text property I'll set as "Title".
+
+In the container, I'll insert a text input control. This is where the user can type the text for the title and I will filter the data in my gallery based on the title column.
+
+---
+
+When filtering, text columns are delegable. These are the delegable formulas for SharePoint.
+
+---
+
+KEY POINTS:
+- Filter section: Container with filter controls
+- Modern themes: Colors adapt to theme changes
+- Text filter:
+  - Label: "Title"
+  - Text input for user entry
+  - Target: Title column
+- Delegable text filter: Yes

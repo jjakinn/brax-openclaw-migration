@@ -1,0 +1,32 @@
+CHUNK 7: RESPONSIVE PREVIEW & USER CONTEXT
+Source: powerapps-vibe-coding-raza | Timestamp: 13:00 - 15:00
+
+We can also preview our application in different screen sizes. Right now, it's in the desktop form factor. Here's tablet. Observe it's responsive. Let's go to mobile.
+
+All right, my tasks are completed by the agent. So now once the app refreshes if I head over to orders as well here also I have my grid view experience.
+
+Now in the dashboard it says welcome back. How about we ask the agent to show the current logged-in username in the welcome message.
+
+Vibe now has that feature where it understands the context of the current user. It has the user's name, email and entra ID which we could use for creating persona based applications.
+
+Done within seconds. Here's my welcome message. Welcome back Raza Dani. Here's an overview of your business.
+
+---
+
+Apart from chatting with the agent to make updates, we can also make quick inline edits by using the toggle inline edits feature. On the dashboard, you can select an element on the page and make changes like typography updates. I'll change the text color here to blue. Can change the background color.
+
+Or I can ask the agent to make changes. Plus I can directly change the text and we have a new option go to code. If I select this it will open in split mode and I can see the code for that exact element that I selected on the page.
+
+Very powerful. It's using an H1 HTML tag. And this is where it is putting out my user's full name information. There's a function called useUser which gets me the user's full name information. So you can explore that part of the code as well. And this is in the index.typescript file.
+
+---
+
+KEY POINTS:
+- Responsive preview: Desktop → Tablet → Mobile
+- User context awareness: Name, email, Entra ID available
+- Use case: Persona-based applications
+- Function: `useUser()` hook gets current user info
+- Inline editing: Toggle "Inline Edits" feature
+- Direct modifications: Text, colors, backgrounds
+- Split mode: Select element → "Go to code" → See exact code
+- Code exploration: Can examine how user info is rendered

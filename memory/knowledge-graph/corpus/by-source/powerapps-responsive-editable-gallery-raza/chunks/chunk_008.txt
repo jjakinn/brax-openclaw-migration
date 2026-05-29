@@ -1,0 +1,41 @@
+CHUNK 8: VERTICAL SCROLL SETUP
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 13:00 - 14:30
+
+The vertical scroll for the gallery. Where did that go?
+
+Well, now that I have a horizontal scroll, I have to go all the way to the right to get that vertical scroll. That may not be a great option.
+
+Why not have the vertical scroll right here?
+
+---
+
+For that, I'll go to the gallery first and turn off the show scroll bar property of the gallery. Let's hide the gallery scroll.
+
+---
+
+Now the gallery just like we set the layout minimum width, there is also a minimum height.
+
+Now the height should be set based upon how many rows are there in this gallery multiplied by the template height which we had set as 40.
+
+---
+
+So the layout minimum height of the gallery should be: my gallery.AllItemsCount multiplied by 40.
+
+And the container in which the gallery sits the vertical overflow I'll set to scroll.
+
+---
+
+Now if I preview observe I have my horizontal scroll and I have my vertical scroll.
+
+This will work for any device size and orientation.
+
+---
+
+KEY POINTS:
+- Problem: With horizontal scroll, vertical scrollbar moves to far right
+- Solution: Move vertical scroll to parent container
+- Steps:
+  1. Gallery ShowScrollbar: OFF (hide gallery's scroll)
+  2. Gallery Layout MinimumHeight: `Gallery.AllItemsCount * TemplateHeight` (40)
+  3. Parent container VerticalOverflow: "Scroll"
+- Result: Both scrollbars accessible without scrolling horizontally first

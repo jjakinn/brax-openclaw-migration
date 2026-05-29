@@ -1,0 +1,39 @@
+CHUNK 17: FILTERING DATA BASED ON TAB SELECTION
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 17:15 - 18:30
+
+When a tab value is selected, it should filter the data in the gallery.
+
+---
+
+So if I pick not started, it should only show the items in my SharePoint list where the status is not started.
+
+---
+
+When all is selected, it should show all the items.
+
+---
+
+My vertical gallery, its items property, I will change as follows:
+
+`Filter(WorkTracker, Status.Value = Gallery1.Selected.Title)`
+
+---
+
+Filter my SharePoint list called work tracker, where the status column's value is equal to my gallery of tabs. Selected title.
+
+---
+
+I don't see any values when "all" is selected. We need to handle that.
+
+---
+
+But if I pick any other status value — not started, in progress, completed or blocked — you can see how the gallery only shows the items where the status matches.
+
+---
+
+KEY POINTS:
+- Filter formula: Based on selected tab
+- Pattern: `Filter(DataSource, Column = TabGallery.Selected.Title)`
+- Issue: "All" tab returns no results (no matching status)
+- Working: Other tabs filter correctly
+- Next: Handle "All" case

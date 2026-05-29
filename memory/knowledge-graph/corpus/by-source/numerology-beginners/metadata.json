@@ -1,0 +1,59 @@
+{
+  "source_id": "numerology-beginners",
+  "display_name": "Numerology For Beginners: Numerology Explained Step By Step",
+  "author": "Unknown (YouTube Creator)",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2024,
+    "url": "https://www.youtube.com/watch?v=J8OvJ9ziV6M",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 7
+  },
+  "length": {
+    "pages": 0,
+    "words": 34651,
+    "duration_minutes": 198,
+    "chunk_count": 7
+  },
+  "structure": {
+    "parts": [
+      "Introduction",
+      "Core Concepts",
+      "Calculations",
+      "Interpretations",
+      "Advanced Topics"
+    ],
+    "chapters": [
+      "Life Path Numbers",
+      "Destiny/Expression Numbers",
+      "Soul Urge Numbers",
+      "Personality Numbers",
+      "Birthday Numbers",
+      "Master Numbers",
+      "Karmic Debt Numbers"
+    ]
+  },
+  "concepts_covered": [
+    "numerology",
+    "life-path-numbers",
+    "destiny-numbers",
+    "soul-urge-numbers",
+    "master-numbers",
+    "karmic-debt",
+    "pythagorean-system",
+    "chaldean-system"
+  ],
+  "domains": [
+    "mysticism",
+    "spirituality",
+    "esoteric-knowledge"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/numerology-beginners/chunks/"
+  }
+}

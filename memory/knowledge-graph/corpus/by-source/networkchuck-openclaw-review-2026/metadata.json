@@ -1,0 +1,27 @@
+{
+  "id": "networkchuck-openclaw-review-2026",
+  "title": "OpenClaw: The Software That Stressed Me Out (Full Review + Setup)",
+  "url": "https://www.youtube.com/watch?v=T-HZHO_PQPY",
+  "platform": "YouTube",
+  "duration": "47 min",
+  "duration_seconds": 2820,
+  "word_count": 6859,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "OpenClaw",
+  "instructor": "NetworkChuck",
+  "concepts": [
+    "openclaw-setup",
+    "openclaw-security",
+    "openclaw-memory",
+    "telegram-bot",
+    "cron-jobs",
+    "heartbeats",
+    "skills",
+    "clawhub",
+    "sub-agents",
+    "vps-deployment"
+  ],
+  "description": "Comprehensive review and setup guide for OpenClaw. Covers 5-minute VPS setup, Telegram bot configuration, security hardening, memory/file system architecture, crons/heartbeats, skills, and real-world use cases. Includes demo projects: news aggregator dashboard and IT engineer monitoring system."
+}

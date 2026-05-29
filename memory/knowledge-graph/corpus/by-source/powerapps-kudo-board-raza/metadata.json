@@ -1,0 +1,25 @@
+{
+  "id": "powerapps-kudo-board-raza",
+  "title": "Kudo Board Application with Power Apps - Team Celebration Platform",
+  "url": "https://www.youtube.com/watch?v=DBlI0pQjfJs",
+  "platform": "YouTube",
+  "duration": "7 min",
+  "duration_seconds": 420,
+  "word_count": 1750,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "kudo-board",
+    "generative-pages",
+    "react-pages",
+    "model-driven-apps",
+    "rich-text",
+    "image-upload",
+    "board-locking",
+    "collaboration"
+  ],
+  "description": "Building a Kudo board application in Power Apps for team celebrations, shoutouts, birthdays, and farewells. Features generative React pages, rich text posts, GIF/image uploads, board locking, and collaborative posting."
+}

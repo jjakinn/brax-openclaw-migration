@@ -1,0 +1,32 @@
+CHUNK 6: DYNAMIC SORT WITH USER INTERACTION
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 04:30 - 06:00
+
+Now let's provide our end users with the option to sort on multiple columns and that too dynamically where the user can click on a specific column to sort either in ascending or descending order.
+
+---
+
+Let's first start with ID. Here I have my gallery control and I have a container in which I have placed text controls. These are simply labels. I am using the modern controls and themes.
+
+---
+
+The label for ID I will remove. And in this header container I'll go and insert the modern button control.
+
+---
+
+For the button: The text property, I'll call it "ID". I can set an icon for the button. One of the icons is arrow sort.
+
+---
+
+Now, when the user clicks on this button, I want to perform the sort. So for the button's OnSelect property, my goal is to store two pieces of information: The direction of the sort and the name of the column that I am going to be performing the sort on.
+
+---
+
+KEY POINTS:
+- Dynamic sorting: User clicks column header to sort
+- Setup: Replace labels with button controls
+- Button configuration:
+  - Text: Column name ("ID")
+  - Icon: Arrow sort (indicates sortable)
+- Information to track:
+  1. Sort column name
+  2. Sort direction

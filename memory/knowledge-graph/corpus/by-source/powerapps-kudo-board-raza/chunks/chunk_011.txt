@@ -1,0 +1,35 @@
+CHUNK 11: SOLUTION COMPONENTS AND SHARING
+Source: powerapps-kudo-board-raza | Timestamp: 06:45 - 07:15
+
+This entire Kudo board experience is a solution in Power Platform.
+
+---
+
+This includes:
+- My model driven power app
+- The tables
+- The security role needed for users to create, update or delete data in those tables
+
+---
+
+For the model driven app, let's look at share.
+
+---
+
+You can share the app with your users or security groups.
+
+---
+
+And when you share, you'll assign the security role "Kudo", which in turn gives them access to perform actions against the Kudo board tables. And the app will be shared with those individuals.
+
+---
+
+KEY POINTS:
+- Solution components:
+  - Model-driven app
+  - Dataverse tables (Boards, Posts)
+  - Security role ("Kudo")
+- Sharing:
+  - Users or security groups
+  - Assign "Kudo" security role
+  - Role grants CRUD permissions on tables

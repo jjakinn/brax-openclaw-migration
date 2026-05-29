@@ -1,0 +1,17 @@
+{
+  "source_id": "openclaw-making-money",
+  "display_name": "Making $$$ with OpenClaw (Greg Isenberg)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 8005,
+    "total_chunks": 3,
+    "chunks_processed": 3
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

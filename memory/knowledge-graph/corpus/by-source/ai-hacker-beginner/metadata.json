@@ -1,0 +1,50 @@
+{
+  "source_id": "ai-hacker-beginner",
+  "display_name": "become an AI HACKER (it's easier than you think)",
+  "author": "YouTube Creator",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2024,
+    "url": "https://www.youtube.com/watch?v=_yfiUQSbdPY",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 1,
+    "total_words": 3441
+  },
+  "length": {
+    "pages": 0,
+    "words": 3441,
+    "duration_minutes": 17,
+    "chunk_count": 2
+  },
+  "structure": {
+    "parts": [
+      "Introduction",
+      "Basics",
+      "Tools",
+      "Getting Started"
+    ],
+    "chapters": [
+      "Introduction to AI Hacking",
+      "Beginner-Friendly Tools",
+      "First Steps"
+    ]
+  },
+  "concepts_covered": [
+    "ai-hacking",
+    "cybersecurity-basics",
+    "hacking-tools",
+    "beginner-guide"
+  ],
+  "domains": [
+    "cybersecurity",
+    "ai"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/ai-hacker-beginner/chunks/"
+  }
+}

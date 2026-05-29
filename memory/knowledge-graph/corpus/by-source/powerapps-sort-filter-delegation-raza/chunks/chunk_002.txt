@@ -1,0 +1,34 @@
+CHUNK 2: BASIC SORT FUNCTION
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 00:30 - 01:30
+
+Let's begin with sorting our gallery data.
+
+Here I have a gallery that is connected to a SharePoint list. A list that has different types of columns: text, choice, date, person.
+
+---
+
+To sort the data in this gallery by the ID column, the items property of the gallery, I will use the Power FX function.
+
+`Sort(myDataSource, ColumnName, SortOrder)`
+
+---
+
+Sort my work tracker list. If I put a comma, I can pick the columns to sort on. I'll pick my ID column.
+
+This will sort the data in the list in ascending order based on the ID column.
+
+---
+
+There is a third property associated with the sort function that's optional and that is the direction of the sort. By default, it's ascending.
+
+Let's pick descending.
+
+Now the data in the gallery is sorted based on the ID in descending order.
+
+---
+
+KEY POINTS:
+- Sort function: `Sort(DataSource, Column, Order)`
+- Default order: Ascending
+- Optional third parameter: SortDirection (Ascending/Descending)
+- Example: `Sort(WorkTracker, ID, Descending)`

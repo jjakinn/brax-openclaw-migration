@@ -1,0 +1,41 @@
+CHUNK 9: BUILDING CUSTOM MULTI-SELECT PEOPLE PICKER IN FORM
+Source: powerapps-modern-combo-box-raza | Timestamp: 13:30 - 17:00
+
+Why not utilize the Office 365 users connectors search user function to allow the user to search across all your users in Microsoft Entra.
+
+So let's begin this data card for stakeholders.
+
+Step one, go to advanced and unlock the data card because we are going to be making changes.
+
+Now this combo box that's there, go delete it. it will result in errors. It's fine. We'll handle it.
+
+Make sure you have the data card selected. Go to insert and insert the modern combo box control.
+
+I'll position this right here. Now, this combo box, I'll rename it.
+
+---
+
+Now, let's see the errors. One of the errors is related to the Y position of another control which was depending on that combo box that we deleted. That combo box no longer exists. I have a new one. So I'll give the reference of my combo box. That's done.
+
+Next, there is an issue with the update property. For now, I'll just remove this. And there is also an issue with the calculation of Y property of another field. I'll give it the reference of my new combo box control.
+
+---
+
+Back to my combo box. The items property will be exactly the same as before. Office 365 users search user v2 search term self.search text.
+
+The item label text thisItem.displayName.
+
+So now you can see it's listing out my users.
+
+---
+
+KEY POINTS:
+- Solution: Replace auto-generated combo box with custom one
+- Steps:
+  1. Unlock the data card (Advanced → Unlock)
+  2. Delete the auto-generated combo box (errors expected)
+  3. Insert new modern combo box
+  4. Fix errors: Update references to new control name
+  5. Remove/update the Update property temporarily
+- Items formula: `Office365Users.SearchUserV2({searchTerm: Self.SearchText, top: 999}).value`
+- Item label: `thisItem.displayName`

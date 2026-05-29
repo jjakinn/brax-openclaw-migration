@@ -1,0 +1,84 @@
+Kind: captions
+Language: en
+
+Hello everyone, Resza here. In this video, we will learn how to build model-driven Power Apps the modern way. Right from creating tables and relationships in Dataverse to building the out-of-the-box model-driven app experience connected to the views and forms of the tables and creating custom pages using generative pages experience. So let's get started with the video.
+
+Model-driven app design in Power Apps is an approach that focuses on adding app components such as forms, views, dashboards to tables that are built in Microsoft Dataverse using an app designer tool.
+
+Without a data model housed in Dataverse, you can't create a model-driven app.
+
+So let's build a model-driven app. We need tables in Dataverse. So let's head over to tables. New table. The table advanced option. This would be the classic way of building your table. Provide the name, set the properties, create columns and more.
+
+The modern option, go to create new tables and this will provide you with a suite of options to choose from. We can start with describing our tables to copilot. You can also import data from an external data source like SharePoint, Excel or CSV or you can simply create tables from blank. All of these options will lead us to the data workspace.
+
+Let's try option one. My description, I need tables for tracking products and product related feedback. I'll click generate and copilot will start framing the data model for me. AI has generated suggestions for two tables: product and product feedback. For product, if I go to view data, it has two columns, product name and price. I can create columns manually or I can ask copilot to add more columns.
+
+Here is my product feedback table. These tables are related to each other. The product column in my product feedback table is a lookup column. So it creates a many-to-one relationship between the product feedback table and the product table.
+
+Once I have my data model defined as per my needs, I'll click save and exit. And at this point the tables, the relationships and the sample data will be created for me in Dataverse. Here is my product table. Here is my product feedback table.
+
+I'll head over to my product table. Now each table in Dataverse, we have the option to set up the data experiences: forms, views, charts, dashboards, and more. All of this will be available within a model driven power app.
+
+So let's create a model-driven app. Click create an app. I'll call this app product feedback tracker and click create. And here is my model driven app. These are my views. If I select an item, it'll take me to the form experience. There's a relationship with product feedback. Here is the associated product feedback for that specific product.
+
+This is my products page. I can add additional pages by simply connecting to tables in database. Let's also bring our product feedback table right here. Publish. Play.
+
+Within seconds, I have my model driven app. I can view data, search for data, export data, import data, full CRUD operation support.
+
+We also have the plan designer available where we can simply describe our business problem in everyday words. I need an expense reporting solution for my team. Submit.
+
+A suite of agents will help me frame the business requirements, the process diagrams, the data model. This would be designed and built in Microsoft Dataverse. And then the solution agent will give me the applications needed to support it.
+
+Right here, I get my model driven app. Here are the business requirements. Think of this as a live document. It starts defining my processes. Users will submit an expense report for submission and approval. Then there is another process for tracking the expense report status, processing it, auditing it and more.
+
+And now it starts framing my data model in Microsoft Dataverse. Here I am in the data workspace.
+
+Now this is the modern way that leads us to our applications. Here I've stated a business problem: I need to design a task manager app for my operations team to assign and monitor projects across the organization.
+
+The requirements agent lists out the user requirements. The process agent maps out the processes that help solve the business problem. Then comes my data model.
+
+My data model is as follows. I have a project table and I have a task table. A project can have many tasks. A task will be assigned to a user. So I have three related tables.
+
+Right after my data model comes my solutions agent and the recommendation was a model-driven power app. I have pages for users, projects and tasks. All of this is the standard view and form experiences. This includes the mapped relationships.
+
+So project 5G network expansion has three tasks associated with it.
+
+We are in the intelligent application era. We have in-app agents for our end users. Users can ask questions against the data. I have the data exploration agent. Show me all the high priority projects. The data exploration agent will filter the view.
+
+I can also visualize the data. The data visualization agent will help me visualize the current data in the view. And I have various chart options to select from.
+
+I'll recommend checking my video on the in-app agents to learn more about these capabilities.
+
+Unlike canvas app development where you get full control over the design of your screens, your pages, with model-driven apps, much of the user interface is determined for you and is largely designated by the components of the app.
+
+What if I would like to take the user experience to the next level? More customized experiences. These are known as generative pages.
+
+Here is a page that lists out all the tasks that are assigned to the current logged-in user. Here is a task board page. I can filter the tasks based on projects. I can filter tasks that are assigned to a specific user. I can move tasks across swim lanes. The swim lanes are the task status. As I move the task, the status is getting updated.
+
+Here is a calendar view of all my tasks. The items on the calendar are color-coded based upon the task status.
+
+I have a view of all my projects and they are related tasks. When I open a specific project, it will give me a count of the number of tasks and will list the tasks in a grid-like fashion. I have the option to edit any of the properties of the task.
+
+I also have a dashboard experience that was built using gen pages. 26 projects in total, 25 active, one inactive. The tasks by priority. I can also decide what priorities I would like to focus on in the chart. This chart shows the task status by priority. For medium, there are nine tasks in progress.
+
+Let's say I would like to focus only on the completed tasks. I get the accounts per priority. I have a chart at the bottom that shows me the tasks due by month.
+
+To create such experiences in a model-driven app, we had to do a lot of work. Use JavaScript, build custom PCF controls, and more. Now we can build these much faster using gen pages.
+
+Here is my model driven app. Let's head over to the gen page that I built called tasks assigned to me. I connected my table and I simply described what I needed. I want to create a modern looking UI to view all the tasks. highlight status and priority columns.
+
+The app agent connected to the table understands the entire schema, was able to understand my request and go ahead and build out the different sections of my generative page. These are the steps I took to build each of these gen pages.
+
+Plus, we have the option to head over to the code, edit the code, and manually make updates to the React code. Full flexibility has been provided.
+
+Let's head over to new. To create a gen page, we select the option to describe a page. Here we can provide context to our tables. For this case, I'll pick my project table. Provide your description. Click generate.
+
+The app agent begins its magic and starts building out my React page in my model driven app. Within seconds, the React code is generated and my page is ready. Lists out all my projects from my projects table. I asked for a card style layout. I also asked for an option for the user to search.
+
+I'll search for mobile. There are three tasks where the title or description contains the text mobile.
+
+This is how quickly we can build model driven apps by designing our data model which itself got built through plan designer by simply describing my business requirement.
+
+So I get all the goodness of a standard model driven app experience, views, forms, and more. And beyond that, I also get the power of generative pages.
+
+If you enjoyed this video, then do like, comment, and subscribe to my YouTube channel. And thank you so much for watching.

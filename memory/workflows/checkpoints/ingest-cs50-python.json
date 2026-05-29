@@ -1,0 +1,37 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "cs50-python-2022",
+  "source_url": "https://www.youtube.com/watch?v=nLRL_NcnK-4",
+  "timestamp": "2026-03-23T17:05:00Z",
+  "status": "COMPLETE",
+  "verification": {
+    "video_duration_hours": 15.96,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 957:64",
+    "total_events": 49702,
+    "word_count": 183775,
+    "chunks_created": 13
+  },
+  "summary": {
+    "title": "CS50's Introduction to Programming with Python (2022)",
+    "author": "David J. Malan (Harvard)",
+    "domain": "coding/python",
+    "key_topics": [
+      "Functions and Variables",
+      "Conditionals",
+      "Loops",
+      "Exceptions",
+      "Libraries and APIs",
+      "Unit Testing",
+      "File I/O",
+      "Regular Expressions",
+      "Object-Oriented Programming",
+      "Advanced Python Features"
+    ]
+  },
+  "files_created": [
+    "corpus/by-source/cs50-python-2022/metadata.json",
+    "corpus/by-source/cs50-python-2022/chunks/chunk_001-013.txt",
+    "summaries/L0-executive/cs50-python-2022.md"
+  ]
+}

@@ -1,0 +1,43 @@
+CHUNK 9: SPECIFIC TABLE QUERIES AND AGENT INSTRUCTIONS
+Source: powerapps-dataverse-mcp-raza | Timestamp: 09:00 - 10:30
+
+Order table. Now in my environment I have multiple order tables. So just to be specific to the agent I'll copy the logical name of my table.
+
+"How many records in my orders table?"
+
+---
+
+Once again the Dataverse MCP server comes alive. Notice here it's executing the SQL query to go and grab the information.
+
+So I have 39 orders.
+
+---
+
+So that's the power of this Dataverse MCP server tool that we can add to our agents.
+
+---
+
+Now as you saw it can query all the tables in this environment. But what if I'm building an agent specific to a particular scenario?
+
+For example, project and task management:
+- A projects table that has details about the project
+- A task table that has task details that are related to a project
+- One project can have many tasks
+
+---
+
+For my agent instructions, I'll describe what I would like this agent to do.
+
+"Your job is to read, search, create, update information in two specific tables." I'm calling out exactly what those tables are.
+
+I'll save my instructions.
+
+---
+
+KEY POINTS:
+- Table specificity: Use logical name for clarity
+- SQL execution: Visible in agent responses
+- Agent scope limitation: Instructions can restrict tables
+- Example: Project and task management scenario
+- Relationship handling: One-to-many (project to tasks)
+- Instructions: Define agent scope and purpose

@@ -1,0 +1,24 @@
+# Chunk 004: Handling Forms and Input
+
+HTML forms collect user input:
+```html
+<form action="/greet" method="post">
+  <input name="name" type="text" placeholder="Name">
+  <button type="submit">Greet</button>
+</form>
+```
+
+GET vs POST:
+- GET: Parameters in URL (visible, limited length, for retrieval)
+- POST: Parameters in HTTP body (private, for data modification)
+
+Flask access:
+- request.args.get() for GET parameters
+- request.form.get() for POST parameters
+
+Always validate input:
+```python
+name = request.form.get("name")
+if not name:
+    return error("Missing name")
+```

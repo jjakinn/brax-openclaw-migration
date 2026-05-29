@@ -1,0 +1,54 @@
+CHUNK 18: AI PAGE CUSTOMIZATION AND PIVOT TABLE
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 22:30 - 24:00
+
+"The status column. I'll ask the agent to color code the status column."
+
+---
+
+You can see a live preview of the updates the agent is making.
+
+---
+
+Let's also ask the agent to allow the user to edit the stock quantity on the fly.
+
+---
+
+Stock quantity. Select update. This is saving the data back to my table.
+
+---
+
+I've asked the agent to also show my total inventory value. This was the calculated column. And there it is.
+
+---
+
+Save this page. I'll call it "products info". Save and publish my app.
+
+---
+
+Let's also attempt to create my pivot table. For this as well, I'll add a page using the app agent.
+
+---
+
+Give it the context of my product table. I'll say "build me an Excel like pivot table for the data from my product table. Columns: status. Rows: supplier. Values: sum of inventory."
+
+---
+
+Let's see what the agent generates for me.
+
+---
+
+And here is my Excel like pivot table experience.
+
+---
+
+The code you can also customize manually — this is React code.
+
+---
+
+KEY POINTS:
+- AI customization: Color coding, inline editing
+- Calculated columns: Displayed in AI pages
+- Save page: Give name and publish
+- Pivot table: Natural language creation
+- Pivot config: Columns, rows, values
+- Customization: React code editable

@@ -1,0 +1,33 @@
+CHUNK 14: VERIFYING DATA IMPORT
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 17:30 - 18:30
+
+If I go back to solutions and go to data flows, here is the data flow that just got created.
+
+---
+
+Ellipses → Show refresh history. Current run is ongoing. It's in progress.
+
+---
+
+The data has been refreshed. If I go to refresh history here, it is succeeded.
+
+---
+
+I can download the file. I had around 300 rows in my Excel file. All of them were inserted.
+
+---
+
+My product table. Now we'll have all the data imported from my Excel file including the mapping to my lookup columns.
+
+---
+
+Inventory value. This was the calculation in Excel.
+
+---
+
+KEY POINTS:
+- Monitor import: Solutions → Data flows → Refresh history
+- Status: In progress → Succeeded
+- Row count: ~300 rows imported
+- Lookup mapping: Successfully mapped via keys
+- Verification: Check product table for imported data

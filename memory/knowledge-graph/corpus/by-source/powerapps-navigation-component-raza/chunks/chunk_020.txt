@@ -1,0 +1,34 @@
+CHUNK 20: STYLING AND CONCLUSION
+Source: powerapps-navigation-component-raza | Timestamp: 32:00 - 33:00
+
+You can further style this component as needed.
+
+In my component, I'll insert an HTML text control. I'll reorder this and send it right to the back.
+
+X property 0, Y property 0. So it sits on the top left.
+
+Width `Parent.Width`, height `Parent.Height`.
+
+The HTML text I'll set as follows. And now I get this nice background effect.
+
+---
+
+I'll set auto height to true. It's got this gradient style effect.
+
+So, the font color I'll set to white.
+
+---
+
+And there is my navigation menu.
+
+If you enjoyed this video, then do like, comment and subscribe to my YouTube channel. And thank you so much for watching.
+
+---
+
+KEY POINTS:
+- Custom styling: HTML text control for gradient backgrounds
+- Position: X=0, Y=0, Width/Height = Parent
+- Layering: Send to back for background effect
+- Auto height: True for gradient
+- Font color: White for contrast
+- Final result: Professional styled navigation component

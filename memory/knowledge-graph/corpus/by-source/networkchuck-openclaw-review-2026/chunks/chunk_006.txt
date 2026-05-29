@@ -1,0 +1,26 @@
+CHUNK 6: DEMO PROJECT 2 — IT ENGINEER MONITORING SYSTEM
+Source: networkchuck-openclaw-review-2026 | Timestamp: 09:10 - 10:45
+
+Project one was super hard. Project two, let's turn Terry 3.0 into an IT engineer. Let's have him monitor his own server, the one he's on. We'll do for/ new to give him new context. We'll make him think hard. and I'll tell him to become an IT engineer. You're an IT engineer. Your first job is to monitor the server you're on. Check everything. Internet speed, RAM, CPU, security, logs, and create a dashboard for me. Go.
+
+And I love that it's going to investigate its own box, make sure it doesn't step on any toes and break anything, and then build something. Okay. Well, I'm not getting hyped. Put the hype to the side. That's pretty cool, though. You have to admit it. I'm not saying turn it loose, but that's pretty cool.
+
+And it's done. It did the same kind of theme, but whoa. I mean, this is pretty cool. It's a oneshot. And yeah, it's updating live. If you did those two things, you have two real things to walk away with. And I'm hoping you're inspired just a little bit because what it just did here was I come on, it's it's neat. And if you're anything like me, you have a bunch of ideas.
+
+---
+
+KEY POINTS:
+- Demo Project 2: IT Engineer / Server Monitoring
+- Technique: Use `/new` to give agent fresh context
+- Role assignment: "You are an IT engineer"
+- Task scope: Monitor own server (self-awareness)
+- Monitoring checklist:
+  - Internet speed
+  - RAM usage
+  - CPU usage
+  - Security status
+  - System logs
+  - Create dashboard
+- Self-preservation: Agent investigates its own box first, ensures it won't break anything
+- Result: Live-updating monitoring dashboard created in "oneshot"
+- Two deliverables from demo: News dashboard + IT monitoring dashboard

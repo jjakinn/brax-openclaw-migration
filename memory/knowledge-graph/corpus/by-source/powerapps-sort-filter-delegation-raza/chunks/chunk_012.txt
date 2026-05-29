@@ -1,0 +1,35 @@
+CHUNK 12: DELEGABLE FILTER WITH STARTSWITH
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 14:30 - 16:00
+
+Search is not a delegable query with SharePoint but `StartsWith` is a delegable formula.
+
+---
+
+This text control I'll rename to `txtTitle`.
+
+---
+
+And my gallery items property where I have my SharePoint list called, I will do so under a filter function:
+
+`Filter(myList, StartsWith(Title, txtTitle.Text))`
+
+---
+
+Filter my list. I'll use the delegable query StartsWith. The title column starts with the text value entered in that text box.
+
+---
+
+Format text. This formula I've applied it to the ID column sort logic. I would have to repeat the same for title and for due date.
+
+---
+
+Yes, the formula is long, but the formula is completely delegable.
+
+---
+
+KEY POINTS:
+- SharePoint delegable filter: `StartsWith`, not `Search`
+- Formula: `Filter(DataSource, StartsWith(Column, TextInput.Text))`
+- Text input naming: `txtTitle` for reference
+- Pattern: Filter function wraps the sort logic
+- Delegation: Long formula but fully delegable

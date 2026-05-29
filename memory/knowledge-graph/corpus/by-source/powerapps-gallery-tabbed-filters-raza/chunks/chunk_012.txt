@@ -1,0 +1,39 @@
+CHUNK 12: ADDING DATA CONTROLS TO GALLERY
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 11:30 - 12:30
+
+This vertical gallery, I'll edit so it highlights the template item. That's the first item of the gallery.
+
+---
+
+I'll reduce its height. And in here, I'll start inserting controls to show the data.
+
+---
+
+I'll add a text control. The text property: `ThisItem.ID`. So this shows the ID of the item coming from the SharePoint list.
+
+---
+
+I'll insert another text control. This one to show the title.
+
+---
+
+Let's insert another text control. This one to show the priority. So `ThisItem.Priority`. This is a choice column. So `Priority.Value`.
+
+---
+
+I'll position it here. Another text control to show the person to whom the task is assigned to. `ThisItem.'Assigned To'`. It's a person type column. Dot will expose all its properties. I'll pick the display name of the person.
+
+---
+
+Next, I'll insert a text here to show the due date of the item.
+
+---
+
+KEY POINTS:
+- Gallery template: Design single row layout
+- Controls added:
+  - ID: `ThisItem.ID`
+  - Title: `ThisItem.Title`
+  - Priority: `ThisItem.Priority.Value` (choice)
+  - Assigned To: `ThisItem.'Assigned To'.DisplayName` (person)
+  - Due Date: `ThisItem.DueDate`

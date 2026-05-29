@@ -1,0 +1,14 @@
+CHUNK 1: INTRODUCTION TO DATAVERSE MCP SERVER
+Source: powerapps-dataverse-mcp-raza | Timestamp: 00:00 - 01:00
+
+Hello everyone, Raza here. In this video, I will showcase the power of the Dataverse MCP server in Microsoft Copilot Studio and Power Apps.
+
+We will start from what is MCP to utilizing the tools of the Dataverse MCP server, list tables, read queries, update record, and a lot more. So, let's check this video out in action.
+
+---
+
+KEY POINTS:
+- Topic: Dataverse MCP (Model Context Protocol) server
+- Platforms: Copilot Studio and Power Apps
+- Capabilities: List tables, SQL queries, CRUD operations
+- Progression: From MCP basics to advanced usage

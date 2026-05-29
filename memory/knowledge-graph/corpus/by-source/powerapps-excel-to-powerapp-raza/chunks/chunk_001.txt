@@ -1,0 +1,41 @@
+CHUNK 1: INTRODUCTION - EXCEL TO POWER APP TRANSFORMATION
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 00:00 - 01:00
+
+Hello everyone, Raza here. In this video, I will show you how to transform an Excel file with multiple sheets, related data, pivot tables, and more into a fully functional Power App.
+
+Let's check this video out in action.
+
+---
+
+I have an Excel file that stores inventory data for products.
+
+---
+
+The first sheet "inventory" includes:
+- Product ID
+- Name
+- Category
+- Supplier
+- Stock quantity
+- Reorder level
+- Unit price
+- Location
+- Status
+- Inventory value (calculation)
+
+---
+
+I have a separate sheet with details about each of the suppliers.
+
+---
+
+I also have a sheet with a pivot table showing sum of inventory value by supplier and status.
+
+---
+
+KEY POINTS:
+- Source: Excel file with multiple sheets
+- Data types: Product data, supplier data, pivot tables
+- Calculations: Inventory value (stock × price)
+- Relationships: Products → Suppliers, Products → Locations
+- Goal: Transform into Power App

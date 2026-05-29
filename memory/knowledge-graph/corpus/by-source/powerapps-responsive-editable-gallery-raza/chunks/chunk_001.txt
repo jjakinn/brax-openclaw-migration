@@ -1,0 +1,23 @@
+CHUNK 1: INTRODUCTION TO RESPONSIVE EDITABLE GALLERY
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 00:00 - 01:00
+
+Hello everyone, Raza here. Have you ever come across a scenario where you needed both a vertical and a horizontal scroll for a gallery control? A classic example is building an editable table-like experience using a gallery control where you have a lot of rows and a lot of columns. So, let me show you how to build this from scratch.
+
+Let's begin creating our responsive Power App from scratch.
+
+---
+
+I'll head over to create, start with a blank canvas, and select the responsive canvas option.
+
+Our screen is set up with responsive container controls. This screen is built using the header and footer responsive layout template.
+
+In the header container, I'll go and insert the modern header control title. I'll say inventory management. Logo, I'll upload an image. Done. My header is set.
+
+---
+
+KEY POINTS:
+- Challenge: Gallery with BOTH vertical AND horizontal scroll
+- Use case: Editable table-like experience with many rows and columns
+- Start: Create blank canvas → Responsive canvas option
+- Template: Header and footer responsive layout
+- Header: Modern header control with title and logo

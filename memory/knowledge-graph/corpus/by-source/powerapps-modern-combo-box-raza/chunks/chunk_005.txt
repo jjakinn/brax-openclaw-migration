@@ -1,0 +1,42 @@
+CHUNK 5: MULTI-SELECT PEOPLE PICKER SETUP
+Source: powerapps-modern-combo-box-raza | Timestamp: 07:00 - 09:30
+
+One of the limitations with the modern combo box was the ability to create a multi-select people picker like experience. Let's give that a shot.
+
+I'll go and insert the modern combo box. I've renamed my control combo box people picker.
+
+The items property I need to search for users in Microsoft Entra. For that under data sources, make sure to add the Office 365 users connector.
+
+I have that added in my app.
+
+---
+
+The items property for the combo box will be Office365Users.SearchUserV2(). So we'll call this function.
+
+It expects properties: search term. What's the text that you are searching on? That will be self meaning the combo box itself dot search text.
+
+Is search term required? I will set this to false meaning if the user is not searching in that case do not perform the search just get the users from Entra.
+
+Comma there is a property called top. At max it supports up to 999 users. So I'll select that. I'll close the object. I'll close the function dot value.
+
+---
+
+This will give me tabular data which will include user profile information based on users coming in from Microsoft Entra.
+
+Now please note 999 is the total number of users that it returns after performing the search.
+
+---
+
+This combo box item label text I'll display the display name of the user. Once again I can concatenate this with other profile properties to show those values.
+
+---
+
+KEY POINTS:
+- New capability: Multi-select people picker
+- Prerequisites: Add Office 365 Users connector
+- Formula: `Office365Users.SearchUserV2({searchTerm: Self.SearchText, top: 999}).value`
+- Search term: `Self.SearchText` (from combo box)
+- `searchTerm` required: Set to `false` to show users when not searching
+- Max results: 999 users (top property)
+- Output: Tabular data with user profile info
+- Item label: `displayName` (can concatenate other properties)

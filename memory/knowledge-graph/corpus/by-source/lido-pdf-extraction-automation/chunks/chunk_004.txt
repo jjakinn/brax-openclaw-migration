@@ -1,0 +1,18 @@
+CHUNK 4: EXTRA INSTRUCTIONS & MULTI-DOCUMENT UPLOAD
+Source: lido-pdf-extraction-automation | Timestamp: 01:50 - 02:40
+
+Now, the extra instructions box down here, we can add any extra instructions of specifics that we might want the AI to use when it extracts the data. I found that this is usually not even a necessary field. So, if you got some complicated stuff and you need to re-emphasize it there, put something here if you need to. Otherwise, I just leave it blank most of the time and it does a perfectly fine job.
+
+Up here where there's a click to upload box, you can actually add multiple documents. And we'll do that in just a second. We'll do two at a time after we extract these.
+
+And then finally, down at the bottom, if there are multiple line items, you can have multiple rows per document extracted right here.
+
+---
+
+KEY POINTS:
+- Extra Instructions box: Optional field for AI guidance on complex extractions
+- Speaker's experience: Usually NOT needed — AI handles standard invoices well
+- Use only for complicated/complex extraction requirements
+- Multi-document upload supported in click-to-upload box
+- Multiple rows per document: Handles invoices with multiple line items
+- Each line item becomes a separate row in output

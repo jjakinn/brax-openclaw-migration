@@ -1,0 +1,112 @@
+{
+  "version": "3.1",
+  "description": "Memory Priority and Lifecycle Management - NEVER DELETE POLICY",
+  "policy": {
+    "deletion": "NEVER",
+    "note": "Jakin's explicit requirement: I never automatically delete anything I have learned. Ever."
+  },
+  
+  "priority_levels": {
+    "P0": {
+      "name": "Critical",
+      "description": "Active project decisions, current context, hot retrieval",
+      "retention": "PERMANENT",
+      "action_on_ttl": "NONE",
+      "alert_if_stale": false,
+      "examples": [
+        "Current project architecture decisions",
+        "Active workflow configurations", 
+        "Critical security credentials (hashed)",
+        "Token checkpoint protocol"
+      ]
+    },
+    "P1": {
+      "name": "Important",
+      "description": "Key context, reference often, keep hot",
+      "retention": "PERMANENT",
+      "action_on_ttl": "NONE",
+      "alert_if_stale": false,
+      "examples": [
+        "Important tool configurations",
+        "Key learnings from projects",
+        "Significant decisions with rationale",
+        "High-value syntheses"
+      ]
+    },
+    "P2": {
+      "name": "Background",
+      "description": "Useful context, keep accessible but lower priority retrieval",
+      "retention": "PERMANENT",
+      "action_on_ttl": "ARCHIVE_ONLY",
+      "alert_if_stale": false,
+      "examples": [
+        "General reference material",
+        "Explored-but-unused approaches",
+        "Historical project notes",
+        "Low-frequency lookup info"
+      ]
+    },
+    "P3": {
+      "name": "Cold Storage",
+      "description": "Low priority, archive for completeness only",
+      "retention": "PERMANENT",
+      "action_on_ttl": "ARCHIVE_ONLY",
+      "alert_if_stale": false,
+      "examples": [
+        "Debug session logs",
+        "Temporary workarounds",
+        "One-off commands",
+        "Draft thoughts",
+        "Failed experiments"
+      ]
+    }
+  },
+
+  "lifecycle_rules": {
+    "promote_on_access": {
+      "description": "Auto-promote P2→P1 if accessed 5+ times in 30 days (affects retrieval priority only)",
+      "enabled": true,
+      "threshold_accesses": 5,
+      "window_days": 30
+    },
+    "demote_on_neglect": {
+      "description": "Auto-demote P1→P2 if not accessed for 90 days (affects retrieval priority only)",
+      "enabled": true,
+      "grace_period_days": 30
+    },
+    "archive_to_cold_storage": {
+      "description": "Move P2/P3 to archive directory after 1 year (NEVER DELETE)",
+      "enabled": true,
+      "after_days": 365,
+      "location": "memory/archive/YYYY-MM/",
+      "note": "Files are MOVED not DELETED. Full recovery possible."
+    },
+    "purge_threshold": {
+      "description": "DISABLED - Never delete anything",
+      "enabled": false,
+      "dry_run": true,
+      "action": "NONE"
+    }
+  },
+
+  "priority_markers": {
+    "markdown_prefix": "**[P0]** | **[P1]** | **[P2]** | **[P3]**",
+    "usage": "Add marker at start of memory entry (affects retrieval ranking only)",
+    "example": "**[P1]** Power Platform CLI configuration for Code Apps"
+  },
+
+  "access_tracking": {
+    "enabled": true,
+    "track_in": "memory/knowledge-graph/index/access-log.json",
+    "fields": ["memory_id", "accessed_at", "query_context", "user_rating"],
+    "purpose": "Improves retrieval ranking only - no deletion decisions"
+  },
+
+  "review_cadence": {
+    "note": "Reviews are for Jakin's manual curation only - I never auto-delete",
+    "P0_review": "monthly (suggest to Jakin)",
+    "P1_review": "quarterly (suggest to Jakin)", 
+    "P2_review": "biannually (suggest to Jakin)",
+    "full_audit": "annually (report to Jakin only)"
+  }
+}

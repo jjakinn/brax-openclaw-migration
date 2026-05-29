@@ -1,0 +1,43 @@
+CHUNK 14: SUBMENU STYLING AND VISIBILITY
+Source: powerapps-navigation-component-raza | Timestamp: 19:00 - 21:30
+
+Font color: `If(ThisItem.screen = App.ActiveScreen, App.Theme.Colors.Primary, DefaultColor)`
+
+And on select, I'll simply navigate the user to the screen.
+
+---
+
+These galleries, they have some template padding. I'll set it to zero for both of my galleries.
+
+If I hold the Alt key, you can see the navigation menu being built out.
+
+---
+
+Now, for each menu and its corresponding submenus, let's say I would like to insert a horizontal line, I'll select my main gallery, edit, and insert a horizontal line.
+
+There is a horizontal line control that we can use or you can also show a nice animated line effect by using the modern progress bar.
+
+---
+
+I'll reduce its height. I'll position it right below my main menu item.
+
+The X position for this progress bar I'll set as 0 with `Parent.TemplateWidth`.
+
+---
+
+And this progress bar has a behavior property called indeterminate. I'll click on on. So you can see how it creates that nice animation effect. The color there is actually the color of my theme.
+
+---
+
+Done. My menu is ready.
+
+---
+
+KEY POINTS:
+- Submenu font color: Same active screen logic as main menu
+- Template padding: Set to 0 for both galleries
+- Visual separator options:
+  - Horizontal line control
+  - Modern progress bar with `Indeterminate = true`
+- Progress bar animation: Shows theme color
+- Separator positioning: Below main menu item

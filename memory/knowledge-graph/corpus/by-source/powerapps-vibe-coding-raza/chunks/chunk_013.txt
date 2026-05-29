@@ -1,0 +1,26 @@
+CHUNK 13: POWER AUTOMATE INTEGRATION
+Source: powerapps-vibe-coding-raza | Timestamp: 30:30 - 31:30
+
+There is so much we can do. For folks wondering how do we call automations Power Automate flow when an action takes place?
+
+Well, guess what? All the data is being stored in our data source which in this case is Microsoft Dataverse. We have triggers available for this. When an item's added, updated in that context, we can use Power Automate.
+
+Power Automate also has "when an HTTP request is received" trigger. You can actually call your flows directly from the React pages as well.
+
+Work with the agent, build your solution, bring your existing tables. Once you have your entire experience ready, hit publish.
+
+In this case, I am publishing my updates as I made certain changes to my app after my previous publish.
+
+Once again, it prepares my app, builds my app, and then works on deploying my application.
+
+Done. Publish complete.
+
+---
+
+KEY POINTS:
+- Power Automate integration options:
+  1. **Dataverse triggers**: When row added/updated/deleted
+  2. **HTTP trigger**: Call flows directly from React pages
+- Data stored in Dataverse = standard Dataverse triggers work
+- React app can make HTTP requests to Power Automate
+- Incremental publishing: Updates go through same prepare → build → deploy cycle

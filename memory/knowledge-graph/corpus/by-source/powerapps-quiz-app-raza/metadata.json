@@ -1,0 +1,25 @@
+{
+  "id": "powerapps-quiz-app-raza",
+  "title": "Complete Quiz App with Power Apps - React Pages, Security Roles, Data Model",
+  "url": "https://www.youtube.com/watch?v=KxaeTx1i75M",
+  "platform": "YouTube",
+  "duration": "11 min",
+  "duration_seconds": 660,
+  "word_count": 2300,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "quiz-application",
+    "plan-designer",
+    "generative-pages",
+    "react-pages",
+    "security-roles",
+    "data-model",
+    "timer",
+    "excel-import"
+  ],
+  "description": "Complete walkthrough of building a quiz application using Power Apps with Plan Designer, generative React pages, security roles, data modeling, timer functionality, and Excel import for bulk question creation."
+}

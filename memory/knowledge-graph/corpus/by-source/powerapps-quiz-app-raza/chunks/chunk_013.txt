@@ -1,0 +1,33 @@
+CHUNK 13: DATA MODEL AND RELATIONSHIPS
+Source: powerapps-quiz-app-raza | Timestamp: 09:30 - 10:00
+
+Let's explore the data workspace.
+
+---
+
+These are the four tables being used by the application.
+
+---
+
+For each quiz, there are going to be multiple questions. So there's a one-to-many relationship between these two tables.
+
+---
+
+A user can take a quiz multiple times. So a quiz can have multiple attempts.
+
+---
+
+The attempt table is where the results are stored and this includes the information of the user. That's the participant who took the quiz.
+
+---
+
+KEY POINTS:
+- Four tables in data model:
+  1. Quiz
+  2. Question
+  3. Attempt
+  4. (User/Participant)
+- Relationships:
+  - Quiz → Questions: One-to-many
+  - Quiz → Attempts: One-to-many
+- Attempt table: Stores quiz results and user info

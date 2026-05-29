@@ -1,0 +1,27 @@
+CHUNK 2: APP SETUP AND DATA CONNECTION
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 01:00 - 01:45
+
+To begin creating the app in make.powerapps.com under apps, I'll start with a page design and create a blank canvas.
+
+---
+
+In the canvas app, we will first connect to our data source.
+
+---
+
+Add data. Connect to SharePoint. Select an existing connection or create a new SharePoint connection. Connect.
+
+---
+
+Plug in your SharePoint site URL and pick the SharePoint list, in my case work tracker, that I want to connect in this app.
+
+---
+
+KEY POINTS:
+- Start: Blank canvas app
+- Connect to: SharePoint
+- Steps:
+  1. Add data → SharePoint
+  2. Create or select connection
+  3. Enter site URL
+  4. Select list (Work Tracker)

@@ -1,0 +1,44 @@
+CHUNK 11: CREATE OPERATIONS AND POWER APPS INTEGRATION SETUP
+Source: powerapps-dataverse-mcp-raza | Timestamp: 12:00 - 13:30
+
+"A project can have many tasks. So list the projects which have tasks."
+
+Once again the magic begins. And here is the list of projects that have associated tasks.
+
+---
+
+"Next I want to create a new project."
+
+The agent is going to give me the details of what is required to create a project. And this it does by using the describe table tool. You can see how intuitive this is.
+
+---
+
+I'll provide some details. Project name is "AI-driven productivity hub". Start date, end date, description, and the project budget.
+
+We'll smartly utilize the available tools. In this case, the create record tool to go and create a new project for me.
+
+Also update the project owner to me.
+
+---
+
+If we now look at the project table, here is the newly created project.
+
+---
+
+"How many projects have budget less than 50k?"
+
+The agent uses the MCP server and provides the response. If you observe, it's firing this SQL query.
+
+---
+
+What if I want to utilize this in the context of Power Apps?
+
+---
+
+KEY POINTS:
+- Create operations: Agent guides through required fields
+- Describe table tool: Shows schema for data entry
+- Record creation: Natural language → New record in Dataverse
+- Verification: New record visible in table
+- SQL visibility: Can see underlying queries
+- Next: Power Apps integration

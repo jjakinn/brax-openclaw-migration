@@ -1,0 +1,54 @@
+{
+  "version": "2.0",
+  "description": "Procedural Knowledge - Patterns and How-Tos",
+  
+  "coding": {
+    "patterns": {
+      "algorithm-selection": {
+        "description": "When to use which algorithm",
+        "sources": [],
+        "procedures": []
+      },
+      "design-patterns": {
+        "description": "Common software patterns",
+        "sources": [],
+        "procedures": []
+      },
+      "optimization": {
+        "description": "Performance optimization techniques",
+        "sources": [],
+        "procedures": []
+      }
+    },
+    "task_index": {
+      "build-api": ["source-id-1", "source-id-2"],
+      "optimize-database": ["source-id-3"],
+      "implement-sorting": ["source-id-1"]
+    }
+  },
+  
+  "powerapps": {
+    "patterns": {
+      "app-architecture": {
+        "description": "Common PowerApps structures",
+        "sources": [],
+        "procedures": []
+      },
+      "formula-patterns": {
+        "description": "Reusable formula combinations",
+        "sources": [],
+        "procedures": []
+      },
+      "connector-usage": {
+        "description": "API integration patterns",
+        "sources": [],
+        "procedures": []
+      }
+    },
+    "task_index": {
+      "build-time-tracker": ["source-id-4"],
+      "create-custom-connector": ["source-id-5"],
+      "automate-workflow": ["source-id-4", "source-id-5"]
+    }
+  }
+}

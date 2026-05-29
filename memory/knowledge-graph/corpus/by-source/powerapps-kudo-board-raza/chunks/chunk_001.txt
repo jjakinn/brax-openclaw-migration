@@ -1,0 +1,19 @@
+CHUNK 1: INTRODUCTION TO KUDO BOARD APPLICATION
+Source: powerapps-kudo-board-raza | Timestamp: 00:00 - 00:30
+
+Hello everyone, Raza here. In this video, I will showcase a Kudo board application that I built using Microsoft Power Apps.
+
+Let's celebrate your team members, birthdays, anniversaries, shoutouts, and more. Create a board, pick your team member, and let your team share the goodness. Let's check this video out in action.
+
+---
+
+KEY POINTS:
+- Application: Kudo board for team celebrations
+- Use cases:
+  - Birthdays
+  - Anniversaries
+  - Shoutouts
+  - Farewells
+  - Milestones
+- Functionality: Create boards, team posts messages/gifs/photos
+- Built with: Microsoft Power Apps

@@ -1,0 +1,37 @@
+CHUNK 8: COMPLETING PRODUCT TABLE SCHEMA
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 09:00 - 10:30
+
+For the purpose of the demo, my location table looks good.
+
+---
+
+Back to my product table. Location, I will change this to be a lookup column looking up to my location table.
+
+---
+
+So once again the data is going to break because the information coming from Excel was text but you can see how it is using the relationship to look up data from the location table.
+
+---
+
+Status: I'll edit this column.
+
+---
+
+Tables within Dataverse — that's where all the tables, their schemas, relationships and data is going to be created and stored.
+
+---
+
+Dataverse already comes with an out-of-the-box status column. I would recommend not to create another column with the name status. Give it a unique name.
+
+---
+
+For my scenario, this is going to be the "product status". Any new product added, I would like to give it the default choice of "active" and I will make this a required column. Update.
+
+---
+
+KEY POINTS:
+- Location: Changed to lookup → Location table
+- Status naming: Avoid "status" (reserved), use "product status"
+- Default value: Active for new products
+- Required: Can mark as required field
+- Dataverse: Stores tables, schemas, relationships

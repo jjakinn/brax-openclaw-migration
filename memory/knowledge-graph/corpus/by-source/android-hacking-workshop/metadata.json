@@ -1,0 +1,17 @@
+{
+  "source_id": "android-hacking-workshop",
+  "display_name": "Android Hacking Workshop (B3nacSec)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 1814,
+    "total_chunks": 1,
+    "chunks_processed": 1
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

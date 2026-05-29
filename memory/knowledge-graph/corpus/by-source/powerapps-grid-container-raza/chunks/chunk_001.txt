@@ -1,0 +1,14 @@
+CHUNK 1: INTRODUCTION TO GRID CONTAINER
+Source: powerapps-grid-container-raza | Timestamp: 00:00 - 01:00
+
+Hello everyone, Raza here. In this video, we will learn all about the new grid container control for canvas power apps.
+
+The grid container helps support responsive design. We can add controls to it and then define the rows and columns, the type of grid we would like to design. So, let's check this video out in action.
+
+---
+
+KEY POINTS:
+- New control: Grid container for canvas apps
+- Purpose: Support responsive design
+- Functionality: Define rows and columns for grid layouts
+- Benefits: Precise control positioning, responsive behavior

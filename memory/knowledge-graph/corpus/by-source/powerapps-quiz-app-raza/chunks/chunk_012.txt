@@ -1,0 +1,36 @@
+CHUNK 12: SOLUTION ARCHITECTURE WITH PLAN DESIGNER
+Source: powerapps-quiz-app-raza | Timestamp: 08:30 - 09:30
+
+So how was this solution built? I have a solution in Power Apps called "Smart Quiz Manager".
+
+---
+
+If we explore the components of this solution, I started building the solution by using Plan Designer.
+
+---
+
+Let's take a look. I started by describing my business problem/business requirement to Plan Designer. I asked it to build me a quiz app where admins can create quizzes with questions, options, mark correct answers.
+
+---
+
+Plan Designer started framing the plan which serves as the blueprint to address my business problem statement.
+
+---
+
+It identified two user roles: Admin and Quiz Taker.
+
+---
+
+It defined the processes and helped me frame the data model needed to support this scenario.
+
+---
+
+KEY POINTS:
+- Solution name: Smart Quiz Manager
+- Built with: Plan Designer
+- Input: Natural language business requirement
+- Plan Designer output:
+  - Blueprint/plan
+  - User roles (Admin, Quiz Taker)
+  - Process definition
+  - Data model

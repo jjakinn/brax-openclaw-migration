@@ -1,0 +1,58 @@
+CHUNK 18: CHEVRON DIRECTION AND SECURITY TRIMMING
+Source: powerapps-navigation-component-raza | Timestamp: 28:00 - 30:30
+
+Now this icon for the submenu should only be visible if there is a submenu. So for the icon's visible property we will set as follows:
+
+`CountRows(ThisItem.submenu) > 0`
+
+---
+
+Logout does not have any submenu. So it doesn't show that icon.
+
+---
+
+And when I select this it opens. When I select it it closes. Why not even change this icon dynamically?
+
+---
+
+We'll set the icon property as: `If(varSelectedMenu = ThisItem.key, ChevronUp, ChevronRight)`
+
+---
+
+Notice it's selected so it's open. Now I can close.
+
+---
+
+Back to our navigation. Let's add more. Now this is for administrators.
+
+Now let's say these admin options should only be visible to a user who truly is an admin.
+
+---
+
+I have a formula called `varUserType`. You can check the security role. You can check a configuration list. Whatever your scenario is for now I'm simply hard coding it to a user.
+
+---
+
+I want to only show the nav items that are related to a user.
+
+---
+
+For that all I have to do is I'll add another property to my navigation structure. I'll call it `security`.
+
+---
+
+User should see this: "user admin". It's a simple string.
+
+---
+
+The next one my tasks here also I've set up security as "user admin". Reports same thing "admin". For this one, I'll set the security only to "admin". Log out "user" and "admin" both can do this.
+
+---
+
+KEY POINTS:
+- Chevron direction: Up when expanded, right when collapsed
+- Icon visibility: Only show if submenu exists `CountRows(ThisItem.submenu) > 0`
+- Security trimming:
+  - Add `security` property to nav items
+  - Values: "user", "admin", "user admin"
+  - Check `varUserType` against security property

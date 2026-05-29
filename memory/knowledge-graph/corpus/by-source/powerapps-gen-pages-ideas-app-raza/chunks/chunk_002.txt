@@ -1,0 +1,39 @@
+CHUNK 2/3
+
+[03:30 - 07:00]
+
+Let's keep working with our app agent. Filter by section. Replace search by date with a date range. Make search by category a drop-down. Add an option to reset filters.
+
+I'm simply describing what changes I need. The agent has summarized the updates that it is planning to perform and it's gone ahead and made the updates.
+
+Categories is now a drop down - tech. So, it only filters and shows the ideas for technology. I even have the option to reset filters. I can define the date range now for which I would like to see the ideas submitted.
+
+That's how easily I was able to make the updates in a gen page.
+
+The top five categories - I'll say the width of each category should be in alignment with how many ideas it has. That's a bar chart also sorted by most ideas in a category on top.
+
+Once again, the app agent starts weaving its magic. Done. Top five categories updated.
+
+If any of the changes that the app agent makes is not in alignment with what you described, you can always undo that step.
+
+Now when new idea is clicked, I would like to give the option to the user to submit a new idea. So I want a form for that. So I'll say when new ideas is clicked, user should be presented with a modern form to submit their idea. The form should fly out from the top.
+
+Let's see what Gen Pages builds out. The update is made. New idea click. The form flies out from the top.
+
+How cool is that?
+
+Let's publish. Let's test it out in our app. New ideas. Let's give the idea a title. Pick my category. Notice I'm submitting one for tech. Keep an eye out on the left hand side for the tech bar. It will increase to four. I'm submitting my idea.
+
+Idea submitted. Look at that. This got updated live and here is my gen pages record.
+
+I can also ask it to sort based on the newest idea on top and it will make that update.
+
+For each idea, I have the option to vote for it. Not clickable at this moment. Let's ask Genpage to do that. On click of the star, users vote for that idea should be added to the vote table. Also a user can only vote once per idea and if user clicks star again then remove vote from the table.
+
+Natural language - gen pages begins the work. The update is made here. If I click it's adding my vote to AI features. Here is my votes table. Here it's added my vote for this idea. I can also remove the vote.
+
+Change the theme of the app to be in dark mode. Add a modern looking icon to change from light mode to dark mode and back.
+
+Go. And there we go. It's gone ahead and added this option on the top right for me to change the theme of the app.
+
+How cool is that?

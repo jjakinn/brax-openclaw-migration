@@ -1,0 +1,17 @@
+{
+  "source_id": "darkweb-exposed",
+  "display_name": "The Dark Web Exposed (NetworkChuck)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 3800,
+    "total_chunks": 2,
+    "chunks_processed": 2
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

@@ -1,0 +1,36 @@
+CHUNK 6: USING MCP IN COPILOT STUDIO - SETUP
+Source: powerapps-dataverse-mcp-raza | Timestamp: 05:30 - 06:30
+
+Now let's try and use the MCP server in Copilot Studio.
+
+I'll go ahead and create an agent. My agent has been provisioned.
+
+To use the MCP server: Under tools, let's add a tool → Model Context Protocol.
+
+Here is the Dataverse MCP server. I'll click add and configure.
+
+---
+
+And in just a few clicks, my agent will be able to query information from the tables in my Dataverse environment based on the permissions I have.
+
+No code, no API keys, everything is handled automatically via MCP.
+
+The Dataverse MCP server is added as a tool.
+
+---
+
+These are all the tools that are exposed by the MCP server. By default, they are all turned on.
+
+As the agent maker, you have the option to choose which tools would be available as part of this MCP server that's connected to your agent.
+
+I'll keep all the options open.
+
+---
+
+KEY POINTS:
+- Copilot Studio: Create agent → Add tool
+- Tool category: Model Context Protocol
+- Select: Dataverse MCP server
+- Setup: Just a few clicks
+- Authentication: Automatic (no API keys)
+- Tool selection: Can enable/disable specific tools

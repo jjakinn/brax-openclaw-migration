@@ -1,0 +1,39 @@
+CHUNK 9: CARD DATA BINDING - TITLE, SUBTITLE, IMAGE
+Source: powerapps-modern-card-control-raza | Timestamp: 09:00 - 10:30
+
+The card control title, I'll set this as `ThisItem.Name`. So this will show the name of the file.
+
+---
+
+Subtitle: `ThisItem.'Created By'.DisplayName`
+
+If I want to add more information here, I can concatenate text by using ampersand.
+
+Date when this file was created. I'll use an emoji here calendar and concatenate with `ThisItem.Created`.
+
+---
+
+Image: Here I would like to show the thumbnail of the document. So `ThisItem.Thumbnail.Large`
+
+---
+
+Header image: Here I'll show an image based on the type of the file.
+
+---
+
+Now the good thing about images and power apps is we can also plug in SVGs here.
+
+---
+
+So I've added some power FX logic wherein it reads the extension of the file and then based upon the extension of the file it will show an SVG image.
+
+---
+
+KEY POINTS:
+- Title: `ThisItem.Name` (file name)
+- Subtitle: `ThisItem.'Created By'.DisplayName`
+- Concatenation: Use `&` to combine text with emojis
+- Main image: `ThisItem.Thumbnail.Large`
+- Header image: Dynamic based on file type
+- SVG support: Can use SVG images for file type icons
+- Power FX: Logic to show different icons based on file extension

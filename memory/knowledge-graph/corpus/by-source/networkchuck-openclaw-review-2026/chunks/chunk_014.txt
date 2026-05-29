@@ -1,0 +1,41 @@
+CHUNK 14: SECURITY — EXECUTION MODES & RED LINES
+Source: networkchuck-openclaw-review-2026 | Timestamp: 37:00 - 41:00
+
+So, if you want to change that right now, you want to make your agent more capable, let's do it. Keep in mind, this is a security risk. But there are ways around that. And what most people do is they fully allow these tools and then they do what's called redlinining or red line.
+
+Now one more config that might mess you up but I don't think by default and it's this config here. Do openclaw config get tools.exec. This config controls what openclaw is allowed to do with the tools it knows about. So if it's like you're like here here's a hammer open claw but you can't use it. You have to ask me first every time.
+
+So it's like okay I have a hammer. Can I use it? That's kind of what's happening here maybe. But not for me because right here I have a very sec confusing security config called security full which means he can fully do whatever he wants. It's not full security. It's I can fully do whatever I want.
+
+Now, if you have the command set to allow list, then you can configure an allow list of tools your agent is allowed to use. And the other option is deny. You don't trust your agent at all. Why do you even have one? And then you have the option for ask, which I have. You might not have that right now, which it'll never ask you.
+
+So, right now, if you have this config combined with the tools.profile full, your guy can do whatever he fully wants. But you can also have ask to always where it'll always ask if you're very paranoid or only on miss which combines with the allow list option.
+
+---
+
+Now to change either of those two options, the command will be open claw config set tools.exec.security and then whatever option you want to put in like allow list or full. I'll just say ask off. Now keep in mind this is setting this globally forever for every session. You can configure these things per session in Telegram.
+
+Now, real quick to see the config, we can do cat openclaw.json, which will have a lot of the allow list stuff and security things in here. And we'll have a deeper dive video on security. But I'll go into my workspace folder and we'll look at agents.md file, which is your agents instructions.
+
+You'll see a section for red lines. Now, watching this back, I realized I kind of just jumped into red lines without explaining why this is here. Here's why. We just told your open claw agent it can do a ton of things. We took off its seat belt. Now, with the redlinining, we're telling it what it can and cannot do.
+
+Like, don't exfiltrate private data. Don't run destructive commands without asking. When in doubt, ask. You might add additional things like don't ever modify SSH config. And that would be red line stuff like stop, ask me first. You can do yellow line which is do it but log it like making firewall changes or running docker commands. And then you have of course have always allowed whatever you want to do.
+
+Keeping in mind that this is agent.md instructions like a prompt that your agent should obey but also it's just a prompt. There's nothing deterministic preventing it from doing it.
+
+---
+
+KEY POINTS:
+- Execution Mode (`tools.exec.security`):
+  - `full` — Agent can use any tool freely
+  - `allowlist` — Only tools on approved list
+  - `deny` — Blocked tools (distrust mode)
+  - `ask` — Prompt before execution (paranoid mode)
+  - `ask: on-miss` — Ask only if not on allowlist
+- Red Lines (in agents.md):
+  - **Red**: STOP, ask first (e.g., modify SSH config, exfiltrate data)
+  - **Yellow**: Do it, but log it (e.g., firewall changes, Docker)
+  - **Green/Always**: No restriction
+- IMPORTANT: Red lines are PROMPTS, not deterministic enforcement
+- Agent CAN disobey — there's no hard enforcement
+- Security model: Trust + monitoring, not hard guarantees

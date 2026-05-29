@@ -1,0 +1,33 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "numerology-divine-triangle-1979",
+  "source_url": "https://www.youtube.com/watch?v=IXgtQFHtAFY",
+  "timestamp": "2026-03-23T16:30:00Z",
+  "status": "COMPLETE",
+  "verification": {
+    "video_duration_hours": 11.09,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 665:15",
+    "total_events": 8479,
+    "word_count": 102433,
+    "chunks_created": 7
+  },
+  "summary": {
+    "title": "Numerology and the Divine Triangle (1979 Audiobook)",
+    "authors": "Faith Javane and Dusty Bunker",
+    "domain": "mysticism/spirituality",
+    "key_topics": [
+      "Divine Triangle Method",
+      "Life Path Numbers",
+      "Master Numbers",
+      "Pinnacles and Challenges",
+      "Personal Year Cycles",
+      "Compatibility Analysis"
+    ]
+  },
+  "files_created": [
+    "corpus/by-source/numerology-divine-triangle-1979/metadata.json",
+    "corpus/by-source/numerology-divine-triangle-1979/chunks/chunk_001-007.txt",
+    "summaries/L0-executive/numerology-divine-triangle-1979.md"
+  ]
+}

@@ -1,0 +1,39 @@
+CHUNK 13: FILTER TESTING AND TRIGGER OUTPUT
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 16:00 - 17:30
+
+Let's try it out. I'll search for "reev". Nothing happened.
+
+Well, that's because I have to click out in order for the filter to be performed.
+
+---
+
+And remember StartsWith, so the text in the title text column starts with "rev". These are the results that it returned.
+
+I'll clear this. Click out. It then filters the gallery.
+
+---
+
+Why do I have to click out? Well, because the text input control has a behavior property called TriggerOutput.
+
+---
+
+Notice it's "FocusOut".
+
+You can change this to different options. I'll recommend to use "Delayed".
+
+---
+
+So let's check it out. I'll type "final" and wait. It applies the search query.
+
+I'll clear. Done.
+
+---
+
+KEY POINTS:
+- Initial issue: Filter only applies on focus out (click outside)
+- TriggerOutput property: Controls when filter applies
+- Options:
+  - `FocusOut`: When user leaves field
+  - `Delayed`: After typing pause (recommended)
+- Better UX: Use Delayed for live filtering
+- StartsWith behavior: Matches beginning of text only

@@ -1,0 +1,17 @@
+{
+  "source_id": "networkchuck-mitm-attack",
+  "display_name": "NetworkChuck MiTM Attack",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 10776,
+    "total_chunks": 4,
+    "chunks_processed": 4
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

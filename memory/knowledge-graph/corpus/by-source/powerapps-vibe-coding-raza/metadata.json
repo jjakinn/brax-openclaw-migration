@@ -1,0 +1,26 @@
+{
+  "id": "powerapps-vibe-coding-raza",
+  "title": "Power Apps Vibe Coding Full Tutorial - Build Order Management App",
+  "url": "https://www.youtube.com/watch?v=HlVJ0_F5B80",
+  "platform": "YouTube",
+  "duration": "32 min",
+  "duration_seconds": 1920,
+  "word_count": 3859,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "powerapps-vibe",
+    "vibe-coding",
+    "ai-agents",
+    "dataverse",
+    "react-apps",
+    "order-management",
+    "copilot-studio",
+    "alm",
+    "security-roles"
+  ],
+  "description": "Comprehensive tutorial on Power Apps Vibe coding experience. Build a full-stack React order management app using AI agents, Dataverse tables, iterative development, inline editing, and publishing with ALM support."
+}

@@ -1,0 +1,36 @@
+CHUNK 2: SETTING UP THE APP AND NAVIGATION STRUCTURE
+Source: powerapps-navigation-component-raza | Timestamp: 00:45 - 03:00
+
+Let's begin creating our navigation component from scratch. In the Power Apps make portal, head over to create and start with a blank canvas.
+
+Let's pick the responsive layout style. We will use the modern controls.
+
+Head over to app settings, updates, and ensure modern controls and themes are turned on.
+
+---
+
+To create screens under new screen, we have the responsive layout templates that we can select. We'll be designing a left navigation. So, let's pick this sidebar layout to begin with.
+
+This screen I will rename as my home screen.
+
+---
+
+In the sidebar container is where I would like to place my navigation component that I will be creating.
+
+The component will require the structure for the navigation. And for creating the structure in the app object we have formulas. Here we will create a navigation structure.
+
+---
+
+We'll give it a name: `navStructure`
+
+Is equal to we will be creating an array. In this array, we will create objects. Objects will have properties.
+
+---
+
+KEY POINTS:
+- Start: Blank canvas → Responsive layout
+- Prerequisite: Modern controls and themes ON
+- Screen template: Sidebar layout for left navigation
+- Navigation structure: Created in App object formulas
+- Variable name: `navStructure`
+- Structure: Array of objects with navigation properties

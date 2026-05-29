@@ -1,0 +1,28 @@
+CHUNK 9: CALCULATED COLUMNS AND SAVING TABLES
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 10:30 - 11:30
+
+Finally, inventory value. This was a calculation in Excel. We have the ability to create calculated columns in Dataverse.
+
+---
+
+I do not want this column. So, I'll select it and delete this column.
+
+---
+
+That completes my schema.
+
+---
+
+Of course, the data here is not valid. I'll have to import it correctly. For now, I'll select all the rows by selecting the first toggle option. And I'll delete all the rows. Done.
+
+---
+
+Save and exit. This will start saving all my tables in my solution, creating the schema, the relationships, and importing all the data.
+
+---
+
+KEY POINTS:
+- Calculated columns: Available in Dataverse ( recreate later)
+- Data cleanup: Delete invalid sample data
+- Save and exit: Creates tables, schema, relationships
+- Process: May take time for complex models

@@ -1,0 +1,155 @@
+{
+  "version": "2.0",
+  "description": "Knowledge Graph Master Index - Loaded every session",
+  "last_updated": "2026-03-23",
+  "total_concepts": 21,
+  "total_sources": 3,
+  
+  "concepts": {
+    "flask": {
+      "display_name": "Flask",
+      "category": "coding/web-frameworks",
+      "sources": ["cs50-flask-web-programming", "cs50-full-course-2026"],
+      "l2_summary_available": true
+    },
+    "http-methods": {
+      "display_name": "HTTP Methods (GET/POST)",
+      "category": "coding/web-development",
+      "sources": ["cs50-flask-web-programming", "cs50-full-course-2026"],
+      "l2_summary_available": true
+    },
+    "jinja-templates": {
+      "display_name": "Jinja Templating",
+      "category": "coding/web-development",
+      "sources": ["cs50-flask-web-programming", "cs50-full-course-2026"],
+      "l2_summary_available": true
+    },
+    "web-forms": {
+      "display_name": "Web Forms",
+      "category": "coding/web-development",
+      "sources": ["cs50-flask-web-programming", "cs50-full-course-2026"],
+      "l2_summary_available": true
+    },
+    "sql-injection-prevention": {
+      "display_name": "SQL Injection Prevention",
+      "category": "coding/security",
+      "sources": ["cs50-flask-web-programming", "cs50-full-course-2026"],
+      "l2_summary_available": true
+    },
+    "sessions-cookies": {
+      "display_name": "Sessions and Cookies",
+      "category": "coding/web-development",
+      "sources": ["cs50-flask-web-programming", "cs50-full-course-2026"],
+      "l2_summary_available": true
+    },
+    "rest-apis": {
+      "display_name": "REST APIs",
+      "category": "coding/web-development",
+      "sources": ["cs50-flask-web-programming", "cs50-full-course-2026"],
+      "l2_summary_available": true
+    },
+    "mvc-pattern": {
+      "display_name": "MVC Pattern",
+      "category": "coding/architecture",
+      "sources": ["cs50-flask-web-programming", "cs50-full-course-2026"],
+      "l2_summary_available": true
+    },
+    "scratch": {
+      "display_name": "Scratch Programming",
+      "category": "coding/beginner",
+      "sources": ["cs50-full-course-2026"],
+      "l2_summary_available": false
+    },
+    "c-programming": {
+      "display_name": "C Programming",
+      "category": "coding/systems",
+      "sources": ["cs50-full-course-2026"],
+      "l2_summary_available": false
+    },
+    "python": {
+      "display_name": "Python",
+      "category": "coding/high-level",
+      "sources": ["cs50-full-course-2026"],
+      "l2_summary_available": false
+    },
+    "sql": {
+      "display_name": "SQL",
+      "category": "coding/databases",
+      "sources": ["cs50-full-course-2026"],
+      "l2_summary_available": false
+    },
+    "html-css": {
+      "display_name": "HTML & CSS",
+      "category": "coding/web-development",
+      "sources": ["cs50-full-course-2026"],
+      "l2_summary_available": false
+    },
+    "javascript": {
+      "display_name": "JavaScript",
+      "category": "coding/web-development",
+      "sources": ["cs50-full-course-2026"],
+      "l2_summary_available": false
+    },
+    "pointers": {
+      "display_name": "Pointers",
+      "category": "coding/memory",
+      "sources": ["cs50-full-course-2026"],
+      "l2_summary_available": false
+    },
+    "data-structures": {
+      "display_name": "Data Structures",
+      "category": "coding/algorithms",
+      "sources": ["cs50-full-course-2026"],
+      "l2_summary_available": false
+    },
+    "algorithms": {
+      "display_name": "Algorithms",
+      "category": "coding/algorithms",
+      "sources": ["cs50-full-course-2026"],
+      "l2_summary_available": false
+    },
+    "memory-management": {
+      "display_name": "Memory Management",
+      "category": "coding/systems",
+      "sources": ["cs50-full-course-2026"],
+      "l2_summary_available": false
+    },
+    "markov-chains": {
+      "display_name": "Markov Chains",
+      "category": "mathematics/probability",
+      "sources": ["veritasium-markov-chains"],
+      "l2_summary_available": true
+    },
+    "law-of-large-numbers": {
+      "display_name": "Law of Large Numbers",
+      "category": "mathematics/probability",
+      "sources": ["veritasium-markov-chains"],
+      "l2_summary_available": true
+    }
+  },
+  
+  "domains": {
+    "coding": {
+      "subdomains": ["algorithms", "patterns", "databases", "apis", "testing", "web-frameworks", "web-development", "security", "architecture", "systems", "memory", "beginner", "high-level"],
+      "source_count": 2
+    },
+    "mathematics": {
+      "subdomains": ["probability", "statistics", "history-of-mathematics"],
+      "source_count": 1
+    },
+    "powerapps": {
+      "subdomains": ["formulas", "connectors", "ui-design", "automation"],
+      "source_count": 0
+    },
+    "consciousness": {
+      "subdomains": ["philosophy", "neuroscience", "mysticism"],
+      "source_count": 0
+    },
+    "ancient-history": {
+      "subdomains": ["egypt", "mesopotamia", "greece", "rome", "asia"],
+      "source_count": 0
+    }
+  },
+  
+  "hot_topics": ["flask", "python", "web-development", "c-programming", "ollama", "local-llm", "cost-optimization"]
+}

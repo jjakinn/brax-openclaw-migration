@@ -1,0 +1,37 @@
+{
+  "id": "powerapps-agent-feed-copilot-studio-raza",
+  "title": "Supervising Agents with Agent Feed in Power Apps (Copilot Studio)",
+  "instructor": "Raza",
+  "channel": "Power Apps",
+  "url": "https://www.youtube.com/watch?v=OU-TS2fw910",
+  "duration": "13 min",
+  "word_count": 1697,
+  "difficulty": "Advanced",
+  "category": "Power Platform",
+  "concepts": [
+    "agent-feed",
+    "copilot-studio",
+    "autonomous-agents",
+    "plan-designer",
+    "model-driven-apps",
+    "power-automate",
+    "agent-flows",
+    "triggers",
+    "tools",
+    "dataverse",
+    "claims-processing",
+    "human-in-the-loop"
+  ],
+  "prerequisites": [
+    "copilot-studio-basics",
+    "dataverse-basics",
+    "model-driven-apps",
+    "power-automate-basics"
+  ],
+  "related_sources": [
+    "powerapps-gen-pages-ideas-app-raza",
+    "powerapps-model-driven-modern-raza"
+  ],
+  "ingested": "2026-03-31",
+  "chunks": 4
+}

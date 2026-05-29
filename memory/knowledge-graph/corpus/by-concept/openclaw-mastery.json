@@ -1,0 +1,34 @@
+{
+  "concept_id": "openclaw-mastery",
+  "display_name": "OpenClaw Mastery",
+  "category": "ai_automation",
+  "description": "Comprehensive understanding of OpenClaw agent framework, including setup, multi-agent workflows, tool integration, and best practices",
+  "sources": [
+    "openclaw-master-10hr",
+    "agentic-workflows-course",
+    "claude-code-course",
+    "openclaw-fixed-setup",
+    "openclaw-army-agents",
+    "n8n-tutorial-zero-to-hero"
+  ],
+  "synthesis": {
+    "available": true,
+    "file_path": "corpus/by-concept/syntheses/openclaw-mastery.md",
+    "word_count": 8390,
+    "sources_synthesized": 6
+  },
+  "related_concepts": [
+    "agentic-workflows",
+    "mcp-protocol",
+    "local-llms",
+    "n8n-workflows",
+    "prompt-engineering"
+  ],
+  "prerequisites": ["terminal-basics"],
+  "difficulty": "intermediate",
+  "key_insights": [
+    "Version 2026.3.2 (build 85377a2) is optimal for kimi",
+    "Token checkpoint at 78% prevents data loss",
+    "Multi-agent architecture enables complex workflows"
+  ]
+}

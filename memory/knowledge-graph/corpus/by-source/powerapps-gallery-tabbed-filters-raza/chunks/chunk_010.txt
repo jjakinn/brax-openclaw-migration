@@ -1,0 +1,31 @@
+CHUNK 10: TAB STYLING - BORDER RADIUS AND PADDING
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 09:30 - 10:30
+
+If I select the button control, it has a property called border radius. Let's give it a border radius of 50. You can see how the borders are now rounded.
+
+---
+
+But to make it look more like tabs, I'll set the border radius to zero.
+
+---
+
+The button control has properties for border radius top left. This I will set to 50. Also border radius top right, I will set to 50.
+
+---
+
+So, now you can see how the buttons appear like tabs.
+
+---
+
+The gallery has a property called template padding that's five. You see the spacing between these items? That's the padding. If I set it to zero, now my buttons come closer to each other and this has the appearance of tabs.
+
+---
+
+KEY POINTS:
+- Border radius options:
+  - All corners: 50 (pill shape)
+  - Top corners only: 50 (tab appearance)
+  - Zero: Square corners
+- Tab appearance: Top-left and top-right radius = 50
+- Template padding: 0 for tight tab grouping
+- Gallery padding: Controls spacing between tabs

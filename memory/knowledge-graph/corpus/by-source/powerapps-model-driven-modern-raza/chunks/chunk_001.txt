@@ -1,0 +1,236 @@
+CHUNK 001 — INTRODUCTION & MODEL-DRIVEN APP FUNDAMENTALS
+=============================================================
+
+Source: How to build Model-Driven Power Apps the Modern Way (Resza)
+URL: https://www.youtube.com/watch?v=S3WVKpNWp2c
+
+---
+
+Hello everyone, Resza here. In this video, we will learn how to build model-driven Power Apps the modern way. Right from creating tables and relationships in Dataverse to building the out-of-the-box model-driven app experience connected to the views and forms of the tables and creating custom pages using generative pages experience. So let's get started with the video.
+
+MODEL-DRIVEN APP DESIGN DEFINITION:
+Model-driven app design in Power Apps is an approach that focuses on adding app components such as forms, views, dashboards to tables that are built in Microsoft Dataverse using an app designer tool.
+
+CRITICAL REQUIREMENT:
+Without a data model housed in Dataverse, you can't create a model-driven app.
+
+---
+
+CHUNK 002 — CREATING TABLES IN DATAVERSE (CLASSIC VS MODERN)
+=============================================================
+
+CLASSIC APPROACH:
+- New table → Advanced option
+- Provide the name, set the properties, create columns and more
+- Manual table creation process
+
+MODERN APPROACH:
+- Create new tables → Suite of options
+- Option 1: Describe tables to Copilot
+- Option 2: Import data from external sources (SharePoint, Excel, CSV)
+- Option 3: Create tables from blank
+- All options lead to the Data Workspace
+
+---
+
+CHUNK 003 — COPILOT DATA MODEL GENERATION
+=============================================================
+
+USER PROMPT EXAMPLE:
+"I need tables for tracking products and product related feedback."
+
+COPILOT OUTPUT:
+- Generated suggestions for two tables: Product and Product Feedback
+- Product table columns: product name and price
+- Product Feedback table with related columns
+- Automatic relationship creation via lookup column
+
+RELATIONSHIP CREATION:
+The product column in the product feedback table is a lookup column, creating a many-to-one relationship between the product feedback table and the product table.
+
+---
+
+CHUNK 004 — DATA WORKSPACE & APP CREATION
+=============================================================
+
+DATA WORKSPACE CAPABILITIES:
+Once data model is defined:
+- Tables are created in Dataverse
+- Relationships are established
+- Sample data is generated
+
+TABLE DATA EXPERIENCES:
+Each table in Dataverse supports:
+- Forms
+- Views
+- Charts
+- Dashboards
+- All available within model-driven Power App
+
+APP CREATION PROCESS:
+1. Click "Create an app"
+2. Name the app (e.g., "Product Feedback Tracker")
+3. Model-driven app is generated automatically
+4. Views and forms are auto-connected to tables
+
+---
+
+CHUNK 005 — PLAN DESIGNER: AI-POWERED APP CREATION
+=============================================================
+
+PLAN DESIGNER OVERVIEW:
+Describe business problem in everyday words, AI agents build the solution.
+
+EXAMPLE BUSINESS PROBLEM:
+"I need an expense reporting solution for my team."
+
+AI AGENT SUITE:
+1. Requirements Agent → Frames business requirements
+2. Process Agent → Creates process diagrams
+3. Data Model Agent → Designs tables in Dataverse
+4. Solution Agent → Recommends applications
+
+LIVE DOCUMENT CONCEPT:
+Business requirements become a living document that defines:
+- Processes (expense submission, approval, tracking)
+- Data model (tables, relationships)
+- Applications needed to support the workflow
+
+SECOND EXAMPLE:
+"I need to design a task manager app for my operations team to assign and monitor projects across the organization."
+
+RESULT:
+- Requirements Agent → User requirements list
+- Process Agent → Process maps
+- Data Model → Project table, Task table, User relationships
+- Solution Agent → Model-driven Power App with pages for users, projects, tasks
+
+---
+
+CHUNK 006 — INTELLIGENT APPLICATION ERA: IN-APP AGENTS
+=============================================================
+
+DATA EXPLORATION AGENT:
+Users can ask questions against data in natural language.
+
+EXAMPLE QUERY:
+"Show me all the high priority projects"
+
+RESULT:
+Data exploration agent filters the view automatically based on the query.
+
+DATA VISUALIZATION AGENT:
+Helps visualize current data in the view with various chart options.
+
+RELATED VIDEO:
+Resza has a separate video on in-app agents for deeper coverage.
+
+---
+
+CHUNK 007 — GENERATIVE PAGES: CUSTOM UI IN MODEL-DRIVEN APPS
+=============================================================
+
+MODEL-DRIVEN VS CANVAS APPS:
+- Canvas apps: Full control over screen design
+- Model-driven apps: UI determined by app components (forms, views)
+
+GENERATIVE PAGES SOLUTION:
+Custom React-based pages within model-driven apps for enhanced user experience.
+
+EXAMPLE GENERATIVE PAGE USE CASES:
+
+1. TASKS ASSIGNED TO ME PAGE:
+   - Lists all tasks assigned to current logged-in user
+   - Modern UI with highlighted status and priority columns
+
+2. TASK BOARD PAGE:
+   - Filter tasks by projects
+   - Filter by assigned user
+   - Move tasks across swim lanes (task status)
+   - Status updates automatically when moving
+
+3. CALENDAR VIEW:
+   - All tasks displayed on calendar
+   - Color-coded by task status
+
+4. PROJECT VIEW:
+   - View all projects with related tasks
+   - Count of tasks per project
+   - Grid display of tasks
+   - Edit task properties inline
+
+5. DASHBOARD EXPERIENCE:
+   - Total projects count (26 projects, 25 active, 1 inactive)
+   - Tasks by priority breakdown
+   - Interactive filtering by priority
+   - Task status by priority charts
+   - Tasks due by month visualization
+
+---
+
+CHUNK 008 — CREATING GENERATIVE PAGES
+=============================================================
+
+OLD WAY VS NEW WAY:
+- Old: JavaScript, custom PCF controls, extensive development
+- New: Describe what you need, AI generates React pages
+
+GENERATIVE PAGE CREATION PROCESS:
+
+1. Go to "New" → Select "Describe a page"
+2. Provide context to tables (e.g., Project table)
+3. Enter description: "I want to create a modern looking UI to view all the tasks. highlight status and priority columns."
+4. Click Generate
+
+AI APP AGENT ACTIONS:
+- Connects to table
+- Understands entire schema
+- Interprets request
+- Builds different sections of generative page
+- Generates React code within seconds
+
+RESULT:
+- Card-style layout
+- Search functionality
+- Lists all records from selected table
+- Example: Search "mobile" → shows tasks containing that text
+
+---
+
+CHUNK 009 — CODE EDITING & FLEXIBILITY
+=============================================================
+
+FULL FLEXIBILITY PROVIDED:
+- Generated React code can be edited
+- Manual updates possible
+- No lock-in to generated code
+- Professional developers can customize
+
+STEPS TO BUILD GEN PAGES:
+Video shows the specific steps taken to build each generative page example shown earlier.
+
+---
+
+CHUNK 010 — SUMMARY: MODERN MODEL-DRIVEN APP DEVELOPMENT
+=============================================================
+
+COMPLETE WORKFLOW:
+
+1. Describe business problem → Plan Designer
+2. AI agents create requirements, processes, data model
+3. Dataverse tables auto-generated with relationships
+4. Model-driven app created with standard views/forms
+5. Optional: Add generative pages for custom UI
+6. Optional: Use in-app agents for natural language queries
+
+KEY BENEFITS:
+- All goodness of standard model-driven app (views, forms, CRUD)
+- Plus power of generative pages (React, custom UI)
+- Rapid development through AI-assisted modeling
+- No-code to pro-code flexibility
+
+FINAL EXAMPLE DEMONSTRATION:
+- Card layout with search
+- Real-time filtering
+- Modern responsive design
+- All generated from natural language description

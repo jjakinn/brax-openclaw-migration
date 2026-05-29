@@ -1,0 +1,51 @@
+CHUNK 9: REPLICATING SORT FOR MULTIPLE COLUMNS
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 09:30 - 11:30
+
+Now this worked for ID. I would want to replicate this for title.
+
+---
+
+Now for the properties that I set for this ID button, I hardcoded the text "ID". So if I copy and paste this to reuse this for other columns, I would have to change this formula every time.
+
+---
+
+Now instead of hard coding to "ID", why not just point to the text of this button which is "ID". I could change this to `Self.Text`.
+
+---
+
+The OnSelect property of the button: `varSortBy` will be `Self.Text`.
+
+---
+
+The title label I'll delete. The ID button I'll copy (Ctrl+C), paste (Ctrl+V), place it right here.
+
+---
+
+This button the text will be "Title".
+
+---
+
+For my gallery, here I have the switch function. Why not directly use `varSortBy` here and make it dynamic?
+
+---
+
+There is a reason why not to do that. Let me show you. If I try it as follows: Sort based on that variable. This becomes non-delegable.
+
+---
+
+So sort needs the direct reference to the column. It cannot be dynamic through a variable.
+
+The same is true for sort direction.
+
+---
+
+So back to my switch function. I copied the same information from the top because the pattern is going to be similar. This time the title column.
+
+---
+
+KEY POINTS:
+- Reusable pattern: Use `Self.Text` instead of hardcoded column name
+- Copy/paste: Duplicate button for each sortable column
+- Just change button text for each column
+- Important limitation: Cannot use variable in Sort column parameter
+- Must use Switch to maintain delegation

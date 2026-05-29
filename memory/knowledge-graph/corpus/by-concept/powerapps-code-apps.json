@@ -1,0 +1,217 @@
+{
+  "id": "powerapps-code-apps",
+  "concept": "Code Apps - Pro-Code React Apps in Power Platform",
+  "description": "Code Apps allow developers to build React/TypeScript web apps in Visual Studio Code and deploy them to Power Platform with access to 1500+ connectors, Entra auth, and managed hosting.",
+  "sources": ["powerapps-code-apps-intro-raza"],
+  "related_concepts": [
+    "powerapps-canvas-apps",
+    "powerapps-model-driven-apps",
+    "power-platform-connectors",
+    "react-development",
+    "pro-code-development"
+  ],
+  "key_capabilities": [
+    {
+      "feature": "Full React/TypeScript Development",
+      "description": "Build apps using standard web dev tools and frameworks",
+      "stack": ["React", "TypeScript", "Vite", "Node.js", "npm"]
+    },
+    {
+      "feature": "1500+ Power Platform Connectors",
+      "description": "Direct JavaScript access to all Power Platform connectors",
+      "examples": ["Office 365 Users", "SharePoint", "Dataverse", "SQL", "Custom Connectors"]
+    },
+    {
+      "feature": "Managed Platform Benefits",
+      "description": "Power Platform handles infrastructure",
+      "includes": [
+        "Microsoft Entra authentication (out-of-box)",
+        "Authorization management",
+        "Managed hosting",
+        "One-click deployment"
+      ]
+    },
+    {
+      "feature": "Hot Module Replacement (HMR)",
+      "description": "Instant code updates during local development",
+      "workflow": "Save file → automatic browser refresh with changes"
+    }
+  ],
+  "prerequisites": {
+    "tools": [
+      "Visual Studio Code",
+      "Git",
+      ".NET",
+      "Node.js",
+      "npm"
+    ],
+    "extensions": [
+      "Power Platform Tools (VS Code extension)"
+    ],
+    "cli": "Power Apps CLI (pac)"
+  },
+  "setup_workflow": [
+    {
+      "step": 1,
+      "action": "Create Vite project",
+      "command": "npm create vite@latest",
+      "details": "Select React + TypeScript template"
+    },
+    {
+      "step": 2,
+      "action": "Install dependencies",
+      "commands": ["npm install", "npm install --save-dev @types/node"]
+    },
+    {
+      "step": 3,
+      "action": "Update Vite config",
+      "file": "vite.config.ts",
+      "purpose": "Configure for Code Apps"
+    },
+    {
+      "step": 4,
+      "action": "Authenticate with Power Platform",
+      "command": "pac auth create",
+      "details": "Login with Power Platform account"
+    },
+    {
+      "step": 5,
+      "action": "Select environment",
+      "command": "pac env select",
+      "details": "Provide environment URL from Power Platform admin center"
+    },
+    {
+      "step": 6,
+      "action": "Initialize Code App",
+      "command": "pac code init",
+      "creates": "power.config.json file in project"
+    },
+    {
+      "step": 7,
+      "action": "Install Power SDK",
+      "source": "GitHub release",
+      "added_to": "package.json"
+    },
+    {
+      "step": 8,
+      "action": "Add Power Provider",
+      "files": ["PowerProvider.tsx", "Update main.tsx"],
+      "purpose": "Initialize Power Platform integration"
+    },
+    {
+      "step": 9,
+      "action": "Run locally with Power SDK",
+      "command": "npm run dev",
+      "starts": ["Vite dev server", "Power SDK server"],
+      "test_url": "http://localhost:5173 (with Power SDK proxy)"
+    },
+    {
+      "step": 10,
+      "action": "Build for production",
+      "command": "npm run build"
+    },
+    {
+      "step": 11,
+      "action": "Deploy to Power Platform",
+      "command": "pac code push",
+      "result": "App available in Power Platform environment"
+    }
+  ],
+  "data_source_integration": {
+    "list_connections": "pac connection list",
+    "add_data_source": "pac code add-data-source --app-id <ID> --connection-id <ID>",
+    "what_gets_created": {
+      "folder": "src/services/",
+      "file": "{ConnectorName}Service.ts",
+      "content": "TypeScript functions exposing connector operations"
+    },
+    "demo_examples": [
+      {
+        "connector": "Office 365 Users",
+        "feature": "Profile screen with photo, name, email"
+      },
+      {
+        "connector": "SharePoint",
+        "list": "Work Progress Tracker",
+        "feature": "Task dashboard with swim lanes"
+      }
+    ]
+  },
+  "github_copilot_integration": {
+    "mode": "Agent mode",
+    "capabilities": [
+      "Update main app file based on natural language requests",
+      "Run builds automatically",
+      "Fix build errors iteratively",
+      "Design UI based on uploaded inspiration images",
+      "Full context of connected data sources"
+    ],
+    "example_prompts": [
+      "Build me a profile screen to show my profile information, name, email, and photo",
+      "Update my main app file to show data from the work progress tracker data source",
+      "Add a feature to drag and drop tasks across swim lanes"
+    ]
+  },
+  "app_characteristics": {
+    "type_in_power_platform": "code",
+    "editable_in_ide": true,
+    "editable_in_power_platform": false,
+    "license": "Premium",
+    "deployment": "pac code push → one-click publish"
+  },
+  "development_experience": [
+    "Standard VS Code development workflow",
+    "Hot module replacement for instant feedback",
+    "GitHub Copilot agent mode for AI-assisted development",
+    "Local testing with Power SDK proxy",
+    "Direct JavaScript/TypeScript connector calls",
+    "Full control over UI and logic"
+  ],
+  "use_cases": [
+    "Complex custom UI requiring full React control",
+    "Apps needing specific npm packages or libraries",
+    "Integration with existing React codebases",
+    "Developer teams preferring VS Code workflow",
+    "Apps requiring advanced JavaScript/TypeScript patterns"
+  ],
+  "key_quotes": [
+    {
+      "quote": "These React-based apps can take advantage of the 1500 plus connectors in the Power Platform ecosystem, manage platform capabilities, and with one click deploy these web apps as code apps in Power Platform.",
+      "timestamp": "00:30",
+      "significance": "Core value proposition of Code Apps"
+    },
+    {
+      "quote": "Devs get full control over the UI and logic. Any dev with a command line can publish and host their line of business applications in Power Platform.",
+      "timestamp": "01:00",
+      "significance": "Developer freedom + Power Platform hosting"
+    },
+    {
+      "quote": "The hot module replacement in action. Immediately, it makes the update.",
+      "timestamp": "08:30",
+      "significance": "Rapid development experience"
+    }
+  ],
+  "comparison_with_other_app_types": {
+    "canvas_apps": {
+      "pros": ["Low-code", "WYSIWYG designer", "Built-in formulas"],
+      "cons": ["Limited custom JS", "Restricted npm packages"]
+    },
+    "model_driven_apps": {
+      "pros": ["Dataverse native", "Auto-generated UI", "Gen Pages"],
+      "cons": ["Less UI control", "Dataverse-dependent"]
+    },
+    "code_apps": {
+      "pros": ["Full React/TS", "Any npm package", "Standard dev tools", "Git workflows"],
+      "cons": ["Requires coding skills", "Premium license", "No visual designer"]
+    }
+  },
+  "documentation_resources": {
+    "github_repo": "Power Apps Code Apps repo",
+    "contains": [
+      "Getting started guide",
+      "Data source connection examples",
+      "Custom connector usage",
+      "Sample applications"
+    ]
+  }
+}

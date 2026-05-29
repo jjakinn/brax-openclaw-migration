@@ -1,0 +1,42 @@
+CHUNK 13: COLUMN MAPPING AND LOOKUP RESOLUTION
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 16:00 - 17:30
+
+Next is the import method. Are you appending to data in that table or do you want to merge data? In my case, it's a fresh load. I'll pick append.
+
+---
+
+Column mapping. You can see how AI has smartly mapped the columns.
+
+---
+
+Source — that's coming from my Excel file. This category is being mapped to the category column in my table.
+
+---
+
+All my columns you see have that prefix Contoso.
+
+---
+
+Those two lookup columns here they are. Thanks to the keys, I now have the option to map text data coming from my Excel file to my lookup column.
+
+---
+
+So this one is the location. I'll pick the location from my Excel file. And the second is the supplier. I'll pick the supplier column from my Excel file.
+
+---
+
+Done. Next. This will create a data flow. I'll publish it.
+
+---
+
+And now the process begins for importing the data.
+
+---
+
+KEY POINTS:
+- Import method: Append (fresh load)
+- AI mapping: Automatic column matching
+- Lookup mapping: Keys enable text-to-lookup mapping
+- Location: Map Excel location → Location lookup
+- Supplier: Map Excel supplier → Supplier lookup
+- Data flow: Created and published

@@ -1,0 +1,38 @@
+CHUNK 18: HANDLING ALL TAB WITH OR CONDITION
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 18:30 - 19:45
+
+To handle "all", all we have to do is right here, where I'm filtering, I'll add an Or condition.
+
+---
+
+The first condition is as is. Comma. The second condition is: `Gallery1.Selected.Title = "All"`.
+
+---
+
+I'll close the Or condition.
+
+---
+
+I do not have any status called "all". So this condition fails.
+
+---
+
+And when it goes into the second condition, it checks to see if the selected tab is "all", this condition succeeds.
+
+---
+
+False or true results in true. So filter the list. The condition is true, meaning get me all the data.
+
+---
+
+And that's exactly what it has done for the "all" tab selection.
+
+---
+
+KEY POINTS:
+- Or pattern: `Or(StatusMatch, IsAllTab)`
+- Logic:
+  - If specific tab: Filter by status
+  - If "All" tab: Show all records
+- Formula: `Or(Status.Value = Selected.Title, Selected.Title = "All")`
+- Result: "All" now shows complete list

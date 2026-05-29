@@ -1,0 +1,41 @@
+CHUNK 2: DEFAULT MULTI-SELECT & DATA ROW LIMITS
+Source: powerapps-modern-combo-box-raza | Timestamp: 01:30 - 03:30
+
+The default setting for the combo box control will now allow multiple selections.
+
+Plus, previously the combo box had a hard item limit of 800 records. Now, this constraint has been lifted so it can handle more items.
+
+The amount of items it can handle depends upon the amount of items that it loads in memory. That means if I head over to the settings of my app under general, the data row limit currently is set to 500.
+
+---
+
+So let's put this to the test first. I have a SharePoint list that's connected in my app. This list has over 9,000 rows of data.
+
+For the combo box data source, I'll pick that SharePoint list.
+
+Item label text property. This defines the text that would be displayed when I open the combo box for selections.
+
+I will change this to thisItem.title.
+
+Now, if I open the combo box, you can see it starts listing out records from my data source. It doesn't list out the full 9,000.
+
+This loads up to the number of records I have set in the data row limit which is 500.
+
+---
+
+If I change the limit, the max we can set here is 2,000.
+
+Now when I open the combo box, you can see I get a lot more items. Now this goes up to 2,000 rows of data.
+
+However, I have 9,000 rows.
+
+---
+
+KEY POINTS:
+- Default: Multi-selection now enabled by default
+- Old limit: Hard 800 record limit (REMOVED)
+- New behavior: Handles more items based on memory
+- Data row limit setting: Controls initial load (default 500, max 2,000)
+- Test scenario: 9,000+ row SharePoint list
+- Initial load only shows up to data row limit (500 → 2,000 max)
+- Item label text: Controls display text (e.g., thisItem.title)

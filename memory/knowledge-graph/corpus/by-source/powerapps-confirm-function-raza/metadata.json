@@ -1,0 +1,23 @@
+{
+  "id": "powerapps-confirm-function-raza",
+  "title": "Power Apps Confirm Function - Native Dialog Boxes",
+  "url": "https://www.youtube.com/watch?v=T9C8LYiYlvg",
+  "platform": "YouTube",
+  "duration": "11 min",
+  "duration_seconds": 660,
+  "word_count": 1950,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "powerapps-confirm",
+    "modern-controls",
+    "dialog-box",
+    "user-experience",
+    "form-unsaved",
+    "bulk-delete"
+  ],
+  "description": "Complete guide to the new native Confirm function in Power Apps. Learn how to create consistent dialog experiences without custom containers, handle user selections, and implement in scenarios like delete confirmation, unsaved changes warnings, and bulk operations."
+}

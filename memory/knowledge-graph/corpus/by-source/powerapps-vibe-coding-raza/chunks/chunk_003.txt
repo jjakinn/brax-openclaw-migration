@@ -1,0 +1,36 @@
+CHUNK 3: AI AGENTS IN ACTION - PLAN GENERATION
+Source: powerapps-vibe-coding-raza | Timestamp: 04:00 - 07:30
+
+Now the moment I do this, the agents will spring into action from gathering the user requirements to building the data model to support my application and to building a full stack React application.
+
+If I open this, I can explore all the tasks that the agents are performing.
+
+Right in the center, we have an overview of what we can expect from Vibe. So, while our app is being generated, the carousel helps you get familiar with the experience and provides a quick preview of what you'll be able to do once the application is ready.
+
+From bringing your existing data to iterating the development by chatting with the agent to making fast inline edits, exploring the details in a code view, previewing your app progress even on a mobile device and publish when it feels ready.
+
+Now observe on the left hand side in the chat dialogue where it says tasks in progress. There are multiple agents that are performing actions. Agents that have the ability to read files, to explore files, to write into files and more.
+
+Now while the tasks are being performed, let's go to the plan. You can think about it as a living breathing document in which I have my problem statement.
+
+---
+
+I have my user personas. This based on the problem statement that I defined. It's an order management system. I mentioned employees will manage customers orders, create orders, track orders. So that persona is my sales staff. I had mentioned about invoices and recording payments. So that persona is the finance staff. Operations manager are supervisors who will monitor the overall performance and manage the product catalog.
+
+So these are the three personas it has identified. All of this completely customizable.
+
+---
+
+KEY POINTS:
+- Multiple AI agents spring into action on submit
+- Agent capabilities: Read files, explore files, write files
+- Plan = "living breathing document" with:
+  - Problem statement
+  - User personas (auto-generated from prompt)
+  - Data model recommendations
+  - Technology recommendations
+- Auto-generated personas for order management:
+  - Sales staff (manage customers/orders)
+  - Finance staff (invoices/payments)
+  - Operations manager (performance/catalog)
+- All personas customizable

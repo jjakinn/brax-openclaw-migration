@@ -1,0 +1,44 @@
+CHUNK 4: CREATING A NEW BOARD
+Source: powerapps-kudo-board-raza | Timestamp: 01:30 - 02:15
+
+So, let's create a new board for James's farewell.
+
+---
+
+The recipient: I'll pick James.
+
+---
+
+I'll go ahead and create the Kudo board.
+
+---
+
+The board has been created by me for James. The board is open. Open for users to post.
+
+---
+
+If I select the board is currently empty as there are no posts yet. Let me be the first one to add to the board.
+
+---
+
+"Thank you, James." I'll give a description, rich text.
+
+---
+
+I can pick from the available GIFs or in this case I've uploaded a thank you image.
+
+---
+
+I'll add the Kudo.
+
+---
+
+KEY POINTS:
+- New board workflow:
+  1. Click create new board
+  2. Select recipient (team member)
+  3. Create board
+  4. Board status: Open for posting
+- First post: Creator can be first to post
+- Content options: GIFs or uploaded images
+- Rich text: Available for descriptions

@@ -1,0 +1,41 @@
+CHUNK 4: CREATING TAB GALLERY WITH ARRAY
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 02:15 - 03:30
+
+So, let's add the gallery first on the screen. Insert. I'll start with a horizontal gallery.
+
+---
+
+The gallery items property, here, this is where I want to create an array of data. This would be the tabs.
+
+---
+
+Each array item will define a tab. For each tab, I have:
+- text
+- icon
+- color
+
+---
+
+So, I want to define three properties.
+
+---
+
+The items property, I'll set an array. My first object, I'll add three properties:
+- title: "All"
+- icon: empty (for now)
+- color: `Color.RoyalBlue`
+
+---
+
+If I format the text, this is the properties for one of my tabs.
+
+---
+
+KEY POINTS:
+- Gallery type: Horizontal
+- Items source: Array of tab definitions
+- Tab properties:
+  - Title: Display text
+  - Icon: Icon identifier
+  - Color: Theme color
+- Syntax: `[{title: "All", icon: "", color: Color.RoyalBlue}]`

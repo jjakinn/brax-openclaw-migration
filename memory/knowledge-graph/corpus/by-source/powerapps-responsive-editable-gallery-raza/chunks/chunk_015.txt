@@ -1,0 +1,39 @@
+CHUNK 15: ADD NEW ITEM AND SORTING
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 27:00 - 29:00
+
+And to give the user an option to add a new inventory item to our data source, I'll right click reorder and move up. In this I'll add a button. I'll call it new item.
+
+When the user selects this, all I have to do is patch to my data source, which in my case is my inventories table. Creating a new record:
+
+`Patch(DataSource, Defaults(DataSource), {RequiredColumn: "New Item"})`
+
+---
+
+So, defaults of inventories. And then any required columns you would have to fill. In my case, item name is a required column. So, I'll just fill it with the text "New Item". The user can modify that.
+
+---
+
+I also need to set my variable. So my variable which was varItemSelected, I will set it to the response of patch.
+
+`Set(varItemSelected, Patch(...))`
+
+---
+
+That's it. Let's try this out. I'll click new item. There is my new item. Save. Done.
+
+---
+
+If you want all the latest items to be on top, the gallery items property, sort by created on in descending order.
+
+`Sort(DataSource, CreatedOn, Descending)`
+
+Now the newly created item would be right at the top.
+
+---
+
+KEY POINTS:
+- New item button: Uses `Defaults(DataSource)` to create new record
+- Required fields: Must populate required columns
+- Auto-edit: Set variable to patch result to immediately enter edit mode
+- Sorting: `Sort(DataSource, CreatedOn, Descending)` for newest first
+- Full CRUD: Create, Read, Update, Delete all supported

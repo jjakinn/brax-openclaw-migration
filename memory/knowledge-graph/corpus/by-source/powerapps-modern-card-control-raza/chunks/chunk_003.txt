@@ -1,0 +1,22 @@
+CHUNK 3: CARD PROPERTIES - DIRECTION, TITLE, SUBTITLE, DESCRIPTION
+Source: powerapps-modern-card-control-raza | Timestamp: 02:00 - 03:00
+
+Direction determines whether the card layout is vertical or horizontal.
+
+Then we have title. This is the header title text. I'll update the title to modern card control.
+
+---
+
+Subtitle: supplemental text displayed under or beside the title and the header. I've added my subtitle.
+
+---
+
+Description: description text displayed below the header of the card. I'll add a description. And there's the description text added to my card.
+
+---
+
+KEY POINTS:
+- `Direction`: Vertical or horizontal layout
+- `Title`: Header title text
+- `Subtitle`: Supplemental text under/beside title
+- `Description`: Text below the header

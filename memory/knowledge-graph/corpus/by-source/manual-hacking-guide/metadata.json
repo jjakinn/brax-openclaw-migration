@@ -1,0 +1,17 @@
+{
+  "source_id": "manual-hacking-guide",
+  "display_name": "Manual Hacking Full Guide (JakSec)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 13734,
+    "total_chunks": 5,
+    "chunks_processed": 5
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

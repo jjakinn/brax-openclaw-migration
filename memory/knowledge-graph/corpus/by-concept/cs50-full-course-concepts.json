@@ -1,0 +1,81 @@
+{
+  "concepts": {
+    "scratch": {
+      "display_name": "Scratch Programming",
+      "category": "coding/beginner",
+      "description": "Visual programming language for learning computational thinking",
+      "sources": ["cs50-full-course-2026"],
+      "chunks": ["001"]
+    },
+    "c-programming": {
+      "display_name": "C Programming",
+      "category": "coding/systems",
+      "description": "Low-level systems programming language with manual memory management",
+      "sources": ["cs50-full-course-2026"],
+      "chunks": ["002", "003", "004", "005"]
+    },
+    "python": {
+      "display_name": "Python",
+      "category": "coding/high-level",
+      "description": "High-level interpreted language with extensive libraries",
+      "sources": ["cs50-full-course-2026"],
+      "chunks": ["010", "011"]
+    },
+    "sql": {
+      "display_name": "SQL",
+      "category": "coding/databases",
+      "description": "Structured Query Language for database operations",
+      "sources": ["cs50-full-course-2026"],
+      "chunks": ["012"]
+    },
+    "flask": {
+      "display_name": "Flask",
+      "category": "coding/web-development",
+      "description": "Python web framework for building web applications",
+      "sources": ["cs50-full-course-2026", "cs50-flask-web-programming"],
+      "chunks": ["015", "016", "017"]
+    },
+    "html-css": {
+      "display_name": "HTML & CSS",
+      "category": "coding/web-development",
+      "description": "Markup and styling languages for web pages",
+      "sources": ["cs50-full-course-2026"],
+      "chunks": ["013", "014"]
+    },
+    "javascript": {
+      "display_name": "JavaScript",
+      "category": "coding/web-development",
+      "description": "Client-side scripting language for interactive web pages",
+      "sources": ["cs50-full-course-2026"],
+      "chunks": ["014"]
+    },
+    "pointers": {
+      "display_name": "Pointers",
+      "category": "coding/memory",
+      "description": "Variables that store memory addresses in C",
+      "sources": ["cs50-full-course-2026"],
+      "chunks": ["006"]
+    },
+    "data-structures": {
+      "display_name": "Data Structures",
+      "category": "coding/algorithms",
+      "description": "Linked lists, hash tables, tries, and trees for organizing data",
+      "sources": ["cs50-full-course-2026"],
+      "chunks": ["008", "009"]
+    },
+    "algorithms": {
+      "display_name": "Algorithms",
+      "category": "coding/algorithms",
+      "description": "Step-by-step procedures for solving problems",
+      "sources": ["cs50-full-course-2026"],
+      "chunks": ["004", "007"]
+    },
+    "memory-management": {
+      "display_name": "Memory Management",
+      "category": "coding/systems",
+      "description": "Stack, heap, malloc, free, and preventing memory leaks",
+      "sources": ["cs50-full-course-2026"],
+      "chunks": ["006", "007"]
+    }
+  }
+}

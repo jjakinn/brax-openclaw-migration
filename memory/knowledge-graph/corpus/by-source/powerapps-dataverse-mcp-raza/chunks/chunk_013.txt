@@ -1,0 +1,36 @@
+CHUNK 13: SQL QUERY EXECUTOR IN POWER APPS
+Source: powerapps-dataverse-mcp-raza | Timestamp: 14:30 - 15:30
+
+Here I have designed an experience where I can fire SQL queries directly against the MCP server.
+
+Let's try this exact same query right here.
+
+"Get me the count of projects where the project budget is less than 50,000."
+
+I am running this in a Power App.
+
+Run the query. Here's the result.
+
+---
+
+And now that I have access to all the tools that the Dataverse MCP server offers, how about creating experiences like this?
+
+"Show me all the tables in my current environment and show me all the row counts for it."
+
+For each of these tables, I can select and I'll get its schema. So, it shows me the different columns, the custom columns, the system columns. It also shows me the relationships.
+
+And if I select this, it will take me to the related table.
+
+---
+
+I was able to do all of this because I now have the power to call that MCP server directly from my Power App.
+
+---
+
+KEY POINTS:
+- SQL Query Executor: Custom Power App interface
+- Direct SQL: Run queries against Dataverse via MCP
+- Dynamic experiences: List all tables with row counts
+- Schema explorer: View columns (custom + system)
+- Relationship navigation: Click to related tables
+- Full tool access: All MCP server tools available

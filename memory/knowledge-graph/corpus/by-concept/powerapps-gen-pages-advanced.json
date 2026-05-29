@@ -1,0 +1,131 @@
+{
+  "id": "powerapps-gen-pages-advanced",
+  "concept": "Generative Pages - AI-Powered App Creation in Power Apps",
+  "description": "Advanced generative pages feature in model-driven Power Apps that uses AI to create React-based UI from natural language descriptions and image references.",
+  "sources": ["powerapps-gen-pages-ideas-app-raza"],
+  "related_concepts": [
+    "powerapps-model-driven-apps",
+    "powerapps-canvas-apps",
+    "dataverse",
+    "ai-app-development",
+    "react-pages",
+    "natural-language-programming"
+  ],
+  "key_capabilities": [
+    {
+      "feature": "Image-to-UI Generation",
+      "description": "Upload a screenshot or mockup as inspiration; Gen Pages recreates the styling and layout",
+      "example": "Canvas app screenshot used to generate matching React-based model-driven page"
+    },
+    {
+      "feature": "Natural Language Iteration",
+      "description": "Describe changes in plain English; app agent implements them",
+      "examples": [
+        "Replace search by date with a date range",
+        "Make search by category a drop-down",
+        "Add an option to reset filters",
+        "Change the theme to dark mode"
+      ]
+    },
+    {
+      "feature": "Interactive Charts as Filters",
+      "description": "Charts can act as interactive filters for the data",
+      "example": "Column chart showing ideas per year - clicking a year filters the gallery"
+    },
+    {
+      "feature": "Dynamic Bar Charts",
+      "description": "Bar width proportional to data values, sorted by volume",
+      "example": "Top 5 categories with bar width = number of ideas in each category"
+    },
+    {
+      "feature": "Flyout Forms",
+      "description": "Modern forms that slide/fly out from edges for data entry",
+      "example": "New idea form flies out from top when button clicked"
+    },
+    {
+      "feature": "Theme Switching",
+      "description": "Built-in light/dark mode toggle with modern icons",
+      "implementation": "App agent adds toggle button in top-right corner"
+    },
+    {
+      "feature": "Excel Export",
+      "description": "One-click export of filtered/viewed data to Excel",
+      "use_case": "Quick data extraction for reporting/analysis"
+    },
+    {
+      "feature": "Command Thread System",
+      "description": "Running comment/feedback threads per record",
+      "tables": ["ideas", "commands"],
+      "features": ["View history", "Add comments on the fly", "Contextual within model-driven app"]
+    }
+  ],
+  "data_tables_used": [
+    {
+      "table": "ideas",
+      "purpose": "Main entity - stores idea submissions"
+    },
+    {
+      "table": "categories", 
+      "purpose": "Lookup table for idea categories"
+    },
+    {
+      "table": "vote",
+      "purpose": "Tracks user votes per idea (one vote per user per idea)"
+    },
+    {
+      "table": "command",
+      "purpose": "Stores comments/commands on ideas with history"
+    }
+  ],
+  "app_agent_workflow": [
+    "Add tables to give context (ideas, categories, vote, command)",
+    "Attach reference image for UI inspiration",
+    "Describe desired page in natural language",
+    "Generate - AI builds React-based page",
+    "Iterate with additional natural language commands",
+    "Undo any changes that don't match requirements",
+    "Publish to make available in model-driven app"
+  ],
+  "limitations": [
+    "Feature is in preview (as of video date)",
+    "Complex multi-table relationships may require regeneration",
+    "Requires Dataverse backend (not available for SharePoint/etc)"
+  ],
+  "prerequisites": [
+    "Model-driven Power App",
+    "Microsoft Dataverse backend",
+    "Understanding of underlying data model"
+  ],
+  "key_quotes": [
+    {
+      "quote": "This entire page, all this functionality I was able to build in a matter of minutes by simply describing what I need in natural language to the app agent.",
+      "timestamp": "10:45",
+      "significance": "Core value proposition of Generative Pages"
+    },
+    {
+      "quote": "Gen pages starts building out the reactbased page for me in the model driven power app. It has the context of my underlying tables.",
+      "timestamp": "02:15",
+      "significance": "Explains the React-based architecture and Dataverse integration"
+    },
+    {
+      "quote": "If any of the changes that the app agent makes is not in alignment with what you described, you can always undo that step.",
+      "timestamp": "05:05",
+      "significance": "Safety/iteration feature - allows experimentation"
+    }
+  ],
+  "technical_details": {
+    "output_format": "React-based pages within model-driven app",
+    "backend_requirement": "Microsoft Dataverse",
+    "app_types_supported": "Model-driven apps (not canvas apps)",
+    "interaction_model": "Natural language to AI app agent",
+    "visual_styling": "AI-generated based on reference images + descriptions"
+  },
+  "use_cases": [
+    "Rapid prototyping of data-driven UIs",
+    "Converting canvas app designs to model-driven apps",
+    "Building dashboard-style interfaces with charts",
+    "Creating voting/feedback systems",
+    "Apps requiring theme switching (light/dark mode)",
+    "Quick Excel export functionality"
+  ]
+}

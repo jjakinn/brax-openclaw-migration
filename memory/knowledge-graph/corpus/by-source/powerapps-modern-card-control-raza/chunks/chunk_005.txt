@@ -1,0 +1,32 @@
+CHUNK 5: ACCESSIBILITY, ONSELECT, DISPLAY MODE, AND STYLING
+Source: powerapps-modern-card-control-raza | Timestamp: 04:30 - 05:30
+
+If we head over to advanced accessible label header image accessible label image accessible label and more.
+
+---
+
+These cards are clickable. So under advanced we have an on select function. Here I'll use the notify function to provide a message. So whenever the user clicks the card, it will fire the on select event.
+
+---
+
+Under display behavior:
+
+Display mode controls whether the card is interactive, meaning editable, view. So at this point, it's not clickable or you can completely disable the control.
+
+Visible: whether you want to show this card or not.
+
+---
+
+And under styling and theming, we have border radius. I've set it to 25 so you can see the curved edges around the card.
+
+And we also have the option for the drop shadow effect.
+
+---
+
+KEY POINTS:
+- Accessibility: Accessible labels for header image and main image
+- `OnSelect`: Cards are clickable - fires event on click
+- `DisplayMode`: Edit (interactive), View (not clickable), Disabled
+- `Visible`: Show/hide control
+- `BorderRadius`: Curved edges (e.g., 25)
+- `DropShadow`: Shadow effect option

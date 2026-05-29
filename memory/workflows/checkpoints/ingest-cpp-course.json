@@ -1,0 +1,41 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "cpp-course-beginner-advanced",
+  "source_url": "https://www.youtube.com/watch?v=8jLOx1hD3_o",
+  "timestamp": "2026-03-23T18:10:00Z",
+  "status": "COMPLETE",
+  "verification": {
+    "video_duration_hours": 31.12,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 1867:48",
+    "total_events": 93918,
+    "word_count": 340477,
+    "chunks_created": 23
+  },
+  "summary": {
+    "title": "C++ Programming Course - Beginner to Advanced",
+    "author": "CodeBeauty (YouTube)",
+    "domain": "coding/cpp",
+    "key_topics": [
+      "C++ Basics",
+      "Variables and Data Types",
+      "Control Flow",
+      "Functions",
+      "Arrays and Strings",
+      "Pointers and References",
+      "Object-Oriented Programming",
+      "Classes and Objects",
+      "Inheritance",
+      "Polymorphism",
+      "Templates",
+      "STL",
+      "File I/O",
+      "Exception Handling",
+      "Memory Management"
+    ]
+  },
+  "files_created": [
+    "corpus/by-source/cpp-course-beginner-advanced/metadata.json",
+    "corpus/by-source/cpp-course-beginner-advanced/chunks/chunk_001-023.txt"
+  ]
+}

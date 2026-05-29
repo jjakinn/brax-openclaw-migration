@@ -1,0 +1,21 @@
+CHUNK 9: THE AGENTS.MD FILE — AGENT INSTRUCTIONS
+Source: networkchuck-openclaw-review-2026 | Timestamp: 17:30 - 19:30
+
+Oh, there's one more markdown file I want to talk about and that's the agents.mmd file. This is the one that actually makes it feel kind of magic and you'll see why. Like look, look what it's doing. We'll cat the agents file. And this tells it like how to wake up and do things. And it's pretty extensive.
+
+Like first run bootstrap. It's your birth certificate. Before doing anything else, look at your soul and user file main session. look at your memory. And like I didn't know this, it won't load the long-term memory in group chats by default. That's helpful.
+
+We have red lines, which we'll talk more about later with security. There's protocols for when to reach out and when to stay quiet. At the end of the day, it's just a fancy prompt. And guess what? It's not tied to any provider. If you want to go tinfoil hat and go all local, which I agree with, you just change the model. The memory stays the same. You just do a brain transplant.
+
+---
+
+KEY POINTS:
+- `agents.md` — The agent's instruction manual / "how to live"
+- Contains:
+  - First run bootstrap (birth certificate)
+  - Startup protocol: Read soul → Read user → Read memory
+  - Security: Group chat memory restrictions
+  - Red lines (security boundaries)
+  - Protocols for when to reach out vs stay quiet
+- Provider-agnostic: Change AI model, keep same memory/personality
+- Essentially: A sophisticated system prompt that persists

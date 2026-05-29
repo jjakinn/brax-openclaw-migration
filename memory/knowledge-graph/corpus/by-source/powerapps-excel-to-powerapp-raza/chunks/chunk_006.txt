@@ -1,0 +1,29 @@
+CHUNK 6: CREATING LOOKUP RELATIONSHIPS
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 05:45 - 07:15
+
+So I want to change this text column. To do that I can manually make this update by editing the supplier column data type.
+
+---
+
+I'll change to lookup and my related table will be supplier. I'll update.
+
+---
+
+Now once I make this update I will get errors. Reason: the data being imported from Excel is text here. I'm trying to map it to data from my supplier table.
+
+---
+
+The supplier value here. I'll remove this. And notice how the supplier column in the product table now allows me to pick suppliers from the supplier table.
+
+---
+
+Of course I have a lot of data in my product table. I will not be updating this one by one. For now, I'm going to leave this as is and move forward.
+
+---
+
+KEY POINTS:
+- Change to lookup: Edit column → Data type → Lookup
+- Related table: Select target table (Supplier)
+- Data issue: Text values don't auto-map to lookups
+- Result: Errors until data mapping fixed
+- Solution: Will use alternate keys later

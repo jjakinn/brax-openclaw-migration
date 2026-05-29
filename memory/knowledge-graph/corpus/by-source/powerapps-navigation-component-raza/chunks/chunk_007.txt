@@ -1,0 +1,25 @@
+CHUNK 7: ACCESS APP SCOPE AND GALLERY ITEMS
+Source: powerapps-navigation-component-raza | Timestamp: 09:00 - 10:00
+
+The items property for this gallery, my nav structure.
+
+Now observe the moment I point to a formula or a variable within my app, my component does not get its context.
+
+To give it the context, back to the component, there is a property called `AccessAppScope`. This we will turn on.
+
+The moment I turn this on, now my component can start working with formulas, variables, and more that were defined within the app.
+
+---
+
+Here is my table, my navigation menu items, including the submenu.
+
+Back to the gallery. Let's edit and insert the modern button control.
+
+---
+
+KEY POINTS:
+- Gallery items: `navStructure`
+- Problem: Component can't access app variables by default
+- Solution: Component property `AccessAppScope = true`
+- Result: Component can access app formulas, variables, collections
+- Next: Add button control in gallery for menu items

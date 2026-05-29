@@ -1,0 +1,29 @@
+# Chunk 006: Database Integration with SQLite
+
+Variables lose data on server restart. Use databases for persistence.
+
+CS50 SQL library:
+```python
+from cs50 import SQL
+db = SQL("sqlite:///frostims.db")
+```
+
+INSERT operations:
+```python
+db.execute("INSERT INTO registrants (name, sport) VALUES (?, ?)", name, sport)
+```
+
+The ? placeholders are CRITICAL - they prevent SQL injection by sanitizing inputs. Never use f-strings with SQL!
+
+SELECT operations return list of dictionaries:
+```python
+rows = db.execute("SELECT * FROM registrants")
+return render_template("registrants.html", registrants=rows)
+```
+
+Display in template:
+```html
+{% for row in registrants %}
+<tr><td>{{ row.name }}</td><td>{{ row.sport }}</td></tr>
+{% endfor %}
+```

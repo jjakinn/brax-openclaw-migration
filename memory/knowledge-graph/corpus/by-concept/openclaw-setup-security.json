@@ -1,0 +1,29 @@
+{
+  "id": "openclaw-setup-security",
+  "name": "OpenClaw Setup & Security Hardening",
+  "category": "AI & Automation",
+  "description": "Complete guide to deploying OpenClaw on VPS, configuring Telegram bots, security hardening with tool profiles, execution modes, and red lines.",
+  "related_concepts": [
+    "openclaw-mastery",
+    "telegram-bot",
+    "vps-deployment",
+    "cron-jobs",
+    "sub-agents"
+  ],
+  "sources": [
+    "networkchuck-openclaw-review-2026"
+  ],
+  "keywords": [
+    "OpenClaw setup",
+    "Telegram bot",
+    "VPS deployment",
+    "security audit",
+    "tool profiles",
+    "red lines",
+    "cron jobs",
+    "heartbeats",
+    "skills",
+    "clawhub"
+  ],
+  "created_at": "2026-03-30"
+}

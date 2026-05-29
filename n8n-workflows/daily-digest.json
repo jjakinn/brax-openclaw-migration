@@ -1,0 +1,87 @@
+{
+  "name": "Claw Agent — Daily Digest",
+  "nodes": [
+    {
+      "name": "Daily Cron",
+      "type": "n8n-nodes-base.cron",
+      "parameters": {
+        "rule": {
+          "interval": [{
+            "field": "hours',
+            "hoursInterval": 24
+          }]
+        },
+        "timezone": "America/Chicago"
+      },
+      "position": [250, 300]
+    },
+    {
+      "name": "Collect Metrics",
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {
+        "method": "GET",
+        "url": "http://localhost:3001/api/daily-metrics",
+        "responseFormat": "json"
+      },
+      "position": [450, 300]
+    },
+    {
+      "name": "Generate Report",
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "jsCode": "const data = $input.first().json;\nconst report = {\n  date: new Date().toISOString().split('T')[0],\n  tokensUsed: data.tokensUsed,\n  tasksCompleted: data.tasksCompleted,\n  errors: data.errors,\n  uptime: data.uptime\n};\nreturn [report];"
+      },
+      "position": [650, 300]
+    },
+    {
+      "name": "Store Report",
+      "type": "n8n-nodes-base.googleSheets",
+      "parameters": {
+        "operation": "append",
+        "documentId": "={{ $env.REPORTS_SHEET_ID }}",
+        "sheetName": "DailyDigest",
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "date": "={{ $json.date }}",
+            "tokensUsed": "={{ $json.tokensUsed }}",
+            "tasksCompleted": "={{ $json.tasksCompleted }}",
+            "errors": "={{ $json.errors }}",
+            "uptime": "={{ $json.uptime }}"
+          }
+        }
+      },
+      "position": [850, 300]
+    },
+    {
+      "name": "Email Summary",
+      "type": "n8n-nodes-base.gmail",
+      "parameters": {
+        "to": "={{ $env.ADMIN_EMAIL }}",
+        "subject": "Claw Agent — Daily Digest ({{ $json.date }})",
+        "text": "Daily Summary:\n\nDate: {{ $json.date }}\nTokens Used: {{ $json.tokensUsed }}\nTasks Completed: {{ $json.tasksCompleted }}\nErrors: {{ $json.errors }}\nUptime: {{ $json.uptime }}%\n\n— Claw Agent",
+        "options": {}
+      },
+      "position": [850, 500]
+    }
+  ],
+  "connections": {
+    "Daily Cron": {
+      "main": [[{"node": "Collect Metrics", "type": "main", "index": 0}]]
+    },
+    "Collect Metrics": {
+      "main": [[{"node": "Generate Report", "type": "main", "index": 0}]]
+    },
+    "Generate Report": {
+      "main": [
+        [{"node": "Store Report", "type": "main", "index": 0}],
+        [{"node": "Email Summary", "type": "main", "index": 0}]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "Error Handler"
+  },
+  "active": false
+}

@@ -1,0 +1,30 @@
+CHUNK 5: DEFINING ALL TAB VALUES
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 03:30 - 04:15
+
+Which I can copy, put a comma, paste. I'll create my second tab.
+
+---
+
+Here I'm plugging in all my status values from SharePoint.
+
+---
+
+I have a status called "not started". I'll give this one purple color.
+
+---
+
+On similar lines, I've gone ahead and plugged all my other tab values.
+
+---
+
+My items array has been defined.
+
+---
+
+KEY POINTS:
+- Tab values match: SharePoint status choice values
+- Colors per tab:
+  - All: RoyalBlue
+  - Not Started: Purple
+  - (Additional tabs with specific colors)
+- Array structure: Multiple objects with title/icon/color

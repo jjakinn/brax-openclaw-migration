@@ -1,0 +1,38 @@
+CHUNK 15: CALCULATED COLUMN AND APP CREATION
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 18:30 - 19:45
+
+Let's add a column in my product table. I'll call it "inventory value". This will be a formula column.
+
+---
+
+My formula will be: stock quantity multiplied by unit price.
+
+---
+
+Notice there's an error. Unit price is a currency column. Formula column allows decimals. Type cast this to decimal.
+
+---
+
+That's my formula. I'll click save. Done.
+
+---
+
+A calculated column is created called inventory value. This is doing a live calculation for each row. This column got added. So let me update my forms and views. Update.
+
+---
+
+The next step is to create my Power App. I'll head over to my product table and click create an app.
+
+---
+
+I'll call it "my inventory app". Click create and it will now start creating the application.
+
+---
+
+KEY POINTS:
+- Calculated column: Formula-based (stock qty × unit price)
+- Data types: Currency needs decimal conversion
+- Formula: `StockQuantity * Decimal(UnitPrice)`
+- Live calculation: Updates automatically
+- App creation: From table → Create app
+- Name: Descriptive app name

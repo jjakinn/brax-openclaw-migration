@@ -1,0 +1,44 @@
+CHUNK 16: MODEL-DRIVEN APP FEATURES
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 19:45 - 21:00
+
+It's loading a preview of the app.
+
+---
+
+The app includes my products table. This is my view that shows all the data. I can sort, I can filter, group by aggregations, create multiple views, export, import data.
+
+---
+
+Select a record. That's the form. These are all the columns from my table. I can update, read, create, delete. Full CRUD support.
+
+---
+
+Now, this is my product table. Let me add a new page. Connect to my database table.
+
+---
+
+I'll search for Contoso. I'll also bring in my location and supplier tables.
+
+---
+
+And just like that I have the same experience for both those tables.
+
+---
+
+These tables are related. So if I pick a supplier, here are the details of that supplier. If I go to related I can see all the products that are related with that supplier.
+
+---
+
+Publish to publish my application.
+
+---
+
+KEY POINTS:
+- Model-driven app: Auto-generated from tables
+- Features:
+  - Sort, filter, group
+  - Multiple views
+  - Export/import
+  - CRUD operations
+- Related data: Navigate between related tables
+- Pages: Can add multiple tables to app

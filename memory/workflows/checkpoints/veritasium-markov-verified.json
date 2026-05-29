@@ -1,0 +1,29 @@
+{
+  "checkpoint_type": "ingestion_verified",
+  "source_id": "veritasium-markov-chains",
+  "source_url": "https://www.youtube.com/watch?v=KZeIEiBrT_w",
+  "timestamp": "2026-03-23T06:28:00Z",
+  "status": "COMPLETE_VERIFIED",
+  "verification": {
+    "video_duration_minutes": 32.5,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 32:35",
+    "total_events": 1654,
+    "events_with_text": 827,
+    "word_count": 5429,
+    "note": "Video has extensive visual demonstrations (card shuffling, animations) without narration. ~50% of runtime is visual content."
+  },
+  "troubleshooting_performed": [
+    "Initial extraction gave partial results (~18 min)",
+    "Downloaded JSON3 subtitle format directly",
+    "Parsed full 32.35 minutes of timestamps",
+    "Verified 827 segments contain text (50% of total)",
+    "Confirmed visual sections have no narration"
+  ],
+  "files_updated": [
+    "corpus/by-source/veritasium-markov-chains/chunks/chunk_001-004.txt",
+    "corpus/by-source/veritasium-markov-chains/metadata.json",
+    "summaries/L0-executive/veritasium-markov-chains.md",
+    "indexes/master-catalog.md"
+  ]
+}

@@ -1,0 +1,42 @@
+CHUNK 8: AGENT-CODED LOGIC & MOCK DATA ISSUE
+Source: powerapps-vibe-coding-raza | Timestamp: 15:00 - 19:00
+
+Let's go back to preview. I'll stop toggle inline edits. Let's go to orders. Select observe. I can do the same here as well. The dollar amount. Selected it. Show me the code view. Here is the code. This is my table.
+
+Note, we cannot manually edit the code, but we can prompt the agent to make changes.
+
+If greater than 10k, then show in red color. The agent is smart enough to understand the context. It's reading my order.typescript file. It's going to make the edits and once the edits are done here you can see any orders greater than 10k are being highlighted in red.
+
+---
+
+And to see that code I'll select go to code view here it is changing the font based on the order total.
+
+I'll go back to preview and stop the inline edits. Explore the orders. It's showing eight orders.
+
+Let's go to our data. I'll assume it's coming from my order table. Let's view the data. Not true. I only have five orders here.
+
+So, how is the application showing eight orders?
+
+And you may experience this for other pages as well. And the reason is there is a chance that the agent is generating mock data.
+
+---
+
+So under the source folder, if I head over to the library folder, notice there is a mock data file that is generating the mock data.
+
+That is not what I want my application to use. All the data should come from my Dataverse tables.
+
+So we'll give it a prompt. Do not use any mock data. Delete the mock data.ts file. You can be that specific. All information must come from the database tables. Go.
+
+Now the agent starts updating the code to remove all the mock data dependencies. As it's making the changes, observe orders now has five orders. These are exactly the number of orders that are in my order table.
+
+---
+
+KEY POINTS:
+- CANNOT manually edit code — must prompt agent
+- Example: Conditional formatting (>$10K in red)
+- Agent reads context (order.typescript) and implements logic
+- **Common issue**: Agent generates mock data instead of using Dataverse
+- Mock data location: `source/library/mockData.ts`
+- Fix: Explicitly prompt "Delete mockData.ts, use database tables only"
+- Result: App now shows exact record count from Dataverse
+- Stop button available to cancel agent responses

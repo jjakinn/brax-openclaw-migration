@@ -1,0 +1,17 @@
+{
+  "source_id": "bug-hunter-methodology",
+  "display_name": "The Bug Hunter's Methodology (Jason Haddix)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 12677,
+    "total_chunks": 5,
+    "chunks_processed": 5
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

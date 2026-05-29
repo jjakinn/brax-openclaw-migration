@@ -1,0 +1,60 @@
+{
+  "concepts": {
+    "flask": {
+      "display_name": "Flask",
+      "category": "coding/web-frameworks",
+      "description": "Lightweight Python web framework for building web applications",
+      "sources": ["cs50-flask-web-programming"],
+      "chunks": ["001", "002", "003"]
+    },
+    "http-methods": {
+      "display_name": "HTTP Methods (GET/POST)",
+      "category": "coding/web-development",
+      "description": "GET for data retrieval, POST for data submission",
+      "sources": ["cs50-flask-web-programming"],
+      "chunks": ["004", "005"]
+    },
+    "jinja-templates": {
+      "display_name": "Jinja Templating",
+      "category": "coding/web-development",
+      "description": "HTML templating engine for Python with variable interpolation and control structures",
+      "sources": ["cs50-flask-web-programming"],
+      "chunks": ["003", "006"]
+    },
+    "web-forms": {
+      "display_name": "Web Forms",
+      "category": "coding/web-development",
+      "description": "HTML forms for user input with validation and submission handling",
+      "sources": ["cs50-flask-web-programming"],
+      "chunks": ["004", "005", "007"]
+    },
+    "sql-injection-prevention": {
+      "display_name": "SQL Injection Prevention",
+      "category": "coding/security",
+      "description": "Using parameterized queries to prevent malicious SQL attacks",
+      "sources": ["cs50-flask-web-programming"],
+      "chunks": ["008", "009"]
+    },
+    "sessions-cookies": {
+      "display_name": "Sessions and Cookies",
+      "category": "coding/web-development",
+      "description": "Maintaining user state across HTTP requests using server-side sessions",
+      "sources": ["cs50-flask-web-programming"],
+      "chunks": ["010", "011"]
+    },
+    "rest-apis": {
+      "display_name": "REST APIs",
+      "category": "coding/web-development",
+      "description": "Building web APIs that return JSON data for frontend consumption",
+      "sources": ["cs50-flask-web-programming"],
+      "chunks": ["012", "013"]
+    },
+    "mvc-pattern": {
+      "display_name": "MVC Pattern",
+      "category": "coding/architecture",
+      "description": "Model-View-Controller architectural pattern for separating concerns",
+      "sources": ["cs50-flask-web-programming"],
+      "chunks": ["001", "014"]
+    }
+  }
+}

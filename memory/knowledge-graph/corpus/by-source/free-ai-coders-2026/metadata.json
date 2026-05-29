@@ -1,0 +1,79 @@
+{
+  "source_id": "free-ai-coders-2026",
+  "display_name": "8 SECRET FULLY FREE AI Coders/APIs: $0 AI Coding Workflow is here!",
+  "author": "AICodeKing",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2026,
+    "url": "https://www.youtube.com/watch?v=5m6NK4D2MkY",
+    "channel": "AICodeKing",
+    "ingested_date": "2026-03-28",
+    "processed_by": "agent:main",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 1,
+    "total_words": 2301
+  },
+  "length": {
+    "pages": 0,
+    "words": 2301,
+    "duration_minutes": 11,
+    "chunk_count": 1
+  },
+  "structure": {
+    "parts": [
+      "Introduction \u2014 Why free AI coding matters in 2026",
+      "Tool 1: Stitch (Google AI Design)",
+      "Tool 2: Codex Free Tier (OpenAI Async Agent)",
+      "Tool 3: Jules (Google GitHub Task Agent)",
+      "Tool 4: Gemini CLI (Terminal Agent)",
+      "Tool 5: Gemini Code Assist (IDE Companion)",
+      "Tool 6: Augment Code (Agentic Editor)",
+      "Tool 7: GitHub Copilot Free",
+      "Tool 8: Qwen Code (Open Source Terminal Agent)",
+      "Bonus: Mistral Vibe / Devstral / Xiaomi MiMo + OpenClaw",
+      "Recommended $0 Workflow Stack",
+      "Closing Thoughts"
+    ]
+  },
+  "concepts_covered": [
+    "free-ai-coding-tools",
+    "stitch-google-design",
+    "openai-codex-free",
+    "google-jules",
+    "gemini-cli",
+    "gemini-code-assist",
+    "augment-code",
+    "github-copilot-free",
+    "qwen-code",
+    "devstral",
+    "xiaomi-mimo-openclaw",
+    "zero-cost-ai-workflow",
+    "async-coding-agents",
+    "terminal-coding-agents"
+  ],
+  "domains": [
+    "ai",
+    "coding-tools",
+    "free-tier",
+    "developer-productivity"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/free-ai-coders-2026/chunks/"
+  },
+  "key_takeaways": [
+    "Stitch (Google Labs) \u2014 Free AI design tool for UI mockups, flows, prototypes before coding",
+    "Codex (OpenAI) \u2014 Free tier with ChatGPT Free/Go, async delegate-and-come-back workflow, works across app/CLI/web/IDE",
+    "Jules (Google) \u2014 Free tier, GitHub-task-oriented async agent, great for batch work (tests, refactors, docs)",
+    "Gemini CLI \u2014 Free tier: 60 req/min, 1000 req/day with Google account, open source, supports MCP, best $0 terminal agent",
+    "Gemini Code Assist \u2014 IDE companion to Gemini CLI, free tier for VS Code / JetBrains",
+    "Augment Code ('anti-gravity') \u2014 Free tier includes ALL features, unlimited tab completions, agent manager, browser integration, weekly rate limit",
+    "GitHub Copilot Free \u2014 2000 code completions + 50 premium requests/month, easiest setup",
+    "Qwen Code \u2014 Open source, 1000 free requests/day with Qwen OAuth, terminal-first agentic",
+    "Xiaomi MiMo \u2014 Zero token cost provider for OpenClaw (V2 Flash Pro + Omni), wildcard free backend",
+    "Devstral \u2014 Free on Mistral experimental plan, good for open/experimental hacker route with OpenClaw",
+    "Recommended $0 stack: Stitch \u2192 Codex/Jules \u2192 Gemini CLI \u2192 Augment Code \u2192 Copilot Free \u2192 OpenClaw + MiMo/Devstral"
+  ]
+}

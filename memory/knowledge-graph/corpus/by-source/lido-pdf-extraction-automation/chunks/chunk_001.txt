@@ -1,0 +1,16 @@
+CHUNK 1: INTRODUCTION & PROBLEM STATEMENT
+Source: lido-pdf-extraction-automation | Timestamp: 00:00 - 00:30
+
+This video is sponsored by Lido. Thanks again for supporting the channel.
+
+Many businesses are still manually typing data into Excel. Let's cut that out, shall we? Let's automate converting PDF invoices into Excel.
+
+So, we're going to use some sample data like this and like this. These are two invoices in PDF form. We're going to use a program called Lido that I've been using for several years now to extract data from these PDFs automatically into Excel.
+
+---
+
+KEY POINTS:
+- Problem: Businesses manually typing data from PDFs into Excel
+- Solution: Lido for automated PDF to Excel extraction
+- Speaker has used Lido for several years
+- Demonstration uses two sample PDF invoices

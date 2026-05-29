@@ -1,0 +1,31 @@
+CHUNK 2/3
+
+[03:30 - 07:00]
+
+Now let's initialize our code app. I have the Power Platform extension added to my IDE. I'll begin with pack O create. This allows me to authenticate the Power Platform CLI against my Power Platform tenant.
+
+So I log in with my Power Platform account. Once I'm authenticated successfully, it will validate the connection and create my O profile.
+
+Next, I'll select my Power Platform environment pack environment. Select - env. I need to give my environment URL. This will be my power platform environment in which I will deploy this code app and go to session details. Copy the environment URL. Paste. Submit. And it's connected me to my environment called dev training.
+
+Let's initialize a code app. Pack code in it. Display name. I'll call this my first code app. Now notice the moment we do this, there is a power.config.json file in our project that gets instantiated.
+
+Next step, we will install the power SDK. We are installing it from the GitHub release in package.json.
+
+The dev server that's going to be used wheat. Now let's update this to include packod run and vit. Under source we'll add a new file power provider.typescript. We'll paste the following code that's provided in the documentation.
+
+And then in the main file let's import the power provider and update the main file as follows.
+
+Now that we've made these updates, let's once again perform npm rundev. This time if you observe, it will run the wed server but also start the power SDK server. Now we can test the app locally using the following URL. Let's fire that URL in the browser.
+
+This is my app running locally. Let's close this. Ctrl C to stop the server.
+
+Now to push this app and run it on Power Apps, let's first run the build. Build succeeded. Pack code push. This will push this app on Power Apps for my environment that I set up.
+
+Done. Says I can test the app on the following URL. Let's open. This is launching my code app that I built in Visual Studio Code Reactbased as a Power App hosted in a Power Platform environment.
+
+Signed in as Raza make. powerapps.com in my environment. Here is my first code app that I deployed and observe the type of the app. It's code.
+
+I can run the app. I cannot edit from my IDE. I can make updates and then redeploy it to the environment.
+
+Details of this app. license designation is premium.

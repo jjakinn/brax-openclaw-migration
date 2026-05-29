@@ -1,0 +1,28 @@
+CHUNK 11: HEADER STYLING AND HORIZONTAL SCROLL SYNC
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 19:30 - 20:30
+
+Done. I'll select all my headers. Align them at the start. Vertical alignment, middle. Font weight, I'll go bold.
+
+Font color, I'll set this based on the theme of my app: App.Theme.Colors.[primary color]
+
+The theme of my app right now is blue. Let's say I change this to orange. The colors of my theme changes.
+
+---
+
+Now, if I preview here, I have my headers as well. My horizontal scroll works.
+
+But as I scroll, you see my header container cuts off. Well, that's because my header container's minimum width property I need to set exactly as how I set the minimum width for my gallery.
+
+Now if I play the app as I scroll horizontally you can see how the header also scrolls to allow the user to make changes.
+
+---
+
+KEY POINTS:
+- Header styling:
+  - Align: Start (horizontal), Middle (vertical)
+  - Font weight: Bold
+  - Font color: Theme-based `App.Theme.Colors.Primary`
+- Theme changes: Dynamically updates app colors
+- Problem: Header doesn't scroll with gallery
+- Solution: Set header container `LayoutMinimumWidth` = Gallery `LayoutMinimumWidth`
+- Result: Header and gallery scroll together horizontally

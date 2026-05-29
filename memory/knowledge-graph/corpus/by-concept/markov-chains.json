@@ -1,0 +1,29 @@
+{
+  "concept_id": "markov-chains",
+  "display_name": "Markov Chains",
+  "category": "mathematics_ml",
+  "description": "Stochastic processes where the next state depends only on the current state, not on the sequence of events that preceded it (memoryless property)",
+  "sources": [
+    "veritasium-markov-chains"
+  ],
+  "synthesis": {
+    "available": true,
+    "file_path": "corpus/by-concept/syntheses/markov-chains.md",
+    "word_count": 5971,
+    "sources_synthesized": 1
+  },
+  "related_concepts": [
+    "probability-theory",
+    "stochastic-processes",
+    "monte-carlo-method",
+    "pagerank"
+  ],
+  "prerequisites": ["probability-basics"],
+  "difficulty": "intermediate",
+  "applications": [
+    "nuclear-simulation",
+    "search-engine-ranking",
+    "language-modeling",
+    "weather-prediction"
+  ]
+}

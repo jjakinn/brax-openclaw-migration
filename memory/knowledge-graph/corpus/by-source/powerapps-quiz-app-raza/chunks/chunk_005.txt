@@ -1,0 +1,32 @@
+CHUNK 5: QUIZ COMPLETION AND RESULTS
+Source: powerapps-quiz-app-raza | Timestamp: 03:00 - 03:45
+
+I'll go ahead and complete the quiz.
+
+---
+
+Completed all the questions. Here's the result.
+
+---
+
+For each question, it highlights my answer. It also gives me an explanation for that question and the number of points that I achieved for each and every question.
+
+---
+
+I have three attempts. I passed it in the first attempt. If I would want to retake it, I can do that. Or I can go back to the main list of quizzes.
+
+---
+
+General knowledge quiz: I have completed one attempt out of three.
+
+---
+
+KEY POINTS:
+- Results screen shows:
+  - Each question
+  - User's selected answer (highlighted)
+  - Explanation for correct answer
+  - Points earned per question
+- Attempt tracking: Shows passed/failed status
+- Retake option: Available if attempts remain
+- Navigation: Back to quiz list or retake

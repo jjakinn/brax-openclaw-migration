@@ -1,0 +1,33 @@
+{
+  "source_id": "hexstrike-mcp-hacking",
+  "display_name": "Is HexStrike the BEST AI MCP for Hacking? (Bug Bounty Tested)",
+  "author": "ZeroDay Gym",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2025,
+    "url": "https://www.youtube.com/watch?v=PQOwpjZXzMo",
+    "ingested_date": "2026-03-25",
+    "processed_by": "agent:main",
+    "ingestion_status": "COMPLETE",
+    "chunks_processed": 3,
+    "total_words": 2252
+  },
+  "length": {
+    "pages": 0,
+    "words": 2205,
+    "duration_minutes": 14,
+    "chunk_count": 3
+  },
+  "domains": [
+    "cybersecurity",
+    "ai",
+    "bug-bounty",
+    "mcp",
+    "hacking"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/hexstrike-mcp-hacking/chunks/"
+  }
+}

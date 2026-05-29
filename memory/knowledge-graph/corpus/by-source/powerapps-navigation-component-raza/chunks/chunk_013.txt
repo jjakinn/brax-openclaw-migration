@@ -1,0 +1,51 @@
+CHUNK 13: SUBMENU GALLERY SETUP
+Source: powerapps-navigation-component-raza | Timestamp: 17:30 - 19:00
+
+Let's set up our submenu.
+
+In the galMenu, edit, insert another blank flexible height gallery.
+
+This one as well. I'll ensure that it begins right after the main menu.
+
+---
+
+I have renamed it to `galSubmenu`.
+
+X property: I'll start this 10 pixels from the left.
+
+Its width will be `Parent.Width - Self.X`.
+
+---
+
+The items property will be `ThisItem.submenu`.
+
+---
+
+The height of this gallery. This I will set as: `CountRows(ThisItem.submenu) * 40`.
+
+That will be the dynamic height of my submenu.
+
+---
+
+Now in this as well, I'll go and insert the button control. Position it on the top left.
+
+The text of the button: `ThisItem.title`.
+
+The width: `Parent.TemplateWidth`.
+
+Icon: `ThisItem.icon`.
+
+---
+
+Very similar steps as before. Alignment left, type transparent, icon style filled.
+
+---
+
+KEY POINTS:
+- Submenu gallery: `galSubmenu`
+- Positioning:
+  - X: 10 (indented from left)
+  - Width: `Parent.Width - Self.X`
+- Items: `ThisItem.submenu`
+- Dynamic height: `CountRows(ThisItem.submenu) * 40`
+- Same button styling as main menu

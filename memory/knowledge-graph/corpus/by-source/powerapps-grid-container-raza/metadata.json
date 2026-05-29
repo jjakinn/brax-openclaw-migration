@@ -1,0 +1,23 @@
+{
+  "id": "powerapps-grid-container-raza",
+  "title": "Power Apps Grid Container Control - Responsive Grid Layouts",
+  "url": "https://www.youtube.com/watch?v=D-VGewJ58GE",
+  "platform": "YouTube",
+  "duration": "13 min",
+  "duration_seconds": 780,
+  "word_count": 2100,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "powerapps-grid-container",
+    "responsive-design",
+    "modern-controls",
+    "grid-layout",
+    "rows-columns",
+    "form-design"
+  ],
+  "description": "Complete guide to the new grid container control in Power Apps. Learn to build responsive grid layouts with defined rows and columns, create card interfaces, and design forms with precise control positioning."
+}

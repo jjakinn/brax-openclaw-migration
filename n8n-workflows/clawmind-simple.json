@@ -1,0 +1,63 @@
+{
+  "name": "ClawMind — Auto-Learning Engine",
+  "id": "clawmind-auto-v1",
+  "nodes": [
+    {
+      "id": "trigger-1",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [250, 300],
+      "parameters": {
+        "rule": {
+          "interval": [{"field": "minutes", "minutesInterval": 15}]
+        }
+      }
+    },
+    {
+      "id": "read-1",
+      "name": "Read Inbox Files",
+      "type": "n8n-nodes-base.readBinaryFiles",
+      "typeVersion": 1,
+      "position": [450, 300],
+      "parameters": {
+        "fileSelector": "=/Users/Jakin/ClawMind/inbox/*.md"
+      }
+    },
+    {
+      "id": "code-1",
+      "name": "Process Content",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [650, 300],
+      "parameters": {
+        "jsCode": "// Extract metadata from markdown\nconst results = [];\nfor (const item of $input.all()) {\n  const content = item.binary.data.toString();\n  const filename = item.binary.fileName;\n  \n  // Extract WikiLinks\n  const links = [...content.matchAll(/\\[\\[([^\\]]+)\\]\\]/g)].map(m => m[1]);\n  \n  results.push({\n    json: {\n      filename,\n      content,\n      links,\n      wordCount: content.split(/\\s+/).length\n    }\n  });\n}\nreturn results;"
+      }
+    },
+    {
+      "id": "write-1",
+      "name": "Save to Knowledge Graph",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "typeVersion": 1,
+      "position": [850, 300],
+      "parameters": {
+        "fileName": "=/Users/Jakin/ClawMind/processed/{{ $json.filename }}",
+        "data": "={{ $base64Encode($json.content) }}"
+      }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": {
+      "main": [[{"node": "Read Inbox Files", "type": "main", "index": 0}]]
+    },
+    "Read Inbox Files": {
+      "main": [[{"node": "Process Content", "type": "main", "index": 0}]]
+    },
+    "Process Content": {
+      "main": [[{"node": "Save to Knowledge Graph", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {"executionOrder": "v1"},
+  "tags": [{"name": "clawmind"}],
+  "active": false
+}

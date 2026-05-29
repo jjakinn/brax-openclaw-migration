@@ -1,0 +1,30 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "stanford-cs106a-lec3",
+  "source_url": "https://www.youtube.com/watch?v=C5HeRliZ0Ns",
+  "timestamp": "2026-03-23T17:30:00Z",
+  "status": "COMPLETE",
+  "verification": {
+    "video_duration_minutes": 50.24,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 50:24",
+    "total_events": 2974,
+    "word_count": 11184,
+    "chunks_created": 4
+  },
+  "summary": {
+    "title": "Stanford CS106A: Programming Methodology - Lecture 3",
+    "author": "Mehran Sahami (Stanford University)",
+    "domain": "coding/computer-science",
+    "key_topics": [
+      "Variables and Data Types",
+      "Conditionals",
+      "Loops",
+      "Methods and Parameters"
+    ]
+  },
+  "files_created": [
+    "corpus/by-source/stanford-cs106a-lec3/metadata.json",
+    "corpus/by-source/stanford-cs106a-lec3/chunks/chunk_001-004.txt"
+  ]
+}

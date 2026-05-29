@@ -1,0 +1,76 @@
+{
+  "source_id": "generative-ai-full-course",
+  "display_name": "Generative AI Full Course \u2013 Gemini Pro, OpenAI, Llama, Langchain, Pinecone, Vector Databases & More",
+  "author": "FreeCodeCamp / YouTube Creator",
+  "type": "course",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2024,
+    "url": "https://www.youtube.com/watch?v=mEsleV16qdo",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 59
+  },
+  "length": {
+    "pages": 0,
+    "words": 292238,
+    "duration_minutes": 1818,
+    "chunk_count": 59
+  },
+  "structure": {
+    "parts": [
+      "Introduction",
+      "LLMs",
+      "APIs",
+      "Langchain",
+      "Vector DBs",
+      "Projects"
+    ],
+    "chapters": [
+      "Introduction to Generative AI",
+      "Google Gemini Pro",
+      "OpenAI GPT Models",
+      "Meta Llama Models",
+      "Langchain Framework",
+      "Pinecone Vector Database",
+      "Vector Databases",
+      "RAG (Retrieval Augmented Generation)",
+      "Prompt Engineering",
+      "Fine-tuning Models",
+      "Building AI Applications",
+      "Deploying AI Models"
+    ]
+  },
+  "concepts_covered": [
+    "generative-ai",
+    "llm",
+    "large-language-models",
+    "gemini-pro",
+    "openai",
+    "gpt",
+    "llama",
+    "meta-ai",
+    "langchain",
+    "pinecone",
+    "vector-database",
+    "embeddings",
+    "rag",
+    "retrieval-augmented-generation",
+    "prompt-engineering",
+    "fine-tuning",
+    "transformers",
+    "api-integration",
+    "ai-applications"
+  ],
+  "domains": [
+    "ai",
+    "machine-learning",
+    "generative-ai"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/generative-ai-full-course/chunks/"
+  }
+}

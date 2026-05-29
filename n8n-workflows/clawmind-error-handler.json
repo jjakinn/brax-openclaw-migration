@@ -1,0 +1,232 @@
+{
+  "name": "ClawMind \u2014 Error Handler",
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "parameters": {},
+      "position": [
+        250,
+        300
+      ],
+      "typeVersion": 1,
+      "id": "dc62de77-751f-446b-aa5e-9a502116ee83"
+    },
+    {
+      "name": "Format Error",
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "jsCode": "const error = $input.first().json;\n\nreturn [{\n  timestamp: new Date().toISOString(),\n  workflow: error.workflow?.name || 'Unknown',\n  executionId: error.execution?.id || 'Unknown',\n  errorMessage: error.execution?.error?.message || 'No message',\n  errorDescription: error.execution?.error?.description || '',\n  failedNode: error.execution?.lastNodeExecuted || 'Unknown',\n  severity: error.execution?.error?.message?.includes('critical') ? 'CRITICAL' : 'ERROR'\n}];"
+      },
+      "position": [
+        450,
+        300
+      ],
+      "typeVersion": 1,
+      "id": "af03d2c7-8cb2-4b5c-8487-e481c78ec688"
+    },
+    {
+      "name": "Log to Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "parameters": {
+        "operation": "append",
+        "documentId": "={{ $env.CLAWMIND_LOG_SHEET_ID }}",
+        "sheetName": "Errors",
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "timestamp": "={{ $json.timestamp }}",
+            "workflow": "={{ $json.workflow }}",
+            "executionId": "={{ $json.executionId }}",
+            "failedNode": "={{ $json.failedNode }}",
+            "errorMessage": "={{ $json.errorMessage }}",
+            "severity": "={{ $json.severity }}",
+            "status": "PENDING_REVIEW"
+          }
+        }
+      },
+      "position": [
+        650,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "bc422a8c-ebb2-4569-80ec-e21d91bc8d42"
+    },
+    {
+      "name": "Critical?",
+      "type": "n8n-nodes-base.if",
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "={{ $json.severity }}",
+            "operator": {
+              "type": "string",
+              "operation": "equals"
+            },
+            "rightValue": "CRITICAL"
+          }
+        }
+      },
+      "position": [
+        650,
+        400
+      ],
+      "typeVersion": 1,
+      "id": "bd681016-2061-4e1f-8a2b-83a090513de8"
+    },
+    {
+      "name": "Send Critical Alert",
+      "type": "n8n-nodes-base.telegram",
+      "parameters": {
+        "chatId": "={{ $env.TELEGRAM_CHAT_ID }}",
+        "text": "\ud83d\udea8 CRITICAL: ClawMind workflow '{{ $json.workflow }}' failed!\\n\\nError: {{ $json.errorMessage }}\\nNode: {{ $json.failedNode }}\\nTime: {{ $json.timestamp }}\\n\\nCheck review queue immediately.",
+        "options": {}
+      },
+      "position": [
+        850,
+        400
+      ],
+      "typeVersion": 1,
+      "id": "4ed286b3-991a-48b6-8023-ade0efe4df41"
+    },
+    {
+      "name": "Send Standard Alert",
+      "type": "n8n-nodes-base.telegram",
+      "parameters": {
+        "chatId": "={{ $env.TELEGRAM_CHAT_ID }}",
+        "text": "\u26a0\ufe0f ClawMind workflow '{{ $json.workflow }}' encountered an error.\\n\\nError: {{ $json.errorMessage }}\\n\\nLogged to review queue.",
+        "options": {}
+      },
+      "position": [
+        850,
+        600
+      ],
+      "typeVersion": 1,
+      "id": "9a43b6c4-926b-4b76-86b5-936253ae7f26"
+    },
+    {
+      "name": "Retry Failed?",
+      "type": "n8n-nodes-base.if",
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "={{ $json.errorMessage }}",
+            "operator": {
+              "type": "string",
+              "operation": "contains"
+            },
+            "rightValue": "network"
+          }
+        }
+      },
+      "position": [
+        1050,
+        300
+      ],
+      "typeVersion": 1,
+      "id": "26d2c89d-e218-4cc9-9331-512f9f83ca2a"
+    },
+    {
+      "name": "Schedule Retry",
+      "type": "n8n-nodes-base.wait",
+      "parameters": {
+        "amount": 5,
+        "unit": "minutes"
+      },
+      "position": [
+        1250,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "89313e4a-89a6-455e-bc02-29f575e8054c"
+    }
+  ],
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Format Error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Error": {
+      "main": [
+        [
+          {
+            "node": "Log to Sheet",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Critical?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Critical?": {
+      "main": [
+        [
+          {
+            "node": "Send Critical Alert",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send Standard Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log to Sheet": {
+      "main": [
+        [
+          {
+            "node": "Retry Failed?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Retry Failed?": {
+      "main": [
+        [
+          {
+            "node": "Schedule Retry",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": [
+    {
+      "name": "clawmind",
+      "id": "clawmind-tag"
+    },
+    {
+      "name": "error-handling",
+      "id": "error-tag"
+    }
+  ],
+  "active": true,
+  "id": "a85a0fcf-7f19-4e4e-a15d-3a3edca49db0"
+}

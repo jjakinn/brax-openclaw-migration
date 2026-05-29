@@ -1,0 +1,220 @@
+[CS50 Flask Web Programming Lecture Transcript]
+
+[00:00 - 15:00] Introduction and HTTP Review
+
+This week is the most representative of what you'll be doing after the class if you choose to program in the future. The goal is to synthesize the past 10 weeks of class, drawing upon building blocks now in your toolbox to apply to web programming.
+
+Every day you use the web and mobile apps. Last week we covered HTML and JavaScript for layout and client-side interactivity. Today we bring back server-side components - Python and SQL - to make full-fledged web applications.
+
+Up until now when we did web work, you ran HTTP server which spawned a web server to serve static content from your folder. URLs followed patterns like file.html or folder/file.html - literally referencing files on the server.
+
+Today we generalize and talk about routes - in web programming we exercise more control over URLs. Back in the day URLs referred literally to files, but in code we can parse what comes after the domain name and use it as input to figure out what output to produce.
+
+When you search on Google for cats, what's really sent is a request for /search (not search.html) - this is a program running on Google's servers. The route is what we start programming today. The query parameter q=cats contains the input.
+
+[15:00 - 30:00] Flask Framework Introduction
+
+We could implement our own web server in C but it would be a nightmare for something as high-level as web code. Instead we use Python with Flask - a micro-framework (library + conventions) that makes web applications easier.
+
+Flask handles GET requests, POST requests, extracts key-value pairs from URLs - commodity stuff every web app does so we don't have to retrace those steps.
+
+Instead of running http-server, we run: flask run
+This looks for app.py in our current directory and if it follows Flask conventions, starts our web application on port 5000 (vs 8080 for http-server).
+
+Minimal Flask app:
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "hello, world"
+```
+
+The @app.route("/") is a Python decorator that associates this function with the root URL. When someone visits /, Flask calls index() and returns whatever it returns.
+
+[30:00 - 45:00] Templates and Jinja
+
+Returning raw strings isn't useful. We want HTML. We could return HTML strings but that's messy. Better to use templates.
+
+Flask uses Jinja templating. Create a templates/ folder and put HTML files there.
+
+```python
+from flask import render_template
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+```
+
+index.html:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head><title>hello</title></head>
+<body>hello, world</body>
+</html>
+```
+
+Templates become powerful with variable substitution:
+```html
+<body>hello, {{ name }}</body>
+```
+
+And in Python:
+```python
+@app.route("/")
+def index():
+    name = request.args.get("name", "world")
+    return render_template("index.html", name=name)
+```
+
+The {{ name }} in the template gets replaced with the value passed from Python.
+
+[45:00 - 75:00] Forms and GET vs POST
+
+HTML forms collect user input:
+```html
+<form action="/greet" method="get">
+  <input name="name" type="text">
+  <button type="submit">Greet</button>
+</form>
+```
+
+GET puts parameters in the URL (visible, bookmarkable). POST puts them in the HTTP request body (better for privacy, passwords, etc.).
+
+In Flask:
+```python
+@app.route("/greet", methods=["POST"])
+def greet():
+    name = request.form.get("name", "world")
+    return render_template("greet.html", name=name)
+```
+
+Use request.args for GET parameters, request.form for POST.
+
+Validation example:
+```python
+@app.route("/register", methods=["POST"])
+def register():
+    name = request.form.get("name")
+    sport = request.form.get("sport")
+    
+    if not name:
+        return render_template("error.html", message="Missing name")
+    if not sport:
+        return render_template("error.html", message="Missing sport")
+    if sport not in SPORTS:
+        return render_template("error.html", message="Invalid sport")
+    
+    # Valid - process registration
+```
+
+[75:00 - 105:00] Database Integration
+
+Storing data in variables is temporary (lost when server restarts). Use databases for persistence.
+
+Flask with SQLite:
+```python
+from cs50 import SQL
+db = SQL("sqlite:///frostims.db")
+
+@app.route("/register", methods=["POST"])
+def register():
+    name = request.form.get("name")
+    sport = request.form.get("sport")
+    db.execute("INSERT INTO registrants (name, sport) VALUES (?, ?)", name, sport)
+    return redirect("/registrants")
+
+@app.route("/registrants")
+def registrants():
+    rows = db.execute("SELECT * FROM registrants")
+    return render_template("registrants.html", registrants=rows)
+```
+
+The ? placeholders prevent SQL injection - never use f-strings with SQL!
+
+registrants.html:
+```html
+<table>
+  <thead><tr><th>Name</th><th>Sport</th></tr></thead>
+  <tbody>
+    {% for row in registrants %}
+    <tr><td>{{ row.name }}</td><td>{{ row.sport }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+```
+
+Jinja's {% for %} loops generate HTML for each database row.
+
+[105:00 - 120:00] Sessions and Cookies
+
+HTTP is stateless - each request is independent. Cookies maintain state between requests.
+
+When you log in, server sends Set-Cookie header with session ID. Browser stores it and sends Cookie header with each subsequent request.
+
+Flask sessions:
+```python
+from flask_session import Session
+
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
+
+@app.route("/login", methods=["POST"])
+def login():
+    session["user_id"] = request.form.get("username")
+    return redirect("/")
+
+@app.route("/logout")
+def logout():
+    session.clear()
+    return redirect("/")
+```
+
+session acts like a dictionary - store any data you want, Flask handles cookies automatically.
+
+Shopping cart example:
+```python
+@app.route("/cart", methods=["POST"])
+def add_to_cart():
+    book_id = request.form.get("id")
+    if "cart" not in session:
+        session["cart"] = []
+    session["cart"].append(book_id)
+    return redirect("/cart")
+```
+
+[120:00 - 144:00] REST APIs
+
+Instead of returning full HTML pages, APIs return raw data (usually JSON) that JavaScript can consume.
+
+```python
+from flask import jsonify
+
+@app.route("/search")
+def search():
+    q = request.args.get("q")
+    shows = db.execute("SELECT * FROM shows WHERE title LIKE ?", "%" + q + "%")
+    return jsonify(shows)
+```
+
+JavaScript fetches this data:
+```javascript
+fetch('/search?q=office')
+  .then(response => response.json())
+  .then(data => {
+    // data is an array of show objects
+    // dynamically update the page
+  });
+```
+
+This enables dynamic features like autocomplete without page reloads.
+
+MVC Pattern:
+- Model: Database (data layer)
+- View: Templates (presentation layer)  
+- Controller: Python routes (logic layer)
+
+This separation makes code maintainable and scalable.

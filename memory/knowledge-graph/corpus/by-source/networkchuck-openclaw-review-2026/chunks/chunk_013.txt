@@ -1,0 +1,44 @@
+CHUNK 13: SECURITY CONFIGURATION — TOOL PROFILES
+Source: networkchuck-openclaw-review-2026 | Timestamp: 29:30 - 37:00
+
+Oh my goodness, security with OpenClaw. I can't believe you installed OpenClaw. I'm just kidding. It's not that bad. But let's get to it right now.
+
+Okay, Open Claw Security. Need some more coffee for this. Thankfully, it's gotten a lot better than it used to be. And honestly, you're probably pretty secure right now, but we're going to double check. It was a dumpster fire to begin with, which is why we have a command like this. Run this right now. Open claw security audit. When you run that, it's going to analyze your OpenClaw instance and make sure that you're obeying security best practices. If you installed it like me, you probably only see two warnings, nothing critical, and we're probably good.
+
+You can do an open claw security audit-fix for it to autofix anything that's broken. Just be careful, it might auto break things as well.
+
+Now, the big thing you want to look for is to make sure that your web UI is unexposed to the internet. Yes, you have a web UI. No, I haven't shown it to you. If you do want to access your web UI, I'll have a walkthrough in the description below.
+
+>> Actually, I did record something on the web UI. It's right here. To quickly test that, you can go to your public IP address and go to port 18789. If you can't access it, that means no one else can either because normally when you install OpenClaw, now it's tied to your loop back address of 127.0.0.1.
+
+And all that means is that no one from the outside can access your open clause stuff. Only things directly on your host. But to allow that, we can do what's called an SSH tunnel.
+
+---
+
+Speaking of your host, we have to make sure that no one can access any other ports on your host. Is your firewall even enabled? Probably not. Let's do that right now with this command. This command is going to enable your firewall and allow port 22 or SSH, which is how we're connecting to it with this terminal right now. We want everything else blocked except for the things that we need.
+
+Now, watch when I do this. I instantly lose access to the web servers that we built because it's blocking down everything. Let's allow that real quick actually because I still want to see my stuff. I'm going to allow port 8787. Actually, you know what? I'm going to have Terry do it. Now, what's cool is that I need to approve this. I'll allow it. and he did it.
+
+---
+
+>> Actually, that's not cool. Having to approve everything all the time. It kind of sucks. It is a security thing. Let me show you how to fix that right now. Let me show you how to make that happen and show you a bit of the confusing world of OpenClaw security configuration.
+
+Now, I want you to run this one command in your terminal. OpenClaw config get tools profile. Now, right now, mine says full and yours probably doesn't. It probably says coding. Why? because I got really miffed and upset with the process halfway through this recording and I changed mine. Now, what does this mean?
+
+It means if it's full, my open call agent can see every tool on the system and it's available to it. It knows about it. Coding is limited and it can do things like read and write files, run terminal commands, but browsing and doing web search and any other tool that might be available, it like it can't see.
+
+---
+
+KEY POINTS:
+- Security audit: `openclaw security audit` + `openclaw security audit-fix`
+- Critical: Web UI should NOT be exposed to internet
+- Default: Web UI bound to 127.0.0.1 (localhost only)
+- Access via SSH tunnel, not public IP
+- Firewall hardening: Enable UFW, allow only SSH (port 22)
+- Approval workflow: Agent asks before executing (can be disabled)
+- Tool Profiles:
+  - `coding` — Limited: files, terminal, no browsing/search
+  - `full` — Agent sees ALL tools
+- Check: `openclaw config get tools.profile`
+- Change: `openclaw config set tools.profile full`
+- Restart gateway after changes: `openclaw gateway restart`

@@ -1,0 +1,33 @@
+CHUNK 3: OLD VS NEW APPROACH
+Source: powerapps-confirm-function-raza | Timestamp: 02:30 - 04:00
+
+Here is an example of an app where I'm allowing the user to delete items and when the user clicks on the delete icon, I was opening this dialogue experience.
+
+This was back in the day when we did not have the confirm function.
+
+So what makers end up doing are things like these. I created a container. This container its background color. I create this effect so the user understands that the background is now disabled.
+
+Then I have my container which looks like that popup dialogue in which I have an icon to close this my text my buttons
+
+I have to write additional logic when the icon is clicked I set a variable so I close this dialogue which also means I'm using that variable on the visible property of the dialogue
+
+---
+
+every user who needs a dialogue like experience would build their own version using different logic. You may build a component for that and try and distribute it to all your makers. The bottom line there is work involved to do that.
+
+Now with the confirm function, everyone will be able to create a consistent dialog like experience.
+
+Please note we only have two options for buttons. The text you can decide.
+
+---
+
+KEY POINTS:
+- Old approach complexity:
+  - Container with semi-transparent background
+  - Popup container with controls (icon, text, buttons)
+  - Variables for visibility logic
+  - Each maker builds different version
+  - Component distribution challenges
+- New approach: One function call = consistent dialog
+- Limitation: Only TWO button options (but customizable text)
+- Benefit: Standardized UX across organization

@@ -1,0 +1,21 @@
+CHUNK 1/3
+
+[00:00 - 03:30]
+
+Hello everyone, Raza here. In this video, we will take a first look at code apps, which is a new way for developers to bring Power Apps capabilities into web apps built with idees like Visual Studio Code. These React-based apps can take advantage of the 1500 plus connectors in the Power Platform ecosystem, manage platform capabilities, and with one click deploy these web apps as code apps in Power Platform. So let's begin.
+
+Power Apps empowers developers of all skill sets, including developers building web apps in idees like Visual Studio Code to efficiently build and run applications on a managed platform, the Power Platform.
+
+The benefit all the power apps capabilities are available to code apps including out ofthe-box Microsoft entra authentication authorization access to 1500 plus power platform connectors which can be directly called from JavaScript. Devs get full control over the UI and logic. Any dev with a command line can publish and host their line of business applications in Power Platform.
+
+Let's begin with code apps. In GitHub, we have the Power Apps code apps repo which is packed with information about code apps, how to create your first app, how to connect to data sources like data versse, SQL, SharePoint, use custom connectors and more.
+
+Prerequisites code apps requires several dev tools like Visual Studio Code, Git.NET, Node.js, and npm to be available on the command line. We will need the Power Apps CLI. Visual Studio Code has the extension for Power Platform tools.
+
+So, let's begin with creating a code app from scratch in Visual Studio Code.
+
+Start a new terminal. I already have a folder in my C drive called code apps. We'll use node package manager and vit to create my first code app. Vit is a modern front-end build tool that's designed to make web development faster. Hit enter.
+
+My package, I'll call it my first code app. My project is ready. Let me go ahead select that folder and load it in Visual Studio Code. Start a new terminal. npm install. Install the node type definitions. The vit config typescript file. I'll update. All of this is in the documentation. Now, npm rundev. This will run locally.
+
+Let's click. And here is my main source file from my apps root folder. This is my TypeScript React component file that's running on my local host. Ctrl C to stop the local server.

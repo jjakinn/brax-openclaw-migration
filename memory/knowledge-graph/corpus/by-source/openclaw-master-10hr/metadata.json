@@ -1,0 +1,17 @@
+{
+  "source_id": "openclaw-master-10hr",
+  "display_name": "Master OpenClaw in 10 Hours (Mani Kanasani)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 64333,
+    "total_chunks": 22,
+    "chunks_processed": 22
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

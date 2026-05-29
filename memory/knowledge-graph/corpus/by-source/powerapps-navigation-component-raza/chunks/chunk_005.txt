@@ -1,0 +1,39 @@
+CHUNK 5: CREATING THE COMPONENT
+Source: powerapps-navigation-component-raza | Timestamp: 06:00 - 07:30
+
+Under tree view, I'll head over to components and create a new component.
+
+Let's first rename this. We'll call it `navComponent`.
+
+The width for this component currently is set at 640. I'll set it to 300.
+
+We will make this responsive and the adjustments will be made in the screens using the responsive containers in which we will be dropping this nav component once we build it out.
+
+---
+
+In the nav component at the top I'll put an image of the current logged in user name maybe show some profile information of that user.
+
+Here you could also show a logo of your app, the title of your app and more. You have full flexibility to design your own component.
+
+---
+
+I'll insert an image. This image the place on the top left. The width, the height, and the border radius I'll set as 60. That will create a perfectly rounded image.
+
+The image property of this image control, we'll set it to `User().Image`. So it will put the current logged in user's image.
+
+---
+
+Next, we'll insert a couple of text controls. Position them right next to the image.
+
+The first one, the text property, I'll set to `User().FullName`. So that puts the current logged in user's name.
+
+---
+
+KEY POINTS:
+- Component creation: Tree view → Components → New
+- Component name: `navComponent`
+- Width: 300 (responsive adjustments in screen containers)
+- User profile section:
+  - Image: `User().Image`, border radius 60 (circular)
+  - Name: `User().FullName`
+- Customization options: Logo, app title, etc.

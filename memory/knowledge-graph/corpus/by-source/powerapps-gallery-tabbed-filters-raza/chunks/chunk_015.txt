@@ -1,0 +1,55 @@
+CHUNK 15: PERSON IMAGE AND PRIORITY ICONS
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 15:00 - 16:30
+
+Assigned to, right next to it, I want to show the image of the person.
+
+---
+
+Insert an image. I'll place the image right next to the name.
+
+---
+
+Image property of the image control will be `ThisItem.'Assigned To'.Picture`.
+
+---
+
+And to make this a rounded image, the image control's height, width, and border radius is exactly the same. And there we have a perfectly rounded image.
+
+---
+
+For the priority, I want to show an icon depending upon the priority value. These icons, I'll upload in my app as images.
+
+---
+
+I'll go to media and upload some images.
+
+---
+
+Back to my gallery item, I'll insert another image control. Position it right next to the priority.
+
+---
+
+For the image property, I'll use the formula:
+
+```
+Switch(
+  ThisItem.Priority.Value,
+  "Critical", Critical,
+  "High", High,
+  "Low", Low,
+  "Medium", Medium
+)
+```
+
+---
+
+If the priority is critical, then you pick the image Critical. That's the name of my image. If high, you pick the image High. Low, Low. Medium, Medium. Those are my four priority values.
+
+---
+
+KEY POINTS:
+- Person image: `ThisItem.'Assigned To'.Picture`
+- Rounded image: Height = Width = BorderRadius
+- Priority icons: Uploaded images
+- Switch function: Map priority values to images
+- Pattern: `Switch(Value, Case1, Result1, Case2, Result2, ...)`

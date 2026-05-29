@@ -1,0 +1,38 @@
+CHUNK 12: DATA FLOW IMPORT WITH POWER QUERY
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 14:30 - 16:00
+
+Once the keys are active, we are now ready to import our data into the product table.
+
+---
+
+I'll go to import, import data with data flows.
+
+---
+
+My data source: Excel. I'll upload the file. The file is being uploaded. I'll sign in using my M365 account. Signed in. Next.
+
+---
+
+This will list out all the tables and sheets within the Excel workbook. I'll pick my inventory table. I'll click next.
+
+---
+
+This is Power Query. Here I have the power to transform the data prior to importing if needed. I'll go ahead and say next.
+
+---
+
+This is where I can decide where I would like to load this data to. Load to a new table or in my case load to an existing table.
+
+---
+
+The publisher prefix for my solution was Contoso. So all those tables will have the prefix Contoso. I would like to import it into my product table. Here it is "Contoso product". So I'll select this.
+
+---
+
+KEY POINTS:
+- Import method: Data flows
+- Data source: Excel
+- Authentication: M365 account
+- Power Query: Transform data before import
+- Target: Existing table (Contoso product)
+- Publisher prefix: Applied to table names

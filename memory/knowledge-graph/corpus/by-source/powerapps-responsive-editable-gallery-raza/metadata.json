@@ -1,0 +1,25 @@
+{
+  "id": "powerapps-responsive-editable-gallery-raza",
+  "title": "Power Apps Responsive Editable Gallery - Horizontal & Vertical Scroll",
+  "url": "https://www.youtube.com/watch?v=i2ah2PQV4RI",
+  "platform": "YouTube",
+  "duration": "24 min",
+  "duration_seconds": 1440,
+  "word_count": 2850,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "powerapps-gallery",
+    "responsive-design",
+    "horizontal-scroll",
+    "vertical-scroll",
+    "editable-grid",
+    "crud-operations",
+    "modern-controls",
+    "dataverse"
+  ],
+  "description": "Build a fully responsive Power App with an editable gallery featuring both horizontal and vertical scrolling. Learn to create table-like experiences with CRUD operations, dynamic headers, and responsive container layouts."
+}

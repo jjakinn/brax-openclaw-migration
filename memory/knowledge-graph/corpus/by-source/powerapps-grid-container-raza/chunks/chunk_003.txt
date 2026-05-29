@@ -1,0 +1,34 @@
+CHUNK 3: GRID LAYOUT PROPERTIES
+Source: powerapps-grid-container-raza | Timestamp: 02:00 - 03:30
+
+The grid container allows us to hold a set of controls that will be laid out in a grid-like pattern. Grid contains rows and columns.
+
+For my grid container: The number of columns is 4. The number of rows is 2.
+
+---
+
+Let's start adding controls within this. I'll add a button control. I'll copy this button control and start adding more controls in the container.
+
+---
+
+Observe as I add controls in the grid container, the controls are being added in 4 columns and 2 rows.
+
+As I start adding more buttons, you can see how they are laid out in the 4 column and 2 row grid format.
+
+---
+
+Now, let's change this up. Two columns and 2 rows, so it can show 4 controls. So, it's only showing the first 4 buttons.
+
+---
+
+Let's change it to 2 columns and 4 rows. Now the grid layout changes the controls - in this case the buttons - within the grid container.
+
+---
+
+KEY POINTS:
+- Grid properties:
+  - `Columns`: Number of columns (default 4)
+  - `Rows`: Number of rows (default 2)
+- Controls auto-layout in grid cells
+- Changing rows/columns repositions controls
+- Extra controls hidden if grid is full

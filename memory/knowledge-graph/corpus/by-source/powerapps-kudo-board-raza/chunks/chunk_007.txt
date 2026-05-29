@@ -1,0 +1,28 @@
+CHUNK 7: TECHNICAL ARCHITECTURE - GEN PAGE AND MODEL-DRIVEN APP
+Source: powerapps-kudo-board-raza | Timestamp: 04:00 - 04:45
+
+The Kudo board app is actually a gen page that was set up in a model driven power app.
+
+---
+
+Where is the navigation for the app? Well, in the URL, I added this token to remove the navigation.
+
+---
+
+Let's remove this. Here is the model driven app.
+
+---
+
+Now, in this the same Kudo board design, I have added different variations. These are simply different styles.
+
+---
+
+The data is being saved in my backend data source which in this case is Microsoft Dataverse.
+
+---
+
+KEY POINTS:
+- App type: Generative page in model-driven app
+- URL parameter: Token to hide navigation (`&flags=...`)
+- Variations: Different style versions of same board
+- Data source: Microsoft Dataverse

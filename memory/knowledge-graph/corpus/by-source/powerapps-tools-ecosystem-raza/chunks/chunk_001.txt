@@ -1,0 +1,30 @@
+CHUNK 1: INTRODUCTION - POWER APPS ECOSYSTEM OVERVIEW
+Source: powerapps-tools-ecosystem-raza | Timestamp: 00:00 - 01:00
+
+Hello everyone, Raza here. In this video, I will show you a range of tools that are available for app creation in Power Platform.
+
+Power Apps now spans the entire ecosystem of no code, low code, vibe code, and pro code. So, let's check this video out in action.
+
+---
+
+A range of tools for app creation from no code to low code to vibe coding to pro code. The Power Apps ecosystem spans this entire range.
+
+---
+
+For information workers, we have the app builder agent directly available inside M365 Copilot.
+
+For makers, we have the Power App Studio experience. You can build canvas apps and model-driven apps.
+
+For makers and developers, we have vibe coding options through the new Power Apps endpoint: vibe.powerapps.com.
+
+For developers, we have the pro code experience which is available through powerapps.codeapps.
+
+---
+
+KEY POINTS:
+- Power Apps ecosystem spans: No-code → Low-code → Vibe-code → Pro-code
+- Four target audiences:
+  1. Information workers: App Builder Agent in M365 Copilot
+  2. Makers: Power Apps Studio (Canvas + Model-driven)
+  3. Makers & Developers: Vibe coding (vibe.powerapps.com)
+  4. Developers: Pro code (Code Apps)

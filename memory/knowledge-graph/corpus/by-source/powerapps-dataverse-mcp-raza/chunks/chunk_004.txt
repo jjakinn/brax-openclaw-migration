@@ -1,0 +1,30 @@
+CHUNK 4: DATAVERSE AS MCP SERVER - CONFIGURATION
+Source: powerapps-dataverse-mcp-raza | Timestamp: 03:00 - 04:30
+
+Our focus will be to connect to Dataverse with MCP.
+
+The best part: we don't have to build an MCP server for that. Microsoft has built one for us.
+
+Microsoft Dataverse can act as an MCP server providing intelligent access to its underlying tables and records to various MCP clients like Copilot Studio, Visual Studio Code, Claude Desktop and more.
+
+---
+
+To use Dataverse as an MCP server, there is a little bit of configuration involved.
+
+In Power Platform for my environment under the environment setting features:
+
+One of the features is "Dataverse Model Context Protocol" — ON by default. This allows MCP clients to interact with the Dataverse MCP server.
+
+---
+
+There is an MCP client allow list wherein the admins can define which clients can call the MCP server.
+
+---
+
+KEY POINTS:
+- Dataverse = MCP server (built by Microsoft)
+- Provides: Intelligent access to tables and records
+- MCP clients: Copilot Studio, VS Code, Claude Desktop, etc.
+- Configuration location: Environment settings → Features
+- Setting: "Dataverse Model Context Protocol" = ON (default)
+- Security: MCP client allow list for admin control

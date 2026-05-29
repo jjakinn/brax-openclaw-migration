@@ -1,0 +1,29 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "stanford-cs106a-lec6",
+  "source_url": "https://www.youtube.com/watch?v=GPWah4wbwYs",
+  "timestamp": "2026-03-23T17:43:00Z",
+  "status": "COMPLETE",
+  "verification": {
+    "video_duration_minutes": 45.76,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 45:46",
+    "total_events": 2636,
+    "word_count": 10053,
+    "chunks_created": 3
+  },
+  "summary": {
+    "title": "Stanford CS106A: Programming Methodology - Lecture 6",
+    "author": "Mehran Sahami (Stanford University)",
+    "domain": "coding/computer-science",
+    "key_topics": [
+      "Advanced Methods",
+      "Stepwise Refinement",
+      "Top-Down Design"
+    ]
+  },
+  "files_created": [
+    "corpus/by-source/stanford-cs106a-lec6/metadata.json",
+    "corpus/by-source/stanford-cs106a-lec6/chunks/chunk_001-003.txt"
+  ]
+}

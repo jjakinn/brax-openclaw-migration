@@ -1,0 +1,46 @@
+CHUNK 4: GALLERY STYLING AND ADDING CONTROLS
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 03:30 - 06:00
+
+Now I'll select the gallery. The gallery has a template size property. I will set this as 40. Meaning every row of data that it will show will have a height of 40.
+
+The gallery also has some template padding. This is set to five. I'll change this to zero to remove any padding.
+
+The container drop shadow I'll set to none.
+
+---
+
+Now in this container I'll start adding my controls.
+
+First I'll show the item ID. It's a read only field. So I'll use a text control. Select the container. Insert the modern text control.
+
+The text property for this will be thisItem.[column]. I see all the columns. Since my gallery is connected to my inventory table, I'll pick item ID.
+
+---
+
+Next, item name. This I want to allow the user to change. Select the container. Insert a text input control.
+
+The value property for this: thisItem.itemName
+
+---
+
+Category is a choice column. With my container selected, I will insert the modern combo box control.
+
+Its items property will be choices of my choice column categories. In my case, it's called category choices. That's the enum. So, I'll select that.
+
+This will list out all those category choices.
+
+---
+
+And the default selected items property of this combo box will be it's an array within the array: thisItem.category
+
+---
+
+KEY POINTS:
+- Gallery template size: 40 (row height)
+- Gallery template padding: 0
+- Container drop shadow: None
+- Control types by data type:
+  - Read-only text: Modern text control
+  - Editable text: Text input control
+  - Choice column: Modern combo box with `Choices([@Table].Column)`
+- Default selected items: `thisItem.Column` (wrapped in array for combo box)

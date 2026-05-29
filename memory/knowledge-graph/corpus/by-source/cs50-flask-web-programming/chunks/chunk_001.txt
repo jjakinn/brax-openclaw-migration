@@ -1,0 +1,9 @@
+# Chunk 001: Introduction to Web Programming
+
+This week synthesizes past 10 weeks to apply concepts to web programming. We use HTML/JavaScript for layout/interactivity and bring back Python/SQL for server-side components.
+
+HTTP servers traditionally serve static files. URLs like file.html referenced literal files. Today we generalize to routes - parsing URL paths to determine output dynamically.
+
+Example: Google search sends request to /search (program, not file) with query parameter q=cats.
+
+Key concept: Routes are programs running on servers that generate dynamic content based on input parameters.

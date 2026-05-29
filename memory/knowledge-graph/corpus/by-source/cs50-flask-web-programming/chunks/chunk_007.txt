@@ -1,0 +1,28 @@
+# Chunk 007: Database DELETE Operations
+
+Removing data with DELETE statements:
+```python
+@app.route("/deregister", methods=["POST"])
+def deregister():
+    id = request.form.get("id")
+    if id:
+        db.execute("DELETE FROM registrants WHERE id = ?", id)
+    return redirect("/registrants")
+```
+
+Use POST for destructive operations (not GET) to prevent accidental data loss from clicked links.
+
+Hidden form fields store IDs:
+```html
+<form action="/deregister" method="post">
+  <input type="hidden" name="id" value="{{ row.id }}">
+  <button type="submit">Deregister</button>
+</form>
+```
+
+Why POST not GET for delete? GET requests can be triggered by:
+- Clicking links
+- Browser prefetching
+- Search engine crawlers
+
+POST requires explicit form submission, adding safety layer.

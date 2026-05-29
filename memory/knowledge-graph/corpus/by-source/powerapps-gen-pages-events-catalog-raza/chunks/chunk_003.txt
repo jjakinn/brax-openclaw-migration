@@ -1,0 +1,35 @@
+CHUNK 3/3
+
+[07:30 - 11:00]
+
+Back to tables in data versse, I'll go and create a new table and I'll pick the option create a virtual table.
+
+A virtual table is one where the data lives in your data source and you can see there are various options here SharePoint, SQL, Snowflake and more. In data versse, it will create the schema. It will query your underlying data source to bring the data.
+
+So let's try it with SharePoint. I'll pick my SharePoint connection and click next. Put my SharePoint site URL. Select my SharePoint site. Next. And here is my product catalog list. I'll say next.
+
+This now brings me to the configuration screen. Here I can update the name of the table that it would be creating in data versse. Goes ahead and maps out my different columns from my SharePoint list. I'll keep the mapping as is. Next. Finish.
+
+Now it starts creating my virtual table schema in datav the actual data in sharepoint plus I will be able to perform full cred operations it creates my virtual table and you can see it's bringing in the data from my shareepoint list.
+
+Now let's go ahead and build an app. I'm I'm calling the small driven app product catalog app. I'll click create and the magic begins where it will create an app based upon the data model of my virtual table.
+
+I am here to build a gen page that can display my product catalog. Here is an inspiration of a design and I would like to build my product catalog in this style.
+
+Let's add a page. Let's describe the page. Let's give some context. I'll add that design. I've said build me a page based on the attached catalog design. Data context will come from. I'll add the table. Here is my virtual table called product catalog. I'll click generate.
+
+And the gen page has tried to build me a page similar to the design I shared but based on the data context that I provided which is data coming from my virtual table product catalog connected to a SharePoint list.
+
+Here it lists out all the products from my SharePoint list and it shows data for all the categories. On the left, I have the option to filter based on a particular category. The category I selected, electronics. Let's also pick automotive. Show me data in this specific price range.
+
+I can also add a product. I can click on more details to see the full details about that product. I can also select and edit an existing product. All of this create, read, update, delete actions will be against my data source. In this case, SharePoint list in my SharePoint site.
+
+I create a page. I'll call it product catalog. Here I can add a web part. The Microsoft Power Apps one only allows canvas apps for model driven. If I go to embed, I can add embed code. Here I need to add the iframe code. I'll add the code as follows.
+
+Iframe source equal to the URL of my model driven app with height. Now notice when I do this, it says embedding content from this website isn't allowed. That's because we need to add this URL to the list of sites that are allowed.
+
+I'll go to the settings gear site information view all site settings HTML field security in the allowed iframes from this domain. I'll put that URL add. Here it is in the allowed list. Okay, done.
+
+Go back to my product catalog page. This time when I put that iframe code, it works. I'll publish. Here is my model driven app gen page, which is that product catalog page inside a SharePoint page.
+
+If you enjoyed this video then do like, comment and subscribe to my YouTube channel and thank you so much for watching.

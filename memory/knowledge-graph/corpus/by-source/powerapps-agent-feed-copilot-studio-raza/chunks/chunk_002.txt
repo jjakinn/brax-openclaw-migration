@@ -1,0 +1,35 @@
+CHUNK 2/4
+
+[03:15 - 06:30]
+
+And let's create the claim evaluation agent.
+
+My agent has been set up. My claim table has been added as knowledge. The agent is using generative orchestration.
+
+So let's provide it the instructions. You are responsible for reviewing employee reimbursement claims and assigning a claim status of approved or rejected.
+
+Approve the claim if the amount is less than 500, the item or service directly supports physical or mental health and it is not office equipment.
+
+reject the claim if it is $500 or more. These are my company guidelines.
+
+Now, in order for the agent to approve or reject, we need to give it the tool to take this action.
+
+For that, under tools, let's go and add a tool. My table is in data, the agent will be updating the status of the claim.
+
+Update a row in selected environment. It creates the connection using my account. I'll click add and configure.
+
+The name I'll call it review the claim. Description review the claim based on company guidelines. The tool is using my connection.
+
+Here I'll use the maker provided credentials for the agent to perform the action environment. I'll pick custom value. Choose an environment. I'll pick the current environment we are in.
+
+Table name, custom value. I'll search for claim. Here is my claims table.
+
+Row ID. This we will let AI dynamically fill. We'll go to add input and pick claim status. Notice the data type is number.
+
+Claim status is a choice column. This is the concept of option sets in data versse. You can think about these as key value pairs. The number correlates to the value.
+
+So for claim status, we will want the agent to dynamically fill it in. However, let's go to customize and give it a description so the agent can use this information to put the correct number value.
+
+If approved, put I'll copy the value for approved and place it right here. If rejected, put the following number. Done. I'll click save.
+
+I'll go back to overview. My tool is ready. Let's edit the instructions. I will say use, put a slash, and I can pick my tool called review the claim. I'll click save. I'm asking the agent to use this tool to perform the action.

@@ -1,0 +1,21 @@
+CHUNK 3: INSTALLATION & AI MODEL CONFIGURATION
+Source: networkchuck-openclaw-review-2026 | Timestamp: 03:20 - 05:00
+
+Now time to install OpenClaw. This is the easy part. Now documentation does change. So we're going to go straight to the source. OpenClaw.AI. Scroll through all the lies. I'm just kidding. Until we see this oneliner to install it. Copy that. Get back to your terminal. Paste that oneline command. And that's pretty much it. Enter. And relax.
+
+And it's done. Now scroll right past that security warning. And we don't care about that right now. We'll talk about it later. Don't worry. Hit yes, I understand. Let's do a quick start. And we're hit with our first option. Which AI model are we going to use? Because guess what? You may not have known this, but Open Claw is not itself an AI. It's a harness. It's a layer sitting on top of other AI.
+
+So, right now, we're going to choose what brain it has. Now, I love this because this is the open part of Open Claw. It doesn't care what you choose. You can even go local models. Olama is even now officially supported, but you're going to have a better time with OpenAI or Anthropic. I would choose OpenAI because Peter works there. Anthropic is kind of being a jerk right now, but I still love them.
+
+Now, what's really great about this is you can either go API key, which is pay as you go, or if you already pay for chat GBT Pro or anything higher than that, use that. Use your subscription you already have. So, select that first option and you got to do this weird off thing. So, we're going to grab this URL, copy that, open up your web browser, paste that URL in, log into your chatbt account, then don't let that message scare you. Just grab your URL, copy that from your URL bar, get back to your terminal, paste that in there, the redirect URL, the one you just copied, hit enter, go with the default model, 5.4. Can't beat it.
+
+---
+
+KEY POINTS:
+- Install: One-liner from openclaw.ai
+- OpenClaw is NOT an AI — it's a harness/layer on top of other AIs
+- Model options: OpenAI, Anthropic, or local (Ollama officially supported)
+- Recommendation: OpenAI (creator works there) or Anthropic
+- Billing: API key (pay-as-you-go) OR use existing ChatGPT Pro subscription
+- Auth flow: OAuth redirect URL copy/paste
+- Default model: 5.4

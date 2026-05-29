@@ -1,0 +1,35 @@
+{
+  "version": "2.0",
+  "description": "Knowledge Prerequisites - What you need to know before what",
+  "chains": {
+    "coding": {
+      "basics": [],
+      "data-structures": ["basics"],
+      "algorithms": ["data-structures"],
+      "advanced-algorithms": ["algorithms"],
+      "system-design": ["algorithms", "databases"]
+    },
+    "powerapps": {
+      "intro": [],
+      "formulas": ["intro"],
+      "connectors": ["intro"],
+      "advanced-patterns": ["formulas", "connectors"]
+    },
+    "consciousness": {
+      "foundations": [],
+      "philosophy-of-mind": ["foundations"],
+      "neuroscience": ["foundations"],
+      "mystical-traditions": ["foundations"],
+      "quantum-consciousness": ["philosophy-of-mind", "neuroscience"]
+    }
+  },
+  
+  "source_prerequisites": {
+    "index_format": {
+      "source_id": "source-id-here",
+      "requires_sources": ["prereq-source-1"],
+      "requires_concepts": ["concept-1", "concept-2"],
+      "difficulty": "beginner|intermediate|advanced"
+    }
+  }
+}

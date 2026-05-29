@@ -1,0 +1,89 @@
+{
+  "concept_id": "powerapps-model-driven-modern",
+  "concept_name": "Modern Model-Driven Power Apps Development",
+  "domain": "Power Platform",
+  "subdomain": "Model-Driven Apps",
+  "description": "AI-assisted approach to building model-driven Power Apps using Copilot for data modeling, Plan Designer for app generation, and Generative Pages for custom React-based UI experiences within model-driven apps.",
+  "source": "powerapps-model-driven-modern-raza",
+  "source_title": "How to build Model-Driven Power Apps the Modern Way",
+  "instructor": "Resza",
+  "date_indexed": "2026-03-31",
+  "key_topics": [
+    {
+      "topic": "Model-Driven App Fundamentals",
+      "description": "App components (forms, views, dashboards) connected to Dataverse tables",
+      "critical_requirement": "Data model in Dataverse is mandatory"
+    },
+    {
+      "topic": "Copilot Data Modeling",
+      "description": "Natural language description of tables generates complete data model with relationships",
+      "example": "I need tables for tracking products and product related feedback"
+    },
+    {
+      "topic": "Plan Designer Workflow",
+      "description": "AI agent suite that converts business problems into complete solutions",
+      "agents": [
+        "Requirements Agent - frames business requirements",
+        "Process Agent - creates process diagrams",
+        "Data Model Agent - designs Dataverse tables",
+        "Solution Agent - recommends applications"
+      ]
+    },
+    {
+      "topic": "In-App Agents",
+      "description": "Natural language interaction with data within the app",
+      "types": [
+        "Data Exploration Agent - natural language queries",
+        "Data Visualization Agent - automatic chart generation"
+      ],
+      "example": "Show me all the high priority projects"
+    },
+    {
+      "topic": "Generative Pages",
+      "description": "Custom React-based pages within model-driven apps",
+      "use_cases": [
+        "Tasks assigned to current user",
+        "Task board with swim lanes",
+        "Calendar view with color-coding",
+        "Project dashboards with metrics"
+      ],
+      "benefits": [
+        "No JavaScript or PCF controls needed",
+        "React code auto-generated from description",
+        "Editable code for pro-developers"
+      ]
+    },
+    {
+      "topic": "Table Relationships",
+      "description": "Automatic relationship creation via lookup columns",
+      "relationship_type": "Many-to-one via lookup columns"
+    }
+  ],
+  "prerequisites": [
+    "powerapps-basics",
+    "dataverse-fundamentals"
+  ],
+  "related_concepts": [
+    "powerapps-vibe-coding",
+    "dataverse-mcp",
+    "plan-designer",
+    "powerapps-ecosystem"
+  ],
+  "workflow_summary": {
+    "step_1": "Describe business problem to Plan Designer",
+    "step_2": "AI agents generate requirements, processes, data model",
+    "step_3": "Dataverse tables auto-created with relationships",
+    "step_4": "Model-driven app generated with views/forms",
+    "step_5": "Optional: Add generative pages for custom UI",
+    "step_6": "Optional: Enable in-app agents for natural language queries"
+  },
+  "terminology": {
+    "model-driven-app": "Power Apps approach using Dataverse tables with auto-generated forms/views",
+    "dataverse": "Microsoft's cloud database service for Power Platform",
+    "generative-pages": "AI-generated React pages within model-driven apps",
+    "plan-designer": "AI-powered tool for creating apps from business descriptions",
+    "lookup-column": "Column type that creates relationships between tables",
+    "in-app-agents": "AI assistants embedded within Power Apps for user interaction",
+    "swim-lanes": "Visual lanes in task boards representing different statuses"
+  }
+}

@@ -1,0 +1,18 @@
+# Chunk 011: MVC Architecture
+
+MVC (Model-View-Controller) separates concerns:
+
+- **Model:** Database - data layer (frostims.db)
+- **View:** Templates - presentation layer (HTML files)
+- **Controller:** Python routes - logic layer (app.py)
+
+Controller handles requests, queries Model, renders View:
+```python
+@app.route("/registrants")  # Controller
+
+def registrants():
+    rows = db.execute("SELECT * FROM registrants")  # Model
+    return render_template("registrants.html", registrants=rows)  # View
+```
+
+Separation makes code maintainable, testable, and scalable.

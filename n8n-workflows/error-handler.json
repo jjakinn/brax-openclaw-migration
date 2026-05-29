@@ -1,0 +1,81 @@
+{
+  "name": "Claw Agent — Error Handler",
+  "nodes": [
+    {
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "parameters": {},
+      "position": [250, 300]
+    },
+    {
+      "name": "Format Error",
+      "type": "n8n-nodes-base.set",
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "errorMessage",
+              "value": "={{ $json.execution.error.message }}"
+            },
+            {
+              "name": "workflowName",
+              "value": "={{ $json.workflow.name }}"
+            },
+            {
+              "name": "timestamp",
+              "value": "={{ $json.execution.startedAt }}"
+            }
+          ]
+        }
+      },
+      "position": [450, 300]
+    },
+    {
+      "name": "Log to Review Queue",
+      "type": "n8n-nodes-base.googleSheets",
+      "parameters": {
+        "operation": "append",
+        "documentId": "={{ $env.REVIEW_QUEUE_SHEET_ID }}",
+        "sheetName": "Errors",
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "timestamp": "={{ $json.timestamp }}",
+            "workflow": "={{ $json.workflowName }}",
+            "error": "={{ $json.errorMessage }}",
+            "status": "PENDING_REVIEW",
+            "reviewedBy": "",
+            "resolution": ""
+          }
+        }
+      },
+      "position": [650, 300]
+    },
+    {
+      "name": "Send Alert",
+      "type": "n8n-nodes-base.telegram",
+      "parameters": {
+        "chatId": "={{ $env.TELEGRAM_CHAT_ID }}",
+        "text": "🚨 Workflow failed: {{ $json.workflowName }}\nError: {{ $json.errorMessage }}\nAdded to review queue."
+      },
+      "position": [850, 300]
+    }
+  ],
+  "connections": {
+    "Error Trigger": {
+      "main": [[{"node": "Format Error", "type": "main", "index": 0}]]
+    },
+    "Format Error": {
+      "main": [
+        [{"node": "Log to Review Queue", "type": "main", "index": 0}]
+      ]
+    },
+    "Log to Review Queue": {
+      "main": [[{"node": "Send Alert", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": true
+}

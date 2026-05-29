@@ -1,0 +1,37 @@
+CHUNK 9: ADDING DATA & ORDER ITEMS
+Source: powerapps-vibe-coding-raza | Timestamp: 19:00 - 22:00
+
+Also note, we do have a stop button added to the chat so you can cancel response generation at any time to avoid any unnecessary waiting.
+
+Let's add some more data. So I'll say add 10 more rows of data in products table and orders table. The agent can do that as well.
+
+And let's see that live in action. I'll head over to the app experience. Go to products. Done. There were five earlier. Now there are 15. Similar for orders.
+
+This proves that the information is coming from my connected tables.
+
+---
+
+Now for an order I can view its details, can edit an order. But what about the order items? Show order items and allow user to add multiple items to an order.
+
+I am constantly working with the agent. It is important to evaluate the updates that are being made to ensure that the functionality is in lines with what you need. In case the output is not as per your desired outcome, you can always ask the agent to undo. For example, undo the previous action. I have had very successful results with that.
+
+The agent has gone made the updates. It's also sharing what are the new features that it has added for me.
+
+---
+
+Let's look at the app. Go to orders. Now for an order, I can view the details. Notice it shows the order items as well. And I can add new items. This coming from my products table. How cool is that?
+
+---
+
+There's another new feature, next best actions. The agents proactively guide you through the app building journey by surfacing intelligent context-aware recommendations at the right moment because my last context was around order items. It's giving me some additional suggestions like add order items bulk import feature or add item quantities inline editing in orders itself. So I can select that and the agent will make those updates.
+
+---
+
+KEY POINTS:
+- Agent can add sample data: "Add 10 more rows to products/orders table"
+- New feature: Order items (line items) management
+- Undo capability: "Undo the previous action" if output not desired
+- Order items feature: View details + Add items from products table
+- **Next Best Actions**: Agent proactively suggests improvements
+- Context-aware recommendations based on recent work
+- Example suggestions: Bulk import, inline quantity editing

@@ -1,0 +1,30 @@
+CHUNK 12: POWER APPS MCP CLIENT CONFIGURATION
+Source: powerapps-dataverse-mcp-raza | Timestamp: 13:30 - 14:30
+
+The allowed MCP clients list: Power Apps is not an allowed client. Let's first go ahead and add that.
+
+- Name: Power Apps
+- Unique name: NewPowerAppsMCP
+- The Power Apps portal has an application ID. I've plugged that in.
+
+I will enable this. Save and close.
+
+---
+
+So now I can call the tools of that MCP server directly from a Power App.
+
+---
+
+And how about doing this in a model driven Power App using generative pages.
+
+---
+
+KEY POINTS:
+- Power Apps not enabled by default in MCP allow list
+- Configuration steps:
+  1. Name: Power Apps
+  2. Unique name: Custom identifier
+  3. Application ID: Power Apps portal ID
+  4. Enable and save
+- Result: Power Apps can call MCP server tools
+- Model-driven apps: Can use with generative pages

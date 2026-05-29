@@ -1,0 +1,39 @@
+CHUNK 4: DATA MODEL & TECHNOLOGY RECOMMENDATIONS
+Source: powerapps-vibe-coding-raza | Timestamp: 07:30 - 09:30
+
+Data model. This is the data model that Vibe recommends to solve our business problem. These are tables that will currently be in draft mode until we go ahead and publish our tables.
+
+The technology to support our business problem. It will start by building the app. This is a full stack react app multi-page experience.
+
+Along with that, it will recommend other technologies to help support your business problem.
+
+It's recommending three agents that we could build in Microsoft Copilot Studio. A sales order agent, finance billing agent, and an operations insights agent. It could also recommend workflows.
+
+---
+
+As the agents are working to build my pages, if we head over to app, as the progress is being made, the pages in the application will start lighting up. Here is my dashboard experience. Very closely mirrors the images that I had uploaded earlier.
+
+This is the page that showcases all the customer information. Here's the page for orders, products, invoices, and payments.
+
+Done. The agent says, "I have built a complete order management application with six interconnected pages."
+
+All of this purely based on a single prompt that I provided along with supporting images.
+
+---
+
+Vibe now runs on Claude Opus 4.5. This means our app generations are now powered by Anthropic's most capable reasoning model, giving makers higher app quality, better code, and richer layouts with more accurate interpretations of their prompts with a bit more thinking time, but dramatically better results.
+
+---
+
+KEY POINTS:
+- Data model auto-generated in DRAFT mode until publish
+- Output: Full-stack React app, multi-page experience
+- Copilot Studio agent recommendations:
+  - Sales order agent
+  - Finance billing agent
+  - Operations insights agent
+- Workflow recommendations also provided
+- Pages "light up" as agents build them
+- Generated pages mirror uploaded design images
+- AI Model: Claude Opus 4.5 (Anthropic's most capable)
+- Trade-off: More thinking time = dramatically better results

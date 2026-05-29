@@ -1,0 +1,23 @@
+{
+  "id": "powerapps-gallery-tabbed-filters-raza",
+  "title": "Power Apps Gallery with Tabbed Filters - Step-by-Step Tutorial",
+  "url": "https://www.youtube.com/watch?v=JJhbBlMuNHM",
+  "platform": "YouTube",
+  "duration": "18 min",
+  "duration_seconds": 1080,
+  "word_count": 2600,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Power Platform",
+  "instructor": "Raza Dani (Microsoft MVP)",
+  "concepts": [
+    "powerapps-gallery",
+    "tabbed-filters",
+    "horizontal-gallery",
+    "named-formulas",
+    "lookup-function",
+    "modern-controls"
+  ],
+  "description": "Step-by-step tutorial on building a Power Apps gallery with tabbed filters. Learn to create tab experiences with horizontal galleries, connect to SharePoint, use named formulas, and filter data based on tab selection with visual indicators."
+}

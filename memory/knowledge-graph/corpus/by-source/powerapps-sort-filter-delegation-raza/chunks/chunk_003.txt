@@ -1,0 +1,35 @@
+CHUNK 3: SORT FUNCTION SYNTAX AND DELEGATION WARNINGS
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 01:30 - 02:30
+
+Now if we explore the sort function, the syntax is: Sort your data source, expression, and then optionally we can pick the order.
+
+---
+
+Now what's this expression? Sort my data source. This time I'll sort on the due date column.
+
+---
+
+Here you can also write expressions. However, these will not be delegable, meaning it won't work for large data sets. Data sets that span beyond the delegable limit set for your application. The maximum limit being 2,000.
+
+---
+
+So you have to be mindful of that.
+
+In scenarios where your data set is not large, here you can write Power FX formulas.
+
+For example, date difference between today's date and the due date.
+
+---
+
+Let me add the sort for descending. And here is the results.
+
+Notice the delegation warning.
+
+---
+
+KEY POINTS:
+- Sort syntax: `Sort(DataSource, Expression, Order)`
+- Expressions in Sort: NOT delegable
+- Delegation limit: 2,000 rows
+- Delegation warning: Blue dot indicates non-delegable
+- Use case: Small datasets only when using expressions

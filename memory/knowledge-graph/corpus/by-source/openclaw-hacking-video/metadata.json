@@ -1,0 +1,55 @@
+{
+  "source_id": "openclaw-hacking-video",
+  "display_name": "I Built an AI Agent That Hacks for Me | OpenClaw + Kali Linux",
+  "author": "YouTube Creator",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2024,
+    "url": "https://www.youtube.com/watch?v=C5ir_rQ4L4g",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 2,
+    "total_words": 7720
+  },
+  "length": {
+    "pages": 0,
+    "words": 7720,
+    "duration_minutes": 41,
+    "chunk_count": 3
+  },
+  "structure": {
+    "parts": [
+      "Introduction",
+      "Setup",
+      "Implementation",
+      "Demo"
+    ],
+    "chapters": [
+      "Building AI Agent for Security",
+      "OpenClaw Integration",
+      "Kali Linux Tools",
+      "Automated Hacking Demonstration"
+    ]
+  },
+  "concepts_covered": [
+    "openclaw",
+    "ai-agent",
+    "kali-linux",
+    "cybersecurity",
+    "penetration-testing",
+    "automation",
+    "security-tools"
+  ],
+  "domains": [
+    "cybersecurity",
+    "ai",
+    "openclaw"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/openclaw-hacking-video/chunks/"
+  }
+}

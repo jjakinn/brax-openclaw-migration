@@ -1,0 +1,43 @@
+CHUNK 5: ADDING ALL COLUMNS & FLEXIBLE WIDTH SETUP
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 06:00 - 08:30
+
+As I am adding these controls, it's best practice to rename them. On very similar lines, I'll add warehouse, which is a combo box as well. Bin location and supplier are text fields. So, I'll add text inputs.
+
+I have added up until bin location. Now, if you notice, I'm out of space on this screen. But I want to add another control in this horizontal container, which I can add. So, I'll go to insert, add another text input. You can see it's gone outside of the screen.
+
+---
+
+This one, it's value property: thisItem.supplier
+
+Now, stock quantity and unit cost. This is a whole number. This is currency. For both of these, I'll use number input controls. So, I'll add two of them. Again, I don't see it on the screen, but they're there.
+
+Stock quantity is value: thisItem.stockQuantity
+Unit cost value: thisItem.unitCost
+
+---
+
+Total value is a read only column it's a formula column does a multiplication between stock quantity and unit cost. To show that I'll pick text.
+
+---
+
+It's important for you to pick the right controls depending upon whether you want the columns to be read only, whether they are choice columns, whether they are text columns or number columns.
+
+---
+
+One last column to add: stock status. That's a choice. Done I have set that up as well.
+
+---
+
+For the container in which these controls are placed, I will give a gap of let's say 10. So now there is some spacing between these controls
+
+---
+
+KEY POINTS:
+- Continue adding controls for all columns (even if off-screen)
+- Control selection by data type:
+  - Text/Text Input: String fields
+  - Combo Box: Choice columns
+  - Number Input: Numeric/currency fields
+  - Text: Formula/calculated columns (read-only)
+- Container gap: 10 (spacing between controls)
+- Controls may extend beyond visible screen area

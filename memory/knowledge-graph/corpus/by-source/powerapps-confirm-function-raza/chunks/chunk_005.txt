@@ -1,0 +1,17 @@
+CHUNK 5: SAVING SELECTIONS TO VARIABLES
+Source: powerapps-confirm-function-raza | Timestamp: 05:30 - 06:30
+
+If you want to save the selection that the user has made for example when I open this dialogue I provide the user with two options to choose their favorite color red or green.
+
+When red is clicked I change the color of the button to red. When green is clicked, it's green. How did I do this?
+
+Here I use that same logic. My confirm function, I decorated with an if. So I know whether confirm was clicked or cancel was clicked. And I'm storing that result in a variable. And that variable is what I am using to define the base color for my modern button control.
+
+---
+
+KEY POINTS:
+- Can store Confirm result in variable
+- Pattern: `Set(varResult, Confirm("Choose color", {ConfirmButton: "Red", CancelButton: "Green"}))`
+- Variable holds `true` (Confirm/Red) or `false` (Cancel/Green)
+- Use variable in other controls: `Button.BaseColor = If(varResult, Red, Green)`
+- Enables multi-step logic based on dialog selection

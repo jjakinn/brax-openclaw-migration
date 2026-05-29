@@ -1,0 +1,26 @@
+{
+  "id": "pdf-extraction-automation",
+  "name": "PDF Data Extraction & Automation",
+  "category": "Business Automation",
+  "description": "Techniques and tools for automatically extracting structured data from PDF documents into spreadsheets and databases.",
+  "related_concepts": [
+    "excel-automation",
+    "invoice-processing",
+    "ocr-technology",
+    "document-parsing",
+    "data-entry-automation"
+  ],
+  "sources": [
+    "lido-pdf-extraction-automation"
+  ],
+  "keywords": [
+    "PDF extraction",
+    "invoice automation",
+    "Excel export",
+    "document parsing",
+    "data extraction",
+    "Lido",
+    "batch processing"
+  ],
+  "created_at": "2026-03-30"
+}

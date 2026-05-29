@@ -1,0 +1,47 @@
+CHUNK 3: NAVIGATION STRUCTURE PROPERTIES
+Source: powerapps-navigation-component-raza | Timestamp: 03:00 - 05:00
+
+The first property I'll create is called `key`. This will be the unique identifier for that navigation item.
+
+So, I'll create one for my home screen experience. My key will be "home". I'll give a title. I'll call this "Home".
+
+`screen`: Which screen should the user be navigated to when they select this specific navigation item. Here I'll select my home screen.
+
+---
+
+On similar lines, I can create navigation items for my other screens as well. This home screen, I'll duplicate this. I'll call this my tasks screen.
+
+Back to my nav structure. I'll create a second navigation item. The key: "tasks", title: "My Tasks". The screen will be my tasks screen.
+
+---
+
+Now for each of these items, I would like to define an icon as well. This could be an image that has us embedding an SVG within it or we could utilize the modern icons.
+
+---
+
+So as an example, if I simply use the modern button control, this has the entire modern icon suite available that we can select.
+
+So for my home screen, I'll use the home icon. When I select home, if we explore the icon property, it is "home".
+
+For the tasks, I'll use the check mark icon. That's called "check mark".
+
+---
+
+Back to my formulas. Now I'll add an icon property as well.
+
+---
+
+We'll add one more. This one an option for the user to log out. The icon: "arrow exit".
+
+In this scenario, there is no context of a screen because I want to take an action to log the user out of the app. So the screen in this case I'll use the formula `Blank()`.
+
+---
+
+KEY POINTS:
+- Navigation item properties:
+  - `key`: Unique identifier (e.g., "home", "tasks")
+  - `title`: Display text (e.g., "Home", "My Tasks")
+  - `screen`: Target screen object (or `Blank()` for actions)
+  - `icon`: Icon name from modern icon suite
+- Icons: Use modern button control to browse available icons
+- Logout example: `screen: Blank()` for actions without navigation

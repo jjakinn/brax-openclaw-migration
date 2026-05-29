@@ -1,0 +1,18 @@
+CHUNK 9: ACTIVE SCREEN HIGHLIGHTING
+Source: powerapps-navigation-component-raza | Timestamp: 12:30 - 13:30
+
+The font color I'll set as follows:
+
+`If(ThisItem.screen = App.ActiveScreen, App.Theme.Colors.Primary, DefaultColor)`
+
+Meaning: If the screen that is associated with that navigation item is equal to the current screen that the user is at, is it matching the screen set for that navigation item? If yes, then you use the primary color of the theme.
+
+You will see this in action when I start adding this component to my screens.
+
+---
+
+KEY POINTS:
+- Active screen detection: `ThisItem.screen = App.ActiveScreen`
+- Active color: `App.Theme.Colors.Primary`
+- Inactive color: Default or theme neutral color
+- Result: Current menu item highlighted with theme color

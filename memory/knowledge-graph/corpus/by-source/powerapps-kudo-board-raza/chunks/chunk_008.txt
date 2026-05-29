@@ -1,0 +1,34 @@
+CHUNK 8: DATA MODEL - BOARDS AND POSTS TABLES
+Source: powerapps-kudo-board-raza | Timestamp: 04:45 - 05:30
+
+Two simple tables:
+
+---
+
+Boards: Here I store:
+- The title
+- The recipient (lookup to user table)
+- Column to track whether board is locked or not
+
+---
+
+The second table is Posts. This includes:
+- The title of the post
+- The body (rich text)
+- Board (lookup column to boards table) — to which board does this post belong
+- Column for image/gif (user uploads or selects)
+
+---
+
+KEY POINTS:
+- Table structure:
+  1. Boards table:
+     - Title
+     - Recipient (lookup to User)
+     - Locked status
+  2. Posts table:
+     - Title
+     - Body (rich text)
+     - Board (lookup to Boards)
+     - Image/GIF column
+- Relationship: Boards → Posts (one-to-many)

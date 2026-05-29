@@ -1,0 +1,24 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "cs50-flask-web-programming",
+  "timestamp": "2026-03-23T05:55:00Z",
+  "status": "COMPLETE",
+  "summary": {
+    "chunks_created": 11,
+    "concepts_extracted": 8,
+    "summaries_created": 2,
+    "indexes_updated": true
+  },
+  "files_created": [
+    "corpus/by-source/cs50-flask-web-programming/metadata.json",
+    "corpus/by-source/cs50-flask-web-programming/raw/transcript.txt",
+    "summaries/L0-executive/cs50-flask-web-programming.md",
+    "summaries/L1-overview/cs50-flask-web-programming.md",
+    "corpus/by-concept/cs50-flask-concepts.json"
+  ],
+  "chunks": [
+    "chunk_001.txt", "chunk_002.txt", "chunk_003.txt", "chunk_004.txt",
+    "chunk_005.txt", "chunk_006.txt", "chunk_007.txt", "chunk_008.txt",
+    "chunk_009.txt", "chunk_010.txt", "chunk_011.txt"
+  ]
+}

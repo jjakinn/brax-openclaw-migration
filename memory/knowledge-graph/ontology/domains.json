@@ -1,0 +1,37 @@
+{
+  "version": "2.0",
+  "description": "Knowledge Domains and Subdomains",
+  
+  "domains": {
+    "coding": {
+      "description": "Computer science and software development",
+      "subdomains": ["algorithms", "patterns", "databases", "apis", "testing", "system-design"],
+      "sources": [],
+      "concept_count": 0
+    },
+    "powerapps": {
+      "description": "Microsoft Power Platform development",
+      "subdomains": ["formulas", "connectors", "ui-design", "automation", "dataverse"],
+      "sources": [],
+      "concept_count": 0
+    },
+    "consciousness": {
+      "description": "Study of mind, awareness, and subjective experience",
+      "subdomains": ["philosophy", "neuroscience", "mysticism", "quantum-theories"],
+      "sources": [],
+      "concept_count": 0
+    },
+    "ancient-history": {
+      "description": "Civilizations before 500 CE",
+      "subdomains": ["egypt", "mesopotamia", "greece", "rome", "india", "china", "americas"],
+      "sources": [],
+      "concept_count": 0
+    },
+    "classified-intelligence": {
+      "description": "Declassified documents and historical intelligence",
+      "subdomains": ["cold-war", "ufology", "black-projects", "espionage"],
+      "sources": [],
+      "concept_count": 0
+    }
+  }
+}

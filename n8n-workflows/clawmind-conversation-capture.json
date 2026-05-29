@@ -1,0 +1,198 @@
+{
+  "name": "ClawMind \u2014 Conversation Capture",
+  "nodes": [
+    {
+      "name": "Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "clawmind-conversation",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "position": [
+        250,
+        300
+      ],
+      "typeVersion": 1,
+      "webhookId": "clawmind-conv",
+      "id": "aaa42118-c66b-4508-a1b7-42fecebf7017"
+    },
+    {
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.if",
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "={{ $json.content }}",
+            "operator": {
+              "type": "string",
+              "operation": "isNotEmpty"
+            }
+          }
+        }
+      },
+      "position": [
+        450,
+        300
+      ],
+      "typeVersion": 1,
+      "id": "064be87e-ee43-4a08-8071-5efd239da5d0"
+    },
+    {
+      "name": "Format Note",
+      "type": "n8n-nodes-base.code",
+      "parameters": {
+        "jsCode": "const input = $input.first().json;\nconst timestamp = new Date().toISOString();\nconst date = timestamp.split('T')[0];\nconst time = timestamp.split('T')[1].split('.')[0];\n\n// Generate filename\nconst safeTitle = (input.title || 'Conversation').replace(/[^a-z0-9\\-_]/gi, '_').substring(0, 50);\nconst filename = `Session ${date} ${safeTitle}.md`;\n\n// Format content\nconst content = `---\ncreated: ${timestamp}\ntags: [conversation, session, ${input.tags?.join(', ') || 'auto-captured'}]\nsource: ${input.source || 'unknown'}\n---\n\n# ${input.title || 'Conversation Session'}\n\n**Date:** ${date} ${time}  \n**Source:** ${input.source || 'Unknown'}  \n**Duration:** ${input.duration || 'N/A'}\n\n## Summary\n${input.summary || 'No summary provided.'}\n\n## Key Insights\n${input.insights?.map(i => `- ${i}`).join('\\n') || '- None recorded'}\n\n## Full Content\n${input.content}\n\n## Related\n${input.links?.map(l => `- [[${l}]]`).join('\\n') || '- None linked'}\n\n---\n\n*Auto-captured by ClawMind Engine*\n`;\n\nreturn [{\n  filename,\n  content,\n  metadata: {\n    date,\n    time,\n    title: input.title || 'Conversation Session',\n    wordCount: input.content.split(/\\s+/).length,\n    tags: input.tags || ['auto-captured']\n  }\n}];"
+      },
+      "position": [
+        650,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "d4f28d2c-6a26-4f48-90da-1fd737632315"
+    },
+    {
+      "name": "Write to Inbox",
+      "type": "n8n-nodes-base.writeBinaryFile",
+      "parameters": {
+        "fileName": "=/Users/Jakin/ClawMind/inbox/{{ $json.filename }}",
+        "data": "={{ $base64Encode($json.content) }}",
+        "options": {}
+      },
+      "position": [
+        850,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "0e859208-8f2c-4a60-a8cf-4471c76d8cc6"
+    },
+    {
+      "name": "Trigger Auto-Learning",
+      "type": "n8n-nodes-base.httpRequest",
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:5678/webhook/clawmind-process",
+        "body": {
+          "action": "process-inbox"
+        },
+        "options": {}
+      },
+      "position": [
+        1050,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "c23795fd-01dc-45dd-9b01-bbd50f5f93d4"
+    },
+    {
+      "name": "Success Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "parameters": {
+        "options": {
+          "statusCode": 200,
+          "body": "={{ JSON.stringify({ success: true, message: 'Conversation captured and queued for processing', filename: $('Format Note').item.json.filename }) }}"
+        }
+      },
+      "position": [
+        1250,
+        200
+      ],
+      "typeVersion": 1,
+      "id": "e5e46bce-9b71-4657-b16b-e4e4dcd3bb16"
+    },
+    {
+      "name": "Error Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "parameters": {
+        "options": {
+          "statusCode": 400,
+          "body": "={{ JSON.stringify({ success: false, error: 'Missing content field' }) }}"
+        }
+      },
+      "position": [
+        650,
+        400
+      ],
+      "typeVersion": 1,
+      "id": "f2be8da2-5105-4efa-9bf1-6fd744557608"
+    }
+  ],
+  "connections": {
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Validate Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Input": {
+      "main": [
+        [
+          {
+            "node": "Format Note",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Error Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Note": {
+      "main": [
+        [
+          {
+            "node": "Write to Inbox",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Write to Inbox": {
+      "main": [
+        [
+          {
+            "node": "Trigger Auto-Learning",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Trigger Auto-Learning": {
+      "main": [
+        [
+          {
+            "node": "Success Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "ClawMind \u2014 Error Handler"
+  },
+  "tags": [
+    {
+      "name": "clawmind",
+      "id": "clawmind-tag"
+    }
+  ],
+  "active": false,
+  "id": "0667c1a7-4f85-4f69-807b-c1d5ed46b416"
+}

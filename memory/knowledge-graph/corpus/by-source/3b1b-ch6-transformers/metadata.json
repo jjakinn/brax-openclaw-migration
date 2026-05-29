@@ -1,0 +1,17 @@
+{
+  "source_id": "3b1b-ch6-transformers",
+  "display_name": "3Blue1Brown Ch6: Transformers",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 4434,
+    "total_chunks": 2,
+    "chunks_processed": 2
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

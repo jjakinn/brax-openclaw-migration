@@ -1,0 +1,41 @@
+CHUNK 17: MULTI-FILTER LOGIC WITH AND FUNCTION
+Source: powerapps-sort-filter-delegation-raza | Timestamp: 21:00 - 22:30
+
+Now let's go and apply the filters to the items property of the gallery.
+
+---
+
+If multiple filters are selected, they should all be applied together in an AND condition. So I'll use the `And()` function.
+
+---
+
+My first filter: StartsWith. I'll put a comma and add my second filter which is: `cmbPriority.Selected.Value = Priority.Value`
+
+Format text.
+
+---
+
+Let's put a comma and add another condition: `cmbStatus.Selected.Value = Status.Value`
+
+This filter I've only applied to the ID sort logic. I need to add it for the others.
+
+---
+
+But before that, let's test it out. Observe there's no results.
+
+---
+
+Well, that's because it's forcing me to pick values for both these columns. If they are blank, it's not showing any values.
+
+---
+
+So, I need to handle the blank logic.
+
+---
+
+KEY POINTS:
+- Multiple filters: Use `And()` to combine conditions
+- Pattern: `And(Filter1, Filter2, Filter3)`
+- Choice filter: `ComboBox.Selected.Value = Column.Value`
+- Initial problem: Blank combo boxes return no results
+- Need: Handle blank/null selections

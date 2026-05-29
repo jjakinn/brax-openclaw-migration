@@ -1,0 +1,27 @@
+CHUNK 10: DEFAULT SELECTED ITEMS FOR MULTI-SELECT
+Source: powerapps-modern-combo-box-raza | Timestamp: 17:00 - 18:30
+
+Now this data card has a property called default. It is thisItem.stakeholders that's coming from my column in my data source.
+
+So my combo box default selected items property because it's a multi select control
+
+ForAll loop through all the stakeholders. So thisItem.stakeholders
+
+And within this I'll do the following Office365Users.SearchUserV2 the search term will be this record meaning the current running item in this loop but search for that user search term is required and I am providing it only get one value once you get the result go get the value
+
+Returns tabular data even if there is a single record that's why I'm decorating it with First.
+
+So this will loop through all those stakeholders and go and get their values and set it as a table that will be applied to the default selected items property of the combo box.
+
+---
+
+KEY POINTS:
+- Data card default: `thisItem.Stakeholders` (existing values)
+- Combo box `DefaultSelectedItems`: Must build table of user objects
+- Pattern: `ForAll(thisItem.Stakeholders, First(Office365Users.SearchUserV2({searchTerm: Email, top: 1}).value))`
+- Logic:
+  - Loop through existing stakeholders
+  - Search Entra for each user by email
+  - Get first result (user profile)
+  - Return as table for DefaultSelectedItems
+- `First()` needed because SearchUserV2 returns table even for single result

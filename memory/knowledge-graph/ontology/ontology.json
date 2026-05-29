@@ -1,0 +1,215 @@
+{
+  "version": "3.0",
+  "description": "Knowledge Graph Ontology — Domain mappings and prerequisite chains",
+  "last_updated": "2026-03-29",
+  
+  "domains": {
+    "mathematics_ml": {
+      "display_name": "Mathematics & Machine Learning",
+      "color": "#4A90E2",
+      "concepts": [
+        "neural-networks",
+        "gradient-descent", 
+        "backpropagation",
+        "markov-chains",
+        "transformers",
+        "attention-mechanism",
+        "linear-algebra",
+        "probability-theory"
+      ]
+    },
+    "computer_science": {
+      "display_name": "Computer Science Foundations",
+      "color": "#7ED321",
+      "concepts": [
+        "algorithms",
+        "data-structures",
+        "programming-fundamentals",
+        "memory-management",
+        "concurrency",
+        "databases"
+      ]
+    },
+    "cybersecurity": {
+      "display_name": "Cybersecurity & Offensive Security",
+      "color": "#D0021B",
+      "concepts": [
+        "bug-bounty-methodology",
+        "reconnaissance",
+        "osint",
+        "web-application-security",
+        "api-security",
+        "microsoft-entra-exploitation",
+        "malware-development",
+        "network-security"
+      ]
+    },
+    "ai_automation": {
+      "display_name": "AI & Automation",
+      "color": "#9013FE",
+      "concepts": [
+        "openclaw-mastery",
+        "claude-code-optimization",
+        "n8n-workflows",
+        "mcp-protocol",
+        "agentic-workflows",
+        "local-llms",
+        "prompt-engineering"
+      ]
+    },
+    "programming_languages": {
+      "display_name": "Programming Languages",
+      "color": "#F5A623",
+      "concepts": [
+        "python",
+        "javascript",
+        "java",
+        "cpp",
+        "c-programming",
+        "flask",
+        "react"
+      ]
+    }
+  },
+  
+  "prerequisites": {
+    "chains": {
+      "neural_networks": {
+        "linear-algebra": [],
+        "calculus-basics": [],
+        "neural-networks": ["linear-algebra", "calculus-basics"],
+        "gradient-descent": ["neural-networks"],
+        "backpropagation": ["gradient-descent", "calculus-chain-rule"],
+        "transformers": ["neural-networks", "attention-mechanism"],
+        "attention-mechanism": ["neural-networks"]
+      },
+      "cybersecurity": {
+        "networking-basics": [],
+        "web-fundamentals": ["networking-basics"],
+        "reconnaissance": ["networking-basics", "osint"],
+        "bug-bounty-methodology": ["reconnaissance", "web-application-security"],
+        "web-application-security": ["web-fundamentals"],
+        "api-security": ["web-application-security"],
+        "microsoft-entra-exploitation": ["web-application-security", "oauth-saml"]
+      },
+      "openclaw": {
+        "terminal-basics": [],
+        "python-basics": [],
+        "openclaw-mastery": ["terminal-basics"],
+        "claude-code-optimization": ["openclaw-mastery"],
+        "agentic-workflows": ["openclaw-mastery", "python-basics"],
+        "mcp-protocol": ["openclaw-mastery"],
+        "n8n-workflows": ["openclaw-mastery"]
+      }
+    },
+    
+    "source_prerequisites": {
+      "3b1b-ch1-neural-network": {
+        "difficulty": "beginner",
+        "requires_concepts": ["basic-math"],
+        "leads_to": ["3b1b-ch2-gradient-descent"]
+      },
+      "3b1b-ch2-gradient-descent": {
+        "difficulty": "intermediate",
+        "requires_sources": ["3b1b-ch1-neural-network"],
+        "requires_concepts": ["derivatives"],
+        "leads_to": ["3b1b-ch3-backprop-intuitive", "3b1b-ch4-backprop-calculus"]
+      },
+      "3b1b-ch6-transformers": {
+        "difficulty": "advanced",
+        "requires_sources": ["3b1b-ch1-neural-network", "3b1b-ch2-gradient-descent"],
+        "requires_concepts": ["neural-networks", "attention-mechanism"],
+        "leads_to": ["3b1b-ch7-attention"]
+      },
+      "bug-hunter-methodology": {
+        "difficulty": "intermediate",
+        "requires_concepts": ["networking-basics", "web-fundamentals"],
+        "requires_sources": ["osint-5hr-course"],
+        "leads_to": ["bug-hunter-app-analysis", "live-recon-snapchat"]
+      },
+      "openclaw-master-10hr": {
+        "difficulty": "beginner",
+        "requires_concepts": ["terminal-basics"],
+        "leads_to": ["agentic-workflows-course", "claude-code-course"]
+      },
+      "agentic-workflows-course": {
+        "difficulty": "advanced",
+        "requires_sources": ["openclaw-master-10hr"],
+        "requires_concepts": ["openclaw-mastery", "python-basics"]
+      },
+      "cs50-full-course": {
+        "difficulty": "beginner",
+        "requires_concepts": [],
+        "leads_to": ["cs50-python-2022", "stanford-cs106a-lec1-28"]
+      },
+      "cs50-python-2022": {
+        "difficulty": "beginner",
+        "requires_sources": ["cs50-full-course"],
+        "leads_to": ["cs50-flask-web-programming"]
+      }
+    }
+  },
+  
+  "cross_references": {
+    "neural-networks": {
+      "related_concepts": ["gradient-descent", "backpropagation", "transformers"],
+      "related_sources": [
+        "3b1b-ch1-neural-network",
+        "3b1b-ch2-gradient-descent",
+        "neural-network-scratch",
+        "generative-ai-full-course"
+      ],
+      "applications": ["computer-vision", "nlp", "speech-recognition"]
+    },
+    "markov-chains": {
+      "related_concepts": ["probability-theory", "stochastic-processes", "monte-carlo"],
+      "related_sources": ["veritasium-markov-chains"],
+      "applications": ["pagerank", "nuclear-simulation", "llm-prediction"]
+    },
+    "bug-bounty-methodology": {
+      "related_concepts": ["reconnaissance", "osint", "web-application-security"],
+      "related_sources": [
+        "bug-hunter-methodology",
+        "bug-hunter-app-analysis",
+        "live-recon-snapchat",
+        "manual-hacking-guide"
+      ],
+      "tools": ["amass", "burp-suite", "shodan", "ffuf"]
+    },
+    "openclaw-mastery": {
+      "related_concepts": ["agentic-workflows", "mcp-protocol", "local-llms"],
+      "related_sources": [
+        "openclaw-master-10hr",
+        "agentic-workflows-course",
+        "claude-code-course",
+        "openclaw-fixed-setup"
+      ]
+    }
+  },
+  
+  "query_patterns": {
+    "concept_lookup": {
+      "steps": [
+        "Check concept index in master-catalog.md",
+        "Read synthesis file if available",
+        "Follow cross-references to related concepts",
+        "Pull verbatim quotes from source chunks"
+      ]
+    },
+    "prerequisite_check": {
+      "steps": [
+        "Check ontology/prerequisites.json for concept chain",
+        "Verify user has required background",
+        "Suggest prerequisite sources if gaps exist"
+      ]
+    },
+    "synthesis_query": {
+      "steps": [
+        "Query multiple related sources",
+        "Cross-reference findings",
+        "Identify agreements and contradictions",
+        "Generate synthesis with citations"
+      ]
+    }
+  }
+}

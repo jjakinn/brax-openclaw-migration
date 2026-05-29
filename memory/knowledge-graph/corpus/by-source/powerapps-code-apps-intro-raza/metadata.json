@@ -1,0 +1,38 @@
+{
+  "id": "powerapps-code-apps-intro-raza",
+  "title": "Code Apps in Power Platform - React-Based Web Apps with Power Platform Integration",
+  "instructor": "Raza",
+  "channel": "Power Apps",
+  "url": "https://www.youtube.com/watch?v=UBFgFNYbSTA",
+  "duration": "10 min",
+  "word_count": 1156,
+  "difficulty": "Intermediate",
+  "category": "Power Platform",
+  "concepts": [
+    "code-apps",
+    "power-apps",
+    "react",
+    "typescript",
+    "visual-studio-code",
+    "power-platform-cli",
+    "vite",
+    "power-sdk",
+    "connectors",
+    "office-365-users",
+    "sharepoint",
+    "github-copilot",
+    "hot-module-replacement",
+    "deployment"
+  ],
+  "prerequisites": [
+    "javascript-basics",
+    "react-basics",
+    "command-line-basics"
+  ],
+  "related_sources": [
+    "powerapps-gen-pages-ideas-app-raza",
+    "powerapps-gen-pages-events-catalog-raza"
+  ],
+  "ingested": "2026-03-31",
+  "chunks": 3
+}

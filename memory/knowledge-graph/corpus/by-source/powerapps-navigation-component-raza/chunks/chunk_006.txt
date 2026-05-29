@@ -1,0 +1,45 @@
+CHUNK 6: USER DEPARTMENT AND GALLERY SETUP
+Source: powerapps-navigation-component-raza | Timestamp: 07:30 - 09:00
+
+And for the second text control, I would like to show their department.
+
+To get that data, let's connect to Office 365 Users.
+
+---
+
+For the text property: `Office365Users.MyProfileV2()`
+
+From this I can pick any of their profile properties. Let's say I show the department.
+
+---
+
+To create the navigation menu I'll go and insert a gallery control. Let's pick the blank flexible height gallery.
+
+I'll adjust this to begin right below the user image.
+
+---
+
+We are trying to make this a responsive dynamic menu experience.
+
+The height for this gallery, we'll set it as `Parent.Height - Self.Y`.
+
+Now the Y property is how many pixels from the top this control is placed at. You subtract that from the height of the parent. That's why it takes the entire remaining height of the component.
+
+---
+
+This gallery I'll rename to `galMenu`.
+
+The X property of this gallery set it as 0.
+
+The width property will be `Parent.Width`.
+
+---
+
+KEY POINTS:
+- User department: `Office365Users.MyProfileV2().department`
+- Gallery type: Blank flexible height
+- Gallery name: `galMenu`
+- Positioning:
+  - X: 0 (left aligned)
+  - Width: `Parent.Width`
+  - Height: `Parent.Height - Self.Y` (fills remaining space)

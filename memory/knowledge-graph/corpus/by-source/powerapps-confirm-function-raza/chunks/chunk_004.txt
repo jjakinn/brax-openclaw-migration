@@ -1,0 +1,30 @@
+CHUNK 4: TRACKING USER SELECTIONS
+Source: powerapps-confirm-function-raza | Timestamp: 04:00 - 05:30
+
+How do we track the selection that the user makes in the dialogue box?
+
+If confirm is clicked, I display a notification message. So, I know that the user clicked on confirm.
+
+If don't confirm is clicked, I display a cancelled message.
+
+How to do this?
+
+You decorate the confirm function with an if condition.
+
+The confirm function itself returns true or false.
+
+If the confirm button is clicked, it's true. So if true, that means the user clicked on the confirm button. And that's how I'm able to display that notification message.
+
+And if no, meaning the user clicked on the cancel button, so that's false. At that point, I display the canceled notification.
+
+And bear in mind if the user opens the dialogue and decides to click outside of the dialogue that is also considered as not confirming.
+
+---
+
+KEY POINTS:
+- Confirm function returns: `true` or `false`
+- `true` = Confirm button clicked
+- `false` = Cancel button clicked OR clicked outside dialog
+- Pattern: `If(Confirm("Message"), DoSomething(), DoSomethingElse())`
+- Clicking outside = Cancel (returns false)
+- Combine with `Notify()` for user feedback

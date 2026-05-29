@@ -1,0 +1,38 @@
+CHUNK 2: SETTING UP GALLERY AND DATA CONNECTION
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 01:00 - 02:30
+
+Main container. Now, this is where I will attempt to create an editable table like experience by using the gallery control.
+
+I need my gallery to have both a vertical scroll because I will have a lot of rows and horizontal scroll because I will have a lot of columns.
+
+You can pick any data source of your choice. For the demo, I have a table in Dataverse called inventory. I have columns created to track the inventory metadata.
+
+---
+
+So, let's connect my app to the data. Head over to data, add data, search for inventory, and I'll select my inventory table.
+
+My table is connected in the app.
+
+Now in my main container, I'll head over and insert a vertical gallery control.
+
+The layout of this gallery. I'll start with blank because I will be designing table like experience in a gallery.
+
+---
+
+The moment I do that, if you observe the gallery width and height are not aligned within the main container. So let's fix that. With the gallery selected, alignment and container stretch, so it takes the full width and flexible height on.
+
+If you notice, there is some padding around the gallery and the main container. That's because the main container has a padding of eight that's set up. I will change that to zero. So now the gallery sits exactly in the main container.
+
+---
+
+This gallery I will connect it to my inventories table.
+
+---
+
+KEY POINTS:
+- Data source: Dataverse table (Inventory example)
+- Gallery type: Vertical gallery with Blank layout
+- Alignment: Container stretch for full width
+- Flexible height: ON
+- Remove padding: Set main container padding to 0
+- Connect gallery to data table

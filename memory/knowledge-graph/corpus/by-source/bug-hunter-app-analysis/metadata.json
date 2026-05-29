@@ -1,0 +1,17 @@
+{
+  "source_id": "bug-hunter-app-analysis",
+  "display_name": "Bug Hunter's Methodology - Application Analysis",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 7027,
+    "total_chunks": 3,
+    "chunks_processed": 3
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

@@ -1,0 +1,141 @@
+# ~/.zshrc — Brax's Configuration
+# Based on Jakin's exact setup, adapted for Brax
+
+# ============================================
+# PATH CONFIGURATION
+# ============================================
+
+# NPM global packages
+export PATH="$HOME/.npm-global/bin:$PATH"
+
+# Ollama agents
+export PATH="$HOME/.ollama/agents/qwen:$PATH"
+export PATH="$HOME/.ollama/agents/kimi-k2.5:$PATH"
+export PATH="$HOME/.ollama/agents/devstral-small-2:$PATH"
+export PATH="$HOME/.ollama/agents/nemotron-3-super:$PATH"
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# .NET / Power Platform
+export PATH="$HOME/.dotnet:$PATH"
+export PATH="$HOME/.dotnet:$HOME/pac-cli/pac-osx/tools:$PATH"
+
+# Power Platform CLI
+export PATH="$HOME/powerplatform-cli:$PATH"
+
+# UV (fast Python package manager)
+export PATH="$HOME/.local/bin:$PATH"
+
+# Cargo (Rust)
+. "$HOME/.cargo/env" 2>/dev/null || true
+
+# ============================================
+# ALIASES — AI AGENTS
+# ============================================
+
+# Dolphin Agent
+alias dolphin="$HOME/.ollama/agents/dolphin/dolphin"
+alias dolphin-chat="$HOME/.ollama/agents/dolphin/dolphin"
+alias d="$HOME/.ollama/agents/dolphin/dolphin"
+
+# Qwen Agent
+alias qwen="python3 $HOME/.ollama/agents/qwen/claw_agent.py"
+alias qwen-chat="python3 $HOME/.ollama/agents/qwen/claw_agent.py"
+alias qwen-run="python3 $HOME/.ollama/agents/qwen/claw_agent.py"
+alias qwen-super="python3 $HOME/.ollama/agents/qwen/claw_agent.py"
+alias qwen-web="python3 $HOME/.ollama/agents/qwen/chat_server.py"
+
+# Kimi Agent
+alias kimi-agent="$HOME/.ollama/agents/kimi-k2.5/kimi-agent"
+
+# Devstral Agent
+alias devstral-agent="$HOME/.ollama/agents/devstral-small-2/devstral-agent"
+
+# Nemotron Agent
+alias nemotron-agent="$HOME/.ollama/agents/nemotron-3-super/nemotron-agent"
+
+# ============================================
+# ALIASES — TOOLS
+# ============================================
+
+# Power Platform CLI
+alias pac="$HOME/pac-cli/pac-osx/tools/pac.sh"
+
+# Terminal Phone
+alias terminalphone="$HOME/terminalphone/terminalphone.sh"
+
+# OpenClaw
+alias oc="openclaw"
+alias ocg="openclaw gateway"
+alias ocs="openclaw status"
+
+# ============================================
+# OPENCLAW COMPLETION
+# ============================================
+
+source "$HOME/.openclaw/completions/openclaw.zsh" 2>/dev/null || true
+
+# ============================================
+# CONDA / MINICONDA
+# ============================================
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# ============================================
+# ENVIRONMENT
+# ============================================
+
+# Default editor
+export EDITOR="nano"
+
+# Language
+export LANG="en_US.UTF-8"
+
+# Node version (ensure node@22 is primary)
+export PATH="/opt/homebrew/opt/node@22/bin:$PATH"
+
+# ============================================
+# CUSTOM FUNCTIONS
+# ============================================
+
+# Quick project navigation
+function cdp() {
+    cd "$HOME/$1" 2>/dev/null || echo "Project not found: $1"
+}
+
+# Git status shortcut
+function gs() {
+    git status
+}
+
+# Git commit shortcut
+function gc() {
+    git commit -m "$1"
+}
+
+# ============================================
+# BRAX-SPECIFIC CUSTOMIZATIONS
+# ============================================
+
+# Add your own aliases and PATH exports below:
+
+
+# ============================================
+# END OF .zshrc
+# ============================================

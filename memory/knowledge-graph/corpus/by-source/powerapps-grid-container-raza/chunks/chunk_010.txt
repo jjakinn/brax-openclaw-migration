@@ -1,0 +1,48 @@
+CHUNK 10: GRID POSITIONING FOR FORM CONTROLS
+Source: powerapps-grid-container-raza | Timestamp: 11:30 - 12:30
+
+Now in the grid container I'll first insert the text. This will be "Customer Information".
+
+---
+
+Next I want to insert labels for first name, last name and then input fields for the same. So I'll insert 2 text controls and 2 text input controls.
+
+---
+
+These text input controls, I'll change their style. Fill white, border solid, value 1. Give it a light gray border.
+
+---
+
+The text property of the first text control: "First Name". And then the other text will be "Last Name".
+
+---
+
+The text input controls placeholder: "First Name" and then for the other text input control "Last Name".
+
+---
+
+I want first name and last name text fields next to each other.
+
+So for the first name field observe it says Grid Position. I will say start it from row 2.
+
+The last name field also I will say start from row 2.
+
+---
+
+This first name, that's the text input. I want it to be on the third row.
+
+Last name go on the third row. So, you can define where those controls go, which row, which column.
+
+---
+
+Notice first and last name. I want this to be on column 1 and this one to be on column 2. So, I can easily swap them around.
+
+---
+
+KEY POINTS:
+- Grid Position properties:
+  - `GridRowStart`: Which row control begins
+  - `GridColumn`: Which column control is in
+- Form layout: Labels and inputs positioned by row/column
+- Styling: Fill, border, placeholder text
+- Flexibility: Can swap column positions easily

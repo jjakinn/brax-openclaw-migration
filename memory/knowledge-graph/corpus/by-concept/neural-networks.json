@@ -1,0 +1,35 @@
+{
+  "concept_id": "neural-networks",
+  "display_name": "Neural Networks",
+  "category": "mathematics_ml",
+  "description": "Computational systems inspired by biological neural networks, consisting of layered nodes that process information through learned weights and biases",
+  "sources": [
+    "3b1b-ch1-neural-network",
+    "3b1b-ch2-gradient-descent",
+    "3b1b-ch3-backprop-intuitive",
+    "3b1b-ch4-backprop-calculus",
+    "neural-network-scratch",
+    "generative-ai-full-course"
+  ],
+  "synthesis": {
+    "available": true,
+    "file_path": "corpus/by-concept/syntheses/neural-networks.md",
+    "word_count": 4786,
+    "sources_synthesized": 6
+  },
+  "related_concepts": [
+    "gradient-descent",
+    "backpropagation",
+    "transformers",
+    "deep-learning",
+    "activation-functions"
+  ],
+  "prerequisites": ["linear-algebra", "calculus-basics"],
+  "difficulty": "intermediate",
+  "applications": [
+    "computer-vision",
+    "natural-language-processing",
+    "speech-recognition",
+    "recommendation-systems"
+  ]
+}

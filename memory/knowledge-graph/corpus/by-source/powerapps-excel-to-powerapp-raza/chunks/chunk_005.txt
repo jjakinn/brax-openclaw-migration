@@ -1,0 +1,36 @@
+CHUNK 5: PRIMARY COLUMN AND PRODUCT TABLE
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 04:30 - 05:45
+
+Ellipses and properties. This is where you can change the name of the table and also give a description associated with your table.
+
+---
+
+Each table has one primary column that you can define. There are some rules around this. The primary column for this is supplier name.
+
+---
+
+Supplier table looks good. Now let's look at the product table.
+
+---
+
+Here there's:
+- Product ID
+- Product name (text)
+- Category: Identified as choice column
+
+---
+
+I can add additional category choices. I can even set the default value for any new products that get added to this table. I'll make this a required column.
+
+---
+
+Supplier is a text column here. However, I have a table for supplier. Why not leverage the powerful relational capabilities that the platform has to offer?
+
+---
+
+KEY POINTS:
+- Primary column: One per table (Supplier name)
+- Product columns: ID, Name, Category (choice)
+- Default values: Can set for choice columns
+- Required fields: Can mark columns as required
+- Relationships: Supplier text → Should be lookup

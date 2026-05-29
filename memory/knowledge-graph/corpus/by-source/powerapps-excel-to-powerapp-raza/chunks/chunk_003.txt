@@ -1,0 +1,40 @@
+CHUNK 3: IMPORTING EXCEL TO DATAVERSE
+Source: powerapps-excel-to-powerapp-raza | Timestamp: 02:00 - 03:15
+
+I would like to turn that Excel spreadsheet into tables.
+
+---
+
+This is where you can define your data model, your schema, your relationships, and import all the data from the Excel file into the Power Platform ecosystem.
+
+---
+
+To do so, I'll go to new table and pick tables.
+
+---
+
+This takes me to a screen where I can choose an option to create my tables.
+
+---
+
+One of the options here is to import an Excel file. I'll select this. I'll select my file here.
+
+---
+
+It's loaded my Excel file. It's identified my tables.
+
+---
+
+Here you can decide whether you want to import them or not. The supplier pivot — that's based on data coming from my inventory table. I'll build the supplier pivot in my app. I don't need to import that data.
+
+---
+
+So, I won't include that. Inventory and supplier information: include yes. I'll say import.
+
+---
+
+KEY POINTS:
+- Import location: Solution → New table → Tables → Import Excel
+- Selective import: Choose which sheets to import
+- Pivot tables: Skip (build in app instead)
+- Tables imported: Inventory, Supplier

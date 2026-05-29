@@ -1,0 +1,60 @@
+{
+  "source_id": "cia-reality-document",
+  "display_name": "Leaked CIA Document Reveals How Reality Works (Full Breakdown)",
+  "author": "YouTube Creator (Analysis)",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2024,
+    "url": "https://www.youtube.com/watch?v=hYsGkLo_e3w",
+    "ingested_date": "2026-03-23",
+    "processed_by": "agent:main:1773904815",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 2,
+    "total_words": 7006
+  },
+  "length": {
+    "pages": 0,
+    "words": 7006,
+    "duration_minutes": 45,
+    "chunk_count": 5
+  },
+  "structure": {
+    "parts": [
+      "Introduction",
+      "Document Analysis",
+      "Key Revelations",
+      "Implications",
+      "Conclusion"
+    ],
+    "chapters": [
+      "The Gateway Process",
+      "Consciousness and Reality",
+      "Holographic Universe Theory",
+      "Out-of-Body Experiences",
+      "Remote Viewing",
+      "Time and Space Manipulation"
+    ]
+  },
+  "concepts_covered": [
+    "gateway-process",
+    "consciousness-reality",
+    "holographic-universe",
+    "remote-viewing",
+    "out-of-body-experiences",
+    "cia-documents",
+    "consciousness-research",
+    "quantum-consciousness"
+  ],
+  "domains": [
+    "classified-intelligence",
+    "consciousness",
+    "paranormal",
+    "physics"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/cia-reality-document/chunks/"
+  }
+}

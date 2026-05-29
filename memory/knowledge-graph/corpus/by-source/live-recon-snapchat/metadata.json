@@ -1,0 +1,17 @@
+{
+  "source_id": "live-recon-snapchat",
+  "display_name": "Live Recon on Snapchat (ITSecurityGuard)",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 12958,
+    "total_chunks": 5,
+    "chunks_processed": 5
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

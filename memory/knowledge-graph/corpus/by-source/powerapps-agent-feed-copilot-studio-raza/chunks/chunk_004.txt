@@ -1,0 +1,39 @@
+CHUNK 4/4
+
+[09:45 - 13:00]
+
+With C-Pilot Studio, I can create multiple autonomous agents. How do I track the activity of all these agents?
+
+Agent feed in Power Apps makes apps a central hub for human agent collaboration by showing a complete activity feed of what agents do for them wherever they are in the app.
+
+Let's see how we can add an agent feed in my model driven Power App. I'll head over to agents. Here is agent feed. Currently, I do not have any agents added to my feed.
+
+These are my agents. These are autonomous agents. I can go ahead and start adding these agents to my feed in this app. I've gone ahead and added four of my published autonomous agents in my agent feed. I'll click publish.
+
+And that's all I have to do. Let's refresh our model driven power app. Once agent feed is enabled, it appears at the top of the site map in our model driven app. Here is agent feed. When I click this, I can see a feed in the side panel of my app. And this includes all the activities that have taken place across all my agents.
+
+I can select specific agents. Here I've only selected my claim evaluation agent and these were the two activities that took place. The side panel we can even expand to go full screen.
+
+There are actions that are completed by the user. There are actions completed by the agent. There are scenarios where the agent needs assistance. This is where agent feed shines.
+
+Now in the agent feed, we get the last step taken by the agent, a timestamp of the most recent activity, and the agent's name and icon.
+
+To-do shows actions that need our attention like those that have failed, completed with errors or are waiting for our input.
+
+Let's take an example of one activity. If I select this, this will give us all the details of every action that the agent took for that specific activity.
+
+This agent of mine triggers when a new email arrives, creates a purchase order in data versse and then sends a reply email. The record that it created for data versse because we are in the context of a model driven app. This is clickable. If I select this, it will show that specific record that it created right here in my application.
+
+Now let's focus on our agent, the claim management agent. Let's select this for ergonomic chair. This is clickable. If I select this takes me directly to that specific record.
+
+Now let's get back to our agent and let's update the instructions or unknown. Now there is no status called unknown but I want to create a scenario where the agent requires our input. I'll update the instruction to also include set the claim to unknown if the claim title is too vague. If the health benefit is unclear or indirect I'll save.
+
+I'll create a new claim. My claim title supplies. What type of supplies? I'm not defining. Let's say $50. Submit. Claim status submitted. Once the flow triggers, if we explore the agent activity, the status is waiting for user. Why? Well, because based on my instructions, it was not able to decide what should the claim status be.
+
+If we explore the transcript, it says, "Please provide the claim status." So, the agent needs human assistance.
+
+Back to our app. Let's go to agent feed. Now, for my claim evaluation agent, I have a to-do item. I have to review the claim. Let's select. Here is the record. I simply click it will take me directly to that record. Now I will take the decision. In this case I'll approve it. Save it. And now that I've completed the task right here, I can mark it as complete. Check. Done. Back to my feed. These were completed by the agent autonomously. This one was completed by Raza.
+
+This is the power of agent feed.
+
+If you enjoyed this video then do like, comment and subscribe to my YouTube channel.

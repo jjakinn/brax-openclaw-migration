@@ -1,0 +1,37 @@
+CHUNK 11: PRO CODE - CODE APPS
+Source: powerapps-tools-ecosystem-raza | Timestamp: 15:30 - 17:30
+
+This app is built in the context of an environment. I can save this will save the app. And once I hit publish, this will publish all my draft tables and the application.
+
+The data source available now is Dataverse. Once I hit publish, all of this will be published to my preferred solution set for this environment.
+
+You can share this app just like you share canvas or a model app. You pick your users or security groups and share the context of the environment.
+
+---
+
+If I go to apps, the portfolio tracker application that I just created is a code app.
+
+---
+
+Code. Here we have power apps code apps.
+
+If you want to go beyond what's possible, you want to build a full stack application in React and write your own code, your own controls, this is where your pro devs come in.
+
+You can build your React application in an IDE of your choice like Visual Studio Code. Leverage the Power Platform connector ecosystem and then deploy my application as a code app to an environment in the Power Platform ecosystem.
+
+---
+
+To build code apps, we need a suite of developer tools. This is all available in the official Microsoft documentation. So, do check it out.
+
+---
+
+KEY POINTS:
+- Publishing: Saves app and publishes draft tables to Dataverse
+- Sharing: Same as canvas/model apps (users/security groups)
+- App type: Code app
+- Pro code (Code Apps):
+  - Full-stack React applications
+  - IDE of choice (VS Code)
+  - Power Platform connector ecosystem
+  - Deploy as code app to environment
+- Developer tools: Available in Microsoft documentation

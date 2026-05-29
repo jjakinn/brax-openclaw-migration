@@ -1,0 +1,45 @@
+CHUNK 13: STATUS BUTTON WITH LOOKUP COLOR
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 12:30 - 14:00
+
+And last, I want to show the status.
+
+---
+
+For showing the status, I would like to show it in lines with the colors that I'm choosing for my tab.
+
+---
+
+Gallery, I'll insert the button. That's the modern button control. Position it right here.
+
+---
+
+Property border radius, I'll set it as 20. So it has those rounded edges.
+
+---
+
+The text property of this button will be `ThisItem.Status`. That's my choice column. So get its value.
+
+---
+
+The color property for this button, I would like to reuse the same colors that I'm setting for my tabbed gallery.
+
+---
+
+And I do that in the items property. I'll copy this. I'll go to the app object and I will use formulas. Here we can create named formulas very similar to Excel.
+
+---
+
+I'll give this a name called `fxTabs` is equal to and I will paste the formula that I wrote earlier in the items property of my tabbed gallery.
+
+---
+
+You need to end every named formula with a semicolon. Done.
+
+---
+
+KEY POINTS:
+- Status display: Modern button with rounded edges
+- Named formulas: Created at App level (similar to Excel)
+- Formula name: `fxTabs`
+- Purpose: Reuse tab definitions across app
+- Semicolon: Required at end of named formulas

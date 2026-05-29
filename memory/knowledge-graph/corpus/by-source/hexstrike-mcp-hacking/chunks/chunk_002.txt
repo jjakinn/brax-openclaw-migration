@@ -1,0 +1,19 @@
+SOURCE: HexStrike MCP Hacking Tutorial (ZeroDay Gym)
+URL: https://www.youtube.com/watch?v=PQOwpjZXzMo
+CHUNK: 2/3 - MCP Server Configuration and Testing
+
+---
+
+So after setting everything up, I'm just going to open clawed uh desktop here. And then let's wait a little bit for it to launch. And then we can see that we have uh uh set up our cloud desktop. So if you if it's the first time for you uh using cloud desktop then you will have to go up here into developer options and then you will have to enable them. For me they are automatically enabled and if I open MCP log and scroll all the way down we can see that we have uh a message from server from hexrike. So this means that the server has successfully connected.
+
+To verify that what I can do is I can ask AI and uh one important note here is that for some NSP servers it shows the tools here but for this one for me at least it doesn't show tools here. So if you want to test if it has access I will just ask it do you have access? Yes, I do have access to MCP server and then it lists all of the commands. So, uh, our AI has all of the access needed and it's asking me what, uh, what do I want to do? I'm just going to now just, uh, really quickly um, curl google.com for me and tell me the headers. And as we can see, it is sending a request. And yep, it got the request. I think this tool doesn't exist or something. Not actually sure. It says hexrike send request not found but it found the tool needed. So it's working fine.
+
+So now let's actually try it against some real challenges because I guess these challenges um are from Yes, we hack and they create like uh real bug bounty challenges that you can do and for example active challenges you can do uh to get points to yes we hack. So, those are like some real challenges.
+
+So, I'm just going to try with let's see, let's say this one, Halloween special. And uh all all I will do is I will just copy the description of the challenge. I will copy and give the AI description. Then I'm going to give him the code code here and then like that. And then the last uh thing I'm going to give it is this setup code. And then let's see if it actually manages to do it. The setup code is too large. It goes it goes up here into paste it. And then uh let's just send one request. I'm going to open network tab and just type in test. And then let's see where is our post request. Post to this challenge link. Um input test.
+
+So let's actually just right click copy value uh and then just copy I guess curl and then uh this is the curl to uh I guess uh send input to the challenge and I'm not going to tell it anything else. I'm just gonna tell it uh do the challenge. Give me the riot and the flag using hex stripe MCP servers and let's see if it will actually do it. So I haven't actually tested it. Uh I'm curious myself it is if it's actually able to do the challenge.
+
+And uh if we go ahead and look at the logs, we can see all of the logs what it does. So it sent through HTTP framework curl request to google.com and it sent a lot of which commands here. So it knows what kind of tools we have and which we don't. Uh and uh it just checked what tools are on my system. So a lot of these failed because I'm on Arch Linux here and not on my CAD installation. Keep in mind I'm using Sonet 4.5 and I'm not using the Opus 4.5. So this is a little bit worse version, but uh I'm hoping that it can still do this challenge.
+
+What I'm going to do here instead of waiting uh and wasting your time. Uh I'm going to pause the video here and then when it finishes uh executing, I'm going to come back and we will see if it manages to do this challenge.

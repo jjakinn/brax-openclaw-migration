@@ -1,0 +1,3324 @@
+Kind: captions
+Language: en
+welcome welcome we are excited today to
+have you on board today we're going to
+build an app and I see people from all
+around the world joining us if you don't
+mind as you're joining us say hi and to
+say where in the world you're from uh
+love to see I see people from California
+from Florida from from South Africa some
+some from Asia all over the place so
+thank you thank you thank you for
+joining us today so we what are we gonna
+do today well we're gonna build a series
+of applications and my name is Brian
+knight from pragmatic works and I am
+here to uh hopefully teach you today how
+to build these style of applications let
+me start with a few slides to introduce
+myself and also I want to introduce uh
+Ace who's with me as well Ace in the
+background say hi uh she will be uh
+working on uh uh some of the questions
+from you guys in the background she'll
+also star your questions and uh let me
+know when I should uh help you out as
+well and then also my team I've got
+Marshall as well hey Marshall uh he's
+been working on the uh raffle that we
+doing later today Marshall is my
+marketing team
+and he'll be working through uh a lot of
+the logistics behind the scenes also so
+let me get my my one or two slides I
+have uh we have a very very Hands-On day
+my name is Brian knight from pragmatic
+Works my email address is on the screen
+right there as well as my Twitter handle
+or X handle I guess uh I'm a power apps
+MVP which basically means I make a lot
+of content around the platform uh make a
+lot of YouTube videos written a lot of
+other things as well on the founder of
+pragmatic works we focus on uh training
+around the Power Platform and the Azure
+stack and other things like that I've
+offered about 18 books when we used to
+have books uh I've authored about 18
+books for those that know me I sell
+those books outside the abandoned
+Blockbuster on videos on weekends I sell
+them next to the guy who sells the pit
+bulls in case you're curious you'll find
+me there in your town here soon as well
+and I blog at pragmatic works.com or you
+can also find me on uh on YouTube as
+well and other other social ways so what
+our agenda for today is we're going to
+walk through building a number of
+applications uh one of the applications
+we're going to do is building a time
+card system to where you can log uh any
+kind of hours that you want to build to
+a project ace and I brainstorm for a
+while and we we we do these things
+called hackathons at pragmatic Works
+where we teach people how to build with
+their own examples and one of the common
+ones we've seen over and over again is
+some type of approval system right where
+where a request comes in like a time
+card request uh somebody approves it and
+then it's now approved ready to go so
+we're going to build two applications
+today we're going to talk about these
+terms in a moment but let me hop over my
+slides and talk about what types of apps
+we're going to build well there's four
+types of apps we can build in power apps
+each of them have their own licensing
+consequences around it and each of them
+have the reasons why you would use one
+over the other uh by by the way we are
+going to do a break about an hour and a
+half into this also right around 12:30
+East Coast time for about 10 minutes to
+let you stretch your legs but this is a
+full course we're doing today we're
+going to build two applications a data
+verse setup tables if we have time we'll
+do a bonus application power pages also
+just to show you how that same data can
+be provisioned and used all around your
+ecosystem now to start with though there
+are a number of styles of apps we can
+choose in power apps the first and most
+common one is a power page power P Sor
+sorry power apps canvas applications
+excuse me canvas applications allow you
+to connect to almost 1,200 data sources
+as of today at least and they're adding
+more data sources all the time they call
+it a canvas application because it is a
+blank canvas you can do whatever you
+want to on it you can drag drag and drop
+things two pixels to the left or right
+and it looks that way on your
+application also anything you do works
+crossplatform on an iPhone an Android a
+Mac or a PC or even a Chromebook doesn't
+matter there's a native application on
+your phone or tablet or you can also use
+uh the traditional web browser if you
+wanted to as well the big markers of a
+canvas application though they're
+prettier generally they are responsive
+from the first moment and um it is also
+connects to 1200 data sources one of
+those data sources is data verse and
+we'll talk about data verse in a moment
+but essentially in short it is a
+database that is a a SQL Server database
+behind the scenes and allows your
+business users to create tables and
+Define security systems and create
+columns and store data so it makes it
+where anybody that was a SharePoint
+person or anybody that's built an Excel
+spreadsheet can build a data verse table
+the other app Styles so canvas app can
+connect 1200 data sources including data
+verse however every other app I'm show
+you does require uh data verse be
+somewhere in the puzzle model driven
+apps are best used for a a audience
+that's that's a a more technically
+proficient audience so Model D apps will
+be used for uh the connected data verse
+and allow you to build out applications
+quickly matter of fact our Model D app
+once we create our tables today we'll be
+able to create those in less than 30
+seconds or so so super easy to build
+so model apps are much more about forms
+and list of data and then a whole bunch
+of options around it these can be a
+little more intimidating for a a user
+that's not used to a lot of high-end
+type stuff like having too many buttons
+might intimidate them if too many
+buttons intimidate your users go canvas
+if your users are Excel users then go M
+it's very very awesome option for you
+okay so next there is is power apps for
+teams this is a free a freemium version
+of power apps if you have a teams
+license you own this today it allows you
+install a two gig version of dataverse
+inside of each team that you wish that
+dataverse table can have up to a million
+records inside of it and it allows you
+to build these beautiful canvas
+applications right from within teams
+your users will use teams to access the
+application and your developers will use
+teams to build the app application it is
+identical to a canvas app largely
+however it's using data verse and it's
+hosted in teams and the last app style
+is called Power Pages used to be called
+power apps portals so it skews the old
+slide here power Pages allows you to go
+out and connect to dataverse and show
+this amazing data that you've built in
+dataverse on a website instead if you
+want to expose this application that
+You' built to an outside audience maybe
+to contractors or to parents if you're a
+university and you want to build a a a
+portal for your parents or your students
+power page this is the way to go it
+gives you like a a CMS a WordPress kind
+of feel but with showing data verse
+forms and data verse lists so those
+three slides are our only slide we're
+going to show today from this point
+forward we're going to get our hands
+dirty now this is a first question we
+get always asked I'm sure Asis already
+feeled this quite a bit is um um we
+probably have a a bunch oh me go and
+hide that thank you for that I
+appreciate that that was uh somebody
+asked me to show hide my screen my my
+share option thank you um what we're
+going to show here today is the ability
+to build a number of applications in a
+data verse concept now in the chat
+window you're going to see the
+directions step by step I built a little
+tiny ebook about 20page ebook to walk
+you through the why uh but you're
+definitely going to watch me to do it uh
+this session is being recorded so you'll
+be able to hop around pause me and do
+this in your environment now whether you
+have access to do this is up to your it
+team but in a moment we'll show you how
+you can also access it through the
+developer plan so the first app we're
+going to build is a dataverse
+application to do things like managing
+the projects that you want uh seeing all
+the employees that are entering the
+contract the um the U time cards and the
+actual time cards coming in this is
+where I can open it up I can approve
+certain ones if I go over here and say
+yep that's approved uh save and closes
+I'm done so there's other ways of doing
+approvals also but we only have three
+hours together so we're going to kind of
+keep our options a little more limited
+this is a model driven app notice you
+have a lot of options up top and this is
+what I mentioned it might be
+intimidating for some users where our
+other application which is a canvas
+application again this was it's going to
+be built in just a couple hours hours we
+didn't spend a whole lot of time on
+Aesthetics here and making it pretty but
+this simple application allows us to go
+through select the project we want to
+build to say uh you know learning
+session I'm going to book uh three hours
+today towards that and when I hit go our
+new session will now be logged in here
+working on training boring meeting and
+so on and so on learning session right
+there we can of course uh uh Tim stamp
+this we can order it so we're going to
+do a number of steps like this
+the thing to keep in mind in this casee
+is as I go through this and delete
+things and edit things there's only so
+many things that your users can do and
+that's where canvas applications Excel
+they and a user looks at this they can
+see well I'm going to go ahead and do
+this or I want to do this there's only
+so many things to click right with three
+things they can click on inside of here
+so what we're going to do next is we're
+going to build this from the scratch
+we're going to start by building a data
+verse table we'll get your environment
+all hooked up make sure you're ready to
+go we'll also go through let me go and
+clean up this real quick we're also
+going to go through and create your data
+verse tables and then We're Off to the
+Races so let's begin to start with
+you're going to want to go to make.
+Power apps.com and again I have a word
+doc that's going to walk you step by
+step through it and it covers a little
+bit of the why but I going to explain a
+lot more why in this video session also
+so I'm going to make power
+apps.com once you're there and again if
+you don't have access you can sign up in
+uh if you just power apps developer plan
+there we go uh Ace is going to be kind
+enough to put the developer plan in the
+chat window also but if you don't have
+power apps today or you don't have
+access to some of the premium features
+this this uh P this plan right here this
+white link you're seeing right here is
+going to allow you to sign up up for the
+developer plan the developer plan if
+your it allows you to do this allows you
+to have a permanently free environment
+does not cost your company any money or
+any
+capacity and you can do whatever premium
+features that you want to do in that eni
+environment if again your it allows you
+so once you click on that white link
+you'll just click on the sign up for
+community plan it will ask you what
+country you're in and when you hit
+accept it's going to spend a few minutes
+creating the environment for you
+sometimes this week I've noticed I've
+had to do it a few times to finally get
+that environment up here You' you'll
+know it works when you see like Ace's
+environment like this it again it might
+take up to 15 30 minutes to do its thing
+again you can always just watch me if
+you don't want to play around play along
+with me absolutely fine here but this
+environment is a developer environment
+which is forever for free for
+you you can also create developer
+environments in the admin Center uh and
+the admin Center you'll notice is in the
+gearbox right here under admin Center
+again this is at make. Power apps.com
+and that admin Center allows you under
+the environment panel on the left side
+allows you to create new environments
+once you click on environments here
+you'll see the new button and there's an
+option right here under new to get the
+developer plan here so again I hit the
+new button up top and you'll make sure
+develop plan is selected here again
+that's a free environment forever for
+you okay so with our environment all set
+up and again please feel free to pause
+me I'm going to close this little side
+panel so none of that kicks gets in away
+here we're now ready to play so our
+steps to creating a dataverse set of
+tables when we're building a Power
+Platform solution we always want to
+start on Solutions so I'm going to pick
+my environment up top okay I've got a
+fresh new environment called learn with
+the Nerds okay so you'll choose that up
+here so pick your environment make sure
+that environment does not say the word
+default so so no default okay so make
+sure that that's the case uh so the word
+it may say default or something like
+personal productivity likely you will
+not have access to do that in that
+environment okay so I'm going to click
+on Solutions on the left side if you
+don't see Solutions you might find it
+also under
+but we're going to select this right
+here to go to our next step okay once
+we're there this is a very clean
+environment I created this environment
+about 10 minutes ago 15 minutes ago
+right before we began what a solution is
+is it is a container of everything you
+need to make your system work this
+environment which we talked about we
+didn't really Define this environment is
+a almost like a server at Microsoft
+everything you want is is in this
+environment your users your apps your
+flows your work your workflows your
+power page stuff your everything you
+want is going to be in there typically
+an environment is like Dev QA and prod
+you'll create one for each for your
+entire company or your department we
+have other sessions on YouTube or also
+in our learning management system that
+walks you through Best Practices around
+that
+also so if I go to Solutions this is
+going to be a container that everything
+I need to deliver my time card to
+you in the uh in the zip file that was
+provided to you you'll find in that zip
+file there's a word doc which is my
+step-by-step instructions and a zip file
+of my final solution as well so that
+final solution is one zip file and all
+you have to do don't do this now but all
+you'd have to do if you want to get all
+my stuff over is hit the import solution
+it's one zip file that you don't don't
+decompress don't uncompress everything
+you want is right there you would import
+hit browse point to my zip file and
+everything you want is there now don't
+do that now let's go and just build this
+together and have some fun though so in
+this case I'm going to build a new
+solution so the step you're going to do
+is you'll hit the new solution button
+right
+here once you have new solution checked
+I'll call this like learn with the Nerds
+and we'll call this a uh time card
+something like that call it ever you
+want though you're the only one that's
+going to see the solution name you as a
+developer and your other developers in
+your team as well would see that
+solution
+name now right below this is something
+called a publisher and a Publisher's job
+is to say who is responsible for this
+solution a publisher should be either a
+department or a company but it should
+not be Brian the reason why is because
+everything I create in this solution is
+going to have the prefix of my publisher
+you'll see what I mean in a moment here
+so I'm going to hit new publisher
+because you'll notice the two solutions
+that are two Publishers that are already
+here are Microsoft Solutions I don't
+want to put it in their I don't want to
+give them credit I'm going to hit new
+publisher right here and I'll call this
+just pragmatic Works call it your
+department name or your company name my
+name is going to be pragmatic works
+again with no spaces so again this is
+going to have
+uh whatever you want to show to to your
+other developers again no spaces
+here and the last part is a prefix right
+here for the prefix put some type of
+two-digit qualifier inside of it like
+your department name two or three letter
+qualifier ignore the choice prefix
+that's for drop- down boxes will not
+matter 99% of the time so so what I
+changed I put pragmatic works I did out
+spaces here and I'm going to put the pre
+prefix right here now you'll notice that
+when I put the prefix on it every table
+that's created now will have PW
+underscore the table name or object Name
+by doing that it allows you in powerbi
+to group all of your assets together if
+you're a SQL Server person this is like
+a schema name it's basically a prefix
+that every object will have on it so it
+allows you to find find your stuff much
+faster I'm going to hit the save button
+the first time to save my publisher
+and then I'm going to select that
+publisher from the drop-down box right
+here so my final screen should look
+something like this and I have my
+display name my name without spaces and
+then my publisher name has been uh
+highlighted right there and then I'll
+hit
+create okay we are going to go a little
+bit fast because we're doing so much
+show Fast here also we're going to get
+through hopefully two maybe three apps
+done
+in this three-hour window so we got a
+lot of a lot of heavy lifting you can
+imagine if you were to build this uh
+build a a time card system yourself Inn
+net or some other mechanism it might
+take you weeks if not months now this is
+going to be a very basic application but
+we're going to do this in three hours
+and then you can go live potentially in
+just a couple of days potentially so
+this is what we do in our hackathons we
+build stuff like this with their own own
+data like this let me close that down l
+in a moment here also all right our
+solution is now created and in our
+solution we've got a whole bunch of
+assets here now anytime you're working
+in the Power Platform you never want to
+do something without a solution you can
+always retroactively bring your stuff in
+by hitting add existing if you ever
+wanted to bring your old stuff into the
+solution at some point it's going to
+make it easier so much easier for you to
+move all those assets sets from Dev to
+QA to Production Solutions also though
+turn on features that you don't have
+normally we'll show some of those
+features a later
+also so we're going to start by creating
+two tables in this so these two tables
+we're going to have one table for all
+the projects and then one table that's
+going to have the actual time card
+itself now of course this time card
+solution would normally be much more
+complex and a lot more inside of it but
+once you do three or four columns you're
+going to get the idea so we're not going
+to go too too deep on that we'll let you
+kind of see the see the few tables move
+um and then you know beat your chest a
+little bit and we'll move on the next
+step but of course in your company this
+example will be much more com much more
+uh enhanced so we're going to go ahead
+and start by hitting the new button now
+again I'm in my solution if I
+accidentally ever got out of the
+solution like this I can always go back
+to Solutions and hit that that little
+learn with the Nerds time card right
+there always get back to it okay I'm
+going to hit the new button right here
+where I can see all the types of assets
+that I can build in my case though I'm
+going to select new table and table now
+while I do this real quick I'm take a
+quick time out we're going to select new
+table and
+table all right and once you do that um
+it is you may have noticed this external
+table right below it also
+external tables allow you to bring in
+stuff like SharePoint list and SQL
+Server uh tables just name a few options
+right into Data verse so it looks like a
+data verse table but if I were to delete
+a record it will push that delete to the
+underlying data source it doesn't
+actually store any data in datae just
+the metadata that describes the columns
+and the the ways you want to see that so
+tables from external data we're not
+going to use use right now but they
+allow you to kind of really have your
+cake and eat it too so I'm going to hit
+new table and table again not the table
+from external
+data okay once we do this our first
+table will be called
+project believe it or not you are done
+you can hit the save button down below
+for this table in particular and just
+watch me for a few seconds if you're
+playing around you might have got an
+error at that point saying you do not
+have permission to do this or the new
+option was grayed out or the save button
+grayed out if that's grayed out it means
+you have an environment selected that
+does not have access to power apps or to
+to data verse create data verse tables
+things like the system customizer role
+uh security role would allow you to do
+that so find a new environment and try
+again that happens to you or ass sign up
+for the trial plan with a with a
+personal email
+address but in my case I do have access
+so I typed in Project always always
+always make sure whatever you put here
+is singular so if you put uh so no
+plural
+names it will mess you up later when we
+go to Builder applications if we type in
+projects so if you look at your table
+right now and you see projects not
+project right here then go ahead and
+delete that table and recreate it you'll
+notice right below below it it does
+pluralize it right below it additionally
+something called a primary column we'll
+come back to that in our next table so
+I'm going to save this
+one so again always always always make
+sure it's singular over here if you made
+that mistake I'm going to hit tables one
+more time if I made that mistake I would
+hit the three Dot and I would delete it
+uh remove it from my environment here
+okay but you'll notice that once I
+clicked on it it came
+here we have no more work to do with
+this right now other than one thing so
+again if you're not here you want to go
+ahead and look over here and click on
+the word project right
+there now once you have this open you'll
+notice if you slide to the right a
+little bit you can see all the columns
+that Microsoft has created so we can add
+other columns right here hitting the
+plus button here or looking at the other
+columns that are out there again we're
+going to come back to that a little bit
+later once we build our model driven app
+to show you what it looks like Okay so
+so next step I'm going to do I'm going
+to select tables
+again right here few ways you can do it
+I'm going to select tables right here
+and then we're go up top again and
+create a new table just like we did last
+time this one's going to be a much more
+elaborate example where I'll go file
+sorry new table and table
+again this table is going to be called
+time space
+card okay notice below it has pluralized
+it so make sure again sing ular here
+each time now there's a few things you
+want to we want to look at here as part
+of this the first thing is what is this
+primary name column I told you I'd come
+back to it Now's the Time the default
+primary name column is name now primary
+name column is what represents a unique
+record uh now it's not a system uh
+record it is how you and I are going to
+communicate so if I call you about a
+project what is the best way I can
+convey that to where you can pull that
+project up in that case it's probably
+the Project's name right the name column
+in our time card case hey I'm calling to
+get this time card approved think about
+what you would what what does this mean
+when I'm reading this over the phone to
+you if this is best described as a
+project name then you you keep the name
+column that you have right here type
+type in Project name or
+whatever if it's best as a a number
+instead then let me call this time card
+number like
+that in this case I'm going to use time
+card number and that is going to be a
+Auto number that we're going to set this
+can either be an auto number or it can
+be a text string like we have
+here uh time card number though does not
+have to be a unique
+value okay somebody's honking their horn
+outside over and over again all right so
+uh in this case it is going to be an
+auto number we'll do the auto number in
+just a moment we have not defined it as
+an auto number yet but we're going to
+Define that a little bit
+later let's go back to properties again
+so I was just over in primary column now
+I'm going to go back to properties
+notice here let's explore a few more
+options that we don't really need but
+I'm going to explore these just so you
+can see additional information that you
+can do on this table first thing you'll
+notice is we can enable attachments
+right here by enabling attachments this
+allows you to go through and turn on
+attachments so you can upload hey this
+is a client signature for this or here's
+a PDF I was working on here's my
+artifact that I created during this time
+block we also see this used for storing
+things like CAD drawings or uh images or
+PDFs or your inspector all the images of
+the flaws of this if I go over to
+Advanced options we can see behind the
+scenes the name in SQL Server of this
+table and as we scroll down I'm also
+going to turn on creating a new
+activity right there under Advanced
+options so when I check that box you are
+safe to hit the create button now okay
+at this point we're done making changes
+that's to kind of show you a few more
+things on camera that you can do okay so
+don't do any of these changes I'm going
+to click on I just clicked on create new
+changes and I would normally hit save
+but I'm going to show you a few opt
+extra options one is the option my
+favorite option here is to audit changes
+the data so as Ace goes through and
+changes their their amount of hours they
+booked from 40 hours to 40 to 4,000
+hours we can log the fact that Ace made
+that change on this day they logged in
+the application they went to the screen
+they changed it from their salary from
+$40,000 to $400,000 they hit save and
+all that is logged so that's one option
+you can do we can also log these large
+files into
+SharePoint every time I create a new
+client or in my case a time card it will
+create a folder that I can store those
+those uh files into so that way I'm
+using the space from SharePoint not the
+space from data verse there's lots more
+around that that we can discuss but just
+a heads up on that one
+piece creating a new activity what this
+allows us to do is it allows us to to
+when we look at a time card we can start
+conversations about that time card we
+can log phone calls log emails about the
+time card we can log appointments about
+it all those things can be logged on a
+given
+record so those are the big highlights
+here I'm going to hit save here and our
+second table has now been
+created now as we go through and create
+this table we have a number of columns
+that we're going to knock out now let's
+start by going to columns a few ways you
+can get there one is you can expand time
+cards click on column the other way is
+click on columns in the middle section
+here so whether you're more comfortable
+expanding the left or go in the center
+you do it works for you okay and you'll
+notice there's a lot of columns that
+Microsoft has created for you in
+dataverse this is one of the advantages
+of dataverse it has things like row
+level security to where you only see
+your own data it has things like
+business unit level security where you
+only see your data and any customers or
+any anybody else in your department
+potentially it also has hierarchical
+security where a CFO can see her her
+department and any Department underneath
+her it has all that and it has column
+level security where I can lock down the
+salary column to where only HR is
+allowed to edit it and only finance can
+see it potentially so you can get really
+granular on your security I have yet
+defined a scenario where data verse
+cannot handle the security Concepts the
+brilliant thing is it's simple
+checkboxes to knock it out and they're
+making it easier you'll also see that it
+has tons of auditing built in this like
+who created the record who modified the
+record who owns that record which may be
+different than the
+Creator now for me the first thing I
+always do when I get here I don't want
+to see all this junk that Microsoft
+created I just want to see my junk so
+I'll select right here where you see the
+name column right here and I'll say
+filter by now remember that prefix I
+created earlier it was called PW in my
+case I want to hit filter by and type in
+PW and then hit apply now I'm just
+seeing the two tables or two columns
+excuse me that I created in this case
+one is called time card number and one
+is called time card ID now time card
+number is my primary name column about
+how you and I are going to communicate
+where time card is a unique identifier
+that is guaranteed to be unique across
+our
+environment this is how all of our link
+links will have the time card ID in that
+link so up top when you look at the URL
+it'll say you're editing time card ID
+equals and we'll have this long long
+string goid behind it now I mentioned
+before I wanted this to be an auto
+number so if I select time card number I
+hit the hyperlink right here for it it's
+going to open up a side Pane and we'll
+see at the as I look at this the data
+type right now is a single line of text
+I'm going to change that into an auto
+number and you can also add descriptions
+on it and all those kind of goodies and
+as I scroll down we also though can put
+prefixes on this so if I do a t for my
+prefix look what happens every row
+underneath it will have T100 10001 and
+so so on and so on why would I ever want
+T 1,000 in that it's like a Terminator
+uh robot doesn't it so if you want to if
+you want want to identify what type of
+record it is a good pre a good option is
+to prefix that data imagine you're an HR
+Group and you have somebody calling
+about T1000 you immediately know that
+because they said the word t or letter
+in front T in front it must be a time
+card where I call about a1000 I'm
+calling about my application for
+employment so this allows you to kind of
+look at the data and find one that works
+for you I'll I'm going to save this and
+it's going to now change this to an auto
+number right now it's a single line of
+text that will then become Auto number
+in a moment there we
+go now we're going to go through and
+create a few more columns and again this
+is all in your word doc you'll see right
+here I have these columns listed right
+there Ace if you don't mind would you
+mind putting those in the chat window
+for the team so they can go ahead and uh
+uh copy and paste if they so chose but
+Additionally you can also go through and
+do that yourself if you like as well so
+my first column up top when I'm in
+columns I'll hit new column and I'll
+call this column um how about I call
+this one project what project are you
+building time to so I'm this data type
+notice all these data types are
+available to you again the goal was to
+make it to where anybody can build these
+tables out so my first column I want to
+connect this table
+to my project table so I'll call it um
+uh again change single line text to look
+up and look up so in this case my column
+name is Project I'm going to go look up
+and then look up
+again with that done it's going to ask
+you which table do you want to connect
+this to where it says related table
+right here I'll click inside of here and
+type in project and hopefully it will go
+out there and find my project table
+all right with that done you can hit the
+save button your First Column has been
+created our next column is what employee
+is logging time now there's a few ways
+we can do this we could look up against
+can can store their employees email
+address we could also connect that into
+another entity for example like the
+contact entity or the user entity so I'm
+going to create another column again
+I'll call this
+employee and this is going to be a
+lookup again and look up again this time
+though I'm going to connect it to the
+contact table now there's a few options
+I had here again I'm gonna I'm gonna
+freeze here a second zoom in I change
+this this and this what are my other
+options here well I chose the contact
+table why would I have my employees in a
+contact table the contact table is a
+table that Microsoft has created for you
+to store all of your all of your people
+inside of there's already over a hundred
+columns inside that table and yes you
+can extend it and add your own columns
+to that as well there's also tables like
+the user table the user table store
+stores any user that has a license of
+power apps in this environment the other
+table is aad
+users this stores a link to your active
+directory and all the all the uh active
+directory users that are there so if I
+hit the drop down box I would see
+Marshall Ace and every Everybody in the
+company right there
+live so why did I choose context instead
+of one of these other two
+tables if I chose one of these other two
+tables it would automatically have a
+list of those
+users the reason I chose contacts though
+in this case
+was because I want to not not Corner
+myself into a corner here or put myself
+into a corner I want to make it where I
+can eventually store this data and have
+my contractors come in through a power
+page even though they don't have a
+pragmatic Works email address I want
+them to be able to come in without being
+authenticated into my active directory
+and log records so if I have contractors
+I have a consultant coming in I want
+them to be able to to to log into a
+power page eventually and log their time
+card also if I put this data in contacts
+contacts will eventually also hold that
+contractor's username and password so by
+using using the contact table in this
+case I am no longer in a corner this is
+not just going to be an externally
+facing application but also potentially
+an internally facing
+application so I'll hit the save button
+here
+all right that one is now done all right
+so our next one is going to be an
+interesting one also so we have our our
+our employee now logged our project now
+logged our next one is going to be the
+description of the work they did so I'll
+hit new column I'll type
+description this one I'm going to make a
+text column but when I make it text I'll
+this little right arrow and I'm going to
+make it multiple lines of text I'll zoom
+in again again here in case you have
+eyes like me I'll go plain text text and
+the description column here now you can
+also use Rich Text where they have a
+full word editor to kind of maintain and
+make any kind of changes that you wish
+but in our case we're choosing to use
+this route to uh because I don't want to
+have all this HTML stuff inside of my uh
+my my information so I'm G to keep I'm
+GNA go with plain text because of that
+so again really simple description mult
+mul line of text and then
+save you're almost done we have three
+more columns to go our next column is
+going to be how many hours you worked so
+I'll call this hours
+worked this is just going to be we can
+make it a number but make sure you make
+it a decimal number not a whole number
+in case I worked a quarter hour or half
+an hour or something I should get credit
+for that so I'll make this a decimal
+you'll also notice by the way under
+Advanced options that you can have a
+whole bunch of data validation like can
+you do a negative hour no you can't do
+negative hour so I'll make that a zero
+right there that's a minimum value can
+do you want to do column security where
+only certain people can edit that you
+can check that if you wanted to let's
+definitely not do that right now but for
+salary columns that's a really useful
+option I'll hit
+save all right two more to go what date
+was this build we have the date it was
+recorded but that may be different than
+the date it was recorded so I'm going to
+hit new new column again we'll select uh
+build date this time this is going to be
+a date column a date only I don't care
+about the time you logged it just the
+date you logged it now in this case so
+make sure this says date only it's going
+to save you some work later but one more
+piece I want to do because of the time
+zone challenges here I'm going to hit
+the advanced options and I'm going to
+change this user uh uh local here to
+date only also that is one more little
+gotcha so again I changed uh Bill date
+date and time date only and date
+only the reason why I had the stuff down
+below is because of time zones if you
+don't do that it's still going to prompt
+you for a time in many of the
+applications so by doing it this way
+you're only prompted for the date not
+for the time so I'm GNA ahead and save
+that now now why this is saving a few
+things also uh as Ace wow already 300 50
+chat messages already thank you Ace for
+covering those uh as as they go through
+and and and do that the more you chat
+and more you uh Converse in that chat
+window we have a raffle we're going to
+do do two Raffles today one at the break
+at 12:30 and then one again at the end
+of the presentation where you'll have a
+a chance to win a free subscription to
+our on demand platform and we'll show
+you it looks like later today um and
+we're going to draw that from those that
+are conversing with with a asking
+questions talking or doing saying how
+cool things are whatever you want to do
+how how bad things are whatever doesn't
+matter so if you if you if you're if
+you're uh chatting at all it puts you it
+gives you a uh a a entry in the raffle
+later today all right sorry Ace I made
+your 350 messages now 900 messages
+probably all right so so to start with
+here we have one one more column do was
+this approved or not approved so think
+about this app application we could if
+I'm a contracting company or consulting
+company I can have all my Consultants
+log this these time in the application
+the internal application using canvas my
+external folks my contractors can use
+the power page and my uh my customers
+can approve that time potentially in the
+power page also so let's go ahead and
+create a simple column called approval
+status all right the drop- down box for
+data type this time will be choice and
+choice and for this I'm going to go
+ahead and scroll down and you'll see new
+choice right here so make sure it says
+it's Global choice I think other
+applications might need this this drop
+down box eventually also so what I'm
+doing right here by creating a global
+Choice I'm creating a drop-down box that
+any application in this environment can
+also use so I'm going to select new
+choice
+now one of my rules of thumb here is I
+always like to go ahead and um approval
+status and I'll put the word choice at
+the end this makes it easier for you
+later to find this so always put the
+word at least my standard at least is to
+always put the word uh choice at the end
+of any choice that you create I'll
+create three choices here one will be
+called uh pending next one will be
+called approved and I'm hitting new
+Choice each time time and the last one
+is
+rejected again all I changed was this
+approval status choice and I create by
+hitting this new Choice button here I
+created these three choices right here
+never before in your publisher you had
+that that uh that choice prefix these
+are the numbers right here that that
+came from that in case you're curious
+now you're ready to hit save here just
+note that you can also do things like
+change the color of these choices if you
+so chose and by you by you're doing that
+the application can later interact with
+that if you wanted to also and and see
+that color overlay on top of your
+choices I'm going to hit save though for
+the time being and set the default oh
+sorry I'm GNA go ahead and select my
+choice this is why I've named it choice
+if I click inside of here and start
+typing in the word choice it comes right
+up and I can see my my options right
+there we can also set the default uh
+whenever somebody inserts a record I'm
+going to make it pin right here all
+right so let me Zoom it again approval
+status choice right there for data
+type then I'm going to say Global choice
+I created my Global choice and yes we
+can always edit it later if we wanted to
+and then I set my my default to pending
+by making that default is pending or uh
+it will every new record will have
+pending on its status type hit save to
+go ahead and commit all that now you'll
+notice as soon as you did that there
+there's going to be a new area on the
+left side here and it's going to have in
+a moment here there it goes and oh it's
+going to be here in just a few seconds
+here um we'll have a choices section
+over here
+also there it is take a while for it to
+show up here so that's where I can go
+and edit those choices anytime I want
+and again any of those choices I edit
+will reflect across any application
+using it in addition you'll notice on
+the left side I've got contacts here why
+is contacts here I didn't create a
+contact tape
+the minute you went ahead and referred
+to the contact table it is it went ahead
+at that point and it is using that as a
+stub where you can extend it if you
+wanted to so this contact table you'll
+notice that if I go to columns here
+there's nothing here but there's tons
+inside the contact table this is just
+showing a stub of everything I I I need
+in this case so if I want to add new
+columns to the content table I can most
+certainly do that if I want to change
+the columns that are already there I can
+add an existing column and then add my
+and then click on it and then modify it
+if I so chose most common application
+for that would be things like uh adding
+in like a contact type this is a teacher
+a contractor an employ or whatever so
+those kind those are ways you can do
+that now for some reason I'm spinning
+out of control right now this little
+hourglass so I'm just going to refresh
+my browser see if it comes back now in
+this
+case Okay so we have now created all the
+tables that we need in all the columns
+in those tables we're now ready to work
+on our model driven application our
+steps for creating a model driven
+application are first of all to create
+our tables which we just
+did create our views to see the data and
+our forms to enter the
+data we're then we lastly we create the
+applications on top of it so we're going
+to start with this time card table so
+what I want you to do is go to time card
+expand it and go to views
+first right on the left side you'll see
+time card and then views if you don't
+see that go back to your solution and
+then go pick the right solution you'll
+find it there by the way you can always
+also select views up top and switch
+between views and forms here if you so
+chose
+also now there's a number of views that
+Microsoft has created for for you okay
+so I'm in the view section right there
+some of those the most common view
+you're going to be messing with is
+active whatever your table name is this
+active whatever your table name is time
+cards will show you all the records that
+are presently active that are not been
+archived where the inactive ones are
+going to show you deactivated records
+that you may want to soft delete meaning
+you're archiving The records there's
+other ones here we do have a whole class
+on M and apps we show you more about
+each of these and you can also create
+the perfect view for yourself right here
+if you so chose I'm going to choose to
+go to the active time cards right here
+and we're going to create our own view
+here now again let me make sure I show
+this one more time for those that may
+have missed that I'm under tables and
+time cards and I clicked on views you
+can also access it in the middle section
+right here you'll see views right there
+as well once you're there click on
+active time cards this opens up your
+designer and this designer is going to
+allow you to kind of manipulate things
+just like you do in Excel spreadsheet
+you can go and if I zoom in here just
+like an Excel you can drag those make it
+smaller bigger you can say I'm G to
+remove that and and I don't care about
+that column by hitting by right clicking
+on it and removing it there we go you
+can also see on the left side there's a
+lot of columns here what I'm going to do
+is I'll hit this drop- down box right
+here where it says the filter
+icon and I'll select
+custom once I do that once I set custom
+I'm only gonna see the stuff that I have
+created and all the Microsoft stuff goes
+away at that
+point so I'm going to go ahead and
+select um um uh I'm G to put the
+employee how many hours they worked on
+what project and when did they do it and
+has it been approved that's good enough
+for now we can also add other columns
+keep in mind this is not you're not
+trying to show every column here you're
+just trying to show a high level
+information and they can click on that
+data to go deeper on the right side you
+can sort it and filter it or you can
+filter it and sort it by just hitting
+the columns and saying sort and filter
+we can always drag things around just
+like this you can resize things or you
+can hit the down arrow and remove things
+at any point in time okay or you can
+rightclick either way if you forgot to
+add a column you can also add columns by
+hitting new table column right here
+also with that first table done you now
+have created a way of seeing the data
+hit save and publish in the top right
+this going to take a few seconds to save
+and publish and what's happening right
+now if we did that in the application
+using this View and you might have an
+employees view with tons and tons of
+applications 20 applications all using
+it if I modified it changing the way the
+data was sorted or changing the filter
+adding a column sorting it whatever I
+want to do if I were to do that every
+one of those 20 applications would also
+reflect that new change That's The Power
+of data verse is you do it once and it
+rolls out for everything and all all my
+a lot of my business logic is in data
+verse I'm as soon as it saves and
+published I'm going to hit the back
+button up in the top top
+left all right ace you're you're busy
+right now 500 questions again there's
+anything that you think that would be
+useful for the other people feel free to
+start it and I'll answer those questions
+in the uh in the chat window also or
+verbally here as well oh there's one our
+first cominging again all right so uh
+question here again what if you didn't
+want a default Choice great question so
+if you didn't want a default choices
+question from Tom coming in then just
+leave it alone if you say none it will
+that that option will be null for you as
+you do that so no worries at all if you
+so to chose that thank you Tom great
+great one to fly there Ace thank you so
+much any as much as you want to that no
+problem at
+all all right so we've now got our view
+now done we have our columns now done
+now we need to wait for our users to
+edit and insert and delete the data so
+to do that we're going to create a form
+again you can select right here under
+views and go to forms that way way or
+you can select forms on the left bar
+whatever is comfortable for
+you now again there's three forms here
+the one that you're going to care about
+again another forms right here the one
+you care about is the main form so yours
+might not be the third form here so look
+whatever one is Main and as soon as you
+identify the main one go ahead and click
+on the word information right
+there now you may have noticed there's
+more than just forms and views inside of
+the left side there are also dashboards
+and charts you have things like
+relationships how you relate tables
+there's keys for looking for duplication
+of data there's also things like uh uh
+business rules you can create
+also so uh great question here from Jeff
+so the question is what happens if I
+remove a column does it also delete all
+the data within that or does it not
+allow uh you to view that so if you
+delete a column within that view so I
+think the question that Jeff is asking
+is I'm looking at the view
+here okay if I were to remove it from
+here it will not delete the data or
+change the the actual data in any way it
+just changes your view on the data if I
+were to delete the column from the
+column list then yes that data will
+disappear at that point it's so great
+question Jeff thanks for asking that go
+and hide that now uh so two different
+ways of thinking about I'm not sure
+which one you're asking but well make
+sure I asked the right one there also
+all right so cool to create our form I'm
+going to go back to forms and I'm gonna
+click on the word information under
+main Now watch how fast we can build a
+form okay right now East Coast time it
+is
+1153 I'm going to hit the drop- down box
+again to say only
+custom and then you see where it says
+time card number right here this little
+panel here I want to click on time card
+number and make this read only so I'm
+going to select time card number on the
+right side I'll check read only this
+puts a little um a little locking key
+next to it so again click on that and
+then Mark it as read
+only by doing that it will auto number I
+don't want my users to feel like they
+have to go in there and type a number
+into there if you do not make it read
+only the users will feel obligated to
+type something in and they will mess
+your data up so keep it
+simple additionally on the left side I'm
+just going to go through and go click
+click click click click all the way down
+on my columns that I created and you'll
+see it went ahead and moved it around
+you can then drag and drop them however
+you want and I'm basically constructing
+a form here we have trained tons of
+business users tons of of users that are
+technical I very rarely found a problem
+where a business user can't figure this
+out very easily usually within a half an
+hour they are building forms for
+themselves it is amazing to watch now
+this owner is who owns the record and I
+can click drag and hold it and if it
+turns light purple up top you can also
+move stuff up to the top header right
+here so when you're done hit SA and
+publish up in the top right it is now
+11:55 2 minutes have passed and you have
+now built your first P data vers form
+model different form in this case this
+form we just built will be used in model
+driven apps and in power Pages The View
+we just we built can be used in model
+driven apps canvas apps uh Power Pages
+uh every type of app you want to build
+it will work working there for you all
+right so it also works in Excel on those
+kind of areas so change it once
+reflected across the board now just to
+kind of take a quick timeout here we
+have you're done so you can save and
+publish and then hit the back button
+you're done but I just want to show you
+again on the left side here you can
+create your own columns right here if
+you wanted to again you can hit the up
+top here it says components
+this allows you to add new components
+like new tabs see now I have a new tab
+right there it allows you to build new
+tabs and I can go through and do other
+stuff as well so if I want to create a
+new tab here and I want to put any kind
+of attachments of this I can drag this
+timeline over don't worry about doing
+this doesn't matter we're not going to
+use this at all so this timeline right
+here lets you go through and add things
+like activities notes uh appointments
+phone calls calls emails about that
+given time card we can also go over and
+select the tab and rename it to you know
+notes something like that again I'm not
+gonna none of this matters I'm not GNA
+actually keep any of this stuff there's
+powerbi integration where you can bring
+in powerbi reports there's AI
+integration there's lots more components
+you have at the bottom as well if you're
+a coder like Asus we can also go through
+and add things like JavaScript libraries
+to this we can add business rules to
+this without
+JavaScript we can also securitize this
+is that a word securitize it is now we
+can also go to form settings and say all
+right who can access this form anyone or
+just people that have a certain security
+role so lots of options you have in here
+and when I save and publish this it is
+now pushing that out to all those
+sources out there so it is now done I'm
+going to hit the back button just like
+you and oh great question question here
+from Elizabeth what happens if you
+accidentally remove a column from the
+column list is there a way to uh
+retrieve it if uh uh treeve the data
+lost yes so if I go back here
+again and I if I accidentally delete a
+column by hitting the delete key or
+hitting the pro the U the pro the uh uh
+delete button right here also this
+little Trash Can button when I do up
+here see to the trash can at any point
+you'll notice that my project should be
+back here again you just simply click on
+it again or drag and drop it and it will
+move that right back for you so at any
+point it's almost impossible to mess
+this stuff up Elizabeth so it's it's you
+can do it of course but it makes things
+a little bit easier as you go through
+these to do that all right I'm G GNA
+save and publish make sure I did that
+and then I'll hit the back button again
+all
+right let me hit that back button W
+almost 600 comments now you guys are
+rocking thank you Ace Ace is uh keeping
+busy now it is the top of the hour we're
+going to do a break in about a half an
+hour here but it is exactly top of the
+hour right now look at your clock watch
+how fast we can build this model driven
+application all the hard work is done we
+have got the form done the view done and
+the columns done all the business logic
+is is inside of here so now we're going
+to go back to the all section right here
+we're going to hit all we're going to
+hit new new app and model driven app so
+I went to all new app model driven app
+name this app whatever you want to name
+it doesn't matter and once you do that
+uh we're going to go through and we're g
+to modify the application so I am going
+to start building this right now file
+new and modeler an app we'll do a canvas
+one next also I'll name mine uh
+timekeeper admin maybe and then I'll hit
+create of course you want to put a
+description on it and of course you can
+put things like uh we can put things
+like icons on it later as well we'll
+call this timekeeper admin this
+application we're building will work on
+your phone on anybody that has a link
+through a browser or a PC Mac it doesn't
+matter all right to create our
+application simply hit the new button
+here here or here either way I'm going
+to hit the one right in the middle here
+it says add page
+once I hit add page notice we can add
+things like dashboards we can add canvas
+stuff to this as well that's our canvas
+items right
+there we can add links to this web
+resources our HTML Pages URLs dashboards
+all that stuff is right here I'm going
+to point to our data verse tables where
+I'm going to search for my contact
+table my project
+table and my time card table the one the
+three tables that we have
+used so again you search right here for
+time
+card contacts and then lastly
+project okay or project excuse
+me once you do that hit the add
+button now you'll also see this is grp
+all these tables right here are grouped
+together if you want to change that
+group on the left side you see new group
+we can select that new group and give it
+a give it a better name like uh time
+cards or
+whatever okay there we go what changes
+that right there so I somebody selected
+it on the left side change it on the
+right side believe it or not you're done
+it is now
+1201 based on my clock at least and at
+12:01 in about two minutes there we have
+finished the application so go hit the
+publish button the top right we're going
+to come back to this in a moment we're
+going to I'm going show you some
+additional things inside of here you may
+notice that I have some sample data in
+here as well if you don't have sample
+data I'm going to show you in just a few
+seconds how you can add some sample data
+also my sample data is only in the
+contact table but in the projects or
+time cards I have no sample
+data so to do this what I want to show
+you is some additional things that you
+can do notice that when I select
+projects on the right side it's showing
+me all the the uh views that are
+available to your users should they be
+able to hit the drop- down box and see
+archive projects that's up to you you
+can hide it by just setting the three
+Dot and saying remove and it will hide
+it from this application you might also
+have like the contact table look at all
+these my goodness so you may not want
+them to see all these views or they
+don't pertain to your application just
+just hit the three Dot and remove
+it in addition we can see things like uh
+any kind of automations you have in
+place you can do other stuff in this
+application also but most the business
+logic is in those
+tables nothing more to do so far but hit
+the play button so I'm G to hit that
+play button right there and it's going
+to open up the
+application question from Julie adding
+powerbi to this it will allow us to
+create a graphs to show where the the
+where you're spending your time can we
+also go through and use a use a plan
+view tool or some other third party tool
+application like that so yes when I open
+up the application we could have powerbi
+reports in this and dashboards in this
+powerbi dashboards to see our data if
+you want to access for a m of an app
+plan view for example your best bet is
+to build powerbi reports on top of plan
+View and then link to it here so you
+would have a dashboard button right here
+and then Julie what you would do is you
+would one of those reports would be your
+plan view report so you have one version
+of the truth there you can also though
+when I'm looking at a view at any point
+hit visualize this View and it will then
+open up a powerbi report about the view
+that you're looking at right now this is
+more of an ad hoc report hopefully juli
+I kind of got you started on that we do
+have some videos that show you more
+information you can also weave those
+into your forms if you so chose
+also okay so once this once this opens
+up it's done right now and it builds
+basically an ad hoc report this takes
+about 30 seconds we're not going to show
+too much about it but I just want to
+show you that you can ad hoc build
+whatever powerbi report that you so
+chose takes a few seconds you can then
+check on different things like the email
+and it will start to open up those oh
+goodness it's taking his time isn't it
+all right well in an effort to save time
+I'm going to close this but just note it
+would be a powerbi report showing you
+the view and helping you slice and dice
+that data all right so what if I don't
+see any data right now well if you don't
+see any data let me show you a little
+backstage way of adding the sample data
+if you want to I'm going to hit the gear
+box the top right and go to advanced
+settings it's going to open up a new tab
+for me and this advanced settings is
+going to let me see all the backstage
+stuff for power apps I'll hit the down
+arrow we on settings right here and then
+go to data management so again the down
+arrow and then data management boom and
+then
+boom then I'm going to go through and
+hit sample data now in my case the
+sample data is already installed which I
+can remove at any point in your case
+though you'll you might see install
+sample data it's not required for this
+session but if you click on that it's
+going to install some companies and some
+contacts for you
+in my case though in an effort to make
+this a little better for myself here I'm
+going to hit the new button under
+contacts when I'm playing the
+application and I'm going to build a a
+user for me Brian all right night there
+we go and then I'll go through and add
+my email address in here all right
+perfect and I'll I have other stuff
+inside of here as well okay that's good
+enough all all you want to do right now
+is add your your first last name and
+your email address in the application
+we're going to use that later if you
+want to add a coworker that's your
+prerogative also you can hit save and
+close up top to leave that if I want to
+go and add like a Devon Knight for
+example o all
+right and then I'll put his email
+address in here you might have guessed
+what his email address might be I'll hit
+save and close and now I have two of
+them there's a few neat things you can
+do here also as you're looking at uh
+these records you can also hop around
+very easily you can export all this data
+to excel you can also import this data
+from Excel as well and on the left side
+we'll see projects you can kind of hop
+around here very very
+easily I'm going to also go through my
+projects here and add one or two
+projects that I can play with here so
+I'm going to click on projects hit new
+up top and I'll call my first project
+here how about I call it uh new HQ
+building all right save and close
+then I'll hit new again and I'll create
+another project here called um I don't
+know um AC's new call it um uh Dynamics
+roll out call it whatever you want none
+of this matters I'm just creating a few
+projects here a shortcut you could do if
+you wanted to is you could hit the three
+dot right here imagine you had the
+project list already inside an Excel
+spreadsheet I can hit the right arrow
+next to export to Excel and say open in
+Excel online this will show you your
+data my two projects in Excel online
+where as I type in Project two project
+three and so on and so
+on it is actually going to write that
+back to the database so I can copy and
+paste from Excel into this environment
+and all right Aces new
+Lambo all right there we go as I hit
+save and save right here at the bottom
+it's going to start to load that data
+now into the data verse database it's
+going to look for any kind of problems
+and I can watch it do it by hitting
+track progress I can see it each step
+along the way and hit that little
+refresh button every so many minutes
+seeing it's parsing the data now then
+it's going to transforming it found five
+rows it also by the way handles deletes
+and updates for you as well so all that
+is handled automatically for you when
+you look at that uh uh that Excel option
+not it's not a must do here it's it's
+taking it sweet times I'm going to leave
+that real quick but again to get that
+you hit the hit the three dot export to
+excel hit the right arrow and then open
+an Excel online there's also Dynamic
+worksheets that can do the same thing
+for you after about five minutes or it
+takes about anywhere from two minutes to
+five minutes to do this after it does
+that simply hit the refresh button and
+you'll see your new rows now out there
+so lots of options you have inside of
+here I'm just going to refresh every so
+often and I'm getting impatient I'll
+come back to it later we'll see those
+projects in there the time card what I
+want to show you in the time card piece
+that you don't have to do is if I hit
+the new button here you'll notice in my
+notes section here just let me just
+create one little time card here I'll
+put Brian Knight the project will be the
+Dynamics roll out whatever don't do this
+guys it's just I'm try showing you
+something really quickly here and they
+worked three hours on that project and
+when I save this This Record I'm going
+to go to notes I'm going to save the
+record notice that the timeline lights
+up where I can hit the plus button and
+you can see all the details about all
+these right here if you so chose okay
+back in projects there's my projects now
+loaded now from Excel this took it about
+five minutes or so to load
+those your first app is done awesome now
+we're ready to build our next
+application which is going to be a
+canvas this is going to be the
+application we're looking at here uh is
+the application for the
+administrators but the application we're
+going to look at in the other interface
+will be for the employees the ones that
+don't want to see all these buttons up
+top that's the application we're going
+to create next so I'm going to go over
+to time key I'm gonna go back to the the
+uh the previous tab we had open and hit
+the back button to get back to our
+solution if you don't want to do that
+you can hit the you know you can always
+come back here again again make. power
+apps.com then go to the learn with the
+Nerds uh what whatever your environment
+was go to Solutions and then pick your
+solution either way it gets you back the
+same same environment all right next you
+can hit go to apps and you'll see
+there's your app right here select new
+app and then canvas applications this
+time is a little different last time we
+did the model driven we went to app new
+app and canvas this time just like last
+time name it whatever you wish so I'll
+call mine uh timekeeping application you
+call it whatever you want notice I'm
+making this tablet friendly at first
+these applications will work on a phone
+device also so just because I'm making
+it tablet here doesn't mean it won't
+work on a phone it is going to be it
+could it can be responsive if I
+configure it in such a way to make it
+responsive to where it works on a phone
+tablet automatically by default it will
+just compress the the application down
+to where it looks good on a phone but
+you can make it look as large as you
+want and actually do that as
+well all right so I'm gonna hit the
+create
+button all right so question here from
+uh somebody in the audience here all
+right the gist Lobby all right nice name
+there so uh question was for time cards
+would a user be able to create multiple
+time cards across multiple dates and
+just one absolutely we're going to build
+it just that way we're g to make it
+where they can do just that that that's
+our that's our goal for today all right
+when this pops up right here we can go
+ahead and say don't ever show this again
+and click on skip it might not show up
+for you that's absolutely fine so the
+application this is power apps canvas
+environment and the first thing I always
+do when I first get here is you may want
+to go and hit the save button in the top
+right just to make sure you have one the
+option saved for you so that way
+autosave will kick in going forward now
+what we want to start here with is we're
+going to build a thre Zone application
+our for a four Zone app we're going to
+have up top here our little header all
+right here we go on the side we're going
+to have a list of our projects over
+here all right uh then we're going to
+break the right pane into two zones
+we're trying to squeeze as much as we
+can into one screen so there's less
+clicking for our users time cards are a
+pain in the butt for users right so
+because of that we want to make it as
+condensed as possible it may not look
+the prettiest but it'll be functional
+and our users will thank us because they
+won't have to go to five different
+screens to do this up top we're going to
+build an app we're going to build our
+form to enter new time cards so let's be
+for insert edit of time
+cards okay on the bottom we're going to
+list all all time
+cards for the project
+selected okay so these are our really
+four zones of the application to manage
+these zones we're going to use something
+called containers and containers allow
+you to make a responsive application
+that will slide left and right right
+based on on on this the user screen here
+so hopefully now you'll see screen one
+we're going to remove that in a moment
+don't worry but on the left side let's
+kind of walk through some of the
+navigation here on the left side you'll
+see your tree view here the tree view
+let me I'll expand this so you can see
+it here there we go all right the tree
+view is going to give you a listing of
+all the objects inside of your
+application right now I only have one
+object and that's screen one right
+now the insert view shows you a list of
+all the objects you can add to the p
+application so I can add a text label
+it's dragging and dropping if I wanted
+to don't worry we're going to delete the
+screen you can drop in a a rectangle or
+whatever and you see how it feels a
+little bit like power about like power
+um um Power Point excuse me on the left
+side but next to that you'll see data
+this is where we can add our tables our
+connected connections to other data
+sources like plan view all those things
+can be added here our logo and other
+types of images will go under Media
+power automate is how you'll go through
+and Link things over to workflows so you
+hit submit I'm going to now send this
+out for approval at that point variables
+self-explanatory these are how you can
+add and create variables and and other
+and collections later also we can do
+there Advanced tooling you we won't come
+into this until you get to be a little
+little more higher level this is where
+you can monitor the application and you
+can also search down here as
+well now
+I first thing I want to do is go to our
+tree view okay I want to collapse this
+this icon that you see right here we're
+going to hit new screen and we're going
+to select the the three uh three prong
+one right here the sidebar template so
+again I went to treeview I hit new
+screen right here and we're going to go
+ahead and so right there and we're going
+to select the sidebar piece right
+there okay
+once we do that it's going to create a
+new screen called screen
+two oh and let me I got to close that
+teams there it keeps on popping up there
+doesn't it let me go ahead and quit that
+teams like you can't quit me all right
+there we go so for this we have screen
+one and Screen two let's go ahead and
+delete screen one by hitting the three
+dot next to it and selecting delete so
+now we just have our one screen here
+and it's called screen two now at any
+point in time you can also rename these
+objects you can double click on screen
+two or select the three Dot and hit
+rename what I like to typically do is
+have a a threeletterman3
+is it makes it to where um if I type in
+up top like just check this out I'm just
+GNA I'm going to put some in arbitrary
+here to ignore what I'm doing right now
+if I put this button up here and I put
+in something like navigate which
+navigates me new to a new screen and I
+open parenes see it it knows I see the
+scr are obvious screen names here so it
+makes it much easier to kind of find my
+stuff ultimately so doing that makes a a
+much easier to navigate
+around the next thing I want you to do
+okay so the your screen should look
+something like this just three little
+panels here these are containers where I
+can move things around a little more
+navigation help also notice up top we
+have a navigation a little pane here it
+shows me whatever I select here it shows
+you what is in context of whatever I
+have selected okay like changing your
+theme or whatever on the right side here
+you'll see your properties window this
+is showing you what properties you have
+uh currently selected so I hit my
+container right here I'm seeing all the
+properties for the
+container speaking of properties I'm G
+to have you over and over again go to
+something called the property dropdown
+box up in the top left once you select
+something your property drop-down box is
+going to be called right here so when I
+say go there you are going to forget
+this I promise this I'm going to refer
+this to the property dropdown box up
+here okay a very fancy name but that
+when I say that go
+there now there's also a setting section
+right here where we can go and set the
+settings the size the of the application
+all that in lastly you'll see a play
+button in your top right as well as your
+save button and your publish button we
+could be working on version 20 of this
+application by hitting save save save 20
+21 22 each time we hit save
+however nobody can see our changes until
+we hit the publish button okay that
+means that that that every Everything
+rolls forward and the minute you publish
+it now shows up on your phone and other
+users that have access to this that you
+shareed this with will also
+change the play button allows you to
+preview the application you can not only
+preview it but you can try the
+application on different kind of devices
+here as well okay
+so also as you preview you'll notice
+that as you exit it's going to say hey
+by the way did you know that you can
+hold the ALT key down and interact with
+the application we'll see that later
+today
+also so the first thing I want you to do
+is click on the settings button right
+here the settings button will show you
+all the settings the icons that you want
+to use Auto saves turned on all those
+kind of things what we're going to turn
+on though under settings so I hit
+settings right here yours might be in
+the bottom left of your screen looking
+for a little gearbox icon there so if
+you don't see it up top here hit the
+three dot so settings might be hidden
+underneath the three dot or it also
+might be in the left panel on the very
+bottom what I want you to do is toggle
+This Modern controls and themes on this
+is going to allow you to go out and
+notice as soon as I did that it's
+showing a whole bunch of new themes that
+I have access to right here uh it has an
+insert button where I can have a new
+controls available to me so this gives
+me a lot more options I can play with
+now
+okay let's first of all get things kind
+of laid out the what we want though so
+I'm gonna first of all stay in tree viw
+I'm going to select this right section
+remember the right section we wanted to
+have two bars here we want to have the
+form up top and we want to have the old
+records down below so to do that I'm
+going to create a a two more containers
+container within a container it's like
+Inception man it's crazy all right so
+anyways I'll select the main container
+I'm gonna go hit the insert button here
+or you can hit the plus button right
+here either way it does the same thing
+I'll go to classic and I'm going to
+search for vertical
+container right there so again you can
+do it by hitting the plus button up top
+insert search for a container or
+vertical whatever and I'm going to click
+on vertical container once and then hit
+it one more time oh but before you do it
+one second time make sure that you have
+main containers selected from the Tree
+View if you don't do that let me make a
+mistake here I'm gonna screw this up
+here I'm gonna hit uh I'm gonna hit the
+um uh insert again and do container
+again I'm going to screw this up don't
+do what I'm doing about to do here it's
+gonna screw things
+up I'll do vertical container again
+notice what's happened is it built a
+container within a container within a
+container now we're three levels into
+this dream big time Inception now we we
+didn't want that though we wanted it to
+we want it basically to have this
+container right here part of main
+container so I'm going to delete
+that okay make sure I slip the main
+container and then I'll say
+insert um and then I'll do vertical
+again and then select vertical container
+now we have it what I'm looking for see
+now you've got a plus button here A Plus
+button here so now we truly have four
+zones in our
+application every so often you're going
+to want to hit the save button up top
+right or hit contrl s if you want to
+save in a faster way every so
+often all right so I'm not gonna not you
+could also publish it every so often
+also so we have about five minutes left
+before our break let's do one or two
+more things inside of here so one of the
+questions coming in from from Howard is
+it possible to directly use uh data in a
+table from an external SQL Server uh to
+a form Howard great question data ver or
+not data verse but canvas apps allow you
+to connect to almost 1,00 data sources
+so not just SQL server but anywhere out
+there so as you do this the data verse
+has some advantages we do not have to go
+to data verse to build this canvas
+application though we could go right to
+SQL Server right to SharePoint right to
+Excel and start building the data right
+there inside of that so most certainly
+do that Howard hopefully answered your
+question if I did not just re ask it a
+slightly different way
+there all right so let's build our
+header first before we go on break so to
+do this I'm going to hit the plus button
+here or I'm going to click on the header
+and go to insert here either way does
+not matter it does the same same exact
+thing then I'm going to go to Modern and
+you'll see a header option already here
+built for you there's header right there
+make sure you're under modern when you
+do that and when you go to Modern just
+hit the header button and there's our
+header all lined in now this header
+lines up with um the the U the theme
+that we currently have selected has a
+few things you may want to do you'll see
+right now I've got uh you know my my
+logo in place which we can change on the
+right side you'll see the logo is right
+there simply upload your logo and you
+can add it there later don't worry about
+it right now we can also see that it has
+scr entry that's a terrible name for a
+screen what we can do on the right side
+you'll see it say title right
+there let's go ahead and Select Title
+click on the word title on the right
+side while the header is selected and
+then it's going to show me in the
+property drawing drop down box that you
+selected title I'm going to remove this
+code that you see right here this code
+essentially showing that's going to show
+the current screen name which is scr
+entry instead in double quotes I'll put
+uh time
+card entry screen or something like
+that and double quotes once you do that
+it reflects that inside the
+application well I don't want to have
+this blue color I want to have a
+different color
+one of the ways we can we can do this we
+can build themes on the left side under
+themes okay that's nice and dandy and as
+we do this but what about my own theme
+what if I wanted to create a Brian
+theme that feature is not available yet
+however if you want to build your own
+kind of logic like that I'm going to go
+to uh this little option right here the
+treeview option click on the word app
+and then I'm going to select from the
+drop down box
+formulas formulas are like Excel
+formulas allow you to to to write code
+build it one time and then bring it over
+over and over and over again into your
+system so hopefully Ace can go a and
+copy and paste this this Le two lines of
+code into the chat window but I'm going
+to type these out my case I'm going to
+build a formula called con
+primary con primary is going to be equal
+to the color that I want is my primary
+color I'll make that primary color color
+value because I'm going to basically do
+a
+um um I'm gonna go ahead and um have a
+hex code of my color inside of a
+parentheses now and inside of Double
+quotes I'm GNA do hashtag or pound sign
+aa9
+FF all right let me zoom in so you guys
+can see that double quotes close a
+parentheses and put a semicolon at the
+end what this is doing is creating a
+formula that whenever I say Co in
+primary it's going to run that code
+right here you see called color value
+and as I hover over this we can see that
+color value is going to give us a color
+that is equal to that hex code right
+there you can also put whatever code
+that you wish in there whatever color
+you wish in there in my case though let
+me do one more for my secondary color
+this one will be called uh Co in uh
+accent or secondary or whatever and
+that's going to be equal to a color
+value as well all right you can also use
+rgba as well but we we'll start with
+this one for time being hex code all
+right this one's an easy one 67 6767 oh
+I did not type it easy but I messed it
+up somehow 67
+6767 and then double quotes and then
+close that parenthese make sure you end
+with a semicolon
+formulas again what this has done is
+it's made it to where anytime I refer to
+one of these words it will run this code
+for me we'll come back and play with
+that a little bit later too and we'll
+use it but it makes it where you don't
+have to write that code over and over
+and over again lastly select your header
+and you'll notice on the right side it
+says base pallet color if I click on
+that word you'll see it also in your
+property dropdown box now I can type in
+Co n primary oh is it going to happen
+and there it goes so it's worked now to
+basically show it's putting a darker
+version of this color right here but if
+I want to lighten that up I can make it
+neutral or I can make it uh lighter or
+whatever but it's taking a gradient of
+that color that you see right here and
+it's making the darker version because
+it's a header color but if I were to
+change that then to co n
+accent we'll get the gray color instead
+of the blue color so this is a way of
+build holding it one time and then
+referring to it over and over and over
+again so these are called formulas now
+we are ready for our break time make
+sure you save now we're going to do a
+10minute break I'll put a a a 10-minute
+clock on my screen look like this here
+in a moment but a few things to note
+Marshall can I bring you on camera here
+again all right so uh yes sir bring me
+on hey there we go I hear you I don't
+see you though um there we go can we
+bring you on camera and let's uh let's
+take a look at let's go and draw our
+first contestant for the
+day so hey there we go all right that's
+that's been a better image there that
+that oh my camera not working I guess
+huh actually you know Brian I think you
+wore out your camera uh oh okay no
+worries no worries we'll get that we'll
+get that working during that break here
+so Marshall uh we'll just do branch
+realquest and you can go ahead and uh
+I'll talk through you now stock puffy
+there we go
+let's go ahead and uh draw our first
+draw this will be for a our on demand
+learning we'll show what that looks like
+in a moment here after we get back from
+break we're going to take people from
+the chat window that have already
+submitted a question or a comment or
+anything in there just just uh talking
+with people go ahead Marshall let's go
+and draw our first winner here we go
+good luck
+everyone oh here we go and the answer
+is oh what let's do it again that's us
+we won we swear
+top I guess we did have the most
+comments one more time here let's do it
+one more time that means Ace has been
+busy there are
+and
+hey
+inch yes there we go how how would MH
+hatch claim their prize absolutely uh
+please send an email to marketing
+pragmatic works.com and uh we will get
+you set up with a free uh annual
+subscription to our on demand learning
+uh program please go do that and um real
+quick speaking of that uh Brian if you
+don't mind I'd like to remind everybody
+that we do have a special right now on
+our uh on demand learning uh for the
+next uh through Saturday or Sunday
+actually uh you can save 50% on an
+annual subscription if you use the code
+CT XP launch so be sure to go to our
+website use that code and sign up for
+your own annual subscription to On
+Demand learning excellent all right so
+uh let's take a 10-minute break right
+now it's around 12:32 East Coast time
+I'll put 10 on the clock uh I think
+Marshall has a video maybe want to show
+but I'll go ahead and start that timer
+now I will see you in 10 minutes stretch
+your legs get some coffee and we come
+back we will see you then take care guys
+hello project managers and I'm here to
+invite you to sign up for our next month
+learn of the nerd session on Microsoft
+Project we are going to walk you how to
+create your own timeline how you can
+start your project from zero including
+all the tracking capabilities variances
+baselines and so on cost very important
+and we're also going to show you a
+complete project and how you can track
+the progress of that project and we're
+going to have a Q&amp;A session so hopefully
+we'll be able to answer all the
+questions you might have if you
+interested make sure you sign up and
+I'll see you there
+soon enjoyed your small little break
+there uh a few things that we got asked
+uh uh during the during break also one
+of the big things we got asked is is the
+calendar invite we sent out was for an
+hour and a half our apologies you guys
+get bonus time so you get not just time
+with me for an hour and a half uh again
+this is all being recorded so you can't
+make the hour and a half last hour and a
+half where we actually get uh into the
+canvas app side have some other fun
+stuff then then you always watch the
+recording you're just going to miss out
+on the fun raffle we do at the end of
+the time also speaking of the raffle we
+mentioned before we we um um we had this
+open a moment ago this is what uh imatch
+just won so we have a on our on demand
+site you'll find us at pragmatic
+works.com when you go to pragmatic
+works.com you'll see in the top right it
+says start learning once you're there uh
+there are about hundreds of classes out
+here you'll see just just tons and tons
+of content around power apps powerbi and
+all those kind of things why we're
+giving the sale this month so we just
+launched this this this option here
+called search XP it's where you're
+trying to uh learn how to uh get
+certified right not not a pragmatic work
+certification a Microsoft certification
+or a comp to1 or those ones we have a
+lot more coming out with this we're
+starting in our beta launch with these
+three and we have two more we're
+launching next week two more behind that
+and so on and so on so I'm going to try
+the pl200 which one the uh the Microsoft
+ones we wanted to find a way to gamify
+it to where you felt like it wasn't a
+chore to get ready for a certification
+so as I go through this you can see I
+started down here I failed a few passed
+a few and as I go through this if I if I
+hit that little continue button we'll
+see a few things first of all I I have
+ADD I'm I'm just going to tell you
+straight up I am um I'm I'm I have some
+challenges around like reading long
+questions this is a relatively short
+question but if I were to go and
+hit you can hear it actually reads a
+question to you how many data source we
+can say hey it's over a th data source
+this goes to a question actually right
+now from uh s s's asking a question
+could you import an Excel spreadsheet
+form or an an access form well the good
+thing about
+dataverse is because the way data verse
+operates uh you can import data very
+easily using things like data flows or
+you can copy and paste um you if if you
+want to import dataverse if you want to
+use uh Excel or access directly in an
+application I would recommend not doing
+that Excel is not a database and it will
+go a little bit a little bit crazy if
+you try to treat it like one access
+unfortunately is not covered by that but
+this is related to your question you saw
+a moment ago so when I hit submit it
+will tell me I got the answer right and
+it let lets me know why I got the answer
+right also so I can see here that the
+answer is good and keep on going the
+next one and you can hear we go going
+through I'm going to get this one wrong
+on purpose this time and hit continue
+but see this question here this a
+typical question
+for for U A certification right long
+long question it makes your eyes crossed
+you get you guys get tired of looking at
+it so this is the way you can kind of
+look at that and and and auto and find
+find this the next question here for my
+favorite uh uh uh name of the day here
+is from spider poop poop all right my
+four-year-old is just giggling up my
+four-year-old uh myself is just giggling
+right now I want to hear that so let me
+stop her right now sorry about that so
+uh for the question from from spider
+poop pop uh is um uh in this case do you
+have to install a client agent in order
+to connect to SQL server on Prim yes to
+do that if you want to use data verse or
+want to use SQL Server to connect to
+that you would use something like the
+not you would use the on-prem data
+Gateway you download it for free you
+install it on one server and it lets you
+access that on Prim server from the
+cloud at that point this it's the same
+Gateway that's used for powerbi and for
+Azure and power automate also so
+absolutely you'll find it right over
+here under Mo and you'll see um as you
+look at that you'll be able to download
+that that inside of the connected
+connections and if you hit discover all
+to find it there okay also when you
+create a connection I get a question a
+lot about the SL connection connectivity
+questions look at all the data sources
+we have here and one is SQL Server to
+answer your question spider uh when I
+select SQL Server it's going to ask me
+first thing as I scroll down on hey uh
+how do you want to connect to it and
+I'll pick SQL server at the very bottom
+there's a Gateway that's how you
+basically connect to an on Prem data
+source so yes you can just note it will
+be a little slower to connect to those
+sometimes also as you do that so again
+the the uh CT XP uh we have it as as
+half off this month Marshall when you
+show the code one more time uh this will
+this this discount code you're seeing
+right below me will give you uh will
+give you the 50% discount for the next
+step I think it's next uh little bit
+here uh there we go uh so it's about to
+expire so make sure you do it quickly
+and this will give you uh all of our on
+demand classes C XP all that stuff in
+one foul swoop here for you okay great
+questions all right let's begin again so
+back when I was starting again let me go
+over here again and open up the
+application I left off when we left off
+we had got the skeleton of the
+application done we had the M mol app
+done and we also have um the the zones
+kind of all ready to go here as well now
+our next step speaking of the SQL sort
+of questions we're getting asked on the
+left side you'll see that database icon
+on the left if you were to select that
+database icon on the
+left and hit add
+data we're can go through and add the
+tables that we wish notice data dat
+verse though is showing right up top
+here so I can search for in my case
+projects
+there it is and click on
+projects I can hit add data again and
+search for
+contacts click on it again there's
+contacts then I can search for it again
+and look for time cards there it is
+click on it and there's time cards so I
+added the three data source that you're
+seeing right here boom boom boom and I
+can at any point rightclick on those and
+actually go right to the data if I
+wanted to so if I want to add more
+projects no problem I can right click
+hit edit data and start adding more
+projects not important right now though
+additionally to my SQL Server people in
+the audience you can search for SQL
+Server there it is and it gives you a
+little icon right here this little
+premium button here means you do require
+a license of power apps to to run this
+not just an office license to run it but
+a full power apps
+license okay so my goal again just to
+refresh you I'm going to put my list of
+projects over here on the the right side
+I'll have a form to iner
+data okay and on the bottom here I'll
+have my old my old time cards down here
+so those are the zones we're going to
+work with let's start with this left
+sidebar right here for this sidebar here
+I'm going to hit the plus button next to
+uh the uh inside this container and I
+going to search for vertical Gallery so
+I'm going search not in the modern one
+but the classic one you'll see vertical
+Gallery right here so again my steps
+were I click on the plus button I'll hit
+vertical Gallery make sure you're in
+classic though before you do
+that sweet now a few things to note here
+as I do this it first thing it's going
+to ask me is which table do I want to go
+to I want to go to my projects table so
+I'm going to click on projects right
+there I also by the way could have done
+this on the right side by selecting
+projects on the left side either way
+there's about four ways of doing this to
+get the same thing the Third Way Is Up
+top the items property for the gallery
+is set the projects it's all doing the
+same
+thing I don't have a picture for
+projects or a time for projects all I
+care about is the name of the project so
+while I have the gallery selected like
+you see right now or you can go to the
+treeview and make sure the gallery is
+selected this
+way once you do that go to layout on the
+right side and change it from image
+title and subtit
+title to title
+instead this little down arrow right
+there and just Select Title
+instead notice your gallery is called
+just just simply Gallery one right now
+now there a little bug right now that we
+have that well Microsoft has in this
+case that whenever I select selected
+that notice the the box is a little bit
+wider than it should B right now that's
+not great right so if I select the
+container and I hit the drop down box
+for property dropdown box what I'm
+looking for here is the width property
+and you can see right now what they've
+done the why the bug exists is for this
+Gallery one I'm going to go to width and
+right now this width that you're seeing
+here in red has been
+hardcoded okay so this is hardcoded
+right now so we want to go ahead and
+change that to where if you're on a
+phone device it it skinnies itself down
+automatically so I'm going to go ahead
+and change at
+640 to parent. width by me typing in the
+P it kind of gives me all the
+information I'll click on parent. width
+it finishes it up parent. width means
+hey this is my this is my H Gallery
+right here look to my parent which is
+this container right here and do its
+width the parent. width looks one level
+up and says what is the width of this of
+this object so in other words the
+parent. width of of this is going to be
+the width of the container right below
+it the container's parent do width is
+the width of the application above it so
+everything has a parent till you get the
+top dog
+here okay if you have employees Pro this
+a question from Sabrina if you have
+employee project and historic time card
+entries in SQL Server tables but don't
+want to give all the employees premium
+licenses what do you recommend well
+that's a great question Sabrina in that
+case what I'd recommend is using
+something like power pages to do that or
+using data verse for teams or you could
+even use like Microsoft forms which then
+writes over to a premium data source uh
+but you can have your cake it too power
+apps for teams gives you the same kind
+of interfaces in a teams environment
+that's included in your office license
+today and then power Pages allows you to
+scale that license to people that are
+only actively using the application each
+month those are two options I'd probably
+select in my my case Okay so again uh
+one if some people are saying that did
+they hey I don't see uh the classic
+modern options again you'll find the
+description of this in the chat window
+as well as the description of the video
+if you're watching us later as well
+there's the the step-by-step
+instructions there but if you go to
+settings AV scroll down on settings what
+you're looking for is modern controls
+and themes and that's that that's
+described also in the directions if you
+so shows
+also okay so we have our first first
+gallery of data here this these
+galleries allow you to see data very
+very easily and uh and interact with the
+data hitting arrows to do something you
+can also do other stuff inside that as
+well there's another way of seeing data
+as well and that's called a data table
+uh there's some quirks in it right now
+that's why I'm not going to show that to
+you but it there's other ways of showing
+it other than a gallery but galleries
+are probably the most interactive way of
+playing with your
+data now I want to build a a a a form to
+enter the data next and also a gallery
+down here to see the data how we start
+with the gallery next so this this area
+you're seeing down below I'm going to
+put a list of all my old time cards into
+here so if I hit the plus button again
+I'm going to click on vertical Gallery
+again under
+classic okay this time I'm going to
+point to time cards so select time cards
+as it pops out here if you don't get the
+pop out you can also select time cards
+up here in data
+source okay there we go now there's a
+lot more we're going to do on this this
+time card right here it looks pretty
+darn ugly right now right I've got a
+time card but we're going to come back
+to it a little bit later but I just want
+to show you right now that we see the
+data at as it is there's a few more
+things we want to do we want to filter
+this to where you only see the time card
+so whatever you select on the left we
+want it to filter on the right so as you
+pick a different project filter that
+down that'll be our next set and we also
+want to sort the data so I want to
+filter it and sort it by my most recent
+time cards up top so we'll start there
+and then our final step at we'll do our
+form next
+and then we're going to lastly uh pretty
+up our form pretty up uh the gallery
+okay so we'll we we're gonna keep it
+pretty darn ugly right now so you see
+this is this the ugly version of it
+right there but we're going to add some
+more data and then we're going to pretty
+it up after we have our form in place
+let's start with the filter though let's
+filter it and sort it I'm going to
+select my entire gallery now a few
+things to note make sure you have the
+whole Gallery selected not just your
+first row the first row is your template
+and I'll show you an example of that
+later so make sure you pick the whole
+Gallery you can check to make sure by
+looking in the right here on the left
+here mine is called Gallery 2 and
+gallery one for the I would normally
+rename all these objects like G projects
+gal time cards I would not put spaces in
+it either but for the time being just go
+ahead and if if yours are not calling
+Gallery 1 and gallery 2 go ahead and
+call it Gallery 1 and gallery 2 so yours
+matches my name until we finish
+up okay so with Gallery 2 now selected
+you'll notice the data is coming from
+time cards notice in my case also I can
+hit the down arrow next to it and I can
+see the row of data that that I have in
+that table right
+now if I go through again though and I
+put the command of how I want to go
+through and filter this data well they
+tried to make this a low code
+environment so in one line of code we're
+going to filter it and sort it let's
+start with the filter command the filter
+command is going to filter this time
+card table based on whatever is on the
+left so I'm going to type in project I
+want to I want to go and say filter it
+based on the Project's ID so I'll say
+project do project now it sounds a
+little goofy there right project.
+project is a referring to the oh sorry
+here we go okay inside the time card
+table you saw right there so inside the
+time card table there's a column called
+project and in that t in that table
+there's another column called project
+remember that if the table name and the
+column name match that is your primary
+key that's what makes a record unique
+across all those
+values so this right here actually's
+kind of answering pavel's question right
+pavel's question is hey is there a way
+to create a unique record ID for every
+project that is that is uh in the link
+yes that is this project ID that I'm
+using right now this project so notice
+if I were to look at this uh table right
+here don't do this and I add that
+project
+column there it is see table name column
+name
+matches there is my guid right there
+okay so when I say
+um when I when I'm pointing over here to
+project table so what what it's doing
+here is say okay in the time card table
+there's a column called project that
+links to the other table called project
+and then when I hit dot here are all the
+columns from that table it's basically
+joining the two tables together for me
+automatically so if I say project.
+project it now knows to go get the ID
+from that
+project now I want that to be equal to
+whatever you select selected on the left
+side that was called Gallery one I
+believe right there it is Gallery one do
+selected not
+project and close a parentheses so again
+my data disappeared because now none of
+these these projects have anything
+associated with them except for my
+Dynamics roll out so what this is doing
+is saying all right take the guid for
+Dynamics roll out
+pass it in to uh right
+here and then match it up against
+whatever is on the time card and only
+show me the time cards that have that
+project on it I can now click on the
+word filter and look what actually
+happens it actually shows me the one
+record if I select a different project
+click on the word filter all my data
+goes away now because it doesn't can't
+find any records there so you can use
+this down arrow to kind of test out your
+code prior actually working on it you
+can also select certain things like this
+Gallery do selected right here and you
+can see there's a gooid being passed in
+right there that is the project ID being
+passed in back to uh pll's question I
+there's a lot of folks are from India
+right now that is crazy late your time
+thank you so much for joining us it is
+crazy uh that you guys are up at what
+two in the morning or or really late in
+the morning right now I'm impressed you
+guys have some stamina right now those
+are hardcore people uh awesome all right
+now if I want to sort the data I can
+also put the word sort in front of
+filter and at the very end I'll do a
+comma and what do I want to sort by I
+want to sort by the bill date so
+whatever date you put in to put the
+newest time cards up top I'll do a comma
+again and I'm it's going to tell me hey
+sort descending again this exact code is
+in the um the word doc as well
+but as you can see here what it's
+basically doing is is it's it's it's
+stacking the formula here it's saying
+filter the data take whatever's been
+filtered and now sort the data you can
+click on any word and it will show you
+down below what the repercussions of
+that was so I take the raw table filter
+it take that filter table sort it and
+all you have to do is say sort this
+table by whatever column and then
+ascending or
+descending so question here from the
+gist here is it is there uh sorry if
+there are any duplicate projects in the
+table with each row showing the project
+status would uh would the gallery show
+multiple instances it would absolutely
+do that uh gist so in this case in this
+case what I'm doing is I'm showing it
+based on prod on Project name so I may
+want to put some extra identifiers
+underneath it like the start date end
+date of the project or maybe some other
+project ID on it or something that makes
+that project a little more unique but
+yes if I had two project twos I would
+see two project twos here also unless I
+group the data somehow great
+question all right so we have our data
+now filtered we have our data now s
+sorted now we're ready to build a way to
+enter new uh new projects in here our
+new time cards in here so I'm going to
+hit this little plus button that you see
+right here now this plus button right
+here is going to allow us to add we're
+going to add an edit form inside
+there let's go ahead and select that
+I'll type in edit
+form all right beautiful now someone
+know where do you want to go with this
+data on the right side you see where it
+says data source I'm going to hit the
+down arrow there and select time cards
+again now what's going to happen is it's
+going to automatically look at these
+columns and say all right here are the
+columns I think you need what it doesn't
+do is add lookup columns and I don't
+want them to add things like time card
+numbers and those kind of things so
+let's go ahead and figure out how we can
+add more comms on the right side again I
+I I added the form right here select
+that white area to make sure the whole
+form is selected see it right there my
+whole form is Select it then we're going
+to go to fields on the right side and
+we'll hit for select
+it this is going to allow us to go and
+see all the fields that are involved in
+this for example I don't really think
+need to or care about the time card
+number so I can hit the three dot next
+to it here we go and I can remove that
+field I think they're going to care
+though and they should not see the
+approval date they should not be able to
+approve their own I'm gonna hit the
+three dot next to it and I'm gonna
+remove that one oh let me go try that
+again hit the three dot next to
+it there it goes why is it hiding from
+me right
+now oh they all hit for me let me try
+that
+again all right my three dot disappeared
+let me try going back to it again there
+it is three Dot and remove my zooming
+must have messed up there all right so
+I'm going to hit add field and add the
+other two Fields I care about I care
+about the employee that did the time
+card the description they did on that
+time card and as I scroll down I care
+about the project on the time card so
+I'm g hit the add button on those two so
+again I added I'm going to go ahead and
+collapse all the so you can see them a
+little better here these are the these
+are the fields that I added here uh I
+removed the other two and I added these
+guys right here these are all these are
+two of these are lookup columns and
+you'll notice that if I go to
+description we can change like what kind
+of data type it is am I am I edit is
+this view only is it edit and I don't
+Rich Text editors all those things can
+be modified right there but I'm going to
+leave them pretty much as
+is once I'm done and of course we can
+can also by the way Shuffle these around
+and drag and drop them so for some
+reason it's not letting me do it again
+so I'll go back to this again and now I
+can drag and drop it and as I move these
+fields around it will move them around
+there as well go ahead and move project
+first and then employee next it's a
+reason why I'm having you do that and
+we'll keep description
+last okay so it should look something
+like this the order ultimately does not
+matter that looks really crowded to me
+so you'll see how kind of proud of it
+looks on the right side there's an
+option over here to change how many
+columns are being shown so I'll make
+mine two columns oh that looks a lot
+better but now I've got too much stuff
+in here now right too much space is
+being
+occupied so wouldn't it be great instead
+to default some of these values to their
+to the proper data source so I want to
+go ahead and have today's date here okay
+I'm going to put uh my employee here
+information here and I'm going to
+default this to whatever
+project was selected those are my three
+things I'm going to go and do
+next let's start with build date we're
+going to rinse and repeat this over and
+over and over again so build date if I
+select the build date card notice this
+is the field and this is the card that
+goes around it so when you hear me refer
+to a card that's my that's my uh this is
+a control inside there a little mini
+control and this card is like a mini
+screen it has all these things but I
+cannot drag anything inside of here
+cannot be dragged outside of here this
+is like a mini screen and it's isolated
+to
+itself if you want to play with this
+stuff though you write click on the card
+and you say
+unlock this lets you now uh Drive what's
+inside that card for the date here if
+you select the little date picker and
+I'm going to change what you're seeing
+up top so first step select the date
+picker there then change it up top to
+the word um now open close
+parthy me zoom out here again step
+one step one is you unlock the field
+you're going to do this over and over
+again so I'm going to document really
+well here step two select your date
+picker okay step three make sure the
+default date is selected here and then
+lastly step four type in now open close
+parentheses to set that equal to today's
+date you can also go through though uh
+there's there's a today function which
+only shows you today's date that's what
+I typically would use here now we'll
+show you the date and the time but in my
+case it's stripping the time
+off all right common question can I hide
+this now it's really based on your
+requirements right I could select that
+whole thing and say visible not visible
+it's up to you in my case I do want my
+Consultants to be able to go ahead and
+put a time card in for a previous date
+so I'm going to leave that uh here as
+well another good question we got from
+Gary is hey can I now that I have an
+employees name in here can I filter it
+to where they can only see their own
+time cards Gary absolutely yes you can
+and we'll show you uh some ways of doing
+that a little bit later here also so
+we're gonna that's our next step in the
+out of the gate here is we're going to
+show uh how to do that and how do you
+lock those down also all right great
+questions guys and thank keep them
+coming we are already poor Ace had 830
+questions so far she is they are killing
+it in the background right now uh and
+thank you Ace for doing that all right
+so
+now our next step is I may want to go
+through and put whatever project was
+selected over here and put it into this
+area on the right here I'm going to do
+the same thing again I'm going to
+rightclick unlock for
+project select that project dropdown box
+and then on items change this to default
+selected items make sure it's default
+selected items and not just default
+okay after you do that your next step is
+you want to go through and set that to
+whatever project was selected on the
+left side do you remember how to do that
+now that you've seen that a few times
+well give you a few seconds to think
+about that and pause me if you want to
+I'm going to change it to Gallery one
+which is where you select that item dot
+select it take whatever record was
+selected on the left side project 4 oh
+me go I'm holding the ALT key down to
+select different projects here and as I
+select different ones my drop down box
+is also
+changing so in my case I'm going to make
+it to where when I select this there's
+no point showing this project anymore so
+I'm going to select the project card
+right here and then I'm going to go over
+here and make the visible property
+defaults so that way it disappears
+creating a little bit more wiggle room
+for me awesome the other thing might may
+want to do is is set the default the
+employee here as well so let's do that
+one next all right so step one for that
+I'm going to go ahead and do some a
+really Nifty thing here I'm hoping I I
+don't want to write this code over and
+over again on how to look up your
+information uh Gary asked a question ear
+this Gary I asked a question earlier
+about how can I
+default this to only my own records well
+we can we can see that in a moment here
+but the first step on how I can find out
+what record Gary is in the contact table
+so hopefully you've added your name in
+that contact table to find that name I'm
+going to go over to my tree View and
+then go to app where I have my formula
+that you see right here I'm going to
+increase the size of this just a little
+bit
+here and I'm going to type in how about
+Co n
+user I'll do
+equals and this formula is going to look
+up your email based on your email
+address your contact record so I'm going
+to say lookup lookup is how you can do
+it lookup you'll pass some information
+in just like filter and it will return a
+single record back so look up against
+the contacts table there it is contacts
+table and then from the contact table I
+want to find out your email address so
+there a column called email inside the
+contact table I want that to be equal to
+user open close
+parentheses. email now for those that is
+the first time seeing this we do have a
+cheat sheet on our website go to
+pragmatic works.com go to resources and
+you'll find the cheat sheets right there
+what this is showing us though there we
+go I'll zoom in so you guys can see have
+a little bit different resolution here
+look up it's going to look up a record
+contacts table this is my table that I
+want to look up
+against all right o there we go table uh
+this uh right here is going to be the
+column that I want to match up against
+so in that contact table there's a
+column call oop sorry I should say
+column in that contact table there's a a
+column called email this user open Clos
+parentheses. email is always going to
+pull in the logged in user email address
+so that actually will pull their email
+address their photo or their full name
+so that's that's how you can kind of
+deconstruct this this is documented
+though in the documentation on this uh
+in this pinned comments or you can also
+go to our cheat sheet on our website
+again if in case you're curious you'll
+find it at pragmatic works.com under
+resources and cheat
+sheets and if I go to PR uh power apps
+there is our cheat sheet and you'll see
+all a whole bunch of helpful links and
+there is a user function right there so
+kind of helps you go through all that
+mess all
+right make sure you save on a very
+periodic basis here hit the control s to
+save every so
+often all right so question here from
+Jackie hey can I add a new project on
+the left side we can most certainly add
+things like a little plus button here
+that adds a new project or what we can
+do is we can go over here if you want to
+be lazy Jackie you can go to the model D
+app and do it over here uh or if you
+want be lazier hit the database icon go
+to projects right click on it and say
+edit data and now you can add another
+project here just by you know typing
+like you do in Excel here hit project
+six and when I close it Watch What
+Happens all right in a few seconds it
+should refresh and I now have project
+six you can't see it because I need to I
+need to scroll down here but there's
+project six right there I need to make
+this higher a a tall Gallery but that's
+how you can do it Jackie about three
+different ways of doing that here um Ace
+would you mind unhiding that uh oh here
+we go I can just do it here uh oh there
+you thank you so much Ace all right so
+with that now done we have to get the
+employee information inside it here just
+like we do with a project I'm G to right
+click and unlock
+it then I'm going to select the employee
+and just like last time default selected
+items from the drop down box property
+drop-down
+box default selected items take parent.
+default and type in Co n and there's my
+coo and user right there oh Nelly
+there's Brian right there nice all right
+you want to pound it nice all right so
+I'm gonna go ahead and select this card
+and I'm gonna hide it as well now look
+how things are all starting to fit
+together now right I have all the data
+in one one tidy little interface and and
+there are some challenges still but
+we're getting there now right the
+project defaults the employee defaults
+the time defaults so now I as a
+consultant all I have to do is put the
+number of hours I've worked in the
+description
+done now there's one more little gotcha
+here for those that have been curious
+and they may have hit the play button
+you may have noticed no item to
+display all right I'm G to hit the
+escape to get out of that so what that
+means when you see no item display is
+this form right now is an edit mode and
+it's trying to figure out what row do
+you want to
+edit the same form can edit data and it
+can insert data so it's important when
+if if you want to insert new time cards
+the form must be in new mode right now
+this form is in edit mode it's asking
+well what in the heck do you want to
+edit right now you hav told me what to
+edit so what you need to do is select
+your entire form and on the right side
+you'll see default mode right there
+change that to new mode click on the
+click on the form and change its mode to
+new after you do that and you hit the
+play button
+hey that is the most common error you're
+going to see so again I'm G to show it
+one more time because this is a really
+important one when you build a power app
+and you see this that is why you're
+seeing this the form is in edit mode and
+you have not told it what row to edit so
+it's important when you're building a
+form that you want to insert data that
+that form has to be a new mode by
+changing the default mode to new then
+the form will come up beautifully at
+that point okay the number one gotcha we
+see in our classes that we have okay now
+what are we missing here ah you know
+what I'm missing a button to actually
+save this data so what I'm going to do
+is I'm going to go ahead and select this
+tree view make sure that I have
+container one selected in the tree view
+or whatever you call that container
+that's up
+top then I'm going to say insert and
+button Boop there we go it's going to
+put the button in the top in the bottom
+left corner and the reason why I did it
+is because it's trying to be responsive
+it's trying to make sure that if you um
+or on a cell phone that this button
+still works if you do not want that you
+can actually use a different type of
+container that does allow you to move it
+around notice by default though if I
+were just go up top and say insert
+button it just don't do this it will
+just kind of put it free floating
+wherever and I can drag it wherever I
+want um if you do that just a note that
+that button will still work even though
+that buttons not near the form not in
+the container not in the form it will
+still
+work so let's select that button of
+course one of the things I want to do is
+I'm going to change that word button to
+save on the right
+side I also want to change its color so
+maybe what I do is for this button I'm
+going to look for um its fill color here
+there it is from the property drop down
+box and I'm going to change its color
+from this rgba color to c n accent if
+you want all right give a little bit of
+a variation in our our app now so now we
+have the gray color buttons and the blue
+color
+header
+awesome okay so for this save button do
+you believe that in about 30 seconds
+we're going to be able to save data to
+this now so select that save button and
+look for the property Con on success and
+we're doing great on time I think rash
+going to have time to show you one more
+type of app power Pages at the end here
+oh three apps and three hours how about
+a mind mind mess up there right all
+right so we'll select that save button
+and where the false is there I want to
+add two words that are going to make it
+where I can save the data on this form
+all right before I do that notice this
+form right now is called form one so
+just kind of glance down and make sure
+your form is called something
+similar then I'll select this where it
+says on select I'll type submit form by
+type you type the time you type in Su
+you should see this that you can click
+on and it will fill this in for you
+submit form is those two words to do
+that open parentheses what form do you
+want to submit form one and then close
+the parentheses now we are done but
+don't hit submit yet all right what this
+is showing us is those two words there
+submit form your form name is going to
+send the data to the database if the
+form is in edit mode it sends an up
+update to the database it form as a new
+mode it sends an insert to the
+database now that is done agnostic of
+your data source so if you are using SQL
+Server it will send it to SQL Server if
+you're using SharePoint it goes to
+SharePoint Excel goes to excel it does
+not matter so this what what happens it
+translates these two words into how how
+do I do this against SQL Server oh you
+want to do insert into table name yada y
+y it actually turns that into a native
+query against that so all the code we've
+done today it does not matter what our
+data source is what you've learned today
+Works across every type of data source
+out there okay that's a cool thing about
+this one language serves them all all
+right so I've got my submit form done
+but what if a failure happens what if I
+have a blank or I point to a Project's
+been deleted or whatever you know my
+insert fails how do I fix that
+well one thing I would recommend is
+selecting the entire form again so make
+sure form one is selected and in the
+drop- down box here the property drop
+down box look for on
+success and for this you'll see faults
+right now meaning nothing happens right
+now if the record actually makes a
+database there's also on error by the
+way as well so if a record successfully
+makes it to the database what do you
+want to do
+well I want to notify them that they've
+done something really cool I'm going to
+notify them and then double quotes I'll
+say Bravo you know time card
+saved
+whatever you can also append in other
+stuff like for project ABC you can do
+all that in here with an and
+percent we'll show that a little later
+then I'll do a comma is it an error
+message a warning a success this is a
+success so I'll go and select that then
+I'll hit a comma again
+and how long do you want this message to
+show up I want it to show up for two for
+for two seconds so I'll just do 2,000
+that's how many milliseconds do you want
+to show up so what this is saying I'm
+going to show this message as a green
+bar across the thing it's a success and
+it's going to show for two
+seconds
+awesome then you can do a a semicolon
+the semicolon is going to say do this
+now
+this then we'll go ahead and say Hey I
+want to reset this form back to New mode
+what happens whenever I submit a DAT
+record it is going to go back to edit
+mode even though I told it to go to new
+mode so we'll say new form form one this
+is going to programmatically do what you
+did over here when you set the default
+mode this code right here is going to
+programmatically do that for you
+otherwise it will flip to edit mode and
+give you the same error message you saw
+before okay now we're done with with the
+form at least save that
+application Play that
+application and try that application
+pick a project that works for you I'll
+use my D my um my Dynamics roll out I'm
+going to build four hours or five hours
+for a boring
+meeting boring me beating that'd be
+worse all right I'll save that
+when I do that Watch What Happens green
+bar it resets ready for my next new
+record all right I also did three hours
+today uh for a ritualistic
+beating all right and put whatever I
+want there hit save boom three records
+three time cards saved I can also go and
+set other projects now and go do those
+and set those three hours for this one
+hit save project five has three hours my
+my Dynamics roll out has this one this
+one has you know approved lease you know
+those kind of things are all done two
+hours for that so all this is build on
+today so I have one view one view that
+says by project what happened to day
+awesome and then we can build some
+powerbi reports onto it now check this
+out as I've been doing this over in my
+other application under time cards oo
+there are my three time cards right
+there and then one of those time cards
+which I think was on this one right here
+uh as you can see that descriptions all
+in there uh there it is the ritualistic
+beating is right there all
+set Dynamics projects are hard it
+occasionally takes a ritualistic beating
+to get that project over the Finish Line
+all right so now that we have that we've
+done our form now we want to clean up
+that uh that Gallery you're seeing down
+below this means nothing to me right so
+how do I make that Gallery a little
+little prettier now let's start right
+here where we see uh let me go get out
+of this now and let's talk about a few
+rules of this before we go all right
+first rule of gallery Club the first
+rule of gallery Club is nobody talks
+about Gallery Club because nobody cares
+about Gallery Club but the second rule
+of gallery Club is your first row right
+here if you select your first row that
+is your template As you move stuff
+around every row underneath it also
+moves the SEC the third rule of gallery
+Club is your second third fourth rows
+select the entire gallery so if you want
+to change a row only select the first
+row to do
+that okay oh I think our camera just
+died there also all right all right
+so uh so while we're doing this all
+right Justin would you mind coming over
+there we go all right so it the camera
+keeps on timing out there on sorry folks
+uh actually she's probably
+better
+all righty guys don't worry if you can't
+hear Brian we're going to get that fixed
+in just a second
+here

@@ -1,0 +1,21 @@
+CHUNK 1: INTRODUCTION TO MODERN CARD CONTROL
+Source: powerapps-modern-card-control-raza | Timestamp: 00:00 - 01:00
+
+Hello everyone, Raza here. In this video, I will showcase the new modern card control experience in canvas power apps.
+
+This card control makes it very easy for us to build cardlike experiences with different properties that allow us to build dynamic responsive cards. I will showcase all of this in the form of demos and more. So, let's check this video out in action.
+
+---
+
+The new modern card control in Power Apps.
+
+Use a card when you want to show a concise overview of an item with optional imagery and text.
+
+---
+
+KEY POINTS:
+- New control: Modern card control for canvas apps
+- Purpose: Show concise overview of items
+- Features: Optional imagery and text
+- Benefits: Dynamic, responsive card experiences
+- Use cases: Document libraries, item listings, asset management

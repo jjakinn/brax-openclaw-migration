@@ -1,0 +1,23 @@
+CHUNK 1: INTRODUCTION TO GALLERY WITH TABBED FILTERS
+Source: powerapps-gallery-tabbed-filters-raza | Timestamp: 00:00 - 01:00
+
+Hello everyone, Raza here. This video is a step-by-step tutorial on how to build a gallery with tabbed filters.
+
+We will build this entire experience from scratch. So, let's begin.
+
+---
+
+Gallery with tabbed filters. Let's see how we can design this experience step-by-step.
+
+---
+
+I have a very simple work tracker SharePoint list. Includes different types of columns: text, choice, date, and person.
+
+---
+
+KEY POINTS:
+- Tutorial: Gallery with tabbed filters
+- Data source: SharePoint list (Work Tracker)
+- Column types: Text, Choice, Date, Person
+- Approach: Build from scratch
+- Output: Filtered gallery based on tab selection

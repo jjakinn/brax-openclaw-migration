@@ -1,0 +1,23 @@
+{
+  "id": "lido-pdf-extraction-automation",
+  "title": "PDF Invoice to Excel (Easiest Way 2026)",
+  "url": "https://www.youtube.com/watch?v=XBRTCAldVS8",
+  "platform": "YouTube",
+  "duration": "6 min",
+  "duration_seconds": 360,
+  "word_count": 775,
+  "language": "en",
+  "captions_type": "captions",
+  "ingested_at": "2026-03-30",
+  "category": "Business Automation",
+  "tool": "Lido",
+  "concepts": [
+    "pdf-extraction",
+    "excel-automation",
+    "invoice-processing",
+    "lido",
+    "data-extraction",
+    "spreadsheet-automation"
+  ],
+  "description": "Tutorial on using Lido to automatically extract data from PDF invoices and export to Excel, eliminating manual data entry."
+}

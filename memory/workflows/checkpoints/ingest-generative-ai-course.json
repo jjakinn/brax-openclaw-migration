@@ -1,0 +1,35 @@
+{
+  "checkpoint_type": "ingestion_complete",
+  "source_id": "generative-ai-full-course",
+  "source_url": "https://www.youtube.com/watch?v=mEsleV16qdo",
+  "timestamp": "2026-03-23T18:20:00Z",
+  "status": "COMPLETE",
+  "verification": {
+    "video_duration_hours": 30.3,
+    "transcript_duration_verified": true,
+    "timestamps_range": "0:00 - 1818:01",
+    "total_events": 80402,
+    "word_count": 292238,
+    "chunks_created": 20
+  },
+  "summary": {
+    "title": "Generative AI Full Course – Gemini Pro, OpenAI, Llama, Langchain, Pinecone, Vector Databases",
+    "author": "FreeCodeCamp / YouTube Creator",
+    "domain": "ai/machine-learning/generative-ai",
+    "key_topics": [
+      "Google Gemini Pro",
+      "OpenAI GPT Models",
+      "Meta Llama",
+      "Langchain Framework",
+      "Pinecone Vector Database",
+      "RAG",
+      "Prompt Engineering",
+      "Fine-tuning",
+      "Building AI Applications"
+    ]
+  },
+  "files_created": [
+    "corpus/by-source/generative-ai-full-course/metadata.json",
+    "corpus/by-source/generative-ai-full-course/chunks/chunk_001-020.txt"
+  ]
+}

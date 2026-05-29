@@ -1,0 +1,31 @@
+CHUNK 19: FILTERING BY SECURITY ROLE
+Source: powerapps-navigation-component-raza | Timestamp: 30:30 - 32:00
+
+Now that I have a security option where I'm loading my nav structure, I'll use a filter formula.
+
+`Filter(navStructure, varUserType in ThisRecord.security)`
+
+---
+
+Filter this entire navigation structure where my user type is in the security property.
+
+---
+
+Done.
+
+My current user type is "user". Observe it does not show the admin option.
+
+If the user type is "admin" now it will show the admin option.
+
+---
+
+So you can make your menu dynamic as well as apply security role trimming to it.
+
+---
+
+KEY POINTS:
+- Filter formula: `Filter(navStructure, varUserType in security)`
+- Shows only items where user's role matches security property
+- "user" sees: Items with "user" or "user admin"
+- "admin" sees: All items including admin-only
+- Dynamic menu based on user permissions

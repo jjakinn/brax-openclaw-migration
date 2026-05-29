@@ -1,0 +1,56 @@
+═══════════════════════════════════════════════════════════════════════════════
+🦾 BRAX — ONE COMMAND TO SETUP OPENCLAW
+═══════════════════════════════════════════════════════════════════════════════
+
+STEP 1: Extract this ZIP file anywhere (Desktop, Downloads, etc.)
+
+STEP 2: Open PowerShell (press Win+X, then select "Terminal" or "PowerShell")
+
+STEP 3: Copy and paste EXACTLY this ONE command:
+
+─── COPY EVERYTHING BELOW THIS LINE ────────────────────────────────────────────
+
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force; cd "$env:USERPROFILE\Downloads\brax-migration"; .\RUN-ME-FIRST.ps1
+
+─── STOP COPYING HERE ──────────────────────────────────────────────────────────
+
+⚠️  IMPORTANT:
+   • If you extracted to Desktop instead of Downloads, change the path:
+     "$env:USERPROFILE\Desktop\brax-migration"
+   
+   • If you extracted somewhere else, change the path to match.
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 What happens when you run it:
+   1. Installs Node.js (if you don't have it) — takes ~3-5 minutes
+   2. Installs OpenClaw 2026.3.2 — exact same version as Jakin
+   3. Copies all configs, skills, memory archives, n8n workflows
+   4. Generates your openclaw.json with Windows paths
+   5. Changes all "Jakin" references to "Brax"
+   6. Verifies everything is in place
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ AFTER IT FINISHES — THE ONLY THING YOU CONFIGURE:
+
+   Run this in PowerShell:
+
+       openclaw auth add kimi-coding
+
+   Paste your Kimi API key when prompted.
+   Get your key: https://platform.moonshot.cn
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🌐 OPTIONAL — Brave Search API (for web search):
+   1. Get free key: https://api.search.brave.com/app/dashboard
+   2. Edit: %USERPROFILE%\.openclaw\openclaw.json
+   3. Find "YOUR_BRAVE_API_KEY_HERE" and replace it
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎉 THAT'S IT. You now have Jakin's exact OpenClaw setup.
+
+Built with 💀 by Jakin for Brax
+OpenClaw 2026.3.2 — Exact Version Locked

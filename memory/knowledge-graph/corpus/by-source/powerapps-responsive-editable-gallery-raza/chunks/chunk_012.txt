@@ -1,0 +1,42 @@
+CHUNK 12: EDIT BUTTON AND ROW EDITING LOGIC
+Source: powerapps-responsive-editable-gallery-raza | Timestamp: 20:30 - 22:30
+
+To allow the user to make changes my gallery. I'll edit make sure I'll select the container that's in the gallery and insert a button control.
+
+Of course, this button goes right at the end, but I want to move this right at the start. So, I'll reorder this and move it to the start.
+
+---
+
+Here it is. This button, I'll give it an icon. I'll show an edit icon. Layout will be icon only.
+
+The width, I'll keep it at 80. Styling type transparent, icon style filled.
+
+---
+
+Now notice because I added a control in the gallery, the alignment of my headers is gone. Well, I need another header for this action as well. So I'll create one. I'll pick my item ID header. Ctrl C, Ctrl V. Reorder this one to sit right at the start. I'll call this action.
+
+This button of mine I've called it btn action.
+
+Now I'll make sure that this header has the same width as that button. So I'll align the width, the fill portions as well as the layout minimum width for this header to match to my control.
+
+So now all my controls are placed accurately.
+
+---
+
+When edit is clicked, I want to only make that row editable for the user. So for this button on select, I'll set a variable: `Set(varItemSelected, ThisItem)`
+
+---
+
+KEY POINTS:
+- Edit button: Insert in gallery container, reorder to start
+- Button properties:
+  - Icon: Edit
+  - Layout: Icon only
+  - Width: 80
+  - Styling: Transparent
+  - Icon style: Filled
+- Header alignment for new button:
+  - Copy existing header
+  - Reorder to start
+  - Link width properties to button
+- Variable: `varItemSelected` stores `ThisItem` when edit clicked

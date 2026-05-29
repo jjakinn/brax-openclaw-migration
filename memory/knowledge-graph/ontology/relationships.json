@@ -1,0 +1,36 @@
+{
+  "version": "2.0",
+  "description": "Relationships between concepts and sources",
+  
+  "contradictions": {
+    "index_format": {
+      "concept_id": "concept-name",
+      "source_a": "source-id",
+      "source_b": "source-id",
+      "claim_a": "Summary of position A",
+      "claim_b": "Summary of position B",
+      "resolution_notes": "Optional: synthesis or context",
+      "confidence": "high|medium|low"
+    },
+    "entries": []
+  },
+  
+  "supports": {
+    "index_format": {
+      "source_a": "source-id",
+      "source_b": "source-id",
+      "relationship": "A supports/extends/confirms B",
+      "concept": "related-concept-id"
+    },
+    "entries": []
+  },
+  
+  "references": {
+    "index_format": {
+      "source_a": "source-id",
+      "mentions": "source-id-b",
+      "context": "Where and why mentioned"
+    },
+    "entries": []
+  }
+}

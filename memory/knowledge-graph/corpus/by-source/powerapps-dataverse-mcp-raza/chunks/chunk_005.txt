@@ -1,0 +1,48 @@
+CHUNK 5: MCP CLIENT ALLOW LIST AND TOOLS
+Source: powerapps-dataverse-mcp-raza | Timestamp: 04:30 - 05:30
+
+Let's go to the advanced settings.
+
+Microsoft Copilot Studio: This is already enabled as an allowed MCP client to access the Dataverse MCP server.
+
+There's Microsoft GitHub Copilot in here as well. It's set to No.
+
+As an admin of the environment, if you want to enable this, you can easily do so.
+
+---
+
+Any other clients you would like to add and allow, you'll have to whitelist them here.
+
+---
+
+Plus the tools, the list of tools that the Dataverse MCP server exposes allows us to:
+- List tables
+- Describe tables
+- Create
+- Update
+- Delete
+- Read
+
+Full CRUD support on our data. All of this by respecting the user's permissions.
+
+---
+
+These tools are utilizing SQL.
+
+---
+
+Back to the environment settings. One other aspect to look at and enable is the TDS endpoint which is enabled in my scenario.
+
+---
+
+KEY POINTS:
+- Pre-enabled clients: Copilot Studio
+- Optional clients: GitHub Copilot (can be enabled)
+- Admin control: Whitelist additional clients
+- MCP tools available:
+  - List tables
+  - Describe tables
+  - Create, Read, Update, Delete (CRUD)
+- Security: Respects user permissions
+- Underlying: SQL-based
+- TDS endpoint: Must be enabled

@@ -1,0 +1,86 @@
+{
+  "source_id": "uncensored-ai-hacking-gecurity",
+  "display_name": "Run YOUR own UNCENSORED AI & Use it for Hacking",
+  "author": "Zade (Gecurity / zSecurity)",
+  "type": "video",
+  "format": "url",
+  "metadata": {
+    "publisher": "YouTube",
+    "year": 2025,
+    "url": "https://www.youtube.com/watch?v=XvGeXQ7js_o",
+    "channel": "zSecurity",
+    "ingested_date": "2026-03-28",
+    "processed_by": "agent:main",
+    "ingestion_status": "COMPLETE",
+    "duration_verified": true,
+    "chunks_processed": 1,
+    "total_words": 5003
+  },
+  "length": {
+    "pages": 0,
+    "words": 5003,
+    "duration_minutes": 26,
+    "chunk_count": 1
+  },
+  "structure": {
+    "parts": [
+      "Introduction",
+      "Finding Uncensored Models on HuggingFace",
+      "Model Selection & Quantization",
+      "Hardware Compatibility Check",
+      "Cloud Setup with Hostinger VPS",
+      "Ollama + Open WebUI Installation",
+      "Installing Models from HuggingFace",
+      "Testing Uncensored Qwen3 Coder",
+      "Testing Qwen3 Reasoning Model",
+      "Demo & Results"
+    ],
+    "chapters": [
+      "Why Uncensored AI Models",
+      "HuggingFace Model Discovery & Filtering",
+      "Understanding Quantization (Q4KM, sizes)",
+      "Hardware Requirements & Compatibility Tool",
+      "Hostinger VPS Cloud Setup (KVM4/KVM8)",
+      "Ollama Pre-installed Application Template",
+      "Open WebUI Interface Walkthrough",
+      "Pulling HuggingFace Models via Open WebUI",
+      "Qwen3 Coder 30B - Uncensored Coding Model",
+      "Qwen3 22B Thinking Model - Reasoning Chain",
+      "Multi-Model Management"
+    ]
+  },
+  "concepts_covered": [
+    "uncensored-ai-models",
+    "huggingface-model-discovery",
+    "ollama-setup",
+    "open-webui",
+    "cloud-vps-ai",
+    "model-quantization",
+    "qwen3-coder",
+    "qwen3-thinking",
+    "hostinger-vps",
+    "ai-for-hacking",
+    "self-hosted-llm",
+    "hardware-compatibility"
+  ],
+  "domains": [
+    "cybersecurity",
+    "ai",
+    "self-hosting",
+    "cloud-computing"
+  ],
+  "files": {
+    "chunks": "corpus/by-source/uncensored-ai-hacking-gecurity/chunks/"
+  },
+  "key_takeaways": [
+    "HuggingFace has 800+ uncensored AI models filterable via &other=uncensored URL param",
+    "Q4KM quantization is recommended balance of quality vs size (~18GB for 30B model)",
+    "HuggingFace hardware compatibility tool checks if your specs can run a model",
+    "Hostinger VPS with Ollama template auto-installs Ollama + Open WebUI (no commands needed)",
+    "KVM8 plan (32GB RAM, 8 vCPU) at ~$20/mo is sufficient for large uncensored models",
+    "Open WebUI can pull models from HuggingFace directly (not just ollama.com)",
+    "Multiple models can coexist \u2014 eject one to free resources before loading another",
+    "Reasoning/thinking models (Qwen3 22B) give better answers but are slower",
+    "Coding models (Qwen3 Coder 30B) are especially good for hacking tasks"
+  ]
+}

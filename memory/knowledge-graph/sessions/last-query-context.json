@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "description": "Session Bridge - Maintains context across sessions",
+  "last_session": "agent:main:1773904815",
+  "last_query": "Ingest Veritasium Markov chains video",
+  "last_concepts_accessed": ["markov-chains", "law-of-large-numbers", "probability-theory"],
+  "sources_in_progress": [],
+  "active_projects": ["knowledge-graph-ingestion"],
+  
+  "conversation_continuity": {
+    "previous_topic": "Veritasium video ingestion",
+    "unanswered_questions": [],
+    "follow_up_suggested": false
+  },
+  
+  "ingestion_status": {
+    "total_sources": 3,
+    "sources_completed": ["cs50-flask-web-programming", "cs50-full-course-2026", "veritasium-markov-chains"],
+    "sources_queued": [],
+    "last_checkpoint": "2026-03-23T06:17:00Z",
+    "total_words_ingested": 315769,
+    "total_chunks": 46
+  }
+}

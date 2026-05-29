@@ -1,0 +1,21 @@
+{
+  "chunks": [],
+  "last_updated": "2026-04-01T14:55:00Z",
+  "version": "3.1",
+  "stats": {
+    "total_chunks": 0,
+    "by_type": {
+      "concept": 0,
+      "procedure": 0,
+      "decision": 0,
+      "reference": 0,
+      "synthesis": 0
+    },
+    "by_priority": {
+      "P0": 0,
+      "P1": 0,
+      "P2": 0,
+      "P3": 0
+    }
+  }
+}

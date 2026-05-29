@@ -1,0 +1,21 @@
+CHUNK 8: ACCESSING AND EDITING REACT CODE
+Source: powerapps-tools-ecosystem-raza | Timestamp: 11:00 - 11:45
+
+We also get access to the code. Here is the full React code that is driving this page.
+
+We can also make edits to the code.
+
+Your makers, your developers, your pro-coders have full flexibility to modify this React code or write the entire code from scratch.
+
+You can also compare with the last version.
+
+---
+
+KEY POINTS:
+- Code access: Full React code available
+- Editing options:
+  - AI agent (natural language)
+  - Direct code editing
+  - Write from scratch
+- Version comparison: Compare with last version
+- Target users: Makers, developers, pro-coders

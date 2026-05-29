@@ -1,0 +1,17 @@
+{
+  "source_id": "3b1b-ch9-ai-images-videos",
+  "display_name": "3Blue1Brown Ch9: AI Images & Videos",
+  "type": "video",
+  "format": "video",
+  "metadata": {
+    "ingested_date": "2026-03-23",
+    "ingestion_status": "COMPLETE",
+    "total_words": 6497,
+    "total_chunks": 3,
+    "chunks_processed": 3
+  },
+  "domains": [],
+  "files": {
+    "chunks": "chunks/"
+  }
+}

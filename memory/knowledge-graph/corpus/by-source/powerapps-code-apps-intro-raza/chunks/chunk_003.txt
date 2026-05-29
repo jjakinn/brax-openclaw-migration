@@ -1,0 +1,39 @@
+CHUNK 3/3
+
+[07:00 - 10:00]
+
+Next, let's connect our code app to data. Now, Power Platform has over 1500 plus connectors. And in our Power Platform environments, we can create connections to those connectors.
+
+These are my connections in this environment. the command pack connection list and this will list out all my connections in the environment that I have connected in Visual Studio Code.
+
+I get the connection ids and I get the app ids. Let's try and connect to the Office 365 users connector. The app ID is shared Office 365 and the connection ID is right here.
+
+To add a connection to my code app, pack code add data source, the app ID, the connection ID, hit enter, and the data source has been added to my app. It's called Office 365 users.
+
+the source folder under services. It adds the Office 365 user service TypeScript file which exposes the connector functions. I can use the functions in this file to build my app.
+
+I want to make changes to my main app file. We are in the age of AI and copilots. Why not leverage the GitHub copilot which I have set in agent mode? I can ask the copilot to make updates to my app.
+
+Build me a profile screen to show my profile information, name, email, and photo. GitHub copilot springs into action. Updates my main app file. It has full context of the connected data source. Done. I'll say keep. I'll ask it to run the build. Continue.
+
+Runs the build function. There were some errors. Fixes them. Click continue. Build successful. npm rundev. Going to run this app locally.
+
+Notice the connection. I'll say allow. And here is the result. My profile image, name, and email. In my main app file, it's calling my profile screen. This is where it's printing the name.
+
+Let's make a change. Save the file. The hot module replacement in action. Immediately, it makes the update.
+
+Next, I'll add a connection to SharePoint. Here is my connection ID. This is my data set and this is my table. I'm connecting to tabular data a SharePoint list called work progress tracker. This is my SharePoint list.
+
+Let's work with GitHub copilot. update my main app file to show data from the work progress tracker data source that I have added to my app. I'll also ask it to run the build. In case there are any errors, GitHub Copilot will fix it for me. The build runs successfully.
+
+Let's run it locally. Connect it to Power Apps. Observe the connections. And here is the results. It's getting data from my SharePoint list.
+
+This is an image of another app that I will provide as inspiration to GitHub copilot. I've uploaded the image. Asked GitHub Copilot to design the app based on it. Here is my app. My server is running. Notice as the changes are made, the app is getting updated live.
+
+And here is the app. It's built my dashboard aggregating data from my data source. Here's my to-do list, the form of those swim lanes. I also asked her to add a feature to drag and drop tasks across swim lanes. And as that happens, go update the status.
+
+I can build my Reactbased web apps in Visual Studio Code and deploy these to the Power Platform.
+
+Here is an example of a quick achart that I built by simply connecting to the Office 365 users connector. Here is an app that is connected to data.
+
+If you enjoyed this video then do like, comment and subscribe to my YouTube channel and thank you so much for watching.

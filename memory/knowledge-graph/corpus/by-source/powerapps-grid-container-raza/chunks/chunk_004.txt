@@ -1,0 +1,26 @@
+CHUNK 4: RESPONSIVE BEHAVIOR, GAP, AND PADDING
+Source: powerapps-grid-container-raza | Timestamp: 03:30 - 05:00
+
+You can see how as the height of the grid changes or the width of the grid changes, the X position, Y position, width and height of the controls - in this case the buttons - within the grid automatically transform themselves.
+
+Amazing for building responsive apps.
+
+---
+
+We can also define the gap. That's the spacing between the controls in the container.
+
+The current gap is 8. Let's change it to 50. Now there is a 50 pixel gap between all of the controls within the grid container.
+
+---
+
+We also have padding options. So padding from the top is 8 pixels. I'll change that to 40. So it's 40 pixels from the top.
+
+I can adjust the left padding, right padding, bottom padding. And you can see how by simply adjusting the properties of the grid container, the controls within the grid are accordingly repositioning themselves.
+
+---
+
+KEY POINTS:
+- Responsive: Controls auto-resize/reposition as grid dimensions change
+- `Gap`: Spacing between controls (default 8)
+- `PaddingTop`, `PaddingLeft`, `PaddingRight`, `PaddingBottom`: Container padding
+- Adjusting grid properties = automatic control repositioning

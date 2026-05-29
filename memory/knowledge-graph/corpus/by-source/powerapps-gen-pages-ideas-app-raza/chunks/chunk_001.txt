@@ -1,0 +1,37 @@
+CHUNK 1/3
+
+[00:00 - 03:30]
+
+Hello everyone, Resza here. Generative pages in power apps, AI powered app creation or canvas power apps. In this video, I'll show you the power of gen pages based on an app that I designed in canvas. So let's begin.
+
+Canvas apps allows us to get full control over the UI UX of our application.
+
+This is an ideas management app. I did a video on this step by step for canvas apps that I will link in the description for this video. So do check it out.
+
+This home screen experience was designed using containers, galleries, controls, and more. To build a screen like this requires understanding of how to use the controls, how to best write your formulas and more.
+
+My back end is Microsoft data versse. Now, this is a canvas app. Let's say I have a scenario where I need to update this. I need to add additional filters. For each idea, I want to allow users to submit commands. I need to provide light mode, dark mode options for my screen. All of this requires work.
+
+Now since this is built on Microsoft data versse I have another option that opens up for me now which is the new gen pages experience exclusive to modeldriven power apps.
+
+I have an out ofthe-box modeldriven power app experience that is connected to those four tables: ideas, the categories, users can vote for ideas and then they can also comment on ideas.
+
+Now let's try and design this experience and enhance it further by using gen pages in my model driven app. I'll describe my page.
+
+First up, I will give context to the app agent. I'll add tables. I'll pick idea. So, it's added the reference to the idea table in data versse. I'll add category, vote, and command.
+
+Plus, I will attach an image. And this image is a screenshot of my canvas app landing screen. This I have added as an inspiration for my generative page.
+
+Now I'm going to describe what I would like the app agent to build me. Build me an idea app home screen based on attached image. Data for idea will come from the idea table.
+
+generate - the magic begins. Here is that screenshot that I provided as a reference.
+
+Gen pages starts building out the reactbased page for me in the model driven power app. It has the context of my underlying tables. It's starting to frame my generative page.
+
+And my generative page is ready. I'll go ahead and save this. I can give this page a name. I'll put an emoji and say ideas. Publish this.
+
+You can see a preview of the page right here. It's showing all the ideas from my idea table. It's gone ahead and styled it very similar to the screenshot that I provided.
+
+The app's published. Let's refresh the model driven app. And here is my ideas generative page. It's got the data from my ideas table.
+
+I also have the option here to search. So the filters are working accurately. Search by category. Typed health. So it's giving me the ideas that are related to that category.

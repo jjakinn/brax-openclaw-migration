@@ -1,0 +1,39 @@
+CHUNK 11: ADDING COMPONENT TO SCREENS
+Source: powerapps-navigation-component-raza | Timestamp: 15:00 - 16:30
+
+Now, this first screen was added when the app was created. I don't need this, so I'll delete.
+
+Here's my home screen that's based on a template. These templates are fully customizable. So, as an example, if I don't want the header container, can simply select and delete it.
+
+---
+
+In this sidebar container, I'll go and insert my navigation menu which is a component. So under custom, here's my nav component.
+
+The component is centered. But because this is in a responsive container, I'll go to the container under display horizontal alignment. I'll stretch.
+
+Flexible width is on this nav component. I'll turn on flexible height so it takes the full height.
+
+---
+
+Its minimum width I'll set as `Parent.Width` and this container the padding I'll set all zero. So now my navigation sits exactly in this container.
+
+And because this is responsive, if I preview the app, you will notice as the dimensions change, my navigation gets that amount of real estate, width, height to play with.
+
+---
+
+Now, since I am on the home screen, if you notice, the home icon has a font color set. That's the color of the theme giving the user the indicator that they are on the home screen.
+
+---
+
+KEY POINTS:
+- Remove default screens if not needed
+- Templates are customizable — delete unwanted containers
+- Insert component: Sidebar container → Custom → navComponent
+- Container settings:
+  - Horizontal alignment: Stretch
+  - Flexible width: ON
+  - Flexible height: ON
+  - Minimum width: `Parent.Width`
+  - Padding: 0
+- Result: Component fills sidebar responsively
+- Active indicator: Home highlighted when on home screen

@@ -1,0 +1,25 @@
+# Chunk 010: REST APIs
+
+APIs return raw data (JSON) instead of HTML pages. Frontend JavaScript consumes this data.
+
+```python
+from flask import jsonify
+
+@app.route("/search")
+def search():
+    q = request.args.get("q")
+    shows = db.execute("SELECT * FROM shows WHERE title LIKE ?", "%" + q + "%")
+    return jsonify(shows)
+```
+
+JavaScript fetches data:
+```javascript
+fetch('/search?q=office')
+  .then(response => response.json())
+  .then(data => {
+    // data is array of objects
+    updatePage(data);
+  });
+```
+
+Enables dynamic features like autocomplete without page reloads.
