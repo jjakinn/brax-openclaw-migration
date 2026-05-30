@@ -123,6 +123,7 @@ Write-Host "STEP 3: Creating directory structure..." -ForegroundColor Yellow
 $dirs = @(
     $WorkspaceDir,
     "$WorkspaceDir\memory",
+    "$WorkspaceDir\memory\archive",
     "$WorkspaceDir\skills",
     "$WorkspaceDir\config",
     "$BraxHome\self-improving",
